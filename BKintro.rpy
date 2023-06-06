@@ -1987,7 +1987,7 @@ label districts_first_time:
 
 label districts_first_time_slums:
 
-    $ narrator("Choose a district.", interact = False)
+    $ narrator("选择一个区域。", interact = False)
 
     $ ui.interact()
 

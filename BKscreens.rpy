@@ -3456,9 +3456,8 @@ screen brothel():
                 $ text1 = "???"
 
             textbutton text1 ypadding 5 xfill True action Return("furniture") text_size res_font(18)
-
-#             if story_flags["found wagon"] and story_flags["met carpenter"]:
-        textbutton "顾客选项" ypadding 5 xfill True action Return("open options") text_size res_font(18)
+        if district.rank  >= 1 and not brothel_firstvisit:
+            textbutton "顾客选项" ypadding 5 xfill True action Return("open options") text_size res_font(18)
 
     frame:
         background None
