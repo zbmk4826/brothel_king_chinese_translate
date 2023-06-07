@@ -1363,7 +1363,7 @@ init -4 python:
     room_pics = {
                 # Common rooms
                 "酒馆" : "tavern.webp",
-                "夜总会" : "strip club.webp",
+                "脱衣舞夜总会" : "strip club.webp",
                 "温泉" : "onsen.webp",
                 "艺伎屋" : "okiya.webp",
                 # Bedrooms

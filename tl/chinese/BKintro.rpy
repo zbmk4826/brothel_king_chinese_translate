@@ -3490,3 +3490,11 @@ translate chinese strings:
     old "An okiya (geisha house)"
     new "艺伎屋"
 
+# TODO: Translation updated at 2023-06-07 22:34
+
+# game/BKintro.rpy:311
+translate chinese resume_intro_1e7e5ee4:
+
+    # you "我叫..." nointeract
+    you "" nointeract
+

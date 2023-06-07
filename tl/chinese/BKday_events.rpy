@@ -766,7 +766,7 @@ translate chinese random_morning_events_9e7a73e1:
 translate chinese random_morning_events_84509039:
 
     # "[girl.name]'s [boost_stat] skill has improved a little."
-    "[girl.name]的[boost_stat]技能有所提高。"
+    "[girl.name]的[boost_stat_translate]有所提高。"
 
 # game/BKday_events.rpy:451
 translate chinese random_morning_events_d404bb97:
@@ -12319,4 +12319,12 @@ translate chinese strings:
     # game/BKday_events.rpy:7532
     old "Nope"
     new "不行"
+
+# TODO: Translation updated at 2023-06-07 22:34
+
+# game/BKday_events.rpy:438
+translate chinese random_morning_events_ed09df51:
+
+    # "[girl.name]'s [boost_stat_translate] skill has improved a little."
+    ""
 

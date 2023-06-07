@@ -434,7 +434,8 @@ label random_morning_events():
 
                                 if boost_stat:
                                     $ girl.change_stat(boost_stat, dice(3))
-                                    "[girl.name]'s [boost_stat] skill has improved a little."
+                                    $ boost_stat_translate = setting_name_dict[boost_stat]
+                                    "[girl.name]'s [boost_stat_translate] skill has improved a little."
 
                         elif ev_type == "libido":
 

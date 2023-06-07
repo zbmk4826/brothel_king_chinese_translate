@@ -635,12 +635,12 @@ label advance_to_chapter(chapter, silent=False, free=False):
                         $ free_room_text = "\n你将获得一个你选择的免费房间。"
 
                     elif chosen_district.room != []:
-                        $ free_room_text = "\n你将获得一个{b}免费的" + chosen_district.room[0] + "{/b}。"
+                        $ free_room_text = "\n你将获得一个{b}免费的" + all_common_rooms_translate[chosen_district.room[0]] + "{/b}。"
 
                     else:
                         $ free_room_text = ""
 
-                    if renpy.call_screen("yes_no", "你真的想把你的青楼搬到{b}[chosen_district.name]{/b}吗？\n\n{size=-2}这将重置你所有的房间升级，但你将保留你的家具和装饰品。" + free_room_text):
+                    if renpy.call_screen("yes_no", "你真的想把你的青楼搬到{b}" + location_name_dict[chosen_district.name] + "{/b}吗？\n\n{size=-2}这将重置你所有的房间升级，但你将保留你的家具和装饰品。" + free_room_text):
                         $ change_district(chosen_district, free)
                         $ renpy.block_rollback()
 

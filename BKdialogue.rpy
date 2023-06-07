@@ -2977,7 +2977,7 @@ init -1 python:
     add_dialogue("free_chat_love", ("bimbo", "pervert"), ("有时候它只是表面的，有时候它会深入骨髓。", "我总是说，如果有魔力，为什么不让它发生呢？"), love=2, max_cap=25)
     add_dialogue("free_chat_origins", ("bimbo", "pervert"), ("这并不重要，对吧？[girl.origin_cn]。"), max_cap=40)
     add_dialogue("free_chat_hobbies", ("bimbo", "pervert"), ("我经常和我的朋友们一起去[hobby_cn]。但最近我感觉我已经厌倦了。"), love=2, max_cap=40)
-    add_dialogue("free_chat_likes", ("bimbo", "pervert", "superficial", "princess"), ("我在[best_cn]夜总会。唯一真正的[thing_cn]之王。*欢笑*"), love=2, max_cap=40)
+    add_dialogue("free_chat_likes", ("bimbo", "pervert", "superficial", "princess"), ("我在[best_cn]脱衣舞夜总会。唯一真正的[thing_cn]之王。*欢笑*"), love=2, max_cap=40)
     add_dialogue("free_chat_dislikes", ("bimbo", "superficial", "princess", "cold"), ("我不喜欢[worst_cn]。那是小孩子的[thing_cn]。"), max_cap=40)
 
     add_dialogue("free_joke_harmless", ("bimbo", "class president"), ("呵呵，好的好的。"), love=1, max_cap=50)
@@ -3069,7 +3069,7 @@ init -1 python:
     add_dialogue("slave positive fixation accept", ("generic"), ["哦，我喜欢这个……", "是的，给我……", "这太热了……", "哦，这让我兴奋……", "哦，是的！让我们这样做。"])
     add_dialogue("slave naked request permanent", ("very lewd"), ("我明白了……嗯，为什么不呢？裸体的感觉很好，而且天气太热了，不适合穿衣服……"), love=2, fear=-2, sound=s_sigh)
     add_dialogue("MC demean rival", ("generic"), ("哦，我会告诉她！她肯定会很生气！*欢笑*"), sound=s_evil_laugh)
-    add_dialogue("slave chat tastes likes", ("bimbo", "pervert", "superficial", "princess"), ("我在[best]夜总会。唯一真正的[thing_cn]国王。*欢笑*"), unlock="LM")
+    add_dialogue("slave chat tastes likes", ("bimbo", "pervert", "superficial", "princess"), ("我在[best]脱衣舞夜总会。唯一真正的[thing_cn]国王。*欢笑*"), unlock="LM")
     add_dialogue("slave chat tastes dislikes", ("bimbo", "superficial", "princess", "cold"), ("我不喜欢[worst]。那是小孩子的[thing_cn]。"), unlock="LM")
     add_dialogue("slave chat origins 1", ("bimbo", "pervert"), ("这不重要，对吧？[girl.origin]。"), unlock="EI")
     add_dialogue("slave lecture refuses", ("very lewd"), ("我不愿意去想起它。求你了，别再提了。"))

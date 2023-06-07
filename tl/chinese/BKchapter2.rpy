@@ -588,11 +588,11 @@ translate chinese c2_intro_7e3c797f:
     # you "Let's see this place old man Gio found us. It better be an upgrade..."
     you "让我们看看老吉欧给我们找的地方，起码要比上个地方强…"
 
-# game/BKchapter2.rpy:386
+# game/BKchapter2.rpy:388
 translate chinese c2_intro_1be66adb:
 
-    # "Not letting Sill's whining spoil your mood, you watch with satisfaction as you leave the slums behind and enter the bustling streets of Zan's popular neighborhoods, stepping into [district.name]."
-    "希露的抱怨并没有破坏了你的好心情，心满意足地看着你们终于离开贫民窟，可以进入赞城的繁华街道，去往[district.name]."
+    # "Not letting Sill's whining spoil your mood, you watch with satisfaction as you leave the slums behind and enter the bustling streets of Zan's popular neighborhoods, stepping into [district_chinese_name]."
+    "希露的抱怨并没有破坏了你的好心情，心满意足地看着你们终于离开贫民窟，可以进入赞城的繁华街道，去往[district_chinese_name]."
 
 # game/BKchapter2.rpy:389
 translate chinese c2_intro_b63ec5de:
@@ -720,11 +720,11 @@ translate chinese c2_intro_25f86d6a:
     # "Shoving Sill and her bags inside, you decide to enjoy a little break from all your hard work and step outside to take a look at your new neighbourhood."
     "你把希露和她的行李塞进去房子里后，决定享受一下辛勤工作之后的小休息，并走出门去看看你住新社区。"
 
-# game/BKchapter2.rpy:440
+# game/BKchapter2.rpy:442
 translate chinese c2_intro_5700888f:
 
-    # you "The streets are so busy this time of day... Travellers from everywhere drop by [district.name]. This should be good for business..."
-    you "这个时候街上非常热闹……来自各地的旅客都会到[district.name]。这对你的生意应该有所帮助……"
+    # you "The streets are so busy this time of day... Travellers from everywhere drop by [district_chinese_name]. This should be good for business..."
+    you "这个时候街上非常热闹……来自各地的旅客都会到[district_chinese_name]。这对你的生意应该有所帮助……"
 
 # game/BKchapter2.rpy:444
 translate chinese c2_intro_99098d21:
@@ -7674,11 +7674,11 @@ translate chinese c2_suzume_brothel_a47d14f0:
     # "You have spent all of your actions for the night."
     "你今天所有行动点数都用完了。"
 
-# game/BKchapter2.rpy:4048
+# game/BKchapter2.rpy:4050
 translate chinese c2_homura_city_meet_cb1006b8:
 
-    # "One morning, as you open your window, you spot a familiar figure that looks out of place in [district.name]."
-    "一天清晨，你打开窗户时，看到一个与[district.name]格格不入的熟悉身影。"
+    # "One morning, as you open your window, you spot a familiar figure that looks out of place in [district_chinese_name]."
+    "一天清晨，你打开窗户时，看到一个与[district_chinese_name]格格不入的熟悉身影。"
 
 # game/BKchapter2.rpy:4053
 translate chinese c2_homura_city_meet_a4616de8:
@@ -22533,4 +22533,24 @@ translate chinese strings:
     # game/BKchapter2.rpy:10760
     old "Cum in her mouth"
     new "在她嘴里射精"
+
+# TODO: Translation updated at 2023-06-07 22:34
+
+# game/BKchapter2.rpy:388
+translate chinese c2_intro_cb99ed40:
+
+    # "Not letting Sill's whining spoil your mood, you watch with satisfaction as you leave the slums behind and enter the bustling streets of Zan's popular neighborhoods, stepping into [district_chinese_name]."
+    ""
+
+# game/BKchapter2.rpy:442
+translate chinese c2_intro_a4cc60b2:
+
+    # you "The streets are so busy this time of day... Travellers from everywhere drop by [district_chinese_name]. This should be good for business..."
+    you ""
+
+# game/BKchapter2.rpy:4050
+translate chinese c2_homura_city_meet_9f94f231:
+
+    # "One morning, as you open your window, you spot a familiar figure that looks out of place in [district_chinese_name]."
+    ""
 

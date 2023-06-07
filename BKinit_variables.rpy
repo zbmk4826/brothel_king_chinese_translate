@@ -509,7 +509,7 @@ init python:
 
     common_room_dict = {
                         "tavern" : Room("酒馆", 0, "special", job = "waitress"),
-                        "club" : Room("夜总会", 0, "special", job = "dancer"),
+                        "club" : Room("脱衣舞夜总会", 0, "special", job = "dancer"),
                         "onsen" : Room("温泉", 0, "special", job = "masseuse"),
                         "okiya" : Room("艺伎屋", 0, "special", job = "geisha"),
                         }
@@ -526,6 +526,10 @@ init python:
 
 #    all_common_rooms = [tavern, club, onsen, okiya]
     all_common_rooms = ["tavern", "club", "onsen", "okiya"]
+    all_common_rooms_translate = {"tavern" : "酒馆",
+                                  "club" : "脱衣舞夜总会",
+                                  "onsen" : "温泉",
+                                  "okiya" : "艺伎屋"}
     job_room_dict = {"waitress" : "tavern",
                      "dancer" : "club",
                      "masseuse" : "onsen",
