@@ -1704,7 +1704,7 @@ label kidnap_tip(girl): # Happens at the taverns location if a girl has been kid
 
 label kidnap_rescue(girl):
 
-    $ loc = selected_location.name.lower()
+    $ loc = location_name_dict[selected_location.name]
 
     "You reach the [loc]. This is where [girl.fullname] is being held."
 

@@ -1136,7 +1136,7 @@ label c1_thieves_guild_tip:
 
     $ renpy.block_rollback()
 
-    $ loc = selected_location.name.lower()
+    $ loc = location_name_dict[selected_location.name]
 
     "After exploring the [loc] area for a couple of hours, you stop in a nearby tavern to slake your thirst."
 

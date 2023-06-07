@@ -2242,8 +2242,18 @@ init -4 python:
 
     slave_stories = ["slave_story1", "slave_story2", "slave_story3", "slave_story4", "slave_story5", "slave_story6", "slave_story7", "slave_story8"]
 
-    origins = ["Zan", "the border with the Holy Lands", "the Blood Islands", "Karkyr", "Westmarch", "the desert of Hokoma", "Borgo, the port city", "the Goliath desolations", "the Arik mountains"]
+    origins = ["瓒城", "圣地边境", "血腥群岛", "卡尔基尔", "威斯马奇", "霍克马沙漠", "港口城市博尔戈", "歌利亚荒原", "阿里克山脉"]
 
+    origins_chinese_translate = {"Zan":"瓒城",
+                                 "the border with the Holy Lands":"圣地边境",
+                                 "the Blood Islands":"血腥群岛",
+                                 "Karkyr" :"卡尔基尔",
+                                 "Westmarch" :"威斯马奇",
+                                 "the desert of Hokoma" :"霍克马沙漠",
+                                 "Borgo, the port city" :"港口城市博尔戈",
+                                 "the Goliath desolations" :"歌利亚荒原",
+                                 "the Arik mountains" :"阿里克山脉"
+                                 }
 #     origin_description = {
 #                           "Zan" : "I know the old streets of Zan like the back of my hand... I used to walk to the market with my %s, wondering what the strange houses with the red lanterns were... Now I know... *blush*",
 #                           "the border with the Holy Lands" : "The Holy Lands are a place of war and suffering, always have been. Still, I remember a few peaceful moments. Walking with my %s across old battlefields, covered with red blooming flowers, watching nature reclaim its rights...",

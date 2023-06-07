@@ -5422,7 +5422,7 @@ label stella_reward3(): # Activates when the player has spent another 1000 denar
 
 label stella_invitation():
 
-    $ loc = selected_location.name.lower()
+    $ loc = location_name_dict[selected_location.name]
 
     "Walking through a small alley leading to the [loc], you spot something on the pavement."
 
@@ -7027,7 +7027,7 @@ label willow_fight(): # This event will happen somewhere in the city after a mon
     hide screen visit_location
     with fade
 
-    $ loc = selected_location.name.lower()
+    $ loc = location_name_dict[selected_location.name]
 
     "Exploring the outskirts of the [loc], you notice something strange."
 

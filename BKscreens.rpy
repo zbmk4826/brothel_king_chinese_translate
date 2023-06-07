@@ -4102,7 +4102,7 @@ screen matchmaking(girls, customers, match_list, context="job"): # Where match l
             add brothel.get_pic(*res_tb(100))
 
             vbox spacing 6:
-                text "闲置顾客：（%s {image=img_cust}）" % (str(len(idle_customers)) + "/" + str(len(customers))) size res_font(18) color c_brown
+                text "未接待的顾客：（%s {image=img_cust}）" % (str(len(idle_customers)) + "/" + str(len(customers))) size res_font(18) color c_brown
 
                 if customers:
                     vpgrid rows 4 spacing 3 ymaximum yres(160):

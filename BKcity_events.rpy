@@ -4,7 +4,7 @@ label city_rape:
 
     $ renpy.block_rollback()
 
-    $ loc = selected_location.name.lower()
+    $ loc = location_name_dict[selected_location.name]
 
     "Making your way through the [loc], you suddenly hear something."
 
@@ -423,7 +423,7 @@ label city_impress:
 
     $ renpy.block_rollback()
 
-    $ loc = selected_location.name.lower()
+    $ loc = location_name_dict[selected_location.name]
 
     "Walking through the [loc], you run into a party of women adventurers."
 
@@ -889,7 +889,7 @@ label city_slave:
 
     $ renpy.block_rollback()
 
-    $ loc = selected_location.name.lower()
+    $ loc = location_name_dict[selected_location.name]
 
     "Wandering around the [loc], you hear a familiar voice."
 
@@ -1508,7 +1508,7 @@ label city_gamble:
 
     $ renpy.block_rollback()
 
-    $ loc = selected_location.name.lower()
+    $ loc = location_name_dict[selected_location.name]
 
     "You are strolling around the [loc], daydreaming, when you hear someone call out to you."
 
@@ -1880,7 +1880,7 @@ label city_thief:
 
     $ renpy.block_rollback()
 
-    $ loc = selected_location.name.lower()
+    $ loc = location_name_dict[selected_location.name]
 
     "As you pass a group of people near the [loc], you suddenly hear a scream."
 
@@ -2050,7 +2050,7 @@ label city_wrestle:
 
     $ renpy.block_rollback()
 
-    $ loc = selected_location.name.lower()
+    $ loc = location_name_dict[selected_location.name]
 
     "You meet a group of sellswords sitting around a few tables, in a dodgy corner of the [loc]."
 
@@ -2274,7 +2274,7 @@ label city_cat:
 
     $ renpy.block_rollback()
 
-    $ loc = selected_location.name.lower()
+    $ loc = location_name_dict[selected_location.name]
 
     "While walking around the [loc], minding your own business, you hear a young woman call you."
 
@@ -2832,7 +2832,7 @@ label city_secret:
 
     $ renpy.block_rollback()
 
-    $ loc = selected_location.name.lower()
+    $ loc = location_name_dict[selected_location.name]
 
     "As you turn into an alley near the [loc], you notice a shady figure standing in a dark corner."
 
@@ -3074,7 +3074,7 @@ label city_gypsy:
 
     $ renpy.block_rollback()
 
-    $ loc = selected_location.name.lower()
+    $ loc = location_name_dict[selected_location.name]
 
     "Strolling around the [loc], you meet a lone girl in exotic clothes, with a worried look on her face."
 
@@ -3472,7 +3472,7 @@ label city_rob:
 
     $ renpy.block_rollback()
 
-    $ loc = selected_location.name.lower()
+    $ loc = location_name_dict[selected_location.name]
 
     "As you pass through one of the [loc]'s less reputable parts, you see a woman barring your way."
 
@@ -3899,7 +3899,7 @@ label city_ambush:
 
     $ renpy.block_rollback()
 
-    $ loc = selected_location.name.lower()
+    $ loc = location_name_dict[selected_location.name]
 
     "Walking through the [loc] looking for a shortcut, you suddenly get a sinking feeling in your stomach."
 
@@ -4253,7 +4253,7 @@ label city_mob:
 
     $ renpy.block_rollback()
 
-    $ loc = selected_location.name.lower()
+    $ loc = location_name_dict[selected_location.name]
 
     "After an uneventful visit to the [loc], you find a large mob barring the road on your way back."
 
@@ -4551,7 +4551,7 @@ label city_none:
 
     $ renpy.block_rollback()
 
-    $ loc = selected_location.name.lower()
+    $ loc = location_name_dict[selected_location.name]
 
     $ choices = ["你在%s漫步。没有什么有意思的事情发生。", "在%s愉快地走了一圈后，你决定是时候回家了。",
                  "今天的%s很平静。你散步很愉快。", "你花了些许时间，浏览了%s附近路过的商人兜售的商品。但是你没有找到喜欢的东西。",
@@ -4593,7 +4593,7 @@ label city_gossip(gossip=None):
 
     $ renpy.block_rollback()
 
-    $ loc = selected_location.name.lower()
+    $ loc = location_name_dict[selected_location.name]
 
     $ text1 = rand_choice(("一些有趣的八卦", "一个令人不安的谣言", "一个奇怪的故事", "一个有趣的传言", "一句告诫"),)
 
@@ -4612,7 +4612,7 @@ label city_luck():
 
     $ gain = (29 + dice(selected_district.rank*71)) * brothel.get_effect("boost", "city rewards")
 
-    $ loc = selected_location.name.lower()
+    $ loc = location_name_dict[selected_location.name]
 
     "Strolling around the [loc], you notice something shiny on the ground."
 
@@ -4693,7 +4693,7 @@ label slave_beach_event(): # Happens in Seafront, Beach, lakefront, waterfalls d
     $ story_flags["last beach event"] = calendar.time
 
     $ dis = selected_district.name.lower()
-    $ loc = selected_location.name.lower()
+    $ loc = location_name_dict[selected_location.name]
 
     scene black with fade
     show bg beach at top with dissolve
