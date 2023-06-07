@@ -3496,5 +3496,5 @@ translate chinese strings:
 translate chinese resume_intro_1e7e5ee4:
 
     # you "我叫..." nointeract
-    you "" nointeract
+    you "我叫..." nointeract
 

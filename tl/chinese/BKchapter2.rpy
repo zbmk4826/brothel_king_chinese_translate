@@ -22540,17 +22540,17 @@ translate chinese strings:
 translate chinese c2_intro_cb99ed40:
 
     # "Not letting Sill's whining spoil your mood, you watch with satisfaction as you leave the slums behind and enter the bustling streets of Zan's popular neighborhoods, stepping into [district_chinese_name]."
-    ""
+    "希露的抱怨并没有破坏了你的好心情，心满意足地看着你们终于离开贫民窟，可以进入赞城的繁华街道，去往[district_chinese_name]."
 
 # game/BKchapter2.rpy:442
 translate chinese c2_intro_a4cc60b2:
 
     # you "The streets are so busy this time of day... Travellers from everywhere drop by [district_chinese_name]. This should be good for business..."
-    you ""
+    you "这个时候街上非常热闹……来自各地的旅客都会到[district_chinese_name]。这对你的生意应该有所帮助……"
 
 # game/BKchapter2.rpy:4050
 translate chinese c2_homura_city_meet_9f94f231:
 
     # "One morning, as you open your window, you spot a familiar figure that looks out of place in [district_chinese_name]."
-    ""
+    "一天清晨，你打开窗户时，看到一个与[district_chinese_name]格格不入的熟悉身影。"
 

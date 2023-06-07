@@ -1148,63 +1148,63 @@ translate chinese strings:
 
     # renpy/common/00director.rpy:1745
     old "Click to toggle attribute, right click to toggle negative attribute."
-    new ""
+    new "单击可切换属性，右键单击可切换负面属性。"
 
     # renpy/common/00director.rpy:1768
     old "Click to set transform, right click to add to transform list."
-    new ""
+    new "单击设置转换，右键单击添加到转换列表。"
 
     # renpy/common/00director.rpy:1789
     old "Click to set, right click to add to behind list."
-    new ""
+    new "单击设置，右键单击添加到后面列表。"
 
     # renpy/common/00gui.rpy:456
     old "This save was created on a different device. Maliciously constructed save files can harm your computer. Do you trust this save's creator and everyone who could have changed the file?"
-    new ""
+    new "这个存档是在另一台设备上创建的。恶意构建的存档文件可能会损害您的计算机。您信任这个存档的创建者和所有可能更改文件的人吗?"
 
     # renpy/common/00gui.rpy:457
     old "Do you trust the device the save was created on? You should only choose yes if you are the device's sole user."
-    new ""
+    new "您信任创建存档的设备吗?只有当你是该设备的唯一用户时，你才应该选择yes。"
 
     # renpy/common/00preferences.rpy:528
     old "audio when unfocused"
-    new ""
+    new "非激活状态声音"
 
     # renpy/common/00preferences.rpy:537
     old "web cache preload"
-    new ""
+    new "Web缓存预加载"
 
     # renpy/common/00preferences.rpy:552
     old "voice after game menu"
-    new ""
+    new "游戏菜单后语音"
 
     # renpy/common/00speechbubble.rpy:344
     old "Speech Bubble Editor"
-    new ""
+    new "语音泡泡编辑器"
 
     # renpy/common/00speechbubble.rpy:349
     old "(hide)"
-    new ""
+    new "（隐藏）"
 
     # renpy/common/00sync.rpy:70
     old "Sync downloaded."
-    new ""
+    new "下载同步。"
 
     # renpy/common/00sync.rpy:190
     old "Could not connect to the Ren'Py Sync server."
-    new ""
+    new "无法连接到Ren'Py同步服务器。"
 
     # renpy/common/00sync.rpy:192
     old "The Ren'Py Sync server timed out."
-    new ""
+    new "Ren'Py 同步服务器超时。"
 
     # renpy/common/00sync.rpy:194
     old "An unknown error occurred while connecting to the Ren'Py Sync server."
-    new ""
+    new "在连接到Ren'Py 同步服务器时发生未知错误。"
 
     # renpy/common/00sync.rpy:267
     old "The Ren'Py Sync server does not have a copy of this sync. The sync ID may be invalid, or it may have timed out."
-    new ""
+    new "Ren'Py 同步服务器没有此同步的副本。同步ID可能无效，或者已超时。"
 
     # renpy/common/00sync.rpy:409
     old "Please enter the sync ID you generated.\nNever enter a sync ID you didn't create yourself."

@@ -12326,5 +12326,5 @@ translate chinese strings:
 translate chinese random_morning_events_ed09df51:
 
     # "[girl.name]'s [boost_stat_translate] skill has improved a little."
-    ""
+    "[girl.name]的[boost_stat_translate]有所提高。"
 
