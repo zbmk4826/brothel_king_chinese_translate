@@ -323,7 +323,7 @@ screen girl_tab(girls, context="girls"):
                     xalign 0.5
                     yalign 0.99
                     text_size 36
-                    text_font "CHOWFUN_0.TTF"
+                    text_font "bk.TTF"
                     action Jump("headhunter_main")
                     hovered tt.Action(textHH2)
 
@@ -332,7 +332,7 @@ screen girl_tab(girls, context="girls"):
                     xalign 0.5
                     yalign 0.99
                     text_size 36
-                    text_font "CHOWFUN_0.TTF"
+                    text_font "bk.TTF"
                     hovered tt.Action(textHH2)
 
 ############ Jman - Headhunter Mod End ########

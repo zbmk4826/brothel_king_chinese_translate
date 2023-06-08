@@ -130,7 +130,7 @@ label slavemarket_loop:
 
                 if MC.has_gold(price):
 
-                    $ result = renpy.call_screen("yes_no", "你真的想用 [price] 金币购买[girl.fullname]吗？")
+                    $ result = renpy.call_screen("yes_no", "您真的确定要用 [price] 金币购买[girl.fullname]吗？")
 
                 else:
                     you "Shoot, I don't have enough gold..."

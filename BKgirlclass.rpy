@@ -37,7 +37,6 @@ init -2 python:
             self.upgrade_points = 0
             self.perk_points = 4
             self.original_price = 0
-            self.origin_chinese = None
             self.jp = {
                        "waitress" : 0,
                        "dancer" : 0,
@@ -138,7 +137,7 @@ init -2 python:
             # 1. INIT GIRL
 
             self.free = free
-
+            self.origin_chinese = ""
             # Has a chance to generate original if it doesn't exist, otherwise creates a clone:
 
             if force_original or self.init_dict["cloning options/unique"]:
