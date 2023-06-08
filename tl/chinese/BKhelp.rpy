@@ -238,7 +238,7 @@ translate chinese help_MC_fda9a393:
 translate chinese help_MC_6816548b:
 
     # sill "{b}Prestige{/b} reflects your character's renown in Zan. Earning prestige allows you to level up and get skill points."
-    sill "{b}声望{/b}反映了您的角色在赞中的知名度。赚取声望可以让您升级并获得技能点。"
+    sill "{b}声望{/b}反映了您的角色在瓒中的知名度。赚取声望可以让您升级并获得技能点。"
 
 # game/BKhelp.rpy:233
 translate chinese help_MC_2e21e849:
@@ -1318,7 +1318,7 @@ translate chinese help_districts_4ac14c86:
 translate chinese help_districts_ec26eb9d:
 
     # sill "Zan is home to {b}six districts{/b}, from the sprawling Slums outside the city walls to the heart of the city's power: the King's Hold."
-    sill "赞一共有{b}六个区域{/b}，从城墙外的杂乱的贫民窟到城市权力的核心：国王城堡。"
+    sill "瓒一共有{b}六个区域{/b}，从城墙外的杂乱的贫民窟到城市权力的核心：国王城堡。"
 
 # game/BKhelp.rpy:882
 translate chinese help_districts_f9b2c1b2:

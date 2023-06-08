@@ -1089,8 +1089,8 @@ translate chinese random_night_girl_event_380bd730:
 # game/BKday_events.rpy:742
 translate chinese random_night_girl_event_41680458:
 
-    # "The place is beautifully decorated with pretty flowers and cute ribbons. A half-finished painting depicts a landscape that you recognize to be from [girl.origin]."
-    "这个地方被漂亮的鲜花和可爱的丝带装饰得很漂亮。一幅半成品画描绘了一幅风景画，你能认出画上描绘了[girl.origin]的景色。"
+    # "The place is beautifully decorated with pretty flowers and cute ribbons. A half-finished painting depicts a landscape that you recognize to be from [girl.origin_chinese]."
+    "这个地方被漂亮的鲜花和可爱的丝带装饰得很漂亮。一幅半成品画描绘了一幅风景画，你能认出画上描绘了[girl.origin_chinese]的景色。"
 
 # game/BKday_events.rpy:746
 translate chinese random_night_girl_event_88ab5f80:
@@ -2170,7 +2170,7 @@ translate chinese random_night_girl_event_2ba1bfc0:
 translate chinese random_night_girl_event_f51f1a93:
 
     # "While the men and women of Zan share a taste for vice and sleaze in equal measure, female customers are a rare sight at the brothel."
-    "虽然赞城的男女都是同等程度的堕落和下流品味，但女性顾客在青楼中还是很少见。"
+    "虽然瓒城的男女都是同等程度的堕落和下流品味，但女性顾客在青楼中还是很少见。"
 
 # game/BKday_events.rpy:1560
 translate chinese random_night_girl_event_6c24df27:
@@ -2464,7 +2464,7 @@ translate chinese random_night_girl_event_3abc3ae5:
 translate chinese random_night_girl_event_d284ec8b:
 
     # you "Friends! I give you a heartfelt welcome to [brothel.name]! A finer house with finer girls you won't find anywhere in Zan."
-    you "朋友们！我在[brothel.name]真心欢迎你们！在赞任何地方都找不到比我们更漂亮的装潢和更优质的姑娘。"
+    you "朋友们！我在[brothel.name]真心欢迎你们！在瓒任何地方都找不到比我们更漂亮的装潢和更优质的姑娘。"
 
 # game/BKday_events.rpy:1713
 translate chinese random_night_girl_event_d24f699b:
@@ -6652,7 +6652,7 @@ translate chinese night_girl_perform_3f565f3a:
 translate chinese night_girl_perform_11612f96:
 
     # man "Whores of this quality are really hard to find in Zan. Congratulations, my good man, you must be the best trainer in the city."
-    man "在赞中，这样高质量的妓女真的很难找到。恭喜，我的朋友，你一定是这城里最好的训奴师。"
+    man "在瓒中，这样高质量的妓女真的很难找到。恭喜，我的朋友，你一定是这城里最好的训奴师。"
 
 # game/BKday_events.rpy:4488
 translate chinese night_girl_perform_32798787:

@@ -6465,7 +6465,7 @@ init -2 python:
                             s="恐惧"
                         text1 = "{b}" + s + "{/b}"
                     else:
-                        text1 = "{b}" + s + "技能" + "{/b}"
+                        text1 = "{b}" + stat_name_dict[s] + "值" + "{/b}"
 
                     if c >= 5:
                         renpy.say("", girl.name + "的" + text1 + "增加了很多。")

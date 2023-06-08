@@ -26674,7 +26674,7 @@ translate chinese kosmo_returns2_9906bd22:
 translate chinese kosmo_returns2_d289eed0:
 
     # kosmo "I posted an ad for a math and science teacher at the job posting corner in Zan..."
-    kosmo "我在赞的招聘启事栏登了一则招聘数学和科学教师的广告。"
+    kosmo "我在瓒的招聘启事栏登了一则招聘数学和科学教师的广告。"
 
 # game/BKstory_events.rpy:13697
 translate chinese kosmo_returns2_29e04527:
@@ -37838,7 +37838,7 @@ translate chinese strings:
 
     # game/BKstory_events.rpy:3248
     old "A curse?"
-    new "是诅咒吗？"
+    new "什么诅咒？"
 
     # game/BKstory_events.rpy:3248
     old "What about this 'farm'?"

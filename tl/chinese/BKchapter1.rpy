@@ -280,7 +280,7 @@ translate chinese c1_meet_kosmo_c24e1f16:
 translate chinese c1_meet_kosmo_498b8490:
 
     # kosmo "I am the world-renowned chairman of 'HʘʘKERS', the largest, fastest-growing, highest-grossing brothel chain in Zan!"
-    kosmo "我可是赞城中规模第一，世界闻名的连锁青楼'HOOKER'的董事长！"
+    kosmo "我可是瓒城中规模第一，世界闻名的连锁青楼'HOOKER'的董事长！"
 
 # game/BKchapter1.rpy:169
 translate chinese c1_meet_kosmo_df028266:
@@ -292,7 +292,7 @@ translate chinese c1_meet_kosmo_df028266:
 translate chinese c1_meet_kosmo_20d48728:
 
     # kosmo "...and I was knighted by King Pharo the 1st in person! Everyone in Zan knows me, of course, but I shouldn't have expected anything else from a filthy foreigner."
-    kosmo "…而且我还被法罗陛下亲自授予爵士头衔!所以在这赞城里的每个人都认识我。\n不过我可没指望一个外国狗能有这般见识。"
+    kosmo "…而且我还被法罗陛下亲自授予爵士头衔!所以在这瓒城里的每个人都认识我。\n不过我可没指望一个外国狗能有这般见识。"
 
 # game/BKchapter1.rpy:173
 translate chinese c1_meet_kosmo_4fafefca:
@@ -316,7 +316,7 @@ translate chinese c1_meet_kosmo_232fda7a:
 translate chinese c1_meet_kosmo_352f5ea1:
 
     # kosmo angry "Hey! You're addressing a Zan Lord! Don't forget your place, worm..." with vpunch
-    kosmo angry "嘿!你可是正在对一位赞的贵族说话!别忘了你的地位，小虫子…"
+    kosmo angry "嘿!你可是正在对一位瓒的贵族说话!别忘了你的地位，小虫子…"
 
 # game/BKchapter1.rpy:193
 translate chinese c1_meet_kosmo_fa0a20c0:
@@ -1030,7 +1030,7 @@ translate chinese c1_ambush_5a85e245:
 translate chinese c1_ambush_0523890e:
 
     # maya "The streets of Zan are dangerous at the best of times. You should tread softly, and watch your back."
-    maya "赞城的街道即使在治安最好的时候也很危险。你应该小心行事，别让你暴露在危险之中。"
+    maya "瓒城的街道即使在治安最好的时候也很危险。你应该小心行事，别让你暴露在危险之中。"
 
 # game/BKchapter1.rpy:630
 translate chinese c1_ambush_df924ee8:
@@ -1438,7 +1438,7 @@ translate chinese c1_guards_visit_01e459fd:
 translate chinese c1_guards_visit_250682d3:
 
     # guard "We are the law in Zan. We do as we please. Do you want to hang, citizen?"
-    guard "我们就是赞城的法律。我们爱怎么做就怎么做。你想上绞刑架么，市民?"
+    guard "我们就是瓒城的法律。我们爱怎么做就怎么做。你想上绞刑架么，市民?"
 
 # game/BKchapter1.rpy:909
 translate chinese c1_guards_visit_dae0ec55:
@@ -2014,7 +2014,7 @@ translate chinese c1_thieves_guild_tip_8a262d27:
 translate chinese c1_spice_market_41a740ee:
 
     # "The Spice Market is the place where the more or less respectable citizens of Zan come to get their fix."
-    "香料市场是赞城多少还受人尊敬的市民购买香料的地方。"
+    "香料市场是瓒城多少还受人尊敬的市民购买香料的地方。"
 
 # game/BKchapter1.rpy:1243
 translate chinese c1_spice_market_bca7e831:
@@ -2026,7 +2026,7 @@ translate chinese c1_spice_market_bca7e831:
 translate chinese c1_spice_market_b7c02ba2:
 
     # "Of course, a lot of the spices one can find at the market are highly illegal in Zan. But here, far from the policed streets of the city inner districts, very few rules are actively enforced."
-    "当然，你在这个市场上找到的很多香料在赞城都是非法的。但在这个远离市中心治安良好的街道，基本不能指望这些法规能够执行下去。"
+    "当然，你在这个市场上找到的很多香料在瓒城都是非法的。但在这个远离市中心治安良好的街道，基本不能指望这些法规能够执行下去。"
 
 # game/BKchapter1.rpy:1249
 translate chinese c1_spice_market_c2282b6a:
@@ -2230,7 +2230,7 @@ translate chinese c1_spice_market_14daa06f:
 translate chinese c1_spice_market_1b980c86:
 
     # you "Oh, I'm an upstanding citizen of Zan, I was only doing my duty... You know. *grin*"
-    you "哦，我只是一个诚实的赞城市民，我只是尽到了我的应尽的义务……。*笑*"
+    you "哦，我只是一个诚实的瓒城市民，我只是尽到了我的应尽的义务……。*笑*"
 
 # game/BKchapter1.rpy:1402
 translate chinese c1_spice_market_4f86f417_1:
@@ -2290,13 +2290,13 @@ translate chinese c1_sewers_411d1222:
 translate chinese c1_sewers_4a7e73f9:
 
     # "Zan is renowned for its extensive sewer system, introduced nineteen centuries ago by the first non-human dwellers of the city."
-    "赞城以其广阔的地下水路而闻名，这是1900年前由该市第一批非人类居民建造的。"
+    "瓒城以其广阔的地下水路而闻名，这是1900年前由该市第一批非人类居民建造的。"
 
 # game/BKchapter1.rpy:1447
 translate chinese c1_sewers_edb5ec57:
 
     # "The non-human empire used magic to carve a complex maze of galleries deep under the current city level. Since then, the successive rulers of Zan have made random additions to the system while abandoning or condemning older galleries."
-    "这个非人类帝国使用魔法在当时的城市规模下如工匠般雕刻了一个复杂的迷宫般的长廊。在这以后，赞城的历代统治者在抛弃或被迫使用旧有水路的同时，对这个排水系统进行随意的扩建。"
+    "这个非人类帝国使用魔法在当时的城市规模下如工匠般雕刻了一个复杂的迷宫般的长廊。在这以后，瓒城的历代统治者在抛弃或被迫使用旧有水路的同时，对这个排水系统进行随意的扩建。"
 
 # game/BKchapter1.rpy:1450
 translate chinese c1_sewers_c81547bb:
@@ -3400,7 +3400,7 @@ translate chinese c1_sewers_rape_e2f72138:
 translate chinese c1_sewers_rape_7e4dc513:
 
     # man "The night is young, and tomorrow you'll sail for the slave pens of the Blood Islands. So relax honey, and enjoy your last stay in Zan..."
-    man "夜色还早，明天你就会坐船送往血岛的奴隶市场。所以放松点，亲爱的，享受你在赞的最后时光……"
+    man "夜色还早，明天你就会坐船送往血岛的奴隶市场。所以放松点，亲爱的，享受你在瓒的最后时光……"
 
 # game/BKchapter1.rpy:2119
 translate chinese c1_sewers_rape_55111de3:
@@ -7090,7 +7090,7 @@ translate chinese c1_interrogate_menu_ee746fcf:
 translate chinese c1_interrogate_menu_13538da8:
 
     # sergeant "The captain recruited me after I arrived in Zan, fleeing from the Westmarch principalities..."
-    sergeant "我从血岛逃到赞城后，是上尉招募了我……"
+    sergeant "我从血岛逃到瓒城后，是上尉招募了我……"
 
 # game/BKchapter1.rpy:3974
 translate chinese c1_interrogate_menu_e3d8d30c:
@@ -7222,7 +7222,7 @@ translate chinese c1_interrogate_menu_2c0bda6e:
 translate chinese c1_interrogate_menu_b8f202b9:
 
     # sergeant "Well, with the amount of looting and stealing that the city guard gets away with, I always felt that we had a powerful patron covering up for us in the city... Someone at court, I would say."
-    sergeant "因为城市卫队的人总是能从海量的抢劫和偷窃行为中脱罪，我一直觉得有一个强大的赞助人在庇护我们……我想是宫廷里面的人。"
+    sergeant "因为城市卫队的人总是能从海量的抢劫和偷窃行为中脱罪，我一直觉得有一个强大的瓒助人在庇护我们……我想是宫廷里面的人。"
 
 # game/BKchapter1.rpy:4025
 translate chinese c1_interrogate_menu_68dc0e55:
@@ -7690,7 +7690,7 @@ translate chinese c1_interrogation_report_cd21fa19:
 translate chinese c1_interrogation_report_c18f6a4e:
 
     # renza "I know. I am talking about much more direct evidence, that we could take directly to the public, and expose the captain's duplicity for all of Zan to see."
-    renza "我当然知道光这样行不通。我的意思是要有更直接的证据，可以直接向公众公布的那种，让赞城的所有人都知道上尉的真面目。"
+    renza "我当然知道光这样行不通。我的意思是要有更直接的证据，可以直接向公众公布的那种，让瓒城的所有人都知道上尉的真面目。"
 
 # game/BKchapter1.rpy:4231
 translate chinese c1_interrogation_report_5c0c3490:
@@ -7870,13 +7870,13 @@ translate chinese c1_interrogation_report_0816ff83:
 translate chinese c1_interrogation_report_20077af7:
 
     # renza "The {b}night mistress{/b}."
-    renza "{b}午夜夫人{/b}。"
+    renza "{b}夜之女王{/b}。"
 
 # game/BKchapter1.rpy:4299
 translate chinese c1_interrogation_report_41a2e7f5:
 
     # you "The night mistress?"
-    you "午夜夫人?"
+    you "夜之女王?"
 
 # game/BKchapter1.rpy:4301
 translate chinese c1_interrogation_report_ca2b57ed:
@@ -7912,13 +7912,13 @@ translate chinese c1_interrogation_report_cd2ade6d:
 translate chinese c1_interrogation_report_c8521fbc:
 
     # renza "The night mistress is not fully human, you see... She's an avatar of Shalia, abducted as a babe and forged in the fires of the seven hells... To return as a night mistress."
-    renza "午夜女士不完全是人，你懂的……她是莎莉娅的化身，当她还是个婴儿就被绑架，被七层地狱之火锻造。从地狱归来后便成了午夜女士。"
+    renza "夜之女王不完全是人，你懂的……她是莎莉娅的化身，当她还是个婴儿就被绑架，被七层地狱之火锻造。从地狱归来后便成了夜之女王。"
 
 # game/BKchapter1.rpy:4315
 translate chinese c1_interrogation_report_8c524f42:
 
     # lieutenant "The night mistress is a bloodthirsty demon, preying on the souls of the Shalia cult's enemies and the unfaithful... She is also notoriously fickle, capable of dessicating a man for the smallest of slights, just by glancing at him."
-    lieutenant "午夜女士是一个嗜血的恶魔，以教会的敌人和不忠者的灵魂为食……她也是出了名的善变，哪怕只是看他一眼就能吸干那个男人。"
+    lieutenant "夜之女王是一个嗜血的恶魔，以教会的敌人和不忠者的灵魂为食……她也是出了名的善变，哪怕只是看他一眼就能吸干那个男人。"
 
 # game/BKchapter1.rpy:4318
 translate chinese c1_interrogation_report_af5f652f:
@@ -7930,7 +7930,7 @@ translate chinese c1_interrogation_report_af5f652f:
 translate chinese c1_interrogation_report_072b31bf:
 
     # renza "And we've all heard even worse stories. But we must request her help. Only a night mistress has enough power to create a voice crystal and fill it with godly energy."
-    renza "我们都听过更糟糕的故事。但我们必须请求她的帮助。只有午夜女士才有足够的力量创造出一个回音水晶，并给它充能。"
+    renza "我们都听过更糟糕的故事。但我们必须请求她的帮助。只有夜之女王才有足够的力量创造出一个回音水晶，并给它充能。"
 
 # game/BKchapter1.rpy:4323
 translate chinese c1_interrogation_report_0dabd547:
@@ -8164,7 +8164,7 @@ translate chinese c1_satella_intro_ab7833ef:
 translate chinese c1_satella_intro_3ff66814:
 
     # renza "[MC.name]! Stop!!! This is the night mistress!"
-    renza "[MC.name]!快住嘴!!! 这位就是午夜女士!"
+    renza "[MC.name]!快住嘴!!! 这位就是夜之女王!"
 
 # game/BKchapter1.rpy:4446
 translate chinese c1_satella_intro_cdd9076e:
@@ -8176,7 +8176,7 @@ translate chinese c1_satella_intro_cdd9076e:
 translate chinese c1_satella_intro_265f83f4:
 
     # you "What? No, it can't be... You said the night mistress was a real woman, not some kid..."
-    you "什么?不，不可能……你说午夜女士是个真正的女人，不是什么孩子……"
+    you "什么?不，不可能……你说夜之女王是个真正的女人，不是什么孩子……"
 
 # game/BKchapter1.rpy:4450
 translate chinese c1_satella_intro_e97c0b95:
@@ -8242,7 +8242,7 @@ translate chinese c1_satella_intro_fad5c02a:
 translate chinese c1_satella_intro_b4c8f09f:
 
     # "The candles light up all at once. The night mistress is staring at you with a smile, looking like nothing just happened."
-    "蜡烛一下子又亮了起来。午夜夫人微笑着看着你，就像什么都没发生过一样。"
+    "蜡烛一下子又亮了起来。夜之女王微笑着看着你，就像什么都没发生过一样。"
 
 # game/BKchapter1.rpy:4498
 translate chinese c1_satella_intro_b3706dfd:
@@ -8284,7 +8284,7 @@ translate chinese c1_satella_intro_999a7fb3:
 translate chinese c1_satella_intro_ebc4c7c2:
 
     # renza "Err, [MC.name], my lady. He's only recently arrived in Zan..."
-    renza "呃，他是[MC.name]，夫人。他最近才到赞城…"
+    renza "呃，他是[MC.name]，夫人。他最近才到瓒城…"
 
 # game/BKchapter1.rpy:4515
 translate chinese c1_satella_intro_3ba8fb74:
@@ -8302,7 +8302,7 @@ translate chinese c1_satella_intro_9c33392c:
 translate chinese c1_satella_intro_5a7cec2d:
 
     # renza "We are deeply honored, o night mistress, but we don't really have time..."
-    renza "我们深感荣幸，午夜女士大人，但我们真的没有时间……"
+    renza "我们深感荣幸，夜之女王大人，但我们真的没有时间……"
 
 # game/BKchapter1.rpy:4523
 translate chinese c1_satella_intro_fca5fe4e:
@@ -8314,7 +8314,7 @@ translate chinese c1_satella_intro_fca5fe4e:
 translate chinese c1_satella_intro_028375a9:
 
     # renza "Oh course, night mistress, of course!!! We love tea! Don't we, [MC.name]!"
-    renza "哦，没问题，午夜女士大人，当然!!我们喜欢喝茶!对吧,[MC.name] !"
+    renza "哦，没问题，夜之女王大人，当然!!我们喜欢喝茶!对吧,[MC.name] !"
 
 # game/BKchapter1.rpy:4527
 translate chinese c1_satella_intro_5677a274:
@@ -8350,7 +8350,7 @@ translate chinese c1_satella_intro_d14829ac:
 translate chinese c1_satella_intro_0639327a:
 
     # you "Is {i}this{/i} the night mistress? I thought..."
-    you "{i}这位{/i}就是午夜女士本人吗?我还以为……"
+    you "{i}这位{/i}就是夜之女王本人吗?我还以为……"
 
 # game/BKchapter1.rpy:4543
 translate chinese c1_satella_intro_b82a6d57:
@@ -9190,7 +9190,7 @@ translate chinese c1_captain_meeting_0dc037a5:
 translate chinese c1_captain_meeting_fdcc4312:
 
     # you "I have come to Zan to meet my uncle, a rich banker from the guild."
-    you "我是来赞城投奔我叔叔的，他是银行家协会里一个非常富有的银行家。"
+    you "我是来瓒城投奔我叔叔的，他是银行家协会里一个非常富有的银行家。"
 
 # game/BKchapter1.rpy:4931
 translate chinese c1_captain_meeting_59ec2c20:
@@ -9508,7 +9508,7 @@ translate chinese c1_captain_meeting_34fcddb0:
 translate chinese c1_captain_meeting_ad46d7fa:
 
     # captain "Hahaha!!! This is a clever observation. But I have a deal... I have a powerful patron, someone high up inside the palace."
-    captain "哈哈哈! ! !你眼光很不错。但我和某人做了交易…我在宫廷里有个很有权势的赞助人。"
+    captain "哈哈哈! ! !你眼光很不错。但我和某人做了交易…我在宫廷里有个很有权势的瓒助人。"
 
 # game/BKchapter1.rpy:5065
 translate chinese c1_captain_meeting_f76c3839:
@@ -10246,7 +10246,7 @@ translate chinese c1_trial_735875ee:
 translate chinese c1_trial_dcc2b901:
 
     # judge "People of Zan!" with vpunch
-    judge "赞的市民们!"
+    judge "瓒的市民们!"
 
 # game/BKchapter1.rpy:5419
 translate chinese c1_trial_b512b0db:
@@ -10318,7 +10318,7 @@ translate chinese c1_trial_d0d35809:
 translate chinese c1_trial_849fd66e:
 
     # "A deathly silence falls over the crowd. No one hardly ever defends the condemned in Zan. They have been found guilty by gods and men, so surely they must deserve their punishment."
-    "人群陷入一片死寂。在赞城，几乎没有人为死刑犯辩护。因为神和人都认定他们有罪，所以他们就应该受到惩罚。"
+    "人群陷入一片死寂。在瓒城，几乎没有人为死刑犯辩护。因为神和人都认定他们有罪，所以他们就应该受到惩罚。"
 
 # game/BKchapter1.rpy:5458
 translate chinese c1_trial_f1106220:
@@ -10348,7 +10348,7 @@ translate chinese c1_trial_b43a2f9c:
 translate chinese c1_trial_b1fc22c0:
 
     # you "Let me speak. I have something to tell the people of Zan."
-    you "让我讲两句话吧。我有话要告诉赞城的人民。"
+    you "让我讲两句话吧。我有话要告诉瓒城的人民。"
 
 # game/BKchapter1.rpy:5472
 translate chinese c1_trial_d84f6703:
@@ -10804,7 +10804,7 @@ translate chinese c1_trial_5cd17928:
 translate chinese c1_trial_7862cba7:
 
     # you "People of Zan, I want you to listen... In fact, I am not the one who will be doing the talking."
-    you "赞城的百姓，我想让你们听一些话……怎么说呢，应该讲话的人并不是我。"
+    you "瓒城的百姓，我想让你们听一些话……怎么说呢，应该讲话的人并不是我。"
 
 # game/BKchapter1.rpy:5699
 translate chinese c1_trial_586c5102:
@@ -11050,7 +11050,7 @@ translate chinese c1_trial_955154ff:
 translate chinese c1_trial_9cad07aa:
 
     # knight "Everyone!!! Bend the knee before the royal princess of Zan!!"
-    knight "所有人! ! !在赞的公主殿下面前跪下!!"
+    knight "所有人! ! !在瓒的公主殿下面前跪下!!"
 
 # game/BKchapter1.rpy:5863
 translate chinese c1_trial_c72909ee:
@@ -11122,7 +11122,7 @@ translate chinese c1_trial_55302e9d:
 translate chinese c1_trial_8286cc1a:
 
     # kuro "And I thank you, young sir, for bringing this matter to the attention of the people of Zan."
-    kuro "我感谢你，年轻人，让赞的人民知道了真相。"
+    kuro "我感谢你，年轻人，让瓒的人民知道了真相。"
 
 # game/BKchapter1.rpy:5888
 translate chinese c1_trial_fa0fd70f:
@@ -12826,7 +12826,7 @@ translate chinese c1_ending_captain_2060fe33:
 translate chinese c1_ending_captain_6b3a168d:
 
     # captain "Well, the city guard still doesn't have jurisdiction over the noble and royal quarters of Zan, of course... Those stuck-up aristocrats don't want us around, on account of us being low-born commoners."
-    captain "当然，城市卫队仍然没有对赞的贵族和王室领地的管辖权……那些趾高气扬的贵族不希望我们在他们身边，因为我们是出身低贱的平民。"
+    captain "当然，城市卫队仍然没有对瓒的贵族和王室领地的管辖权……那些趾高气扬的贵族不希望我们在他们身边，因为我们是出身低贱的平民。"
 
 # game/BKchapter1.rpy:6840
 translate chinese c1_ending_captain_8892c339:
@@ -13294,7 +13294,7 @@ translate chinese c1_ending_captain_54bb2b1f:
 translate chinese c1_captain_fate_c20eb056:
 
     # "Meanwhile, deep down inside the dungeons of Zan's infamous Xotar prison."
-    "与此同时，在赞城臭名昭著的扎特监狱地牢深处。"
+    "与此同时，在瓒城臭名昭著的扎特监狱地牢深处。"
 
 # game/BKchapter1.rpy:7089
 translate chinese c1_captain_fate_cb895a12:

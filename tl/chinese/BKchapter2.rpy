@@ -448,7 +448,7 @@ translate chinese sewer_girl_returns_menu_852b01f9:
 translate chinese sewer_girl_returns_menu_617e6ef6:
 
     # sewer_woman "Sorry, I really have to go. After what happened last time, I swore never to walk the streets of Zan alone at night again."
-    sewer_woman "对不起，我真的得走了。经历了上次的事，我发誓再也不晚上一个人在赞的大街上走了。"
+    sewer_woman "对不起，我真的得走了。经历了上次的事，我发誓再也不晚上一个人在瓒的大街上走了。"
 
 # game/BKchapter2.rpy:277
 translate chinese sewer_girl_returns_menu_a792b112:
@@ -592,7 +592,7 @@ translate chinese c2_intro_7e3c797f:
 translate chinese c2_intro_1be66adb:
 
     # "Not letting Sill's whining spoil your mood, you watch with satisfaction as you leave the slums behind and enter the bustling streets of Zan's popular neighborhoods, stepping into [district_chinese_name]."
-    "希露的抱怨并没有破坏了你的好心情，心满意足地看着你们终于离开贫民窟，可以进入赞城的繁华街道，去往[district_chinese_name]."
+    "希露的抱怨并没有破坏了你的好心情，心满意足地看着你们终于离开贫民窟，可以进入瓒城的繁华街道，去往[district_chinese_name]."
 
 # game/BKchapter2.rpy:389
 translate chinese c2_intro_b63ec5de:
@@ -616,7 +616,7 @@ translate chinese c2_intro_61ccd6d1:
 translate chinese c2_intro_2c601bfe:
 
     # "Workers, merchants and craftsmen mingle in the busiest neighbourhood of the city. Zan's main market is just a few streets away, the noise of a thousand people bartering echoing in your ears."
-    "工人、商人和工匠们在这个城市最繁忙的街区混杂在一起。赞城的主要市场就在离这里几条街之外，成千上万人的讨价还价的嘈杂声回响在你耳边。"
+    "工人、商人和工匠们在这个城市最繁忙的街区混杂在一起。瓒城的主要市场就在离这里几条街之外，成千上万人的讨价还价的嘈杂声回响在你耳边。"
 
 # game/BKchapter2.rpy:398
 translate chinese c2_intro_f0bb559e:
@@ -2188,7 +2188,7 @@ translate chinese c2_princess_letter_f6ba9b9e:
 translate chinese c2_princess_letter_123f646a:
 
     # you "A meeting with the Princess of Zan, uh? When did I become so fancy..."
-    you "和赞的公主见面？ 我是何时变得如此高雅呢..."
+    you "和瓒的公主见面？ 我是何时变得如此高雅呢..."
 
 # game/BKchapter2.rpy:1317
 translate chinese c2_princess_visit1_ad8f354c:
@@ -2230,7 +2230,7 @@ translate chinese c2_princess_visit1_7cb68c88:
 translate chinese c2_princess_visit1_12616042:
 
     # "Gio explains Zan to you as you move deeper inside the city."
-    "当你们深入城市时，吉欧向你介绍起了赞城。"
+    "当你们深入城市时，吉欧向你介绍起了瓒城。"
 
 # game/BKchapter2.rpy:1336
 translate chinese c2_princess_visit1_75d2332b:
@@ -2254,7 +2254,7 @@ translate chinese c2_princess_visit1_b2d7ac9c:
 translate chinese c2_princess_visit1_05725832:
 
     # gio "Behold... The hanging gardens of Zan, famous all over Xeros. They're tended to by the magic guild."
-    gio "看啊……赞的空中花园，在整个克塞罗斯都很有名。它由魔法公会管理维护。"
+    gio "看啊……瓒的空中花园，在整个克塞罗斯都很有名。它由魔法公会管理维护。"
 
 # game/BKchapter2.rpy:1346
 translate chinese c2_princess_visit1_f1eac234:
@@ -2488,7 +2488,7 @@ translate chinese c2_princess_visit1_0c02699d:
 translate chinese c2_princess_visit1_2fb5f8c0:
 
     # "The knight leads you towards the right aisle, which has the most breathtaking view of the city, hanging right on top of the cliff overlooking Zan."
-    "骑士带着你走向右边的通道，那里能看到最壮美的城市景色，就在俯瞰赞城的峭壁顶上。"
+    "骑士带着你走向右边的通道，那里能看到最壮美的城市景色，就在俯瞰瓒城的峭壁顶上。"
 
 # game/BKchapter2.rpy:1441
 translate chinese c2_princess_visit1_d9869771:
@@ -2680,7 +2680,7 @@ translate chinese c2_princess_visit2_917e96eb:
 translate chinese c2_princess_visit2_7d4eaa39:
 
     # you "No... I've only been in Zan for a few weeks..."
-    you "没有……我才来赞几周而已。"
+    you "没有……我才来瓒几周而已。"
 
 # game/BKchapter2.rpy:1542
 translate chinese c2_princess_visit2_a86c1ef0:
@@ -3052,7 +3052,7 @@ translate chinese kurohime_conversation_menu_58959e3a:
 translate chinese kurohime_conversation_menu_e97d92da:
 
     # you "Well... Zan is by far the largest city in the land..."
-    you "嗯...赞可是这片土地上最大的城市..."
+    you "嗯...瓒可是这片土地上最大的城市..."
 
 # game/BKchapter2.rpy:1723
 translate chinese kurohime_conversation_menu_59fa51c4:
@@ -3148,7 +3148,7 @@ translate chinese kurohime_conversation_menu_149d302c:
 translate chinese kurohime_conversation_menu_962b9ab3:
 
     # you "Actually, I do come from a minor noble family. It's a long way from Zan's court, though. I'm sure you wouldn't have heard of it."
-    you "其实，我确实出身于一个小贵族家庭。不过，那里离赞的王室很远。我相信您没听说过。"
+    you "其实，我确实出身于一个小贵族家庭。不过，那里离瓒的王室很远。我相信您没听说过。"
 
 # game/BKchapter2.rpy:1769
 translate chinese kurohime_conversation_menu_8c43a7f1:
@@ -3196,7 +3196,7 @@ translate chinese kurohime_conversation_menu_f7c9f149:
 translate chinese kurohime_conversation_menu_4cb0e0fc:
 
     # kuro "Princess, housewife or slave, it's all the same in Zan. A woman cannot live her life freely."
-    kuro "无论是公主、家庭主妇还是奴隶，在赞都一样。女人不能自由地生活。"
+    kuro "无论是公主、家庭主妇还是奴隶，在瓒都一样。女人不能自由地生活。"
 
 # game/BKchapter2.rpy:1792
 translate chinese kurohime_conversation_menu_5471309d:
@@ -3418,7 +3418,7 @@ translate chinese kurohime_conversation_menu_29915477:
 translate chinese kurohime_conversation_menu_e7f38c19:
 
     # kuro "Many people think that Zan is ripe for the taking... The only thing I can do is fight back, at my modest level."
-    kuro "许多人认为时机成熟，可以攻占赞了……我唯一能做的就是在我这小小范围内反击。"
+    kuro "许多人认为时机成熟，可以攻占瓒了……我唯一能做的就是在我这小小范围内反击。"
 
 # game/BKchapter2.rpy:1886
 translate chinese kurohime_conversation_menu_51d4dc60:
@@ -3496,7 +3496,7 @@ translate chinese kurohime_conversation_menu_0298c048:
 translate chinese kurohime_conversation_menu_edd4b850:
 
     # you "Well... Zan is my home now. I need to learn."
-    you "但是……赞现在是我的家。我需要了解。"
+    you "但是……瓒现在是我的家。我需要了解。"
 
 # game/BKchapter2.rpy:1919
 translate chinese kurohime_conversation_menu_beafff1f:
@@ -3688,7 +3688,7 @@ translate chinese kurohime_conversation_menu_8c6041ad:
 translate chinese kurohime_conversation_menu_11059dfd:
 
     # you "Well, I was told Zan was a seedy place..."
-    you "嗯，我是听说赞城是个龌龊的地方……"
+    you "嗯，我是听说瓒城是个龌龊的地方……"
 
 # game/BKchapter2.rpy:1993
 translate chinese kurohime_conversation_menu_7ee8df19:
@@ -4666,13 +4666,13 @@ translate chinese c2_gio_meeting_b5a5332c:
 translate chinese c2_gio_meeting_ab8b6b04:
 
     # you "Are there some here, in Zan?"
-    you "那么，在赞这里有吗？"
+    you "那么，在瓒这里有吗？"
 
 # game/BKchapter2.rpy:2614
 translate chinese c2_gio_meeting_6638aa56:
 
     # gio "The Kunoichi are usually scattered across Xeros on various assignments. To my knowledge, only a handful are active in Zan. But as they stick to the shadows, tales of their deeds rarely surface."
-    gio "“女忍”通常分散在克塞罗斯各地执行任务。据我所知，只有少数活跃在赞。但由于她们潜伏于暗处，关于她们的传说很少浮出水面。"
+    gio "“女忍”通常分散在克塞罗斯各地执行任务。据我所知，只有少数活跃在瓒。但由于她们潜伏于暗处，关于她们的传说很少浮出水面。"
 
 # game/BKchapter2.rpy:2616
 translate chinese c2_gio_meeting_7983df68:
@@ -4900,7 +4900,7 @@ translate chinese c2_gio_meeting_c271a3c1:
 translate chinese c2_gio_meeting_d738db33:
 
     # "Paperboy" "Read the Zanic Magic Tribune! A JUDGE HAS BEEN GRUESOMELY MURDERED!!!"
-    "Paperboy" "读《赞尼克魔法论坛报》!一名法官被残忍地杀害了了!!"
+    "Paperboy" "读《瓒尼克魔法论坛报》!一名法官被残忍地杀害了了!!"
 
 # game/BKchapter2.rpy:2692
 translate chinese c2_gio_meeting_7000be84:
@@ -7534,7 +7534,7 @@ translate chinese c2_suzume_brothel_9557c8a9:
 translate chinese c2_suzume_brothel_d9e3fdd6:
 
     # suzume "I know of at least three others working in Zan, not counting myself. One or several of them could be in league with your masked whatever, but not me."
-    suzume "在赞不算我自己的话至少有三个人在从事忍者工作。 其中一个或几个可能与你说的那个戴面具的家伙勾结，但不包括我。"
+    suzume "在瓒不算我自己的话至少有三个人在从事忍者工作。 其中一个或几个可能与你说的那个戴面具的家伙勾结，但不包括我。"
 
 # game/BKchapter2.rpy:3970
 translate chinese c2_suzume_brothel_d27a7e8f:
@@ -7738,7 +7738,7 @@ translate chinese c2_homura_city_meet_990e46ce:
 translate chinese c2_homura_city_meet_4f8f501e:
 
     # you "Well, at least you seem to be able to travel within Zan. What brings you to the lower city?"
-    you "嗯，在赞国境内旅行也算一种经历吧。那么请问您来下城区做什么呢？"
+    you "嗯，在瓒国境内旅行也算一种经历吧。那么请问您来下城区做什么呢？"
 
 # game/BKchapter2.rpy:4085
 translate chinese c2_homura_city_meet_89daf939:
@@ -8098,7 +8098,7 @@ translate chinese c2_homura_okiya1_fda0c688:
 translate chinese c2_homura_okiya1_df678f09:
 
     # you "I understand. Seen from the palace towers, the women and men of Zan must be more like ants than real people..."
-    you "我懂了。从王宫里塔楼上看，赞的男男女女们更像蚂蚁而非真正的人类..."
+    you "我懂了。从王宫里塔楼上看，瓒的男男女女们更像蚂蚁而非真正的人类..."
 
 # game/BKchapter2.rpy:4234
 translate chinese c2_homura_okiya1_7fd0052d:
@@ -9364,13 +9364,13 @@ translate chinese c2_suzume_morning_visit_menu_34e20372:
 translate chinese c2_suzume_morning_visit_menu_3ae63dd0:
 
     # you "Are there any in Zan?"
-    you "赞城有吗？"
+    you "瓒城有吗？"
 
 # game/BKchapter2.rpy:4774
 translate chinese c2_suzume_morning_visit_menu_4e280903:
 
     # suzume shrewd "Well, this is where it gets interesting... I know of {i}three{/i} other Kunoichi in Zan at this very moment, and all of them are famous!"
-    suzume shrewd "这就变得有趣了... 我知道现在赞中还有{i}三位{/i}女忍，而且她们都很出名！"
+    suzume shrewd "这就变得有趣了... 我知道现在瓒中还有{i}三位{/i}女忍，而且她们都很出名！"
 
 # game/BKchapter2.rpy:4776
 translate chinese c2_suzume_morning_visit_menu_c18759d0:
@@ -9388,7 +9388,7 @@ translate chinese c2_suzume_morning_visit_menu_758f446c:
 translate chinese c2_suzume_morning_visit_menu_b6e502c7:
 
     # suzume normal "There are three of them in Zan. Any one of them could be in league with your killer... Of perhaps all of them."
-    suzume normal "她们三个都在赞。她们中的任何一个可能与你说的杀手勾结… 或许所有人都是。"
+    suzume normal "她们三个都在瓒。她们中的任何一个可能与你说的杀手勾结… 或许所有人都是。"
 
 # game/BKchapter2.rpy:4785
 translate chinese c2_suzume_morning_visit_menu_10084d5f:
@@ -9472,7 +9472,7 @@ translate chinese c2_suzume_morning_visit_menu_aa5982f0:
 translate chinese c2_suzume_morning_visit_menu_0c79b497:
 
     # you "I see. But what is she doing in Zan?"
-    you "明白了。那么她在赞城做什么？"
+    you "明白了。那么她在瓒城做什么？"
 
 # game/BKchapter2.rpy:4819
 translate chinese c2_suzume_morning_visit_menu_f40f59be:
@@ -9532,7 +9532,7 @@ translate chinese c2_suzume_morning_visit_menu_fcf05c61:
 translate chinese c2_suzume_morning_visit_menu_a64e6e91:
 
     # you "I see... But why is she in Zan now?"
-    you "明白了...但现在她在赞城做什么呢？"
+    you "明白了...但现在她在瓒城做什么呢？"
 
 # game/BKchapter2.rpy:4840
 translate chinese c2_suzume_morning_visit_menu_f499f664:
@@ -9604,7 +9604,7 @@ translate chinese c2_suzume_morning_visit_menu_ab92222d:
 translate chinese c2_suzume_morning_visit_menu_0fea6fb0:
 
     # you "A ninja prodigy, uh? And what is she doing here in Zan?"
-    you "一个忍者神童，不是么？那么她在赞做什么？"
+    you "一个忍者神童，不是么？那么她在瓒做什么？"
 
 # game/BKchapter2.rpy:4865
 translate chinese c2_suzume_morning_visit_menu_d956493f:
@@ -10870,7 +10870,7 @@ translate chinese intercept_narika_ab5646a1:
 translate chinese intercept_narika_6c19060a:
 
     # you "Why are you here, in Zan?"
-    you "那么，请问你为什么出现在赞？"
+    you "那么，请问你为什么出现在瓒？"
 
 # game/BKchapter2.rpy:5648
 translate chinese intercept_narika_0d145a59:
@@ -11236,7 +11236,7 @@ translate chinese intercept_narika_7f1a8eda:
 translate chinese intercept_narika_ff37177d:
 
     # you "What are you doing here in Zan? Are you here on a contract?"
-    you "你来赞是干什么？是来执行委托的吗？"
+    you "你来瓒是干什么？是来执行委托的吗？"
 
 # game/BKchapter2.rpy:5805
 translate chinese intercept_narika_486d18c7:
@@ -13000,7 +13000,7 @@ translate chinese intercept_mizuki_f88119c4:
 translate chinese intercept_mizuki_8044f0e7:
 
     # you "Let's not beat around the bush. What are you doing here, in Zan?"
-    you "别绕弯子了。你来赞做什么？"
+    you "别绕弯子了。你来瓒做什么？"
 
 # game/BKchapter2.rpy:6628
 translate chinese intercept_mizuki_034efb87:
@@ -13246,7 +13246,7 @@ translate chinese intercept_mizuki_fb4b0439:
 translate chinese intercept_mizuki_68e1cd2b:
 
     # you "Anyway, what are you doing here in Zan? Are you involved with the masked murderer?"
-    you "不管怎样，你在赞城做什么？你和那个戴面具的杀手有关系吗？"
+    you "不管怎样，你在瓒城做什么？你和那个戴面具的杀手有关系吗？"
 
 # game/BKchapter2.rpy:6755
 translate chinese intercept_mizuki_5843248a:
@@ -13402,7 +13402,7 @@ translate chinese intercept_mizuki_5447414c:
 translate chinese intercept_mizuki_959347d9:
 
     # you "So this is it, then? You're after someone here in Zan? For revenge?"
-    you "那么这就是全部？ 为了复仇而追杀赞城里的某个人？"
+    you "那么这就是全部？ 为了复仇而追杀瓒城里的某个人？"
 
 # game/BKchapter2.rpy:6822
 translate chinese intercept_mizuki_46e09e21:
@@ -14710,7 +14710,7 @@ translate chinese intercept_haruka_cc8f22a9:
 translate chinese intercept_haruka_9a8f6237:
 
     # you "And what are they, exactly? What takes you to Zan?"
-    you "那具体指什么？ 为什么你在赞城？"
+    you "那具体指什么？ 为什么你在瓒城？"
 
 # game/BKchapter2.rpy:7432
 translate chinese intercept_haruka_2812641f:
@@ -14836,7 +14836,7 @@ translate chinese intercept_haruka_05e9e0eb:
 translate chinese intercept_haruka_503755a5:
 
     # "After a long, intense chase in Zan's streets, you finally corner Haruka in a dead end, overlooked by the grim grey walls of the prison in the distance."
-    "在赞的街道上进行一场漫长而激烈的追逐之后，你在离监狱不远处死胡同中围堵住了遥。远处监狱阴森的灰色墙壁俯瞰着你。"
+    "在瓒的街道上进行一场漫长而激烈的追逐之后，你在离监狱不远处死胡同中围堵住了遥。远处监狱阴森的灰色墙壁俯瞰着你。"
 
 # game/BKchapter2.rpy:7498
 translate chinese intercept_haruka_393a9e37:
@@ -14962,7 +14962,7 @@ translate chinese intercept_haruka_e2406068:
 translate chinese intercept_haruka_01a2d5f7:
 
     # you "Let's not waste time. Tell me now, what brought you to Zan?"
-    you "别浪费时间了。告诉我，你为什么来到赞？"
+    you "别浪费时间了。告诉我，你为什么来到瓒？"
 
 # game/BKchapter2.rpy:7555
 translate chinese intercept_haruka_f15aace1:
@@ -15124,7 +15124,7 @@ translate chinese intercept_haruka_68df7aa1:
 translate chinese intercept_haruka_73072770:
 
     # haruka "The Noroi are an ancient menace from the East. Our school has been at the forefront of the struggle to keep them from setting foot in Xeros."
-    haruka "诅咒党是从东方传来的古老威胁，他们试图进入赞地盘，但被我们的门派阻止了。"
+    haruka "诅咒党是从东方传来的古老威胁，他们试图进入瓒地盘，但被我们的门派阻止了。"
 
 # game/BKchapter2.rpy:7615
 translate chinese intercept_haruka_f42f81db:
@@ -15772,7 +15772,7 @@ translate chinese intercept_haruka_f5fff906:
 translate chinese intercept_haruka_8656e902:
 
     # you "Subaru... But why is she in a Zanic jail, of all places?"
-    you "昴...但她为什么会被关在赞尼克监狱里？"
+    you "昴...但她为什么会被关在瓒尼克监狱里？"
 
 # game/BKchapter2.rpy:7941
 translate chinese intercept_haruka_796f83ad:
@@ -15946,7 +15946,7 @@ translate chinese c2_palace_visit1_f082e6c3:
 translate chinese c2_palace_visit1_d36bd62e:
 
     # "Princess Kurohime and Knight Commander Uesugi are standing over a table, covered with maps of Zan and various folders thick with documents. You can tell the meeting has been going on since morning."
-    "黑姬公主和骑士长上杉站在一张桌子前，桌子上摆满了赞的地图和各种厚厚的文件与文件夹。你可以看出这次会议从早上开始就一直在进行。"
+    "黑姬公主和骑士长上杉站在一张桌子前，桌子上摆满了瓒的地图和各种厚厚的文件与文件夹。你可以看出这次会议从早上开始就一直在进行。"
 
 # game/BKchapter2.rpy:8052
 translate chinese c2_palace_visit1_1192a2c4:
@@ -16726,7 +16726,7 @@ translate chinese c2_homura_okiya2_293da2ce:
 translate chinese c2_homura_okiya2_123e9c31:
 
     # homura "Well, I am now certain they have a link to your killer... And the nobility. Some of Zan's most powerful players are plotting something and it involves them."
-    homura "嗯，我现在确定她们与你的杀手有联系...还有一些贵族。赞最有权势的大人物正在策划某些事情，他们很明显牵涉其中。"
+    homura "嗯，我现在确定她们与你的杀手有联系...还有一些贵族。瓒最有权势的大人物正在策划某些事情，他们很明显牵涉其中。"
 
 # game/BKchapter2.rpy:8386
 translate chinese c2_homura_okiya2_6f9526c1:
@@ -16972,7 +16972,7 @@ translate chinese c2_homura_okiya2_2b281fbc:
 translate chinese c2_homura_okiya2_b590082d:
 
     # you "What is it like to be part of the Zanic nobility? You said your father is a powerful royal advisor..."
-    you "作为赞尼克贵族的一员是什么感觉？你说你的父亲是一个有权势的王室顾问..."
+    you "作为瓒尼克贵族的一员是什么感觉？你说你的父亲是一个有权势的王室顾问..."
 
 # game/BKchapter2.rpy:8483
 translate chinese c2_homura_okiya2_3506b98f:
@@ -18958,7 +18958,7 @@ translate chinese luncheon2_kenshin_menu_9bcdbe90:
 translate chinese luncheon2_kenshin_menu_62bbb51c:
 
     # "Duchess" "Well, he's still old Zanic nobility. Some foolish people would even say he has as much right to the throne as Princess Kurohime, Arios bless her... Some even took to calling him 'Prince Dukal'."
-    "公爵夫人" "嗯，他仍然是老派的赞尼克贵族。一些愚蠢的人甚至会说他有和库洛公主一样的继承权，阿里奥斯保佑她...有些人甚至称他为“杜克尔亲王”。"
+    "公爵夫人" "嗯，他仍然是老派的瓒尼克贵族。一些愚蠢的人甚至会说他有和库洛公主一样的继承权，阿里奥斯保佑她...有些人甚至称他为“杜克尔亲王”。"
 
 # game/BKchapter2.rpy:9376
 translate chinese luncheon2_kenshin_menu_b51f4e8d:
@@ -19858,7 +19858,7 @@ translate chinese c2_meet_papa_freak_63281f90:
 translate chinese c2_meet_papa_freak_d0b81e23:
 
     # papa "Oh yes, and indeed they were the first settlers of the city that became known as Zan..."
-    papa "是的，他们确实是成为后来被称为赞恩的城市的第一批定居者..."
+    papa "是的，他们确实是成为后来被称为瓒恩的城市的第一批定居者..."
 
 # game/BKchapter2.rpy:9763
 translate chinese c2_meet_papa_freak_dcd8fc0a:
@@ -20740,7 +20740,7 @@ translate chinese c3_homura_okiya3_e8374cad:
 translate chinese c3_homura_okiya3_ce989516:
 
     # homura normal "Mostly, I walk around in the forest West of Zan by myself, enjoying nature..."
-    homura normal "大多数时候，我独自一人在赞西边的森林里散步，享受大自然..."
+    homura normal "大多数时候，我独自一人在瓒西边的森林里散步，享受大自然..."
 
 # game/BKchapter2.rpy:10162
 translate chinese c3_homura_okiya3_d8b82e71:
@@ -22236,7 +22236,7 @@ translate chinese strings:
 
     # game/BKchapter2.rpy:4544
     old "Who are the Kunoichi in Zan?"
-    new "在赞城的女忍都有谁？"
+    new "在瓒城的女忍都有谁？"
 
     # game/BKchapter2.rpy:4544
     old "No more questions"
@@ -22284,7 +22284,7 @@ translate chinese strings:
 
     # game/BKchapter2.rpy:5799
     old "What are you doing in Zan?"
-    new "你来赞干做什么？"
+    new "你来瓒干做什么？"
 
     # game/BKchapter2.rpy:5799
     old "Are you in league with the masked murderer?"

@@ -2685,8 +2685,8 @@ translate chinese slave_story2_4e3e3d2a:
 # game/BKinteractions.rpy:3704
 translate chinese slave_story2_c2a355ad:
 
-    # girl.char "It all happened a long time ago, back in [girl.origin]..."
-    girl.char "这一切发生在很久以前，在[girl.origin]……"
+    # girl.char "It all happened a long time ago, back in [girl.origin_chinese]..."
+    girl.char "这一切发生在很久以前，在[girl.origin_chinese]……"
 
 # game/BKinteractions.rpy:3711
 translate chinese slave_story2_7e0b1b13:
@@ -3153,8 +3153,8 @@ translate chinese slave_story3_c7542f25:
 # game/BKinteractions.rpy:3947
 translate chinese slave_story3_7a1a8533:
 
-    # girl.char "I used to live a happy life in [girl.origin], where I enjoyed [girl.hobbies[0]] most days..."
-    girl.char "我曾经在[girl.origin]过着幸福的生活，大部分时间都在享受[girl.hobbies[0]]..."
+    # girl.char "I used to live a happy life in [girl.origin_chinese], where I enjoyed [girl.hobbies[0]] most days..."
+    girl.char "我曾经在[girl.origin_chinese]过着幸福的生活，大部分时间都在享受[girl.hobbies[0]]..."
 
 # game/BKinteractions.rpy:3956
 translate chinese slave_story3_5886ce35:
@@ -3741,8 +3741,8 @@ translate chinese slave_story4_1b43fbf6:
 # game/BKinteractions.rpy:4211
 translate chinese slave_story4_b6fe2914:
 
-    # girl.char "Yes... I was born in [girl.origin], in a very poor family..."
-    girl.char "是的...我出生在[girl.origin]，家里非常贫困..."
+    # girl.char "Yes... I was born in [girl.origin_chinese], in a very poor family..."
+    girl.char "是的...我出生在[girl.origin_chinese]，家里非常贫困..."
 
 # game/BKinteractions.rpy:4213
 translate chinese slave_story4_4680cb4f:
@@ -4431,8 +4431,8 @@ translate chinese slave_story5_fef91995:
 # game/BKinteractions.rpy:4518
 translate chinese slave_story5_7ce7c857:
 
-    # girl.char "It all started while I was living in [girl.origin] with my [girl.story_guardian]."
-    girl.char "一切都始于我和我的[girl.story_guardian]一起生活在[girl.origin]的时候。"
+    # girl.char "It all started while I was living in [girl.origin_chinese] with my [girl.story_guardian]."
+    girl.char "一切都始于我和我的[girl.story_guardian]一起生活在[girl.origin_chinese]的时候。"
 
 # game/BKinteractions.rpy:4525
 translate chinese slave_story5_54e6d272:
@@ -5152,31 +5152,31 @@ translate chinese slave_story5_43358bbd_1:
 translate chinese slave_story6_8a06ad2f:
 
     # "You enter [girl.name]'s room, and are surprised to find her extremely agitated."
-    "发生了那么多事情，但是你知道......最终，我们得到了应得的报应......但他才是受害者。至少我是这么认为的。"
+    "你走进[girl.name]的房间，惊讶地发现她极度激动。"
 
 # game/BKinteractions.rpy:4829
 translate chinese slave_story6_b5da9f96:
 
     # girl.char "Ah! Master [MC.name]! I'm glad you're here!"
-    girl.char "她眼眶湿润了。"
+    girl.char "啊![MC.name]主人!很高兴你来了!"
 
 # game/BKinteractions.rpy:4831
 translate chinese slave_story6_7c165600:
 
     # you "What is it, [girl.name]?"
-    you "我们把他的尸体扔进了河里，甚至没有给他一个像样的葬礼......他可能有家人；他们永远不会知道发生了什么......我感到非常内疚。"
+    you "什么事，[girl.name]?"
 
 # game/BKinteractions.rpy:4833
 translate chinese slave_story6_3ea1180e:
 
     # girl.char "This! This is a disaster!"
-    girl.char "但是你能做些什么呢？"
+    girl.char "看看这个!这简直就是一场灾难!"
 
 # game/BKinteractions.rpy:4835
 translate chinese slave_story6_d813ee49:
 
     # "She points to a plate of meat and vegetables standing on her night table. It appears she barely touched it."
-    "我知道我无法弥补我所做的事情......但至少我可以在大教堂为他设立个祭坛。也许，阿里奥斯就可以把他的光照在他身上，照在他所爱的人身上......"
+    "她指着床头柜上放着的一盘肉和菜肴。看起来她几乎没碰过。"
 
 # game/BKinteractions.rpy:4837
 translate chinese slave_story6_95d5e5df:
@@ -5349,8 +5349,8 @@ translate chinese slave_story6_adb6bbb8:
 # game/BKinteractions.rpy:4885
 translate chinese slave_story6_948a280f:
 
-    # girl.char "Yes... My father was a nobleman in [girl.origin], renowned across Xeros and influential at court..."
-    girl.char "是的……我的父亲是[girl.origin]的贵族，在克塞罗斯享有盛名，并在朝廷有影响力……"
+    # girl.char "Yes... My father was a nobleman in [girl.origin_chinese], renowned across Xeros and influential at court..."
+    girl.char "是的……我的父亲是[girl.origin_chinese]的贵族，在克塞罗斯享有盛名，并在朝廷有影响力……"
 
 # game/BKinteractions.rpy:4886
 translate chinese slave_story6_9464a26a:
@@ -5800,7 +5800,7 @@ translate chinese slave_story6_30b378af:
 translate chinese slave_story6_85121ee0:
 
     # girl.char "I look at this, and all it brings is painful and sad memories. Give me the noise and mess of Zan's streets over that any day..."
-    girl.char "我看着这个，它带给我的只有痛苦和悲伤的回忆。给我任何一天赞的街道上的噪音和混乱……"
+    girl.char "我看着这个，它带给我的只有痛苦和悲伤的回忆。给我任何一天瓒的街道上的噪音和混乱……"
 
 # game/BKinteractions.rpy:5005
 translate chinese slave_story6_8d9e1a4c:
@@ -6267,8 +6267,8 @@ translate chinese slave_story7_78f547c1:
 # game/BKinteractions.rpy:5160
 translate chinese slave_story7_5b5bef6d:
 
-    # girl.char "Believe it or not, when I was growing up in [girl.origin], it was perfectly normal to worship the Dweller. There was no holy war then..."
-    girl.char "信不信由你，在我在[girl.origin]长大的时候，崇拜居者是很正常的事情。那时还没有圣战..."
+    # girl.char "Believe it or not, when I was growing up in [girl.origin_chinese], it was perfectly normal to worship the Dweller. There was no holy war then..."
+    girl.char "信不信由你，在我在[girl.origin_chinese]长大的时候，崇拜居者是很正常的事情。那时还没有圣战..."
 
 # game/BKinteractions.rpy:5167
 translate chinese slave_story7_1a07ef4a:
@@ -6465,8 +6465,8 @@ translate chinese slave_story7_d8a048e0:
 # game/BKinteractions.rpy:5233
 translate chinese slave_story7_74024fdb:
 
-    # girl.char "Back then in [girl.origin], all peaceful religions were welcome. No one talked about burning heretics or torturing elven spies..."
-    girl.char "那时在[girl.origin]，所有和平的宗教都受到欢迎。没有人谈论烧死异端或者折磨精灵间谍..."
+    # girl.char "Back then in [girl.origin_chinese], all peaceful religions were welcome. No one talked about burning heretics or torturing elven spies..."
+    girl.char "那时在[girl.origin_chinese]，所有和平的宗教都受到欢迎。没有人谈论烧死异端或者折磨精灵间谍..."
 
 # game/BKinteractions.rpy:5235
 translate chinese slave_story7_25328452:
@@ -7335,8 +7335,8 @@ translate chinese slave_story8_a1918715:
 # game/BKinteractions.rpy:5571
 translate chinese slave_story8_f256ee5f:
 
-    # girl.char "It all started a while ago, when I was living in [girl.story_home_article] in [girl.origin]..."
-    girl.char "一段时间以前，当我还住在[girl.story_home_article]的[girl.origin]时，一切都开始了......"
+    # girl.char "It all started a while ago, when I was living in [girl.story_home_article] in [girl.origin_chinese]..."
+    girl.char "一段时间以前，当我还住在[girl.story_home_article]的[girl.origin_chinese]时，一切都开始了......"
 
 # game/BKinteractions.rpy:5578
 translate chinese slave_story8_f2692a58:
@@ -7569,8 +7569,8 @@ translate chinese slave_story8_9d46dba6:
 # game/BKinteractions.rpy:5672
 translate chinese slave_story8_ce9564f7:
 
-    # girl.char "Well... I told you about my time in [girl.origin], when I was looking for a magic teacher..."
-    girl.char "嗯……我跟你说过我在[girl.origin]的时候，我在寻找魔法老师……"
+    # girl.char "Well... I told you about my time in [girl.origin_chinese], when I was looking for a magic teacher..."
+    girl.char "嗯……我跟你说过我在[girl.origin_chinese]的时候，我在寻找魔法老师……"
 
 # game/BKinteractions.rpy:5674
 translate chinese slave_story8_8b044c9c:
@@ -7905,8 +7905,8 @@ translate chinese slave_story8_33c6fd3a:
 # game/BKinteractions.rpy:5794
 translate chinese slave_story8_2ddc3804:
 
-    # girl.char "You remember, I told you I was working for a powerful witch in [girl.origin]."
-    girl.char "你记得，我告诉过你我在[girl.origin]为一位强大的女巫工作。"
+    # girl.char "You remember, I told you I was working for a powerful witch in [girl.origin_chinese]."
+    girl.char "你记得，我告诉过你我在[girl.origin_chinese]为一位强大的女巫工作。"
 
 # game/BKinteractions.rpy:5796
 translate chinese slave_story8_15d6b866:

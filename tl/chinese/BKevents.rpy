@@ -820,7 +820,7 @@ translate chinese wood_intro_49655f52:
 translate chinese wood_intro_6c927173:
 
     # "Zan is a prime destination for trade from all over the known world, and its shipyard is always buzzing with activity from workmen, seamen, seagulls, moguls, bribe-givers, bribe-takers, bribe-agnostics, idlers and other riff-raff."
-    "赞是世界各地贸易的主要集散地，这里的船厂总是熙熙攘攘，到处都是工人、海员、海鸥、大亨、行贿者、受贿者、不可知论者、懒汉和其他不三不四的人。"
+    "瓒城是世界各地贸易的主要集散地，这里的船厂总是熙熙攘攘，到处都是工人、海员、海鸥、大亨、行贿者、受贿者、不可知论者、懒汉和其他不三不四的人。"
 
 # game/BKevents.rpy:2028
 translate chinese wood_intro_a456aa9e:
@@ -832,7 +832,7 @@ translate chinese wood_intro_a456aa9e:
 translate chinese wood_intro_c64fea32:
 
     # "Because of its ever-growing population, Zan has stripped most of the surrounding country of its timber. Therefore, wood is a valuable commodity, so instead of letting it go to waste, some enterprising people dismantle old boats to make new ones."
-    "由于赞的人口不断增长，赞砍伐了周围大部分地区的树木。因此，木材是一种宝贵的商品，所以一些有事业心的人会拆解旧船来制造新船，而不是让其白白浪费。"
+    "由于瓒城的人口不断增长，瓒城砍伐了周围大部分地区的树木。因此，木材是一种宝贵的商品，所以一些有事业心的人会拆解旧船来制造新船，而不是让其白白浪费。"
 
 # game/BKevents.rpy:2032
 translate chinese wood_intro_1caccc6f:
@@ -1036,7 +1036,7 @@ translate chinese leather_intro_41eb158a:
 translate chinese leather_intro_477856ae:
 
     # "The old man is in charge of keeping animals safe for travellers who are set for a short stay in the city. Herding cattle around in the narrow streets of Zan is far from ideal."
-    "这位老人负责为那些在这座城市短暂停留的旅行者们保护他们牲畜的安全。在赞狭窄的街道上放牧远非理想。"
+    "这位老人负责为那些在这座城市短暂停留的旅行者们保护他们牲畜的安全。在瓒城狭窄的街道上放牧远非理想。"
 
 # game/BKevents.rpy:2134
 translate chinese leather_intro_16eb8294:
@@ -1132,7 +1132,7 @@ translate chinese leather_intro_563e60f5:
 translate chinese marble_intro_ae1d66b1:
 
     # "The old ruins belonged to the non-human empire that first settled Zan's current location, Cimeria."
-    "古老的废墟属于最先定居在赞现在位置的名为西梅里亚的非人类帝国。"
+    "古老的废墟属于最先定居在瓒城现在位置的名为西梅里亚的非人类帝国。"
 
 # game/BKevents.rpy:2178
 translate chinese marble_intro_8cf674d5:
@@ -1162,13 +1162,13 @@ translate chinese marble_intro_71ee01d6:
 translate chinese marble_intro_63c7aec4:
 
     # "Zan is always in need of new buildings, and the old ruins are so expansive that it never seems to run out of materials, no matter how many walls people dismantle."
-    "赞总是需要新的建筑，而古老的废墟是如此广阔，以至于无论人们拆除了多少墙壁，似乎永远不会用尽材料。"
+    "瓒城总是需要新的建筑，而古老的废墟是如此广阔，以至于无论人们拆除了多少墙壁，似乎永远不会用尽材料。"
 
 # game/BKevents.rpy:2188
 translate chinese marble_intro_53b15031:
 
     # "The old palaces are especially reknowned for their Cimerian marble, a fancy stone that Zan's elite has a particular fondness for."
-    "这些古代的宫殿尤其以其西梅里亚大理石而闻名，这是赞城精英们特别喜欢的一种奇特的石头。"
+    "这些古代的宫殿尤其以其西梅里亚大理石而闻名，这是瓒城精英们特别喜欢的一种奇特的石头。"
 
 # game/BKevents.rpy:2190
 translate chinese marble_intro_34df0699:
@@ -1210,7 +1210,7 @@ translate chinese marble_intro_b02f412c:
 translate chinese silk_intro_6a983f1a:
 
     # "The hanging gardens are a wonderful place, tended by the magic guild's airmancers and extending high above Zan. The view is magnificent from here."
-    "空中花园是一个奇妙的地方，由魔法公会的风系法师们管理，高高地延伸在赞城上方。从这里看，景色非常壮观。"
+    "空中花园是一个奇妙的地方，由魔法公会的风系法师们管理，高高地延伸在瓒城上方。从这里看，景色非常壮观。"
 
 # game/BKevents.rpy:2215
 translate chinese silk_intro_19d11233:
@@ -1222,7 +1222,7 @@ translate chinese silk_intro_19d11233:
 translate chinese silk_intro_a0427549:
 
     # "Creeping along those vines is a unique animal Zan is known all around Xeros for: the Zanic silkworm."
-    "沿着这些藤蔓爬行的是赞在整个克塞罗斯很出名的一种独特动物：赞蚕。"
+    "沿着这些藤蔓爬行的是瓒在整个克塞罗斯很出名的一种独特动物：瓒蚕。"
 
 # game/BKevents.rpy:2219
 translate chinese silk_intro_33b67048:
@@ -1234,7 +1234,7 @@ translate chinese silk_intro_33b67048:
 translate chinese silk_intro_e2bf4d4b:
 
     # "They are slow-paced, majestic animals. Silkworms are a delicacy for nobles around Zan, who like to eat a whole one roasted in butter for new year's eve, but very pricey."
-    "它们是缓慢而高贵的动物。蚕对于赞城周围的贵族来说是一种美食，在除夕夜吃一整只用黄油烤制的蚕，但价格非常昂贵。"
+    "它们是缓慢而高贵的动物。蚕对于瓒城周围的贵族来说是一种美食，在除夕夜吃一整只用黄油烤制的蚕，但价格非常昂贵。"
 
 # game/BKevents.rpy:2223
 translate chinese silk_intro_91289a63:
@@ -1258,7 +1258,7 @@ translate chinese silk_intro_096b7f43:
 translate chinese ore_intro_ebd6f897:
 
     # "The guild quarter hosts representatives from every possible trade in Zan, except for the Magic and Banking guilds that have their own separate quarter."
-    "公会区容纳着赞城所有行业的代表，除了魔法师和银行公会，它们有自己独立的区域。"
+    "公会区容纳着瓒城所有行业的代表，除了魔法师和银行公会，它们有自己独立的区域。"
 
 # game/BKevents.rpy:2241
 translate chinese ore_intro_4b745e39:
@@ -1270,7 +1270,7 @@ translate chinese ore_intro_4b745e39:
 translate chinese ore_intro_536562de:
 
     # "The guild quarter is also where the mining activities are concentrated in Zan, as the guilds handle claims and stakes for the miners."
-    "公会区也是赞城中采矿业最集中的地方，因为行会会为矿工处理索赔和股份。"
+    "公会区也是瓒城中采矿业最集中的地方，因为行会会为矿工处理索赔和股份。"
 
 # game/BKevents.rpy:2245
 translate chinese ore_intro_5049007a:
@@ -1492,7 +1492,7 @@ translate chinese ore_intro_6e3d37b3:
 translate chinese diamond_intro_d80ef30c:
 
     # "As you enjoy the sight of Zan's mighty waterfalls, you hear an eery noise that makes your hair stand."
-    "当你欣赏着赞瀑布的壮丽景色时，你听到了一种让你毛骨悚然的声音。"
+    "当你欣赏着瓒瀑布的壮丽景色时，你听到了一种让你毛骨悚然的声音。"
 
 # game/BKevents.rpy:2333
 translate chinese diamond_intro_f4da045c:
@@ -1534,7 +1534,7 @@ translate chinese diamond_intro_f4dc0fa7:
 translate chinese diamond_intro_4d26ea10:
 
     # "Old man" "Oh, yes! There's a huge network of caves that starts there and runs through the whole mountain range. Some say it's many times bigger than Zan, and Zan is the largest city in the world!"
-    "老人" "哦，是的！那里有一个巨大的洞穴网络，从那里开始贯穿整个山脉。有人说它比赞还要大好几倍，而赞是世界上最大的城市！"
+    "老人" "哦，是的！那里有一个巨大的洞穴网络，从那里开始贯穿整个山脉。有人说它比瓒还要大好几倍，而瓒是世界上最大的城市！"
 
 # game/BKevents.rpy:2347
 translate chinese diamond_intro_990f348e:
@@ -3034,7 +3034,7 @@ translate chinese send_to_farm_439b5ef7:
 translate chinese send_to_farm_7c2e174a:
 
     # gizel "There are no free pens in the farm right now. You cannot add any more pens to the farm for the time being."
-    gizel "There are no free pens in the farm right now. You cannot add any more pens to the farm for the time being."
+    gizel "现在农场里没有空闲的畜栏了。你暂时也不能再给农场增加畜栏了了。"
 
 # game/BKevents.rpy:3400
 translate chinese send_to_farm_eb772d0c:
@@ -3052,7 +3052,7 @@ translate chinese send_to_farm_4ea7c761:
 translate chinese send_to_farm_menu_3ae7d2f9:
 
     # gizel normal "So, tell me what you want me to do with [girl.name]?{nw}"
-    gizel normal "So, tell me what you want me to do with [girl.name]?{nw}"
+    gizel normal "所以，告诉我你想让我怎么训练[girl.name]?{nw}"
 
 # game/BKevents.rpy:3435
 translate chinese send_to_farm_menu_11fdb519:
@@ -3064,7 +3064,7 @@ translate chinese send_to_farm_menu_11fdb519:
 translate chinese send_to_farm_menu_55d7b492:
 
     # gizel upset "Humph, boring. What do you want her to do?{nw}"
-    gizel upset "Humph, boring. What do you want her to do?{nw}"
+    gizel upset "哼,无聊。你想让她怎么做?{nw}"
 
 # game/BKevents.rpy:3441
 translate chinese send_to_farm_menu_11fdb519_1:
@@ -3076,7 +3076,7 @@ translate chinese send_to_farm_menu_11fdb519_1:
 translate chinese send_to_farm_menu_dd905e41:
 
     # gizel smirk "Of course! What should I have her do?{nw}"
-    gizel smirk "Of course! What should I have her do?{nw}"
+    gizel smirk "当然!我应该让她做什么?{nw}"
 
 # game/BKevents.rpy:3458
 translate chinese send_to_farm_menu_11fdb519_2:
@@ -3088,7 +3088,7 @@ translate chinese send_to_farm_menu_11fdb519_2:
 translate chinese send_to_farm_menu_a51c7fc3:
 
     # gizel normal "And where would you rather have [girl.name] train?{nw}"
-    gizel normal "And where would you rather have [girl.name] train?{nw}"
+    gizel normal "你想让[girl.name]接受什么训练?{nw}"
 
 # game/BKevents.rpy:3502
 translate chinese send_to_farm_menu_11fdb519_3:
@@ -6382,7 +6382,7 @@ translate chinese tax_intro_menu_f8a30259:
 translate chinese tax_intro_menu_28185add:
 
     # taxgirl "You shouldn't boast about it too much. Dragonscale boots are all the rage with Zan nobility these days... And monster hunters are a dime a dozen."
-    taxgirl "你不应该太过自夸。如今，赞的贵族都流行穿龙鳞靴...而怪物猎人们更是一毛钱就能雇来一打。"
+    taxgirl "你不应该太过自夸。如今，瓒的贵族都流行穿龙鳞靴...而怪物猎人们更是一毛钱就能雇来一打。"
 
 # game/BKevents.rpy:6405
 translate chinese tax_intro_menu_1b4c41e0:
@@ -8233,4 +8233,32 @@ translate chinese strings:
     # game/BKevents.rpy:6856
     old "Not today"
     new "今天不行"
+
+# TODO: Translation updated at 2023-06-07 23:28
+
+translate chinese strings:
+
+    # game/BKevents.rpy:624
+    old "You can now move to a larger brothel (maximum "
+    new ""
+
+    # game/BKevents.rpy:624
+    old " bedrooms).\nChoose a district to set up your new brothel."
+    new ""
+
+    # game/BKevents.rpy:635
+    old "\nYou will receive a free room of your choice."
+    new ""
+
+    # game/BKevents.rpy:638
+    old "\nYou will receive a {b}free "
+    new ""
+
+    # game/BKevents.rpy:643
+    old "Do you really want to move your brothel to {b}[chosen_district.name]{/b}?\n\n{size=-2}This will reset all your room improvements, but you will keep your furniture and decorations."
+    new ""
+
+    # game/BKevents.rpy:657
+    old "你获得了一个新的目标"
+    new "你获得了一个新的目标"
 

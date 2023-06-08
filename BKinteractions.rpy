@@ -1650,13 +1650,13 @@ label slave_train(girl, act, response, mode="train"): # Used if girl accepted of
     ## Action starts
 
     if response == "accepted":
-        $ text1 = "Giving you a sheepish look, "
+        $ text1 = "她表现得有点不好意思, "
 
     elif response == "resisted":
-        $ text1 = "Looking at you with mournful eyes, "
+        $ text1 = "她用悲伤的眼神看着你, "
 
     elif response == "magic":
-        $ text1 = "With a dazed stare, "
+        $ text1 = "她一脸茫然的凝视着你, "
 
     else:
         $ raise AssertionError, "No context found for interaction"
@@ -3701,7 +3701,7 @@ label slave_story2(girl):
 
         you "Well, let's hear it."
 
-        girl.char "It all happened a long time ago, back in [girl.origin]..."
+        girl.char "It all happened a long time ago, back in [girl.origin_chinese]..."
 
         if girl.origin in origins:
             call dialogue(girl, "origin " + girl.origin) from _call_dialogue_230
@@ -3928,9 +3928,9 @@ label slave_story3(girl):
     if girl.flags["story"] == 4:
 
         if girl.is_("dom"):
-            $ text1 = "It isn't like her."
+            $ text1 = "这可不像她。"
         else:
-            $ text1 = "You wonder what it is this time."
+            $ text1 = "你想知道这次是怎么了。"
 
         "You find [girl.name] crying in her room. [text1]"
 
@@ -3944,7 +3944,7 @@ label slave_story3(girl):
 
         girl.char "I never dreamt I would end up in this place and become a slave, you know..."
 
-        girl.char "I used to live a happy life in [girl.origin], where I enjoyed [girl.hobbies[0]] most days..."
+        girl.char "I used to live a happy life in [girl.origin_chinese], where I enjoyed [girl.hobbies[0]] most days..."
 
         if girl.origin in origins:
             call dialogue(girl, "origin " + girl.origin) from _call_dialogue_231
@@ -4208,7 +4208,7 @@ label slave_story4(girl):
         you "Is that so?"
 
         if girl.free:
-            girl.char "Yes... I was born in [girl.origin], in a very poor family..."
+            girl.char "Yes... I was born in [girl.origin_chinese], in a very poor family..."
         else:
             girl.char "Yes, I was born a slave... My [girl.story_guardian] too..."
 
@@ -4515,7 +4515,7 @@ label slave_story5(girl):
 
         you "Have you, now? For what?"
 
-        girl.char "It all started while I was living in [girl.origin] with my [girl.story_guardian]."
+        girl.char "It all started while I was living in [girl.origin_chinese] with my [girl.story_guardian]."
 
         if girl.origin in origins:
             call dialogue(girl, "origin " + girl.origin) from _call_dialogue_233
@@ -4882,7 +4882,7 @@ label slave_story6(girl):
         you "Seriously? When did sex slaves become so fancy?"
         girl.char "I wasn't always a slave, you know... In fact, I come from an old and well-respected family..."
         you "You do?"
-        girl.char "Yes... My father was a nobleman in [girl.origin], renowned across Xeros and influential at court..."
+        girl.char "Yes... My father was a nobleman in [girl.origin_chinese], renowned across Xeros and influential at court..."
         you "Really... You didn't look that well-off when I met you..."
         girl.char "It's true... But my family was very unlucky. My current predicament is the result of a succession of terrible unfortunate events..."
         girl.char "I was raised like a princess... I never wanted for anything..."
@@ -5157,7 +5157,7 @@ label slave_story7(girl):
 
         you "I can see why it isn't a very popular god in those parts anymore."
 
-        girl.char "Believe it or not, when I was growing up in [girl.origin], it was perfectly normal to worship the Dweller. There was no holy war then..."
+        girl.char "Believe it or not, when I was growing up in [girl.origin_chinese], it was perfectly normal to worship the Dweller. There was no holy war then..."
 
         if girl.origin in origins:
             call dialogue(girl, "origin " + girl.origin) from _call_dialogue_235
@@ -5230,7 +5230,7 @@ label slave_story7(girl):
 
         girl.char "Well, it's the story I promised to tell you..."
 
-        girl.char "Back then in [girl.origin], all peaceful religions were welcome. No one talked about burning heretics or torturing elven spies..."
+        girl.char "Back then in [girl.origin_chinese], all peaceful religions were welcome. No one talked about burning heretics or torturing elven spies..."
 
         girl.char "Me and my [girl.story_guardian] were living our religion openly, although it was uncommon to worship the Dweller for people in these parts."
 
@@ -5568,7 +5568,7 @@ label slave_story8(girl):
 
         girl.char "It's not fun at all!!!"
 
-        girl.char "It all started a while ago, when I was living in [girl.story_home_article] in [girl.origin]..."
+        girl.char "It all started a while ago, when I was living in [girl.story_home_article] in [girl.origin_chinese]..."
 
         if girl.origin in origins:
             call dialogue(girl, "origin " + girl.origin) from _call_dialogue_236
@@ -5669,7 +5669,7 @@ label slave_story8(girl):
 
         you "What is that curse all about, anyway?"
 
-        girl.char "Well... I told you about my time in [girl.origin], when I was looking for a magic teacher..."
+        girl.char "Well... I told you about my time in [girl.origin_chinese], when I was looking for a magic teacher..."
 
         you "Yes. Did you find one?"
 
@@ -5791,7 +5791,7 @@ label slave_story8(girl):
 
         you "Tell me."
 
-        girl.char "You remember, I told you I was working for a powerful witch in [girl.origin]."
+        girl.char "You remember, I told you I was working for a powerful witch in [girl.origin_chinese]."
 
         you "Yes."
 

@@ -220,7 +220,7 @@ translate chinese sill_spank_dc795e73:
 translate chinese resume_intro_131476a8:
 
     # sill happy "...and that's how the Pharo dynasty rose to power in Zan, or so the innkeeper said. Fascinating story, isn't it, Master?"
-    sill happy "...这就是法罗王朝在赞国崛起的故事，客栈老板是这么说的。很有趣的故事，不是吗，主人？"
+    sill happy "...这就是法罗王朝在瓒国崛起的故事，客栈老板是这么说的。很有趣的故事，不是吗，主人？"
 
 # game/BKintro.rpy:274
 translate chinese resume_intro_05abe805:
@@ -2992,7 +2992,7 @@ translate chinese districts_first_time_d598cb46:
 translate chinese districts_first_time_slums_4276900c:
 
     # "The Slums are located on the outskirts of Zan, beyond the defensive wall. It is home to the Zani rabble: new arrivals, refugees, paupers, spice addicts... It is also rumored to host the hideout of the Thieves Guild, and a temple of the Goddess Shalia."
-    "贫民窟位于赞的郊区，在城墙之外。这里是瓒城乌合之众的家园：新来者、难民、穷人、香料成瘾者...据说这里还有盗贼公会的藏身之处，以及莎莉娅女神的神庙。"
+    "贫民窟位于瓒的郊区，在城墙之外。这里是瓒城乌合之众的家园：新来者、难民、穷人、香料成瘾者...据说这里还有盗贼公会的藏身之处，以及莎莉娅女神的神庙。"
 
 # game/BKintro.rpy:2006
 translate chinese districts_first_time_slums_1054b62c:

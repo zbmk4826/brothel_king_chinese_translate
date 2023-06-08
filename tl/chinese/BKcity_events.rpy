@@ -1180,7 +1180,7 @@ translate chinese city_slave_190538b3:
 translate chinese city_slave_0769663a:
 
     # "You tell her vivid details about the life of some of the famous sex slaves of Zan, explaining how they leveraged their situation to become legends in their own right."
-    "你向她讲述了赞城中一些有名的性奴的生活细节，解释了她们如何利用自己的处境成就了自己的传奇人生。"
+    "你向她讲述了瓒城中一些有名的性奴的生活细节，解释了她们如何利用自己的处境成就了自己的传奇人生。"
 
 # game/BKcity_events.rpy:1012
 translate chinese city_slave_4b50ad06:
@@ -5332,7 +5332,7 @@ translate chinese city_mob_1b1b8f26:
 translate chinese city_mob_4aa1c879:
 
     # you "Good people of Zan! Listen to me."
-    you "赞的善良的人们！听我说。"
+    you "瓒的善良的人们！听我说。"
 
 # game/BKcity_events.rpy:4354
 translate chinese city_mob_20e93590:
@@ -5476,7 +5476,7 @@ translate chinese city_mob_cbb9609b:
 translate chinese city_mob_00a55a35:
 
     # man "People of Zan! Listen! Listen to me!!!"
-    man "赞城的人们！听我说！听我说！！！"
+    man "瓒城的人们！听我说！听我说！！！"
 
 # game/BKcity_events.rpy:4418
 translate chinese city_mob_56f56aa2:

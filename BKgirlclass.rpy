@@ -37,7 +37,7 @@ init -2 python:
             self.upgrade_points = 0
             self.perk_points = 4
             self.original_price = 0
-
+            self.origin_chinese = None
             self.jp = {
                        "waitress" : 0,
                        "dancer" : 0,
@@ -174,8 +174,10 @@ init -2 python:
 
             if self.init_dict["background story/origin"] and self.init_dict["background story/origin"] != "random":
                 self.origin = self.init_dict["background story/origin"]
+                self.origin_chinese = self.origin
             else:
                 self.origin = rand_choice(origins)
+                self.origin_chinese = origins_chinese_translate[self.origin]
 
             if self.init_dict["background story/story_label"]:
                 self.story = self.init_dict["background story/story_label"]
@@ -4262,7 +4264,7 @@ init -2 python:
                     des += "奴隶"
 
                 if self.personality_unlock["origin"]:
-                    des += "来自" + self.origin
+                    des += "来自" + self.origin_chinese
 
                 des += "。"
 

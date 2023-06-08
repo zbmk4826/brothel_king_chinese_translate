@@ -740,7 +740,7 @@ label random_night_girl_event(girl, room):
                         "You notice many shiny jewels and nice clothes laying around her night table, and about a hundred boxes for shoes and accessories. She sure seems to live large for a slave..."
                         $ stat = "body"
                     else:
-                        "The place is beautifully decorated with pretty flowers and cute ribbons. A half-finished painting depicts a landscape that you recognize to be from [girl.origin]."
+                        "The place is beautifully decorated with pretty flowers and cute ribbons. A half-finished painting depicts a landscape that you recognize to be from [girl.origin_chinese]."
                         $ stat = "sensitivity"
                 elif c == "LM":
                     if girl.is_("lewd"):

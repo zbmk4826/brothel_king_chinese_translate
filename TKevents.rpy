@@ -164,13 +164,13 @@ label traitking_day: # day: triggers after morning, but still before player can 
 
                 girl.remove_trait(trait_dict["In demand"])
                 
-                renpy.say("","Slavers are no longer willing to pay a premium for " + girl.name + ".")
+                renpy.say("","奴隶贩子不再愿意给" + girl.name + "支付溢价了.")
 
             if renpy.random.random() <= 0.06 and not girl.free: # In demand trait (add)
             
                 add_trait_perkless(girl, trait_dict["In demand"])
                 
-                renpy.say("","Recently a lot of slavers have been inquiring about " + girl.name + ". It would seem that she is {b}{color=[c_orange]}in high demand{/color}{/b}. If you were willing to part with her, it could prove to be very lucrative.")
+                renpy.say("","最近很多奴隶贩子都在打听" + girl.name + ". 看起来她是 {b}{color=[c_orange]}in high demand{/color}{/b}. 如果你愿意和她告别，这可能会是笔不错的收入。")
                 
             if renpy.random.random() <= 0.06:
             
@@ -1032,16 +1032,16 @@ label undervalued_interact(girl):
                                 "Ferocious" : "贪婪的",
                                 "Uninhibited" : "从笼子里放出来的",
                                 "Cum Addict" : "饥渴的",
-                                "Bimbo" : "Slut",
+                                "Bimbo" : "母狗",
                                 "Pervert" : "虚弱的",
                                 "for Public use" : "公共",
                                 "Cumslut" : "洞",
                                 "Orgy girl" : "万人骑",
-                                "Uncouth" : "Cheap",
-                                "Scruffy" : "Run-down",
-                                "Vulgar" : "Fucking",
-                                "Strong Gag Reflex" : "Choking",
-                                "Clumsy" : "Shit",
+                                "Uncouth" : "简单的",
+                                "Scruffy" : "衰弱的",
+                                "Vulgar" : "该死的",
+                                "Strong Gag Reflex" : "令人窒息的",
+                                "Clumsy" : "讨厌透顶的",
                                 "Sickly" : "呆板的",
                                 "Unlucky" : "邪恶的",
                                 "Weak" : "跛子",

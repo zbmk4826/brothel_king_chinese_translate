@@ -160,7 +160,7 @@ label after_load: # Happens after a game state is loaded
                 show screen load
                 $ renpy.full_restart()
 
-        call screen OK_screen("加载旧的保存游戏", "你选择继续使用你的旧游戏。\n如果你遇到了bug，{b}请不要在BK论坛上报告它们{/b}。")
+        call screen OK_screen("加载旧的游戏存档", "你选择继续使用你的旧存档。\n如果你遇到了bug，{b}请不要在BK论坛上报告它们{/b}。")
 
     return
 
@@ -260,7 +260,7 @@ label effect_expired(char, effects): # Where eff is a list of effects
                 char.current_food_effect[e.target] = None
 
             if debug_mode:
-                renpy.notify(char.name + "的" + e.type + " " + e.target + "效果已过")
+                renpy.notify(char.name + "的" + e.type + " " + e.target + "效果已失效")
 
     return
 

@@ -455,7 +455,7 @@ label c2_intro():
 
     katryn "My, my, Gurigura... You're such a bumpkin. This is just like any city..."
 
-    $ gurigura_name = "Gurigura"
+    $ gurigura_name = "古利古拉"
 
     hide gurigura
     hide katryn
@@ -469,7 +469,7 @@ label c2_intro():
 
     riche "Come on, Katryn, don't be such a killjoy... This {i}is{/i} the largest city in Xeros! Isn't it amazing? Right, Ramias?"
 
-    $ katryn_name = "Katryn"
+    $ katryn_name = "凯特琳"
 
     show ramias at right behind riche with dissolve
 
@@ -477,11 +477,11 @@ label c2_intro():
 
     riche "Ramias?"
 
-    $ ramias_name = "Ramias"
+    $ ramias_name = "拉米亚斯"
 
     ramias "I sense danger, Riche. These streets are not safe. There are too many places to hide..."
 
-    $ riche_name = "Riche"
+    $ riche_name = "莉琪"
 
     hide riche
     hide ramias
