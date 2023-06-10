@@ -421,7 +421,6 @@ label headhunter_menu:
                 $ hunter_neg_traits = traitking_neg_traits
 
             menu:
-
                 "身份":
                     label headhunter_menu_identity:
                     if headhunted_original == 1:
@@ -543,10 +542,10 @@ label headhunter_menu:
                         "[menu_item_rank]":
                             $ rank_temp = renpy.input("你需要的姑娘阶级为", default = "")
                             $ done_already = False
-                            python: 
+                            python:
                                 try:
                                     rank_temp = int(rank_temp)
-                                except ValueError: 
+                                except ValueError:
                                     if isinstance(rank_temp, basestring):
                                         if rank_temp in ("x", "X"):
                                             headhunted_rank = 5
@@ -597,7 +596,7 @@ label headhunter_menu:
                                 $ express_default = "已出现."
                             else:
                                 $ express_default = "未出现."
-                            $ menu_item_express = "Express: " + str(express_default)
+                            $ menu_item_express = "是否出现: " + str(express_default)
                             jump headhunter_menu_identity
                         "返回":
                             jump headhunter_menu
@@ -606,10 +605,10 @@ label headhunter_menu:
                     menu:
                         "[menu_item_charm]":
                             $ stat_temp = renpy.input("输入魅力 等级 0 到 5\n 0 = 随机:", default = "")
-                            python: 
+                            python:
                                 try:
                                     stat_temp = int(stat_temp)
-                                except ValueError: 
+                                except ValueError:
                                     if headhunted_charm:
                                         stat_temp = headhunted_charm
                                     else:
@@ -620,10 +619,10 @@ label headhunter_menu:
 
                         "[menu_item_body]":
                             $ stat_temp = renpy.input("输入身材 等级 0 到 5\n 0 = 随机:", default = "")
-                            python: 
+                            python:
                                 try:
                                     stat_temp = int(stat_temp)
-                                except ValueError: 
+                                except ValueError:
                                     if headhunted_body:
                                         stat_temp = headhunted_body
                                     else:
@@ -634,10 +633,10 @@ label headhunter_menu:
 
                         "[menu_item_beauty]":
                             $ stat_temp = renpy.input("输入美貌 等级 0 到 5\n 0 = 随机:", default = "")
-                            python: 
+                            python:
                                 try:
                                     stat_temp = int(stat_temp)
-                                except ValueError: 
+                                except ValueError:
                                     if headhunted_beauty:
                                         stat_temp = headhunted_beauty
                                     else:
@@ -648,10 +647,10 @@ label headhunter_menu:
 
                         "[menu_item_refinement]":
                             $ stat_temp = renpy.input("输入优雅 等级 0 到 5\n 0 = 随机:", default = "")
-                            python: 
+                            python:
                                 try:
                                     stat_temp = int(stat_temp)
-                                except ValueError: 
+                                except ValueError:
                                     if headhunted_refinement:
                                         stat_temp = headhunted_refinement
                                     else:
@@ -662,10 +661,10 @@ label headhunter_menu:
 
                         "[menu_item_sensitivity]":
                             $ stat_temp = renpy.input("输入敏感 等级 0 到 5\n 0 = 随机:", default = "")
-                            python: 
+                            python:
                                 try:
                                     stat_temp = int(stat_temp)
-                                except ValueError: 
+                                except ValueError:
                                     if headhunted_sensitivity:
                                         stat_temp = headhunted_sensitivity
                                     else:
@@ -676,10 +675,10 @@ label headhunter_menu:
 
                         "[menu_item_libido]":
                             $ stat_temp = renpy.input("输入性欲 等级 0 到 5\n 0 = 随机:", default = "")
-                            python: 
+                            python:
                                 try:
                                     stat_temp = int(stat_temp)
-                                except ValueError: 
+                                except ValueError:
                                     if headhunted_libido:
                                         stat_temp = headhunted_libido
                                     else:
@@ -690,10 +689,10 @@ label headhunter_menu:
 
                         "[menu_item_constitution]":
                             $ stat_temp = renpy.input("输入体质 等级 0 到 5\n 0 = 随机:", default = "")
-                            python: 
+                            python:
                                 try:
                                     stat_temp = int(stat_temp)
-                                except ValueError: 
+                                except ValueError:
                                     if headhunted_constitution:
                                         stat_temp = headhunted_constitution
                                     else:
@@ -704,10 +703,10 @@ label headhunter_menu:
 
                         "[menu_item_obedience]":
                             $ stat_temp = renpy.input("输入服从 等级 0 到 5\n 0 = 随机:", default = "")
-                            python: 
+                            python:
                                 try:
                                     stat_temp = int(stat_temp)
-                                except ValueError: 
+                                except ValueError:
                                     if headhunted_obedience:
                                         stat_temp = headhunted_obedience
                                     else:
@@ -1048,10 +1047,10 @@ label headhunter_menu:
                     menu:
                         "[menu_item_sex_experience]":
                             $ sex_name_temp = renpy.input("性经验 等级 0到5,\n 0 = 随机: ", default = "")
-                            python: 
+                            python:
                                 try:
                                     sex_name_temp = int(sex_name_temp)
-                                except ValueError: 
+                                except ValueError:
                                     if headhunted_sexual_experience:
                                         sex_name_temp = headhunted_sexual_experience
                                     else:
@@ -1186,35 +1185,35 @@ label headhunter_menu:
 #                            else:
 #                                $ headhunted_virginity_trait2 = weighted_choice([(trait_dict["Virgin"],10), (trait_dict["Housebroken"],5), (trait_dict["Teacher's pet"],0), (trait_dict["Farmgirl"],10), (trait_dict["Deflowered"],40), (trait_dict["Broken in"],10), (trait_dict["Experienced"],10), (trait_dict["Jaded"],5), (trait_dict["Trauma"],10)])
 
-                    if headhunted_pos_trait1: 
+                    if headhunted_pos_trait1:
                         if headhunted_pos_trait1 in trait_dict.keys():
                             if trait_dict[headhunted_pos_trait1] in (hunter_pos_traits + hunter_gold_traits):
                                 $ headhunted_pos_traits = headhunted_pos_traits + [headhunted_pos_trait1]
-                    if headhunted_pos_trait2: 
+                    if headhunted_pos_trait2:
                         if headhunted_pos_trait2 in trait_dict.keys():
                             if trait_dict[headhunted_pos_trait2] in (hunter_pos_traits + hunter_gold_traits):
                                 $ headhunted_pos_traits = headhunted_pos_traits + [headhunted_pos_trait2]
-                    if headhunted_pos_trait3: 
+                    if headhunted_pos_trait3:
                         if headhunted_pos_trait3 in trait_dict.keys():
                             if trait_dict[headhunted_pos_trait3] in (hunter_pos_traits + hunter_gold_traits):
                                 $ headhunted_pos_traits = headhunted_pos_traits + [headhunted_pos_trait3]
-                    if headhunted_pos_trait4: 
+                    if headhunted_pos_trait4:
                         if headhunted_pos_trait4 in trait_dict.keys():
                             if trait_dict[headhunted_pos_trait4] in (hunter_pos_traits + hunter_gold_traits):
                                 $ headhunted_pos_traits = headhunted_pos_traits + [headhunted_pos_trait4]
-                    if headhunted_pos_trait5: 
+                    if headhunted_pos_trait5:
                         if headhunted_pos_trait5 in trait_dict.keys():
                             if trait_dict[headhunted_pos_trait5] in (hunter_pos_traits + hunter_gold_traits):
                                 $ headhunted_pos_traits = headhunted_pos_traits + [headhunted_pos_trait5]
-                    if headhunted_neg_trait1: 
+                    if headhunted_neg_trait1:
                         if headhunted_neg_trait1 in trait_dict.keys():
                             if trait_dict[headhunted_neg_trait1] in hunter_neg_traits:
                                 $ headhunted_neg_traits = headhunted_neg_traits + [headhunted_neg_trait1]
-                    if headhunted_neg_trait2: 
+                    if headhunted_neg_trait2:
                         if headhunted_neg_trait2 in trait_dict.keys():
                             if trait_dict[headhunted_neg_trait2] in hunter_neg_traits:
                                 $ headhunted_neg_traits = headhunted_neg_traits + [headhunted_neg_trait2]
-                    if headhunted_neg_trait3: 
+                    if headhunted_neg_trait3:
                         if headhunted_neg_trait3 in trait_dict.keys():
                             if trait_dict[headhunted_neg_trait3] in hunter_neg_traits:
                                 $ headhunted_neg_traits = headhunted_neg_traits + [headhunted_neg_trait3]
@@ -1495,8 +1494,8 @@ label headhunter_menu:
                             play sound s_giggle
                             $ discount_str = str(headhunter_advance - payment) + " 金币"
                             headhunter "作为表示, 你可以享受[discount_str]的折扣, 因为你是首次下单! *眨眼*"
-                        
-                        if renpy.call_screen("yes_no", "Haggle about the price?"):
+
+                        if renpy.call_screen("yes_no", "要不要讨价还价?"):
                             show headhunter angry at centerhighright with dissolve
                             play sound s_ahh_frustrated
                             headhunter angry "啊啊啊! 别着急……"
@@ -1673,16 +1672,16 @@ label headhunter_delivers:
             headhunter "一口价[headhunter_price_final_str]!"
             if game.headhunter_discount > 0:
                 play sound s_giggle
-                $ discount_str = str(finders_fee - finder_payment) + " gold"
-                headhunter "Oh, and yer first-timer discount is [discount_str]! *wink*"
+                $ discount_str = str(finders_fee - finder_payment) + "金币"
+                headhunter "对了，你的第一次折扣是[discount_str]! *眨眼*"
             $ slavery_default = 1
             if slavery_default == 0:
-                $ slavery_default_string = "Slave Market."
+                $ slavery_default_string = "送去奴隶市场."
             else:
-                $ slavery_default_string = "buy her."
+                $ slavery_default_string = "买下她."
             $ payment_str = str(payment) + " 金币"
-            $ finder_payment_str = str(finder_payment) + " 金币"
-            if renpy.call_screen("yes_no", "Do you want to buy her now for [payment_str]? Otherwise you will pay the finder's fee of [finder_payment_str] and she is sent to the Slave Market?"): # Currently: " + slavery_default_string):
+            $ finder_payment_str = str(finder_payment) + "金币"
+            if renpy.call_screen("yes_no", "你想现在用[payment_str]买下她么?不然你就需要给猎头[finder_payment_str]作为报酬，然后把姑娘送去奴隶市场?"): # Currently: " + slavery_default_string):
                 $ slavery_default = 1
             else:
                 $ slavery_default = 0
@@ -1823,8 +1822,8 @@ label headhunter_delivers:
                         play sound s_woman_scream
                         show headhunter angry at truecenter with dissolve
                         headhunter "啊啊, 你没法获得战利品了!"
-                        $ slavery_default_string = "leave her."
-                        if renpy.call_screen("yes_no", "Do you want to leave the girl with the hunter? She won't be happy about it, but otherwise you will pay the finder's fee of [finder_payment_str] and she is sent to the Slave Market? Currently: " + slavery_default_string):
+                        $ slavery_default_string = "放走她."
+                        if renpy.call_screen("yes_no", "你想把那女孩留给猎头吗?她会不高兴的, 但是你还可以给猎头[finder_payment_str]作为报酬，然后把姑娘送去奴隶市场? 当前选项: " + slavery_default_string):
                             $ slavery_default = 1
                         else:
                             $ slavery_default = 0

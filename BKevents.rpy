@@ -2570,7 +2570,7 @@ label thieves_guild_loop:
 
         while True:
 
-            $ renza("Here's what I have on sale this week, at a special price just for you.", interact = False)
+            $ renza("这是我这周的特价商品，是专为你准备的。", interact = False)
 
             $ result = ui.interact()
 
@@ -4429,7 +4429,7 @@ label advertising_intro():
             "Nah, I'm fine":
                 sill "Okay then. Ask me later if you need a refresher."
 
-        call screen OK_screen("Basic Outfits", "You have received {b}basic outfits{/b} for your advertising girls from Sill. It is a simple uniform with '%s' sewn on the front." % brothel.name, pic=Picture(path="items/furniture/Basic outfit.webp"))
+        call screen OK_screen("基础服装", "你已从希露那里收到了广告女郎的{b}基础服装{/b}。 这是一件简单的制服， 胸前缝着'%s'的字样." % brothel.name, pic=Picture(path="items/furniture/Basic outfit.webp"))
 
         "You have received an outfit for your advertising girls, increasing your {b}advertising power{/b}. There may be a way to unlock more powerful outfits in the future."
 

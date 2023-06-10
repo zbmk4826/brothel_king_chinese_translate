@@ -12328,3 +12328,11 @@ translate chinese random_morning_events_ed09df51:
     # "[girl.name]'s [boost_stat_translate] skill has improved a little."
     "[girl.name]的[boost_stat_translate]有所提高。"
 
+# TODO: Translation updated at 2023-06-09 23:29
+
+# game/BKday_events.rpy:743
+translate chinese random_night_girl_event_478e0829:
+
+    # "The place is beautifully decorated with pretty flowers and cute ribbons. A half-finished painting depicts a landscape that you recognize to be from [girl.origin_chinese]."
+    "这个地方被漂亮的鲜花和可爱的丝带装饰得很漂亮。一幅半成品画描绘了一幅风景画，你能认出画上描绘了[girl.origin_chinese]的景色。"
+

@@ -894,22 +894,22 @@ init -2 python:
                 nb = nb * self.get_effect("boost", stat + " gains") + self.get_effect("change", stat + " gains")
 
             if stat == "strength":
-                if self.strength + nb <= 10:
+                if self.strength + nb <= 20:
                     self.strength += nb
                     return True
 
             elif stat == "spirit":
-                if self.spirit + nb <= 10:
+                if self.spirit + nb <= 20:
                     self.spirit += nb
                     return True
 
             elif stat == "charisma":
-                if self.charisma + nb <= 10:
+                if self.charisma + nb <= 20:
                     self.charisma += nb
                     return True
 
             elif stat == "speed":
-                if self.speed + nb <= 10:
+                if self.speed + nb <= 20:
                     self.speed += nb
                     return True
 
@@ -2068,7 +2068,7 @@ init -2 python:
         def buy_furniture(self, furn):
 
             if self.current_building:
-                renpy.say(carpenter, "对不起，老板，你需要的" + self.current_building.name + "还没有建好。")
+                renpy.say(carpenter, "对不起，老板，你需要的" + furniture_name_dict[self.current_building.name] + "还没有建好。")
                 return False
 
             elif not furn.can_build():
@@ -2082,8 +2082,8 @@ init -2 python:
                     renpy.say(carpenter, "听着，老板，在我开始干活之前你必须有足够的材料。")
                     break
             else:
-                renpy.say(carpenter, "好的，看样子你已经拿到材料了，交给我。我马上就为'" + furn.name + "'开始准备。")
-                if renpy.call_screen("yes_no", "您确定要为建造'" + furn.name + "'而花费" + furn.describe_cost() + "吗？"):
+                renpy.say(carpenter, "好的，看样子你已经拿到材料了，交给我。我马上就为'" + furniture_name_dict[furn.name] + "'开始准备。")
+                if renpy.call_screen("yes_no", "您确定要为建造'" + furniture_name_dict[furn.name] + "'而花费" + furn.describe_cost() + "吗？"):
                     MC.spend_resources(furn.cost)
                     renpy.block_rollback()
                     furn.start_building()
@@ -5349,8 +5349,8 @@ init -2 python:
                 return False, "你没有足够的互动时间来做这件事。"
             elif self.get_gold_cost() and MC.gold < self.get_gold_cost():
                 return False, "你没有足够的钱来支付这个训练的费用 (" + str(self.get_gold_cost()) + "{image=img_gold})。"
-            elif self.group == "train" and girl.MC_interact_counters[self.group] >= 1:
-                return False, "你每天只能训练一个女孩一次。"
+            elif self.group == "train" and girl.MC_interact_counters[self.group] >= 2:
+                return False, "你每天只能训练一个女孩两次。"
             elif self.group in ("reward", "discipline") and girl.MC_interact_counters[self.group] >= 1:
                 return False, "你每天只能奖励或惩罚一个女孩一次。"
             elif self.group in ("gold", "gift", "sex_reward", "rape", "offer") and girl.MC_interact_counters[self.group] >= 1:
@@ -5367,8 +5367,8 @@ init -2 python:
 
             elif self.group == "offer" and len(MC.girls) >= brothel.bedrooms:
                 return False, "你的青楼里没有空间容纳另一个女孩。"
-            elif self.group and girl.MC_interact_counters[self.group] >= 3:
-                return False, "你不能和一个女孩每天互动3次以上的" + self.group + "。"
+            elif self.group and girl.MC_interact_counters[self.group] >= 4:
+                return False, "你不能和一个女孩每天互动4次以上的" + self.group + "。"
             elif self.label == "slave_master_bedroom_add" and not brothel.master_bedroom.can_have_girl():
                 return False, "你的卧室已经满了。"
             return True, ""
@@ -6880,9 +6880,9 @@ init -2 python:
                     brothel.furniture.remove(furniture_dict[self.upgrade])
                 brothel.deactivate_furniture(furniture_dict[self.upgrade])
                 if message:
-                    renpy.call_screen("OK_screen", title = "家具升级", message = self.upgrade + "已经升级到" + self.name + "了。\n\n" + self.description, pic = self.pic, pic_size = "large")
+                    renpy.call_screen("OK_screen", title = "家具升级", message = furniture_name_dict[self.upgrade] + "已经升级到" + furniture_name_dict[self.name] + "了。\n\n" + self.description, pic = self.pic, pic_size = "large")
             elif message:
-                renpy.call_screen("OK_screen", title = "家具制造", message = "一个新的" + self.name + "已经建成了。\n\n" + self.description, pic = self.pic, pic_size = "large")
+                renpy.call_screen("OK_screen", title = "家具制造", message = "一个新的" + furniture_name_dict[self.name] + "已经建成了。\n\n" + self.description, pic = self.pic, pic_size = "large")
             self.activate()
             test_achievement("furniture")
 

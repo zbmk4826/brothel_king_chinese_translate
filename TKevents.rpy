@@ -170,7 +170,7 @@ label traitking_day: # day: triggers after morning, but still before player can 
             
                 add_trait_perkless(girl, trait_dict["In demand"])
                 
-                renpy.say("","最近很多奴隶贩子都在打听" + girl.name + ". 看起来她是 {b}{color=[c_orange]}in high demand{/color}{/b}. 如果你愿意和她告别，这可能会是笔不错的收入。")
+                renpy.say("","最近很多奴隶贩子都在打听" + girl.name + ". 看起来她是 {b}{color=[c_orange]}紧俏商品{/color}{/b}. 如果你愿意和她告别，这可能会是笔不错的收入。")
                 
             if renpy.random.random() <= 0.06:
             

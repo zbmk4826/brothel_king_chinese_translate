@@ -30646,7 +30646,7 @@ translate chinese hire_carpenter_d83ba17e:
 translate chinese hire_carpenter_f7a77f38:
 
     # you "I don't mean selling your stuff in {i}that{/i} way! Whatever extra furniture and trinkets you make can be sold."
-    you "我不是说要以{i那种{/i}方式出售你的东西！你制作的额外家具和小玩意儿可以卖掉。"
+    you "我不是说要以{i}那种{/i}方式出售你的东西！你制作的额外家具和小玩意儿可以卖掉。"
 
 # game/BKstory_events.rpy:15700
 translate chinese hire_carpenter_7a255f05:

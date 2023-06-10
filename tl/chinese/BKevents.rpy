@@ -694,7 +694,7 @@ translate chinese test_resources_4d846f38:
 translate chinese furniture_built_1cf70525:
 
     # carpenter "Hey, boss! I've just finished work on the [furn.name]. I hope you like it."
-    carpenter "嘿，老板！我刚刚完成了[furn.name]的建造。希望你能喜欢。"
+    carpenter "嘿，老板！我刚刚完成了[xxxx23]的建造。希望你能喜欢。"
 
 # game/BKevents.rpy:1618
 translate chinese collect_wood_c314ab88:

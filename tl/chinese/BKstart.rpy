@@ -38,5 +38,5 @@ translate chinese strings:
 
     # game/BKstart.rpy:90
     old "A club"
-    new "夜总会俱乐部"
+    new "脱衣舞夜总会"
 

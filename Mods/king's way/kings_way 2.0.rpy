@@ -517,7 +517,7 @@ screen cheat_slave_edit:
                                 text_layout "nobreak"
                                 hovered SetVariable("trait_desc",trait.get_description("girls"))
                                 unhovered SetVariable("trait_desc"," ")
-                text "[trait_desc]"
+                text "{size=-3}[trait_desc]{/size}"
             vbox:
                 if slave_id in game.free_girls:
                     text "Location: [slave_id.location]"

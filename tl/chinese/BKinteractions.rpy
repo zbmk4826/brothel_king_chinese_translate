@@ -5578,7 +5578,7 @@ translate chinese slave_story6_8c41578f:
 translate chinese slave_story6_f3f306c5:
 
     # girl.char "'Marrying for love is only good for farmhands', everyone told me. A lady had to marry up."
-    girl.char "'Marrying for love is only good for farmhands', everyone told me. A lady had to marry up."
+    girl.char "'每个人都告诉我，为爱情结婚只对那些老农夫有好处。一位女士必须嫁得更高贵一些。"
 
 # game/BKinteractions.rpy:4943
 translate chinese slave_story6_2f2a5c53:
@@ -9815,4 +9815,66 @@ translate chinese strings:
     # game/BKinteractions.rpy:5961
     old "Don't bother me with this anymore"
     new "别再拿这事烦我了"
+
+# TODO: Translation updated at 2023-06-09 23:29
+
+# game/BKinteractions.rpy:3704
+translate chinese slave_story2_b4e86f52:
+
+    # girl.char "It all happened a long time ago, back in [girl.origin_chinese]..."
+    girl.char "这一切发生在很久以前，在[girl.origin_chinese]……"
+
+# game/BKinteractions.rpy:3947
+translate chinese slave_story3_46567327:
+
+    # girl.char "I used to live a happy life in [girl.origin_chinese], where I enjoyed [girl.hobbies[0]] most days..."
+    girl.char "我曾经在[girl.origin_chinese]过着幸福的生活，大部分时间都在享受[girl.hobbies[0]]..."
+
+# game/BKinteractions.rpy:4211
+translate chinese slave_story4_5350a7c2:
+
+    # girl.char "Yes... I was born in [girl.origin_chinese], in a very poor family..."
+    girl.char "是的...我出生在[girl.origin_chinese]，家里非常贫困..."
+
+# game/BKinteractions.rpy:4518
+translate chinese slave_story5_aa300d6c:
+
+    # girl.char "It all started while I was living in [girl.origin_chinese] with my [girl.story_guardian]."
+    girl.char "一切都始于我和我的[girl.story_guardian]一起生活在[girl.origin_chinese]的时候。"
+
+# game/BKinteractions.rpy:4885
+translate chinese slave_story6_11abd5fe:
+
+    # girl.char "Yes... My father was a nobleman in [girl.origin_chinese], renowned across Xeros and influential at court..."
+    girl.char "是的……我的父亲是[girl.origin_chinese]的贵族，在克塞罗斯享有盛名，并在朝廷有影响力……"
+
+# game/BKinteractions.rpy:5160
+translate chinese slave_story7_2b7ca697:
+
+    # girl.char "Believe it or not, when I was growing up in [girl.origin_chinese], it was perfectly normal to worship the Dweller. There was no holy war then..."
+    girl.char "信不信由你，在我在[girl.origin_chinese]长大的时候，崇拜居者是很正常的事情。那时还没有圣战..."
+
+# game/BKinteractions.rpy:5233
+translate chinese slave_story7_cd545d00:
+
+    # girl.char "Back then in [girl.origin_chinese], all peaceful religions were welcome. No one talked about burning heretics or torturing elven spies..."
+    girl.char "那时在[girl.origin_chinese]，所有和平的宗教都受到欢迎。没有人谈论烧死异端或者折磨精灵间谍..."
+
+# game/BKinteractions.rpy:5571
+translate chinese slave_story8_8b85864f:
+
+    # girl.char "It all started a while ago, when I was living in [girl.story_home_article] in [girl.origin_chinese]..."
+    girl.char "一段时间以前，当我还住在[girl.story_home_article]的[girl.origin_chinese]时，一切都开始了......"
+
+# game/BKinteractions.rpy:5672
+translate chinese slave_story8_c4f088f8:
+
+    # girl.char "Well... I told you about my time in [girl.origin_chinese], when I was looking for a magic teacher..."
+    girl.char "嗯……我跟你说过我在[girl.origin_chinese]的时候，我在寻找魔法老师……"
+
+# game/BKinteractions.rpy:5794
+translate chinese slave_story8_539e6d9c:
+
+    # girl.char "You remember, I told you I was working for a powerful witch in [girl.origin_chinese]."
+    girl.char "你记得，我告诉过你我在[girl.origin_chinese]为一位强大的女巫工作。"
 

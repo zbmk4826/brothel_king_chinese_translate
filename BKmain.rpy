@@ -1798,7 +1798,7 @@ label shop_loop:
         if it:
             $ chapter, cost, upgrade = shop_upgrades[shop.upgrade_level + 1]
 
-            if renpy.call_screen("yes_no", "你确定要为商店升级%s %s吗？" % (str(cost[1]), cost[0])):
+            if renpy.call_screen("yes_no", "你确定要为商店升级花费%s%s吗？" % (str(cost[1]), resource_name_dict[cost[0]])):
                 $ shop.upgrade_shop(cost, upgrade)
 
                 $ renpy.say(shopgirl, shopgirl_comment[cost[0]])

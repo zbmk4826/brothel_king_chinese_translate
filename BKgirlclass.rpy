@@ -577,7 +577,7 @@ init -2 python:
                     self.xp = self.get_xp_cap()
                     self.rep += rep_to_rank[3]
                     self.perk_points += 17
-                    self.upgrade_points += 5 + 5 * self.rank
+                    self.upgrade_points += 5 + 10 * self.rank
                     return
             for stat in (self.stats+self.sex_stats):
                 if stat.value > 100 and self.rank < 3:
@@ -586,7 +586,7 @@ init -2 python:
                     self.xp = self.get_xp_cap()
                     self.rep += rep_to_rank[2]
                     self.perk_points += 12
-                    self.upgrade_points += 5 + 5 * self.rank
+                    self.upgrade_points += 5 + 10 * self.rank
                     return
             for stat in (self.stats+self.sex_stats):
                 if stat.value > 50 and self.rank < 2:
@@ -595,7 +595,7 @@ init -2 python:
                     self.xp = self.get_xp_cap()
                     self.rep += rep_to_rank[1]
                     self.perk_points += 6
-                    self.upgrade_points += 5 + 5 * self.rank
+                    self.upgrade_points += 5 + 10 * self.rank
                     return
 
         def will_do_farm_act(self, act, mode=None): # Returns 'accepted', 'resisted', 'refused' unless a specific mode is chosen, in which case it returns a boolean

@@ -316,14 +316,14 @@ screen girl_tab(girls, context="girls"):
                 key "shift_H" action Jump("headhunter_main")
             $ textHH = "猎头公司" #
 
-            $ textHH2 = "订购具有特定特征的奴隶，以增加成本。"
+            $ textHH2 = "通过增加预算订购具有特定特征的奴隶。"
 
             if game.headhunter_button_enabled:
                 textbutton textHH:
                     xalign 0.5
                     yalign 0.99
                     text_size 36
-                    text_font "bk.TTF"
+                    text_font "bk.ttf"
                     action Jump("headhunter_main")
                     hovered tt.Action(textHH2)
 
@@ -332,7 +332,7 @@ screen girl_tab(girls, context="girls"):
                     xalign 0.5
                     yalign 0.99
                     text_size 36
-                    text_font "bk.TTF"
+                    text_font "bk.ttf"
                     hovered tt.Action(textHH2)
 
 ############ Jman - Headhunter Mod End ########
@@ -3437,9 +3437,9 @@ screen brothel():
 
                 if brothel.current_building:
                     if len(brothel.current_building.name) > 15:
-                        $ text1 += "\n(" + brothel.current_building.name[:15] + "。"
+                        $ text1 += "\n(" + furniture_name_dict[brothel.current_building.name] + "。"
                     else:
-                        $ text1 += "\n(" + brothel.current_building.name + " "
+                        $ text1 += "\n(" + furniture_name_dict[brothel.current_building.name] + " "
 
                     $ max_dur = float(brothel.current_building.duration)
                     $ leftover_dur = round_int(max_dur - (calendar.time - brothel.started_building))
@@ -3451,7 +3451,7 @@ screen brothel():
                     else:
                         $ text1 += u"\u25d4"
 
-                    $ text1 += "" + str(leftover_dur) + "d){/size}"
+                    $ text1 += "" + str(leftover_dur) + "天){/size}"
             else:
                 $ text1 = "???"
 
@@ -3840,7 +3840,7 @@ screen furniture():
             if not brothel.current_building:
                 $ text1 = "喔，嗨。为我找了一份新工作？"
             else:
-                $ text1 = "我还在努力制作" + brothel.current_building.name + "。你应该晚点再来。"
+                $ text1 = "我还在努力制作" + furniture_name_dict[brothel.current_building.name] + "。你应该晚点再来。"
 
             text text1 xsize 0.4 yalign 0.5 size res_font(18) justify True italic True
 
@@ -4319,9 +4319,9 @@ screen home():
                         xalign 0.5
                         yalign 0.0825
                         text_size 36
-                        text_font "CHOWFUN_0.TTF"
+                        text_font "bk.TTF"
                         action Jump("headhunter_delivers")
-                        hovered tt.Action(textHH2)
+                        hovered (tt.Action(textHH2))
 
             else:
                 $ textHH = "猎头公司：[game.headhunter_time]天"
@@ -4331,8 +4331,8 @@ screen home():
                     xalign 0.5
                     yalign 0.0825
                     text_size 36
-                    text_font "CHOWFUN_0.TTF"
-                    hovered tt.Action(textHH2)
+                    text_font "bk.TTF"
+                    hovered (tt.Action(textHH2))
         else:
             $ game.headhunter_button_enabled = 1
 ############ Jman - Headhunter Mod End ########

@@ -1395,7 +1395,7 @@ screen gallery(gal_type="ev"): # The Gallery object must have a pics variable (a
 
                     if index+i < len(gal.blist):
                         $ but = gal.blist[index+i]
-
+                        $ pic = ProportionalScale(but, 240, 180)
                         if gal_type == "ev":
                             if is_imgfile(game_image_dict[name][but][0], video=False):
                                 $ pic = ProportionalScale(game_image_dict[name][but][0], 240, 180)
