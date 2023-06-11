@@ -1817,6 +1817,6 @@ init -4 python:
     ## For feedback, bug report, constructive criticism, etc. Appears in help messages
 
     URL = "{b}*新论坛*{/b} {a=https://www.henthighschool.net/brothel-king/}{color=#9933FF}https://www.henthighschool.com/brothel-king/{/color}{/a}"
-    issuesURL = "{a=https://github.com/XyMinxin/Brothel-King-Chinese-Translate/issues}{color=#9933FF}https://github.com/XyMinxin/Brothel-King-Chinese-Translate/issues{/color}{/a}"
+    issuesURL = "{a=https://github.com/zbmk4826/brothel_king_chinese_translate/issues}{color=#9933FF}https://github.com/zbmk4826/brothel_king_chinese_translate/issues{/color}{/a}"
 
 #### END OF BK SETTINGS ####

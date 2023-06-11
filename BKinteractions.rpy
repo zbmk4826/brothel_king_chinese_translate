@@ -1279,8 +1279,8 @@ label slave_remove_fixation(girl):
 
         if len(neg_fix) == 1:
             fix = neg_fix[0]
-
-            renpy.say(you, "今天，我希望你能克服对[fix.short_name]的厌恶。")
+            fix_chinese_name = girl_related_dict[fix.name]
+            renpy.say(you, "今天，我希望你能克服对[fix_chinese_name]的厌恶。")
 
         else:
             menu_list = [] #[("Choose a fixation to work on", None)]
@@ -1326,14 +1326,17 @@ label slave_remove_fixation(girl):
 
     if inter.response == "accepted":
         play sound s_sigh
+        $ fix_chinese_name = girl_related_dict[fix.name]
         girl.char "Uh, [fix.short_name]? Well... Okay... {color=[c_green]}*accepted*{/color}"
 
     elif inter.response == "resisted":
         play sound s_surprise
+        $ fix_chinese_name = girl_related_dict[fix.name]
         girl.char "Oh no, Master, not [fix.short_name]! Let's do something else... {color=[c_lightred]}*resisted*{/color}"
 
     elif inter.response == "refused":
         play sound s_scream
+        $ fix_chinese_name = girl_related_dict[fix.name]
         girl.char "[fix.short_name]? No, no way!!! {color=[c_lightred]}*refused*{/color}"
 
     ## MC choice
@@ -1355,6 +1358,7 @@ label slave_remove_fixation(girl):
 
         "Rough her up" if inter.response != "refused":
             $ inter.MC_reaction = "fear"
+            $ fix_chinese_name = girl_related_dict[fix.name]
             you "I don't care if you like [fix.short_name] or not, slave. When you work for me, you have to do anything I tell you."
 
         "Force her" if inter.response == "refused":
@@ -1408,7 +1412,7 @@ label slave_remove_fixation(girl):
 
         $ renpy.say("", fix_description[fix.name + " pos_reaction"])
 
-        $ renpy.say("", "训练进行得非常顺利。" + event_color["special"] % (girl.fullname + "不再对" + fix.name + "感到厌恶。"))
+        $ renpy.say("", "训练进行得非常顺利。" + event_color["special"] % (girl.fullname + "不再对" + girl_related_dict[fix.name] + "感到厌恶。"))
 
         $ girl.add_log("neg fixation removed")
 
@@ -1423,7 +1427,7 @@ label slave_remove_fixation(girl):
         girl.char "NO! Go away!!!"
         "[girl.name] pushes you back, curls up and starts sobbing uncontrollably. You cannot get anything more out of her."
 
-        $ renpy.say("", "你的粗暴训练对她来说太过分了。" + event_color["bad"] % ("她现在永远恨" + fix.name + "。"))
+        $ renpy.say("", "你的粗暴训练对她来说太过分了。" + event_color["bad"] % ("她现在打心底里恨" + girl_related_dict[fix.name] + "。"))
 
         $ unlock_achievement("neg fixation locked")
 
@@ -1723,11 +1727,11 @@ label slave_advanced_training(girl, act, step):
 
         if step == 1:
             use_location = [] # init location (use_location must be a list)
-            prompt = "How would you like to prepare her for the training?"
+            prompt = "你想让她为培训做些什么准备?"
         elif step == 2:
-            prompt = "Do you ask her to do anything special during training?"
+            prompt = "在训练期间，你有要求她做什么特别的事情吗?"
         elif step == 3 and len(menu_list) > 2:
-            prompt = "How would you like to finish her training?"
+            prompt = "你想如何结束她的训练?"
 
         if len(menu_list) > 2:
             fix = long_menu(prompt, menu_list)
@@ -2496,7 +2500,7 @@ label slave_reward_day(girl):
     return
 
 label slave_reward_sex(girl):
-    $ act = menu(get_act_menu(prompt="What do you want to reward her with?", extended=False, girl=girl))
+    $ act = menu(get_act_menu(prompt="你想如何奖励她?", extended=False, girl=girl))
 
     if act == "back":
         $ inter.canceled = True
@@ -3032,11 +3036,11 @@ label slave_rape(girl, act): # If girl refused and was forced
 
         $ pos_reaction, neg_reaction = girl.test_weakness(act)
         $ advanced = False
-
+        $ act_chinese_name = girl_related_dict[act]
         if pos_reaction and neg_reaction:
-            $ reaction = "ambivalent feelings"
+            $ reaction = "感到又爱又恨"
         elif neg_reaction:
-            $ reaction = "a disgust"
+            $ reaction = "感到厌恶"
         else:
             $ reaction = ""
 
@@ -3064,7 +3068,8 @@ label slave_rape(girl, act): # If girl refused and was forced
 
                         $ text1 = long_act_description[act]
                         $ text2 = fix_description[fix.name + " description"][:-1]
-                        "You don't know what it is she hates about [text1], so you just try something at random, to see how she handles [fix.name]."
+                        $ xxx4 = girl_related_dict[fix.name]
+                        "You don't know what it is she hates about [text1], so you just try something at random, to see how she handles [xxx4]."
 
                         if fix.name in [f.name for f in girl.neg_fixations]:
 

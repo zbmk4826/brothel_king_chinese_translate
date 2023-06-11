@@ -1084,7 +1084,7 @@ init -3 python:
                         girl.get_hurt(dice(3)+1)
 #                         girl.add_log("hurt_days")
 
-                        girl.track_event("hurt", "一个暴力的顾客")
+                        girl.track_event("hurt", "凶暴的客人")
 
                         violent_report = "{color=[c_red]}" + violent_report + "他打了你一顿并让%s受伤了。{/color} " % girl.name
                         girl.change_fear(2)
@@ -1137,7 +1137,7 @@ init -3 python:
                         girl.get_hurt(dice(3)+1)
 #                         girl.add_log("hurt_days")
 
-                        girl.track_event("hurt", "一个暴力的客户")
+                        girl.track_event("hurt", "凶暴的客人")
 
                         violent_report = "{color=[c_red]}" + violent_report + " %s受伤了。{/color}" % girl.name
                         girl.change_fear(1)

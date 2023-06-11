@@ -238,7 +238,7 @@ translate chinese free_flirt_sex_tastes_be9561ba:
 translate chinese free_flirt_sex_tastes_3ac8bfbc:
 
     # "You have discovered [girl.name]'s fixation with [fix.name]."
-    "你已经发现[girl.name]对[fix.name]的迷恋。"
+    "你已经发现[girl.name]对[xxx3]的迷恋。"
 
 # game/BKinteractions_free.rpy:696
 translate chinese free_flirt_sex_tastes_be25caff:
@@ -268,7 +268,7 @@ translate chinese free_flirt_sex_tastes_93b10a0e:
 translate chinese free_flirt_sex_tastes_2c0cf15f:
 
     # "You have discovered [girl.name]'s disgust for [fix.name]."
-    "你发现[girl.name]对[fix.name]感到厌恶。"
+    "你发现[girl.name]对[xxx3]感到厌恶。"
 
 # game/BKinteractions_free.rpy:731
 translate chinese free_flirt_sex_tastes_be25caff_1:

@@ -1269,7 +1269,7 @@ init python:
                                 # Rewardable events
                                 "level up" : GirlRecentEvent(type="level up", action="获得一些经验", base_description="她变得更有经验了({color=[c_emerald]}等级%s{/color})。", discipline=False),
                                 "rank up" : GirlRecentEvent(type="rank up", action="获得新的阶级", base_description="她已经到了{color=[c_emerald]}阶级%s{/color}。", discipline=False),
-                                "job up" : GirlRecentEvent(type="job up", action="提升了工作技能", base_description="她增加了她的{color=[c_emerald]}%s{/color}技能。", discipline=False),
+                                "job up" : GirlRecentEvent(type="job up", action="提升了工作技能", base_description="她提升了她的{color=[c_emerald]}[girl_related_dict[%s]]{/color}经验。", discipline=False),
                                 "good result" : GirlRecentEvent(type="good result", action="工作中表现良好", base_description="她在工作时的表现{color=[c_emerald]}%s{/color}(%s)。", discipline=False),
                                 "quest good result" : GirlRecentEvent(type="quest good result", action="任务中表现良好", base_description="%s", discipline=False),
                                 "class good result" : GirlRecentEvent(type="class good result", action="培训中学习努力", base_description="%s", discipline=False),
@@ -1442,13 +1442,13 @@ init python:
                     "{font=[gui.yishu]}{size=18}技能训练{/font}" : [GirlInteractionTopic("train", "train", "服从训练", "slave_train_obedience", act="obedience"),
                                         GirlInteractionTopic("train", "train", "体质训练", "slave_train_constitution", act="constitution")],
                     "{font=[gui.yishu]}{size=18}性爱训练{/font}" : [
-                                        GirlInteractionTopic("train", "train", "露出　　", "slave_train_sex_acts", act="naked", advanced=True),
-                                        GirlInteractionTopic("train", "train", "服侍　", "slave_train_sex_acts", act="service", advanced=True),
-                                        GirlInteractionTopic("train", "train", "性交　　", "slave_train_sex_acts", act="sex", advanced=True),
-                                        GirlInteractionTopic("train", "train", "肛交　　", "slave_train_sex_acts", act="anal", advanced=True),
+                                        GirlInteractionTopic("train", "train", "露出", "slave_train_sex_acts", act="naked", advanced=True),
+                                        GirlInteractionTopic("train", "train", "服侍", "slave_train_sex_acts", act="service", advanced=True),
+                                        GirlInteractionTopic("train", "train", "性交", "slave_train_sex_acts", act="sex", advanced=True),
+                                        GirlInteractionTopic("train", "train", "肛交", "slave_train_sex_acts", act="anal", advanced=True),
                                         GirlInteractionTopic("train", "train", "性虐", "slave_train_sex_acts", act="fetish", advanced=True),
-                                        GirlInteractionTopic("train", "train", "双飞　　", "slave_train_sex_acts", act="bisexual", advanced=True),
-                                        GirlInteractionTopic("train", "train", "群交　　", "slave_train_sex_acts", act="group", advanced=True),
+                                        GirlInteractionTopic("train", "train", "双飞", "slave_train_sex_acts", act="bisexual", advanced=True),
+                                        GirlInteractionTopic("train", "train", "群交", "slave_train_sex_acts", act="group", advanced=True),
                                     ],
                     "{font=[gui.yishu]}{size=18}特别训练{/font}" : [GirlInteractionTopic("train", "train", "消除负面癖好", "slave_remove_fixation", condition="neg_fix")],
 
@@ -1460,13 +1460,13 @@ init python:
                                                 GirlInteractionTopic("magic", "train", "性欲训练", "slave_magic", act="libido", gold_cost=20),
                                                 ],
                     "{font=[gui.yishu]}{size=18}魔法性爱训练{/font}" : [
-                                                GirlInteractionTopic("magic", "train", "露出　　", "slave_magic", act="naked", advanced=True, gold_cost=20),
-                                                GirlInteractionTopic("magic", "train", "服侍　", "slave_magic", act="service", advanced=True, gold_cost=40),
-                                                GirlInteractionTopic("magic", "train", "性交　　", "slave_magic", act="sex", advanced=True, gold_cost=50),
-                                                GirlInteractionTopic("magic", "train", "肛交　　", "slave_magic", act="anal", advanced=True, gold_cost=60),
+                                                GirlInteractionTopic("magic", "train", "露出", "slave_magic", act="naked", advanced=True, gold_cost=20),
+                                                GirlInteractionTopic("magic", "train", "服侍", "slave_magic", act="service", advanced=True, gold_cost=40),
+                                                GirlInteractionTopic("magic", "train", "性交", "slave_magic", act="sex", advanced=True, gold_cost=50),
+                                                GirlInteractionTopic("magic", "train", "肛交", "slave_magic", act="anal", advanced=True, gold_cost=60),
                                                 GirlInteractionTopic("magic", "train", "性虐", "slave_magic", act="fetish", advanced=True, gold_cost=70),
-                                                GirlInteractionTopic("magic", "train", "双飞　　", "slave_magic", act="bisexual", advanced=True, gold_cost=80),
-                                                GirlInteractionTopic("magic", "train", "群交　　", "slave_magic", act="group", advanced=True, gold_cost=100),
+                                                GirlInteractionTopic("magic", "train", "双飞", "slave_magic", act="bisexual", advanced=True, gold_cost=80),
+                                                GirlInteractionTopic("magic", "train", "群交", "slave_magic", act="group", advanced=True, gold_cost=100),
                                                 ],
 
                     "react" : ["{font=[gui.yishu]}{size=18}鼓励{/font}", "{font=[gui.yishu]}{size=18}惩罚{/font}"],
@@ -3336,12 +3336,12 @@ init -2 python:
 
     # ORG/org = Organizer, VEN/ven = venue, AVEN/aven = article + venue, LOC/loc = location, DIS/dis = district
 
-    contract_description = {"cruise" : ":ORG:正在组织一次夜间巡游:dis:以感谢其成员今年的辛勤工作。:AVEN:将在黄昏时分出发前往海湾观光，然后停泊在:LOC:旁边，享受一个娱乐之夜。",
+    contract_description = {"cruise" : ":ORG:正在:dis:组织一次夜间巡游以感谢其成员今年的辛勤工作。:AVEN:将在黄昏时分出发前往海湾观光，然后停泊在:LOC:旁边，享受一个娱乐之夜。",
                             "party" : ":ORG:正在:aven:附近举办一个奢华的派对。所有在瓒城的人都要参加，并一直狂欢到天亮之后。",
                             "ceremony" : ":ORG:选择了:aven:靠近:LOC:来庆祝他们众多的圣日之一。为了更接近他们的神，崇拜者要超越精神和肉体，沉浸在最可耻的快乐中，用大量的圣酒洗去他们的罪孽，教会在现场很方便地出售这些圣酒。",
                             "festival" : ":ORG:下个月将在:dis:举办一个巨大的节日，以庆祝新的季节、三头牛、太阳再次升起，或其他一些乡下人的胡话。不过，在:Aven:靠近:LOC:的地方会有一场大的盛宴，有食物、饮料、表演，当然还有女孩！",
                             "date" : ":ORG:已经邀请了几个朋友到:aven:旁边的:LOC:过夜，并要求有人陪伴。仪容整洁、举止得体的女仆被期望照顾他的每一个需求。",
-                            "meeting" : ":ORG:召集志同道合的贵族和外交官开会，讨论:ven:在:LOC附近的一个隐秘的地点。虽然这一严肃话题的复杂性将占据他们的大部分时间，但他们也希望主人能提供一流的服务和'缓解'紧张的方法。",
+                            "meeting" : ":ORG:召集志同道合的贵族和外交官开会，讨论:ven:在:LOC:附近的一个隐秘的地点。虽然这一严肃话题的复杂性将占据他们的大部分时间，但他们也希望主人能提供一流的服务和'缓解'紧张的方法。",
                             "magic" : ":ORG:召集所有的奥术师在:LOC:参加一个有趣的魔法之夜。在美女们的照顾下，客人们将在:aven:参加特别活动，俯瞰:DIS的壮丽景色。",
                             "orgy" : ":ORG:很高兴地宣布，在:LOC中，有一个漫长的享乐主义和色情惊喜的夜晚。聚集在:aven:，客人们将与志同道合的人和精心挑选的精英性奴一起享受禁忌的快乐。"}
 
@@ -3391,7 +3391,7 @@ init python:
                                   ),
                           Contract(type="magic", district="The Magic Gardens", archetypes = ["The Escort", "The Courtesan"],
                                    names=["魔术：集会", "巫师年会", "神奇的科学博览会", "在魔法协会的乐趣", "魔法学校对决", "巫师请"],
-                                   organizers=["风佐斯大法师", "关心女巫联盟", "亡灵巫师社交夜总会", "Karkyr的长老们", "友好邻里的黑暗崇拜者"],
+                                   organizers=["风佐斯大法师", "关心女巫联盟", "亡灵巫师社交夜总会", "卡尔基尔的长老们", "友好邻里的黑暗崇拜者"],
                                    venues=["闹鬼的庄园", "恐怖的旧房子", "高塔", "地下洞府", "最近开辟的恶魔之路", "尘封的书房"],
                                    character=sorceress,
                                    MC_event_pic="NPC/encounters/witches (1).webp",
@@ -3406,7 +3406,7 @@ init python:
                                   ]
 
     contract_task_types_order = {"greet" : 1, "serve" : 2, "mingle" : 3, "event" : 4, "private show" : 5, "fun" : 6}
-    contract_task_types_description = {"greet" : "Greet Guests", "serve" : "Serve Guests", "mingle" : "Socialize", "event" : "Participate In An Event", "private show" : "Deliver A Private Show", "fun" : "Have 'Fun'"}
+    contract_task_types_description = {"greet" : "迎接贵宾", "serve" : "服务宾客", "mingle" : "交际", "event" : "参加活动", "private show" : "举办私人演出", "fun" : "找点'乐子'"}
 
     contract_tasks = [
                         ContractTask("clean", type="serve", requirements=["job waitress", "skill obedience", "skill constitution", ], tags=(["maid"], ["obedience"], ["waitress"], ["profile"])),

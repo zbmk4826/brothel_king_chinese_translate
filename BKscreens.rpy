@@ -1933,7 +1933,7 @@ screen button_overlay(girl, context="girls"):
                 $ ttip = "未分配工作。这名女孩已被安排休息，等待进一步的指示。"
 
             elif girl.work_whore:
-                $ text1 = girl_related_dict[girl.job.capitalize()][:4] + "./Wh."
+                $ text1 = girl_related_dict[girl.job.capitalize()][:4] + "./妓女."
                 $ ttip = "工作和嫖娼。改变这个女孩的工作或者让她休息。"
 
             else:
@@ -6821,7 +6821,7 @@ screen letter(header="", message="", signature = ""): # Returns True upon closin
         xsize 0.75
 
         hbox xfill True:
-            text header xalign 0.0 size res_font(32) font "1.TTF" color c_black
+            text header xalign 0.0 size res_font(32) font "bk.TTF" color c_black
             fixed fit_first True xalign 1.0 yalign 0.5:
                 use close(act=Return(True), name = "close")
 
@@ -6960,7 +6960,7 @@ screen resource_exchange():
 
                 if resource.rank <= story_flags["builder license"]:
 
-                    button xfill True ysize yres(60) action (SetScreenVariable("source", resource), SetScreenVariable("source_name", resource.name), SetScreenVariable("source_nb", 0), SelectedIf(source==resource)) tooltip ("用 " + r + " 交换其他资源"):
+                    button xfill True ysize yres(60) action (SetScreenVariable("source", resource), SetScreenVariable("source_name", resource.name), SetScreenVariable("source_nb", 0), SelectedIf(source==resource)) tooltip ("用 " + resource_name_dict[r] + " 交换其他资源"):
                         selected_background c_emerald
                         has hbox xfill True yfill True spacing 10
                         add resource.pic.get(*res_tb(40)) yalign 0.5

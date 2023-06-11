@@ -1648,7 +1648,7 @@ init -2 python:
                 status_list.append(["not_naked.webp", self.fullname + "不是{b}裸体{/b} (这对你来说显然是个问题)。"])
 
             if [fix.name for fix in self.neg_fixations if self.personality_unlock[fix.name]] and persistent.show_girl_status["negative fixation"]:
-                status_list.append(["negfix.webp", "你得知" + self.fullname + "对性行为有一个{b}负面想法{/b}。"])
+                status_list.append(["negfix.webp", "你得知" + self.fullname + "对性行为有一个{b}负面刻板印象{/b}。"])
 
             return status_list
 
@@ -1703,7 +1703,7 @@ init -2 python:
             if [fix.name for fix in self.neg_fixations if self.personality_unlock[fix.name]]:
                 if r:
                     r += "，"
-                r += "对性行为有一个{b}负面想法{/b}"
+                r += "对性行为有一个{b}负面刻板印象{/b}"
 
             return "当前状态：" + r + "。"
 

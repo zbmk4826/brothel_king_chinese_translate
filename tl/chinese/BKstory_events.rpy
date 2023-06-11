@@ -20566,7 +20566,7 @@ translate chinese farm_first_stallion_6f576d7e:
 translate chinese farm_first_stallion_6b594460:
 
     # you "'Welcoming your first stallion in the family, a friendly guide' from Blood Orange Inc., sponsored by the Blood Islands' Tourist Office."
-    you "'Welcoming your first stallion in the family, a friendly guide' from Blood Orange Inc., sponsored by the Blood Islands' Tourist Office."
+    you "'欢迎你迎来家里的第一只种马，来自血橙公司的友好导游，由血腥群岛旅游局赞助。"
 
 # game/BKstory_events.rpy:10321
 translate chinese farm_first_stallion_06b26405:

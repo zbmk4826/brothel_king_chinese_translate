@@ -7268,10 +7268,10 @@ init -2 python:
         def get_description(self, base_text): # can be called from outside the Contract object to convert any string (may not be necessary)
             desc = base_text.replace(":ORG:", capitalize(self.organizer))
             desc = desc.replace(":org:", self.organizer)
-            desc = desc.replace(":DIS:", self.district)
-            desc = desc.replace(":dis:", self.district.lower())
-            desc = desc.replace(":LOC:", self.location.name)
-            desc = desc.replace(":loc:", self.location.name.lower())
+            desc = desc.replace(":DIS:", location_name_dict[self.district])
+            desc = desc.replace(":dis:", location_name_dict[self.district])
+            desc = desc.replace(":LOC:", location_name_dict[self.location.name])
+            desc = desc.replace(":loc:", location_name_dict[self.location.name])
             desc = desc.replace(":VEN:", capitalize(self.venue))
             desc = desc.replace(":ven:", self.venue.lower())
             desc = desc.replace(":AVEN:", capitalize(self.a_venue))
@@ -7282,13 +7282,13 @@ init -2 python:
             spe, target = self.special
 
             if spe == "trait":
-                return "{b}特质{/b}：" + and_text([t.name for t in target], "或")
+                return "{b}特质{/b}：" + and_text([girl_related_dict[f.name] for t in target], "或")
 
             elif spe == "perk":
                 return "{b}奖励{/b}：" + target.name
 
             elif spe == "fix":
-                return "{b}正面癖好{/b}：" + and_text([f.name.capitalize() for f in target], "或")
+                return "{b}正面癖好{/b}：" + and_text([girl_related_dict[f.name] for f in target], "或")
 
             elif spe == "farm":
                 return "{b}弱点{/b}：" + target.capitalize()
@@ -7485,11 +7485,11 @@ init -2 python:
 
             for req in self.requirements:
                 if req.startswith("job"):
-                    r.append("{b}"+ req[4:].capitalize() + "{/b} %s or better" % ("{image=img_star}" * self.limits[req]))
+                    r.append("{b}"+ girl_related_dict[req[4:].capitalize()] + "{/b} %s 或更好" % ("{image=img_star}" * self.limits[req]))
                 elif req.startswith("skill"):
-                    r.append("{b}" + stat_name_dict[req[6:].capitalize()] +  " " + str(self.limits[req]) + "{/b} or better")
+                    r.append("{b}" + stat_name_dict[req[6:].capitalize()] +  " " + str(self.limits[req]) + "{/b} 或更好")
                 elif req.startswith("pref"):
-                    r.append("{b}" + req[5:].capitalize() + " preference: " + self.limits[req].capitalize() + "{/b} or better")
+                    r.append("{b}" + girl_related_dict[req[5:].capitalize()] + " 偏好: " + self.limits[req].capitalize() + "{/b} 或更好")
 
             return r
 

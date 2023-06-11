@@ -127,21 +127,21 @@ label traitking_day: # day: triggers after morning, but still before player can 
                     bedroom_pic = brothel.bedroom_type.get_pic(x=config.screen_width, y=config.screen_height)
                     
                     if girl.has_trait("Genius") and (girl.perk_points + len(girl.perks)) <= 4 + (girl.level // 2):
-                        result_comment = "an extra perk point."
+                        result_comment = "获得了一个额外特质点。"
                         girl.perk_points += 1
                    
                     elif sum([t for o, t in girl.jp.items()]) <= 1000:
                         result_target = rand_choice(girl.jp.items())
-                        result_comment = "increased familiarity with " + result_target[0] + " tasks."
+                        result_comment = "更加熟悉 " + girl_related_dict[result_target[0]] + " 技巧."
                         girl.jp[result_target[0]] += 25
                         
                     else:
                         result_target = rand_choice(girl.jp.items())
-                        result_comment = "increased familiarity with " + result_target[0] + " tasks."
+                        result_comment = "更加熟悉 " + girl_related_dict[result_target[0]] + " 技巧."
                         girl.jp[result_target[0]] += 10
                         
                     renpy.show_screen("show_event", girl_pic, x=config.screen_width, y=int(config.screen_height*0.8), bg=bedroom_pic)
-                    renpy.say("",girl.name + " has been studying vigorously in her leisure time, resulting in " + result_comment)
+                    renpy.say("",girl.name + " 她在闲暇时间一直在努力学习，结果 " + result_comment)
                     renpy.hide_screen("show_event")
                     
             if girl.has_trait("Prodigy"): # Prodigy trait

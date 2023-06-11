@@ -10732,7 +10732,7 @@ translate chinese c1_trial_a0d6289f:
 translate chinese c1_trial_46fdd2f6:
 
     # "She holds the dagger to the captain's gut."
-    "她把匕首抵在船长的肚子上。"
+    "她把匕首抵在上尉的肚子上。"
 
 # game/BKchapter1.rpy:5665
 translate chinese c1_trial_d5c2757f:

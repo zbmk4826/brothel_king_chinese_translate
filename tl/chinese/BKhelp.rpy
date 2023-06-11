@@ -802,7 +802,7 @@ translate chinese group_introduction_54670519:
 translate chinese group_introduction_b9132224:
 
     # sill "Group girls are able to have orgies with several customers. For that, you will need {b}at least two willing customers{/b} that want the same sex act."
-    sill "群交姑娘能够同时与多个客人纵情狂欢。为此，你需要{b至少有两个愿意进行相同性行为的客户{/b}。"
+    sill "群交姑娘能够同时与多个客人纵情狂欢。为此，你需要{b}至少有两个愿意进行相同性行为的客户{/b}。"
 
 # game/BKhelp.rpy:595
 translate chinese group_introduction_b6488f89:

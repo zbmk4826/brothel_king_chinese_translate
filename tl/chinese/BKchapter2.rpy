@@ -4708,7 +4708,7 @@ translate chinese c2_gio_meeting_826fe1ab:
 translate chinese c2_gio_meeting_1aa413d1:
 
     # you "No, Gio. You're {i}not{/i} right. And I don't want to picture you in that situation for even a second... *retch*"
-    you "不行，吉欧。你{ i }错{/ i }了。我一秒钟都不想想象你在那种情况下的样子……*恶心*"
+    you "不行，吉欧。你{i}错{/i}了。我一秒钟都不想想象你在那种情况下的样子……*恶心*"
 
 # game/BKchapter2.rpy:2628
 translate chinese c2_gio_meeting_078df465:
@@ -4852,7 +4852,7 @@ translate chinese c2_gio_meeting_89e6ac0d:
 translate chinese c2_gio_meeting_951ffe30:
 
     # gio "I specifically inquired: they are after {b}you{/b}, nothing was said of your associates... So I figure, I should be safe from harm... *sweat*"
-    gio "我特别询问：她们正在在追杀{ b } 你 { /b} ，并未提及您的合作伙伴…所以我想, 我应该安全无恙… *汗水*"
+    gio "我特别询问：她们正在在追杀{b} 你 {/b} ，并未提及您的合作伙伴…所以我想, 我应该安全无恙… *汗水*"
 
 # game/BKchapter2.rpy:2676
 translate chinese c2_gio_meeting_eb211c67:
@@ -5020,7 +5020,7 @@ translate chinese c2_suzume_invitation_6f12cd3c:
 translate chinese c2_suzume_invitation_9c3ac752:
 
     # you "Aaah! Such a nice, fresh [season] morning!"
-    you "啊！多美好、清新的[季节]早晨啊！"
+    you "啊！多美好、清新的[season]早晨啊！"
 
 # game/BKchapter2.rpy:2756
 translate chinese c2_suzume_invitation_8054ccf1:
@@ -5188,7 +5188,7 @@ translate chinese c2_suzume_invitation_0ac198df:
 translate chinese c2_suzume_invitation_95e3cb0f:
 
     # you "(But wait... The message explicitly says it's {i}totally{/i} not a trap, so it can't be...)"
-    you "（但等等...消息明确说它<i>完全</i>不是个陷阱，所以不可能是...）"
+    you "（但等等...消息明确说它{i}完全{/i}不是个陷阱，所以不可能是...）"
 
 # game/BKchapter2.rpy:2831
 translate chinese c2_suzume_invitation_f9484665:
@@ -5482,7 +5482,7 @@ translate chinese c2_suzume_forest1_5665837e:
 translate chinese c2_suzume_forest1_7646ddd0:
 
     # suzume "Mister? I think your nose is bleeding..."
-    suzume "Mister？我觉得您的鼻子在流血..."
+    suzume "先生？我觉得您的鼻子在流血..."
 
 # game/BKchapter2.rpy:2985
 translate chinese c2_suzume_forest1_92b6e548:
@@ -5656,7 +5656,7 @@ translate chinese c2_suzume_forest1_8f7e250b:
 translate chinese c2_suzume_forest1_4dc9f615:
 
     # suzume "Trust me, you're going to love this {i}to death{/i}..."
-    suzume "相信我，您会爱上这个，{I}直到死{/I}..."
+    suzume "相信我，您会爱上这个，{i}直到死{/i}..."
 
 # game/BKchapter2.rpy:3064
 translate chinese c2_suzume_forest1_72e2de01:
@@ -5668,7 +5668,7 @@ translate chinese c2_suzume_forest1_72e2de01:
 translate chinese c2_suzume_forest1_2e848342:
 
     # suzume "Oh yes, Mister, this is so much fun! Let's keep going just a bit more... {i}The end is near{/i}..."
-    suzume "哦，太棒了，先生，这太爽了！让我们再进一步... {i}马上就结束了{/ i}..."
+    suzume "哦，太棒了，先生，这太爽了！让我们再进一步... {i}马上就结束了{/i}..."
 
 # game/BKchapter2.rpy:3068
 translate chinese c2_suzume_forest1_cdf3f4f3:
@@ -5680,7 +5680,7 @@ translate chinese c2_suzume_forest1_cdf3f4f3:
 translate chinese c2_suzume_forest1_e1106824:
 
     # suzume "Here it comes!!! The {i}five-point pussy exploding dick technique{/i}!!!"
-    suzume "要来了！！！{i}五重夹爆鸡巴之术{/ i}！！！（对不起，我不知道怎么翻译了，原谅我CPU烧了）"
+    suzume "要来了！！！{i}五重夹爆鸡巴之术{/i}！！！（对不起，我不知道怎么翻译了，原谅我CPU烧了）"
 
 # game/BKchapter2.rpy:3074
 translate chinese c2_suzume_forest1_caa3fc7d:
@@ -5788,7 +5788,7 @@ translate chinese c2_suzume_forest1_952c333c:
 translate chinese c2_suzume_forest1_ba5a8bdb:
 
     # you "Oh! Hey, it's Suzume!"
-    you "哦！嘿，铃音！"
+    you "哦！嘿，铃女！"
 
 # game/BKchapter2.rpy:3133
 translate chinese c2_suzume_forest1_78464e3c:
@@ -6514,7 +6514,7 @@ translate chinese c2_suzume_forest2_66bdc409_1:
 translate chinese c2_suzume_forest2_e9dc93b2:
 
     # you "Suzume?"
-    you "……铃音？"
+    you "……铃女？"
 
 # game/BKchapter2.rpy:3533
 translate chinese c2_suzume_forest2_5eb0631b:
@@ -7420,7 +7420,7 @@ translate chinese c2_suzume_brothel_23ed3c64:
 translate chinese c2_suzume_brothel_a1dcc137:
 
     # you "Oh, I'm close... Suzume..."
-    you "哦，我快射了...铃音..."
+    you "哦，我快射了...铃女..."
 
 # game/BKchapter2.rpy:3919
 translate chinese c2_suzume_brothel_0aef0aac:
@@ -9904,7 +9904,7 @@ translate chinese c2_suzume_onsen_62d26c86:
 translate chinese c2_suzume_onsen_3156c832:
 
     # you "Suzume! What are you doing in my backyard pool, naked, and causing a riot?"
-    you "铃音！你光着身子在我后院的温泉里闹事是怎么回事？"
+    you "铃女！你光着身子在我后院的温泉里闹事是怎么回事？"
 
 # game/BKchapter2.rpy:4998
 translate chinese c2_suzume_onsen_54780dd9:
@@ -10126,7 +10126,7 @@ translate chinese c2_suzume_onsen_af689775:
 translate chinese c2_suzume_onsen_02eb2678:
 
     # you "Suzume..."
-    you "铃音..."
+    you "铃女..."
 
 # game/BKchapter2.rpy:5117
 translate chinese c2_suzume_onsen_822f0877:
@@ -10342,7 +10342,7 @@ translate chinese c2_suzume_onsen_2164466f:
 translate chinese c2_suzume_onsen_85097159:
 
     # you "Suzume!" with vpunch
-    you "铃音!" with vpunch
+    you "铃女!" with vpunch
 
 # game/BKchapter2.rpy:5207
 translate chinese c2_suzume_onsen_3e66aaf7:
@@ -10360,7 +10360,7 @@ translate chinese c2_suzume_onsen_e78e649b:
 translate chinese c2_suzume_onsen_3ca241ec:
 
     # you "Suzume! Are you all right?"
-    you "铃音！你还好吗？"
+    you "铃女！你还好吗？"
 
 # game/BKchapter2.rpy:5213
 translate chinese c2_suzume_onsen_983d0c0a:
@@ -10384,7 +10384,7 @@ translate chinese c2_suzume_onsen_88e2ee61:
 translate chinese c2_suzume_onsen_88d70762:
 
     # you "Suzume! You're okay!"
-    you "铃音！没事吧！"
+    you "铃女！没事吧！"
 
 # game/BKchapter2.rpy:5221
 translate chinese c2_suzume_onsen_fd76e843:
@@ -10594,7 +10594,7 @@ translate chinese ninja_hunt_fe0e1c0c:
 translate chinese ninja_hunt_intro_36e59502:
 
     # you "Suzume, wait! Where is she?"
-    you "铃音，等等！她在哪里？"
+    you "铃女，等等！她在哪里？"
 
 # game/BKchapter2.rpy:5406
 translate chinese ninja_hunt_intro_faa19272:
@@ -10906,7 +10906,7 @@ translate chinese intercept_narika_e98dcb19:
 translate chinese intercept_narika_32b6bc74:
 
     # narika "Suzume! The Air School slut!"
-    narika "风之流的那个婊子·铃音!"
+    narika "风之流的那个婊子·铃女!"
 
 # game/BKchapter2.rpy:5660
 translate chinese intercept_narika_9cc5fe52:
@@ -11194,7 +11194,7 @@ translate chinese intercept_narika_c20a606b:
 translate chinese intercept_narika_b648dd2d:
 
     # you "Ahem, Suzume, thanks for divulging our secret..."
-    you "嗯哼, 铃音, 我可真得谢谢泄露了我们的秘密......"
+    you "嗯哼, 铃女, 我可真得谢谢泄露了我们的秘密......"
 
 # game/BKchapter2.rpy:5787
 translate chinese intercept_narika_1de173d8:
@@ -11986,7 +11986,7 @@ translate chinese intercept_narika_627123d8:
 translate chinese intercept_narika_85097159:
 
     # you "Suzume!" with vpunch
-    you "铃音!" with vpunch
+    you "铃女!" with vpunch
 
 # game/BKchapter2.rpy:6128
 translate chinese intercept_narika_fb64429f:
@@ -12016,7 +12016,7 @@ translate chinese intercept_narika_7ee27247:
 translate chinese intercept_narika_795f0f31:
 
     # you "Suzume! Are you alright?"
-    you "铃音！ 你还好吗？"
+    you "铃女！ 你还好吗？"
 
 # game/BKchapter2.rpy:6144
 translate chinese intercept_narika_92421337:
@@ -12322,7 +12322,7 @@ translate chinese c2_narika_H1_f56031ff:
 translate chinese c2_narika_H1_f7d2c2ad:
 
     # you "(Did you hear that? She's making a move on her mark! Suzume?)"
-    you "（你听到了吗？ 她对目标采取行动！ 铃音? ）"
+    you "（你听到了吗？ 她对目标采取行动！ 铃女? ）"
 
 # game/BKchapter2.rpy:6299
 translate chinese c2_narika_H1_9e88775f:
@@ -14566,7 +14566,7 @@ translate chinese intercept_haruka_5b40f55d:
 translate chinese intercept_haruka_d53d7db3:
 
     # haruka "Suzume? I've heard your name. I'm Haruka Takamori."
-    haruka "铃音？我听过你的名字。我是鹰守遥（出处：超昂閃忍ハルカ）。"
+    haruka "铃女？我听过你的名字。我是鹰守遥（出处：超昂閃忍ハルカ）。"
 
 # game/BKchapter2.rpy:7373
 translate chinese intercept_haruka_1bc8ef68:

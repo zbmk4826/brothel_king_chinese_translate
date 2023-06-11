@@ -472,7 +472,7 @@ translate chinese slave_chat_tastes_6cfd37d9:
 translate chinese slave_chat_tastes_3ac8bfbc:
 
     # "You have discovered [girl.name]'s fixation with [fix.name]."
-    "你发现了[girl.name]对[fix.name]的迷恋。"
+    "你发现了[girl.name]对[xxx3]的迷恋。"
 
 # game/BKinteractions.rpy:1045
 translate chinese slave_chat_tastes_3f2466f8:
@@ -484,7 +484,7 @@ translate chinese slave_chat_tastes_3f2466f8:
 translate chinese slave_chat_tastes_2c0cf15f:
 
     # "You have discovered [girl.name]'s disgust for [fix.name]."
-    "你发现了[girl.name]对[fix.name]的厌恶。"
+    "你发现了[girl.name]对[xxx3]的厌恶。"
 
 # game/BKinteractions.rpy:1060
 translate chinese slave_chat_tastes_743d9504:
@@ -670,37 +670,37 @@ translate chinese slave_train_sex_acts_cbaff687:
 translate chinese slave_train_sex_acts_99742c96:
 
     # "She refuses you."
-    "好吧...随你的便。"
+    "她拒绝你。"
 
 # game/BKinteractions.rpy:1302
 translate chinese slave_remove_fixation_8a1b364c:
 
     # "[girl.name] was pushed too hard, she hates [fix.name] with all her heart now. You cannot do anything about it."
-    "我简直不敢相信现在的奴隶...好吧！"
+    "[girl.name]被逼得太紧了，她现在打心底讨厌[fix.name]。你对此无能为力。"
 
 # game/BKinteractions.rpy:1315
 translate chinese slave_remove_fixation_44008d8e:
 
     # "[girl.fullname] isn't comfortable enough with any of the required sex acts to try to remove this fixation."
-    "ne:哼。这次我放过你。你欠我一个人情。"
+    "[girl.fullname]对任何必要的性爱行为都感到不舒服，你要试图消除这种固化。"
 
 # game/BKinteractions.rpy:1329
 translate chinese slave_remove_fixation_70c73ec2:
 
     # girl.char "Uh, [fix.short_name]? Well... Okay... {color=[c_green]}*accepted*{/color}"
-    girl.char "gd:好吧，我不会强迫你做你不喜欢的事情。"
+    girl.char "嗯,[fix_chinese_name]?嗯…好吧……{color=[c_green]}*接受*{/color}"
 
 # game/BKinteractions.rpy:1333
 translate chinese slave_remove_fixation_b8c47446:
 
     # girl.char "Oh no, Master, not [fix.short_name]! Let's do something else... {color=[c_lightred]}*resisted*{/color}"
-    girl.char "ev:该死，这次我就先放过你...但别考验我的耐心。"
+    girl.char "哦，不，主人，不要[fix_chinese_name]!求您换一个……{color=[c_lightred]}*抵制*{/color}"
 
 # game/BKinteractions.rpy:1337
 translate chinese slave_remove_fixation_b2b63228:
 
     # girl.char "[fix.short_name]? No, no way!!! {color=[c_lightred]}*refused*{/color}"
-    girl.char "她拒绝了你。"
+    girl.char "[fix_chinese_name]? 不,没门!!! {color=[c_lightred]}*拒绝*{/color}"
 
 # game/BKinteractions.rpy:1342
 translate chinese slave_remove_fixation_11fdb519:
@@ -718,7 +718,7 @@ translate chinese slave_remove_fixation_c1dc810d:
 translate chinese slave_remove_fixation_798ef7c1:
 
     # you "I don't care if you like [fix.short_name] or not, slave. When you work for me, you have to do anything I tell you."
-    you "我不在乎你是否喜欢[fix.short_name]，奴隶。当你在为我工作时，你必须服从我所有的命令。"
+    you "我不在乎你是否喜欢[fix_chinese_name]，奴隶。当你在为我工作时，你必须服从我所有的命令。"
 
 # game/BKinteractions.rpy:1363
 translate chinese slave_remove_fixation_3d88aec3:
@@ -1894,7 +1894,7 @@ translate chinese slave_punish_698fb4d9:
 translate chinese slave_punish_f4350b26:
 
     # "Your punishment is less effective because she has already been chastised enough recently."
-    "3天"
+    "你的惩罚没那么有效，因为她最近已经被惩罚的够多了。"
 
 # game/BKinteractions.rpy:3052
 translate chinese slave_rape_98f56acc:
@@ -1905,8 +1905,8 @@ translate chinese slave_rape_98f56acc:
 # game/BKinteractions.rpy:3067
 translate chinese slave_rape_82edb748:
 
-    # "You don't know what it is she hates about [text1], so you just try something at random, to see how she handles [fix.name]."
-    "你不知道她讨厌[text1]的哪一点，所以你随便尝试了一下，看看她是如何应对[fix.name]的。"
+    # "You don't know what it is she hates about [text1], so you just try something at random, to see how she handles [girl_related_dict[fix.name]]."
+    "你不知道她讨厌[text1]的哪一点，所以你随便尝试了一下，看看她是如何应对[xxx4]的。"
 
 # game/BKinteractions.rpy:3073
 translate chinese slave_rape_9b162712:
@@ -2080,7 +2080,7 @@ translate chinese slave_rape_195304f8:
 translate chinese slave_rape_e589ac84:
 
     # "[text1]"
-    "[文本1]"
+    "[text1]"
 
 # game/BKinteractions.rpy:3215
 translate chinese slave_rape_403590ba:
@@ -5446,7 +5446,7 @@ translate chinese slave_story6_e5093cf0:
 translate chinese slave_story6_a4161c2a:
 
     # girl.char "But the old gentleman returned several times after that. Every time, I was forced to be courteous, and exchange pleasantries with him. I didn't know what was going on, but I went along with it..."
-    girl.char "但那个老审视在那之后又来了好几次。每次，我都被迫谦恭有礼，和他寒暄几句。我不知道这是怎么回事，但我还是照做了..."
+    girl.char "但那个老绅士在那之后又来了好几次。每次，我都被迫谦恭有礼，和他寒暄几句。我不知道这是怎么回事，但我还是照做了..."
 
 # game/BKinteractions.rpy:4910
 translate chinese slave_story6_76091049:
@@ -9478,7 +9478,7 @@ translate chinese strings:
 
     # game/BKinteractions.rpy:268
     old "Ignore her and proceed"
-    new "无视她，继续往前走"
+    new "别理她，继续"
 
     # game/BKinteractions.rpy:483
     old "I see"
@@ -9629,7 +9629,7 @@ translate chinese strings:
     new "1天"
 
     # game/BKinteractions.rpy:3044
-    old "You know that [girl.name] has [reaction] for [act] acts. Do you want to try to use it against her?"
+    old "你知道[girl.name]对[act]有[reaction]。你想以此来对付她吗?"
     new "7天"
 
     # game/BKinteractions.rpy:3383
@@ -9877,4 +9877,18 @@ translate chinese slave_story8_539e6d9c:
 
     # girl.char "You remember, I told you I was working for a powerful witch in [girl.origin_chinese]."
     girl.char "你记得，我告诉过你我在[girl.origin_chinese]为一位强大的女巫工作。"
+
+# TODO: Translation updated at 2023-06-10 23:53
+
+# game/BKinteractions.rpy:3068
+translate chinese slave_rape_2e05c9a0:
+
+    # "You don't know what it is she hates about [text1], so you just try something at random, to see how she handles [xxx4]."
+    "你不知道她讨厌[text1]的哪一点，所以你随便尝试了一下，看看她是如何应对[xxx4]的。"
+
+translate chinese strings:
+
+    # game/BKinteractions.rpy:3044
+    old "You know that [girl.name] has [reaction] for [act] acts. Do you want to try to use it against her?"
+    new "你知道[girl.name]对[act_chinese_name][reaction]。你想以此来对付她吗?"
 

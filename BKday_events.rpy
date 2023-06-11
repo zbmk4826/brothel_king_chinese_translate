@@ -2917,17 +2917,17 @@ label random_night_girl_event(girl, room):
             for stat, value in changed_stats:
                 girl.change_stat(stat, value)
                 if value > 5:
-                    renpy.say("", "[girl.name]的[stat]技能大幅提升。")
+                    renpy.say("", "[girl.name]的"+girl_related_dict[stat]+"技能大幅提升。")
                 elif value > 2:
-                    renpy.say("", "[girl.name]的[stat]技能提升了。")
+                    renpy.say("", "[girl.name]的"+girl_related_dict[stat]+"技能提升了。")
                 elif value > 0:
-                    renpy.say("", "[girl.name]的[stat]技能略有提升。")
+                    renpy.say("", "[girl.name]的"+girl_related_dict[stat]+"技能略有提升。")
                 elif value < -5:
-                    renpy.say("", "[girl.name]的[stat]技能大幅下降。")
+                    renpy.say("", "[girl.name]的"+girl_related_dict[stat]+"技能大幅下降。")
                 elif value < -2:
-                    renpy.say("", "[girl.name]的[stat]技能下降了。")
+                    renpy.say("", "[girl.name]的"+girl_related_dict[stat]+"技能下降了。")
                 elif value < 0:
-                    renpy.say("", "[girl.name]的[stat]技能略有下降。")
+                    renpy.say("", "[girl.name]的"+girl_related_dict[stat]+"技能略有下降。")
 
     return
 
