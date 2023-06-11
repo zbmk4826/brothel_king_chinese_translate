@@ -8003,7 +8003,7 @@ screen contract_tab(contract, x=320, active=False):
             has vbox spacing 12
 
             vbox spacing 3:
-                text "" + contract.location.name drop_shadow (1, 1) font "DejaVuSans.TTF" color c_brown
+                text "" + location_name_dict[contract.location.name] drop_shadow (1, 1) font "DejaVuSans.TTF" color c_brown
                 text contract.title drop_shadow (1, 1) font "DejaVuSans.TTF" color c_prune
 
             vbox spacing 3:

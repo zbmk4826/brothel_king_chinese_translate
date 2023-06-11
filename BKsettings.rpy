@@ -350,8 +350,8 @@ init -4 python:
                         ## 训练内容 ##
                         "Libido" : "照看仆役",
                         "libido" : "照看仆役",
-                        "Sensitivity" : "服侍Gizel",
-                        "sensitivity" : "服侍Gizel",
+                        "Sensitivity" : "服侍吉泽尔",
+                        "sensitivity" : "服侍吉泽尔",
                         "Obedience" : "打扫农场",
                         "obedience" : "打扫农场",
                         "Constitution" : "外出工作",

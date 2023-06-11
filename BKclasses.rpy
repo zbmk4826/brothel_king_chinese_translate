@@ -7282,7 +7282,7 @@ init -2 python:
             spe, target = self.special
 
             if spe == "trait":
-                return "{b}特质{/b}：" + and_text([girl_related_dict[f.name] for t in target], "或")
+                return "{b}特质{/b}：" + and_text([trait_name_dict[t.name] for t in target], "或")
 
             elif spe == "perk":
                 return "{b}奖励{/b}：" + target.name
@@ -7291,7 +7291,7 @@ init -2 python:
                 return "{b}正面癖好{/b}：" + and_text([girl_related_dict[f.name] for f in target], "或")
 
             elif spe == "farm":
-                return "{b}弱点{/b}：" + target.capitalize()
+                return "{b}弱点{/b}：" + farm_related_dict[target]
 
             elif spe == "item":
                 return "{b}必须穿着{/b}：" + target.name
@@ -7485,11 +7485,11 @@ init -2 python:
 
             for req in self.requirements:
                 if req.startswith("job"):
-                    r.append("{b}"+ girl_related_dict[req[4:].capitalize()] + "{/b} %s 或更好" % ("{image=img_star}" * self.limits[req]))
+                    r.append("{b}"+ girl_related_dict[req[4:].capitalize()] + "{/b} %s 或更高" % ("{image=img_star}" * self.limits[req]))
                 elif req.startswith("skill"):
-                    r.append("{b}" + stat_name_dict[req[6:].capitalize()] +  " " + str(self.limits[req]) + "{/b} 或更好")
+                    r.append("{b}" + stat_name_dict[req[6:].capitalize()] +  " " + str(self.limits[req]) + "{/b} 或更高")
                 elif req.startswith("pref"):
-                    r.append("{b}" + girl_related_dict[req[5:].capitalize()] + " 偏好: " + self.limits[req].capitalize() + "{/b} 或更好")
+                    r.append("{b}" + girl_related_dict[req[5:].capitalize()] + "偏好程度:" + girl_related_dict[self.limits[req].capitalize()] + "{/b}或更高")
 
             return r
 

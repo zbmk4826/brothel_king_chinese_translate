@@ -1049,7 +1049,7 @@ label c2_princess_letter:
 
             "Gio grumbles, but he's too horny to pass on a free hooker."
 
-            $ girl = long_menu("Choose which girl will entertain Gio", [(g.name, g) for g in MC.girls])
+            $ girl = long_menu("选一个姑娘来招待吉欧", [(g.name, g) for g in MC.girls])
             $ girl2 = None
 
             you "[girl.name]! Come over here."
@@ -1084,8 +1084,8 @@ label c2_princess_letter:
 
             "He seems to have forgotten all about Sill."
 
-            $ girl = long_menu("Choose which girl will entertain Gio (first girl)", [(g.name, g) for g in MC.girls])
-            $ girl2 = long_menu("Choose which girl will entertain Gio (second girl)", [(g.name, g) for g in MC.girls if g != girl])
+            $ girl = long_menu("选一个姑娘来招待吉欧 (第一个姑娘)", [(g.name, g) for g in MC.girls])
+            $ girl2 = long_menu("选一个姑娘来招待吉欧 (第二个姑娘)", [(g.name, g) for g in MC.girls if g != girl])
 
             you "[girl.name]! [girl2.name]! Come here, darlings."
 
