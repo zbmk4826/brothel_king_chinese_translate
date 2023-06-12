@@ -358,7 +358,7 @@ init -3 python:
                     "在阶级最低时，女孩的技能限制在50。每增加一级，技能上限提高50点。",
                     "当一个女孩升级时，她会根据她当前的等级获得技能点。而且，她每升两级就会获得额外奖励。",
                     "每升5级，就会有一个女孩获得额外的奖励点。",
-                    "无论如何，一位女孩的等级不可能超过25级。",
+                    "无论如何，一位女孩的等级不可能超过100级。",
                     "我听说过在奴隶公会里关于一个神秘阶级的谣言，它的评价甚至高于“S”。",
                     "求你了，主人，千万不要让你的账户变成负数！我听说有些人会在你欠债的时候用一些见不得人的交易来引诱你，但那只会给你带来更多的麻烦。",
                     "永远不要相信精灵。别跟我说我没警告过你。",
@@ -1519,7 +1519,7 @@ init python:
                                                 GirlInteractionTopic("chat", "chat", "她喜欢什么　", "free_chat_likes", love_test=10),
                                                 GirlInteractionTopic("chat", "chat", "她不喜欢什么", "free_chat_dislikes", love_test=10),
                                                 ],
-                            "fun" : ["{font=[gui.yishu]}{size=18}笑话{/font}", "{font=[gui.yishu]}{size=18}接触{/font}", "{font=[gui.yishu]}{size=18}PLAY{/font}"],
+                            "fun" : ["{font=[gui.yishu]}{size=18}笑话{/font}", "{font=[gui.yishu]}{size=18}接触{/font}", "{font=[gui.yishu]}{size=18}寻欢{/font}"],
                             "{font=[gui.yishu]}{size=18}笑话{/font}" : [
                                         GirlInteractionTopic("fun", "joke", "无关紧要", "free_joke_harmless", love_test=15),
                                         GirlInteractionTopic("fun", "joke", "成人", "free_joke_adult", love_test=15),
@@ -1533,12 +1533,12 @@ init python:
                                         GirlInteractionTopic("fun", "touch", "抚摸她的胸部", "free_touch_breasts", love_test=60, relationship_level=3),
                                         GirlInteractionTopic("fun", "touch", "触摸她的私处", "free_touch_pussy", love_test=65, relationship_level=3),
                                         ],
-                            "{font=[gui.yishu]}{size=18}PLAY{/font}" : [
+                            "{font=[gui.yishu]}{size=18}寻欢{/font}" : [
                                         GirlInteractionTopic("fun", "play", "让她脱光衣服", "free_play", act="naked", relationship_level=4),
                                         GirlInteractionTopic("fun", "play", "要求她性服侍", "free_play", act="service", relationship_level=4),
                                         GirlInteractionTopic("fun", "play", "要求她来做爱", "free_play", act="sex", relationship_level=4),
                                         GirlInteractionTopic("fun", "play", "要求进行肛交", "free_play", act="anal", relationship_level=4),
-                                        GirlInteractionTopic("fun", "play", "要求她来SM　", "free_play", act="fetish", relationship_level=4),
+                                        GirlInteractionTopic("fun", "play", "要求她来SM ", "free_play", act="fetish", relationship_level=4),
                                         ],
                             "flirt" : ["{font=[gui.yishu]}{size=18}赞美{/font}", "{font=[gui.yishu]}{size=18}关于性的话题{/font}"],
 

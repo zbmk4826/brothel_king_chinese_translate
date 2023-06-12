@@ -41,11 +41,11 @@ label chris_jobmod_init():
     
         # Maximum Customers for this Job. This also affects XP, JP and payment per customer, so that these stay roughly equal per night for each job. (As long as a girl has max Customers) Does not affect tiredness!
         act_max_customers_modifier = {
-                                "waitress" : 0.75,
+                                "waitress" : 1.0,
                                 "dancer" : 1.0,
-                                "masseuse" : 0.5,
-                                "geisha" : 0.75,
-                                "whore" : 1.0
+                                "masseuse" : 1.0,
+                                "geisha" : 1.0,
+                                "whore" : 1.2
         }
 
         # Base tiredness per customer is 5 for Jobs, 10 for Whore. This (multiplicative) modifier changes the tiredness, nothing else.

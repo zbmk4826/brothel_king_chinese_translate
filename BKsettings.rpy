@@ -409,7 +409,7 @@ init -4 python:
                         "close" : "关闭",
                         "Next" : "下一个",
                         "next" : "下一个",
-
+                        ## 互动选项1 ##
                         "Chat" : "交谈",
                         "chat" : "交谈",
                         "Train" : "训练",
@@ -420,6 +420,16 @@ init -4 python:
                         "react" : "行动",
                         "Misc" : "杂项",
                         "misc" : "杂项",
+                        ## 互动选项2 ##
+                        "touch" : "接触",
+                        "joke" : "笑话",
+                        "play" : "寻欢",
+                        "compliment" : "赞美",
+                        "chat about sex" : "关于性的话题",
+                        "gift" : "送她礼物",
+                        "gold" : "给她金币",
+                        "reward" : "鼓励",
+                        "discipline" : "惩罚",
                         }
 
     ## 初始创建界面 ##

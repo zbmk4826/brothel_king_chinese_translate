@@ -267,14 +267,14 @@ init -1 python:
                 )
                 
     # custom dialogue: new year
-    add_dialogue("holiday new year", ("very extravert"), ("HAPPY NEW YEAR! This year it's {i}my{/i} time to shine. I just know it!", "Master! I wish you {i}so{/i} many blessings this year.", "This is going to be, like, the best year ever!", "Happy new year, Master!", "A whole year has gone by already? Best wishes to you and yours, Master!"))
-    add_dialogue("holiday new year", ("very introvert"), ("Good wishes to you, Master.", "All the very best, Master.", "Oh... A year has gone by already?"))
-    add_dialogue("holiday new year", ("very idealist"), ("I've got my resolutions for this year all figured out. How about you, Master?", "Let's make this a year to remember!", "Together we can achieve even greater heights this year."))
-    add_dialogue("holiday new year", ("very materialist"), ("Happy new year, [MC.name].", "Thank you for your guidance, [MC.name].", "Let's toast to another amazing year!"))
-    add_dialogue("holiday new year", ("very lewd"), ("Where's the champagne? We've got to drink to celebrate!", "Last year was a fucking blast, but I think we can do even better!", "Cheers, [MC.name]. Best year ever!"))
-    add_dialogue("holiday new year", ("very modest"), ("May Arios guide your path, [MC.name]. Happy new year.", "May the light of Arios shine down on [brothel.name] this year.", "Thank Arios for another year ahead of us. I pray that His Light may shine upon the world through our actions!"))
-    add_dialogue("holiday new year", ("very dom"), ("Happy new year! Let's get wasted!", "*sigh* Will we really be spending this year in [district.name]? I'd like a change of scenery.", "I wonder what else [brothel.name] will have to offer this year."))
-    add_dialogue("holiday new year", ("very sub"), ("T-thank you for everything, Master.", "I love you, Master. I wish you all the best!", "I hope I can help [brothel.name] for many years to come, Master!"))
+    add_dialogue("holiday new year", ("very extravert"), ("恭贺新禧! 今年是{i}我{/i}成为明星的时候了。我就是知道!", "主人!祝你在新的一年里能获得{i}更多{/i}的祝福。", "这将是，有史以来最棒的一年!", "主人，新年快乐!", "一年都已经过去了?祝福您和您的家人，主人!"))
+    add_dialogue("holiday new year", ("very introvert"), ("祝福您，主人。", "祝您一切顺利，主人。", "哦……一年都已经过去了?"))
+    add_dialogue("holiday new year", ("very idealist"), ("我已经把今年的计划都想好了。您呢，师父?", "让我们让今年成为值得纪念的一年!", "只要齐心协力，我们今年可以取得更大的成就。"))
+    add_dialogue("holiday new year", ("very materialist"), ("新年快乐, [MC.name].", "谢谢您的指导, [MC.name].", "让我们为又一个精彩的一年干杯!"))
+    add_dialogue("holiday new year", ("very lewd"), ("香槟在哪里?我们得喝酒庆祝一下!", "去年真是太棒了，但我觉得我们还可以做得更好!", "一起干杯吧, [MC.name]. 真是最好的一年!"))
+    add_dialogue("holiday new year", ("very modest"), ("愿阿里奥斯指引您的道路, [MC.name]. 新年快乐.", "愿阿里奥斯之光今年能一直照耀[brothel.name]。", "感谢阿里奥斯又给了我们一年的时间。我祈祷他的光可以通过我们的行动照亮整个世界!"))
+    add_dialogue("holiday new year", ("very dom"), ("新年快乐!今天我们喝个通宵吧!", "*叹气* 我们今年真的要在[district.name]度过吗? 我想换个环境了。", "我想知道[brothel.name]今年还会提供什么。"))
+    add_dialogue("holiday new year", ("very sub"), ("谢-谢谢您为我们做的一切，主人。", "我爱您，主人。祝您一切顺利!", "我希望我能在未来的许多年里能一直帮助[brothel.name],主人!"))
 
     # custom dialogue: valentines
     add_dialogue("slave love", ("very extravert"), ("Master, I just want you and everyone else to know... I LOVE YOU!", "I love you {i}so{/i} much, Master!", "You're the best, [MC.name]. I love you more than anyone in the world!"))

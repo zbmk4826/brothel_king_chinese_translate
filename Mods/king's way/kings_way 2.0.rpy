@@ -47,6 +47,7 @@ label kingsway_init():
     default KW_Show = True
     default KW_Widget_x = 0.0
     default KW_Widget_y = 99.00
+    default act_name = ""
     #$ config.overlay_screens.append('cheat_box')
     "King's Way activated!"
     
@@ -460,9 +461,13 @@ screen cheat_slave_edit:
                         textbutton "Max" action SetDict(slave_id.jp,job,slave_id.get_jp_cap(job))
             text "指令计数器" layout "nobreak" color "#33cccc"
             for act in slave_id.MC_interact_counters:
-                if act not in ("present", "money", "offer","discipline","reward",None):
+                if act not in ("present", "money", "offer",None):
+                    if(act in button_name_dict.keys()):
+                        $ act_name = button_name_dict[act]
+                    else:
+                        $ act_name = act
                     hbox:
-                        text "{}: {}".format(button_name_dict[act], slave_id.MC_interact_counters[act]) layout "nobreak"
+                        text "{}: {}".format(act_name, slave_id.MC_interact_counters[act]) layout "nobreak"
                         textbutton "" action SetDict(slave_id.MC_interact_counters,act,0)
         if game.has_active_mod("traitking"):
             vbox:
@@ -517,10 +522,10 @@ screen cheat_slave_edit:
                                 text_layout "nobreak"
                                 hovered SetVariable("trait_desc",trait.get_description("girls"))
                                 unhovered SetVariable("trait_desc"," ")
-                text "{size=-3}[trait_desc]{/size}"
+                text "{size=-6}[trait_desc]{/size}"
             vbox:
                 if slave_id in game.free_girls:
-                    text "Location: [slave_id.location]"
+                    text "位置: {}".format(location_name_dict[slave_id.location])
         else:
             vbox:
                 text '特质'

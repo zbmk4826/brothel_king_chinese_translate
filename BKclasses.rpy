@@ -3903,6 +3903,10 @@ init -2 python:
                 target = "艺伎"
             if target == "valuation":
                 target = "估值"
+            if target == "city rewards":
+                target = "城市资源"
+            if target == "resource extraction":
+                target = "资源提取率"
             target = "舞娘职业经验收益" if target == "dancer jp gains" else target
             target = "按摩师职业经验收益" if target == "masseuse jp gains" else target
             target = "服务员职业经验收益" if target == "waitress jp gains" else target

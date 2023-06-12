@@ -1888,7 +1888,7 @@ init -3 python:
 #                 girl.interactions -= spent_interactions
 
         # Get tired
-
+        # 此处为疲劳值计算，如果从事普通工作或者双飞，疲劳值为减值为5倍顾客数量 其余为10倍顾客数量
         if act in all_jobs or len(girls) > 1:
             tiredness = 5 * len(customers)
         else:
