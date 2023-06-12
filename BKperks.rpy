@@ -75,11 +75,11 @@ label init_perks():
                              "医者之心" : "她很关心别人，会尽她所能保护她爱的人",
                              "贞洁妓女" : "'{i}你可以对我做任何事，但这个地方是禁区……先生，你没事吧?都出汗了……{/i}'",
 
-                             "Naturist" : "在任何时候包括平时都接受裸体",
-                             "Ponygirl" : "现在她只穿着一个暴露的马具和一条尾巴。猜猜它插在哪里……免费广告。",
-                             "Bisexual" : "有时会和另一个女孩提供双飞服务。极大地增加小费和客户满意度，减少疲劳。",
-                             "Group" : "与客户进行三人行为对她来说不是什么难事。可能与最多两名客户发生性行为，代价是额外的疲劳。",
-                             "Orgy" : "真是个荡妇！看起来她想要每个洞都填满。可能与最多三名客户发生性行为，代价是额外的疲劳。",
+                             "返璞归真" : "在任何时候包括平时都接受裸体",
+                             "小马女孩" : "现在她只穿着一个暴露的马具和一条尾巴。猜猜它插在哪里……免费广告。",
+                             "双人成行" : "有时会和另一个女孩提供双飞服务。极大地增加小费和客户满意度，减少疲劳。",
+                             "酒池肉林" : "与客户进行三人行为对她来说不是什么难事。可能与最多两名客户发生性行为，代价是额外的疲劳。",
+                             "恣意狂欢" : "真是个荡妇！看起来她想要每个洞都填满。可能与最多三名客户发生性行为，代价是额外的疲劳。",
                              }
 
 
@@ -151,11 +151,11 @@ label init_perks():
 
         ## SPECIAL PERKS ##
 
-        naked_perk = Perk("Naturist",name="返璞归真", type="sex", effects = [Effect("special", "naked", 1)])
-        pony_perk = Perk("Ponygirl",name="小马女孩", type="sex", effects = [Effect("special", "ponygirl", 1.0, 0.5)])
-        bis_perk = Perk("Bisexual",name="双人成行", type="sex", effects = [Effect("special", "bisexual", 1.0, bis_chance)])
-        group_perk = Perk("Group",name="酒池肉林", type="sex", effects = [Effect("special", "group", 1.0, group_chance)])
-        orgy_perk = Perk("Orgy",name="恣意狂欢", type="sex", effects = [Effect("special", "orgy", 1.0, 0.5)])
+        naked_perk = Perk("返璞归真", type="sex", effects = [Effect("special", "naked", 1)])
+        pony_perk = Perk("小马女孩", type="sex", effects = [Effect("special", "ponygirl", 1.0, 0.5)])
+        bis_perk = Perk("双人成行", type="sex", effects = [Effect("special", "bisexual", 1.0, bis_chance)])
+        group_perk = Perk("酒池肉林", type="sex", effects = [Effect("special", "group", 1.0, group_chance)])
+        orgy_perk = Perk("恣意狂欢", type="sex", effects = [Effect("special", "orgy", 1.0, 0.5)])
 
 
 
