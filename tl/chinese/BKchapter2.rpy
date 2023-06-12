@@ -7882,7 +7882,7 @@ translate chinese c2_homura_city_meet_8d5ccb5e:
 translate chinese c2_homura_city_meet_41ab53ad:
 
     # homura "And this girl, is she, a... a... I believe you'd say, 'soiled dove'?"
-    homura "而这个姑娘，她是...... 一个...... 我相信您会说，“肮脏的鸽子”吗？"
+    homura "而这个姑娘，她是...... 一个...... 我相信您会说，“肮脏的流莺”吗？"
 
 # game/BKchapter2.rpy:4140
 translate chinese c2_homura_city_meet_9685d2f8:

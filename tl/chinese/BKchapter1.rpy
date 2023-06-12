@@ -8992,7 +8992,7 @@ translate chinese c1_captain_meeting_0b6b6d0a:
 translate chinese c1_captain_meeting_55afd508:
 
     # captain "Are you ok, citizen? You look feverish. And, uh... It looks like you're drooling."
-    captain "你没事吧，市民?你看起来有点发烧。,嗯…你好像还流了些口水。"
+    captain "你没事吧，市民?你看起来有点发烧。嗯…你好像还流了些口水。"
 
 # game/BKchapter1.rpy:4858
 translate chinese c1_captain_meeting_ec685c31:

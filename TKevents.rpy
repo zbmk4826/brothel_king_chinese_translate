@@ -56,9 +56,9 @@ label traitking_morning: # morning: triggers as first thing in the day
                 
             net_list.sort(reverse=True, key=lambda y: y[1])
             
-            profitable_desc = rand_choice(["proven to be your most lucrative asset", "brought in the most coin", "brought in the most profit", "been a smash hit", "proven to be your most popular girl", "been a favorite among your customers", "led your stable", "earned her keep like no other", "taken the crown"])
+            profitable_desc = rand_choice(["是你最赚钱的资产", "赚了最多的钱", "带来了最多的利润", "取得了巨大的成绩", "是你这里最受欢迎的姑娘", "是你顾客们的最爱", "拔得头筹", "赢得了独一无二的荣誉", "赢得桂冠"])
             
-            renpy.say("","Over the past month, {b}{color=[c_orange]}" + net_list[0][0] + "{/color}{/b} has " + profitable_desc +  " (bringing in " + str(net_list[0][1]) + " gold), followed by {b}" + net_list[1][0] + "{/b} and {b}" + net_list[2][0] + "{/b}.")
+            renpy.say("","在过去的一个月中, {b}{color=[c_orange]}" + net_list[0][0] + "{/color}{/b}" + profitable_desc +  " (赚取了" + str(net_list[0][1]) + "金币), 二、三名是{b}" + net_list[1][0] + "{/b}和{b}" + net_list[2][0] + "{/b}.")
             
             # friendship/rivalry: other girls become jealous or start admiring the top earner
             if best_net > 2000:
@@ -99,7 +99,7 @@ label traitking_day: # day: triggers after morning, but still before player can 
                     if renpy.random.random() <= 0.02: # 2% chance of discovering the unknown trait per workday
                         add_trait_perkless(girl, Trait("Unknown", verb = "have an", eff1 = Effect("boost", "prestige", -0.25), base_description = "This girl is hiding something from you."))
 
-                        renpy.say("","You suspect that " + girl.name + " is trying to hide something from you.")
+                        renpy.say("","你怀疑" + girl.name + "是想对你隐瞒什么。")
         
             if girl.has_trait("Karkyrian Hymen"): # Karkyrian Hymen trait
             
@@ -107,7 +107,7 @@ label traitking_day: # day: triggers after morning, but still before player can 
                 
                     add_trait_perkless(girl, trait_dict["Virgin"])
                     
-                    renpy.say("","Thanks to her Karkyrian Hymen, " + girl.name + "'s virginity has been restored.")
+                    renpy.say("","多亏了她是万世处女, " + girl.name + "的贞洁已经恢复。")
 
                     for trait in girl.traits:
                     
@@ -154,7 +154,7 @@ label traitking_day: # day: triggers after morning, but still before player can 
             
                         if i == 0:
                         
-                            renpy.say("",girl.name + " is a true prodigy. It's as if the tricks of the trade come naturally to her.")
+                            renpy.say("",girl.name + "是个真正的神童。她似乎天生就会这一行的的诀窍。")
 
                         i += 1                     
                         girl.unlock_archetype(archetype)
@@ -334,7 +334,7 @@ label performance_reward(girl):
             location = brothel.bedroom_type.name
             girl_state = "rest"
             girl_pic = girl.get_pic("rest", not_tags=["public", "beach", "nature", "town"], naked_filter=True, soft=True)
-            girl_state_comment = rand_choice(["You find her relaxing in her room.","She's resting in her room.", "she is enjoying a well-earned rest in her room.", "She's recuperating in her room."])
+            girl_state_comment = rand_choice(["你发现她在自己的房间里放松。","她在房间里休息。", "她正在自己的房间里享受应得的休息。", "她正在她的房间里休养。"])
             
         elif d < 30:
         
@@ -346,20 +346,20 @@ label performance_reward(girl):
 
             girl_state = "profile"
             girl_pic = girl.get_pic("profile", "portrait", not_tags=["public", "beach", "nature", "town"], naked_filter=True, soft=True)
-            girl_state_comment = rand_choice(["You find her hanging around the brothel.","She's relaxing in the brothel.", "She's enjoying a moment's rest in the brothel.", "she hums a cheerful tune as she skips through the brothel."])
+            girl_state_comment = rand_choice(["你发现她在青楼里闲逛。","她在青楼里放松。", "她正在青楼里享受片刻的休息。", "她在青楼里哼着欢快的曲调，到处跳来跳去。"])
             
         elif d < 35:
         
             location = brothel.bedroom_type.name
             girl_state = "naked"
             girl_pic = girl.get_pic("naked", "profile", and_tags=["embar"], not_tags=["public", "beach", "nature", "town"], naked_filter=False, soft=True)
-            girl_state_comment = rand_choice(["You find her in her room.","She's staying in her room this morning.", "She is enjoying a well-earned rest in her room.", "She's recuperating in her room."])
+            girl_state_comment = rand_choice(["你在她的房间里找到她。","她今天早上待在她的房间里。", "她正在自己的房间里享受应得的休息。", "她正在她的房间里休养。"])
             
             if girl.naked == True:
-                girl_state_comment += rand_choice([" She's naked, as usual.", " The sight of her breasts brightens up your morning.", " Naturally, she's naked as the day she was born.", ""])
+                girl_state_comment += rand_choice(["她像往常一样光着身子。", "她的奶子使你这个清晨都显得明亮起来。", "自然，她和出生时一样一丝不挂。", ""])
                 
             else:
-                girl_state_comment += rand_choice([" You find her in a compromising situation.", " She's undressed for one reason or another.", " To your surprise, she's not wearing any clothes.", " What a pleasant sight! She happens to be undressed."])
+                girl_state_comment += rand_choice(["你发现她处于一种难堪的境地。", "她不知道为什么脱光了衣服。", "让你吃惊的是，她身上并没有穿什么衣服。", "多么令人愉快的景象啊!她碰巧什么都没穿。"])
             
 
         elif d < 45:
@@ -367,33 +367,33 @@ label performance_reward(girl):
             location = brothel.bedroom_type.name
             girl_state = "naked rest"
             girl_pic = girl.get_pic("naked", "rest", not_tags=["public", "beach", "nature", "town"], naked_filter=False, soft=True)
-            girl_state_comment = rand_choice(["You find her resting in her room.","She's resting in her room.", "She is enjoying a well-earned rest in her room.", "She's recuperating in her room."])
+            girl_state_comment = rand_choice(["你发现她在房间里休息。","她在房间里休息。", "她正在自己的房间里享受应得的休息。", "她正在她的房间里休养。"])
             
             if girl.naked == True:
-                girl_state_comment += rand_choice([" She's naked, as usual.", " The sight of her breasts brightens up your morning.", " Naturally, she's naked as the day she was born.", ""])
+                girl_state_comment += rand_choice(["她像往常一样光着身子。", "她的奶子使你这个清晨都显得明亮起来。", "自然，她和出生时一样一丝不挂。", ""])
                 
             else:
-                girl_state_comment += rand_choice([" It looks like she wasn't expecting you, judging from her state of undress.", " She's undressed for one reason or another.", " To your surprise, she's not wearing any clothes.", " What a pleasant sight! She happens to be undressed."])
+                girl_state_comment += rand_choice(["从她没穿衣服的样子来看，她好像没料到你会来。", "她不知道为什么脱光了衣服。", "让你吃惊的是，她身上并没有穿什么衣服。", "多么令人愉快的景象啊!她碰巧什么都没穿。"])
 
         elif d < 50:
 
             location = brothel.bedroom_type.name
             girl_state = "mast"
             girl_pic = girl.get_pic("mast", and_tags=["embar"], not_tags=["public", "beach", "nature", "town"], naked_filter=False, soft=True)
-            girl_state_comment = rand_choice(["You find her masturbating in her room.","She's pleasuring herself in her room.", "she is enjoying some self-service in her room.", "She's having some fun in her room."])
+            girl_state_comment = rand_choice(["你发现她在自己的卧室里自慰。","她在房间里正安慰着自己湿漉漉的小穴。", "她正在房间里享受着‘自助服务’。", "她正在卧室里用按摩棒抽插着自己的小穴。"])
 
             if girl.naked == True:
-                girl_state_comment += rand_choice([" She must be looking forward to serving more customers.", " Her moans can be heard from the hallway.", " She's screaming your name as she climaxes."])
+                girl_state_comment += rand_choice(["她一定很期待能为更多的客人服务。", "她的浪叫声在走廊里都能听到。", "她高潮时不断喊着你的名字。"])
                 
             else:
-                girl_state_comment += rand_choice([" She scampers to cover herself as you enter the room.", " When your eyes meet, she freezes up as if caught in a spell.", " She attemts to hide under the bedsheets as you call her name."])
+                girl_state_comment += rand_choice(["当你进入房间时，她惊慌失措地想把自己遮盖起来。", "当你们的目光相遇时，她就像中了魔咒一样僵住了。", "当你叫她的名字时，她试图躲在被褥下面。"])
 
         elif d < 60:
         
             location = brothel.bedroom_type.name
             girl_state = "study"
             girl_pic = girl.get_pic("study", not_tags=["public", "beach", "nature", "town"], naked_filter=True, soft=True)
-            girl_state_comment = rand_choice(["She is hard at work, studying to further improve her performance.","She's studying some literature, immersed in thought.", "She is using her downtime productively by studying."])
+            girl_state_comment = rand_choice(["她工作很努力, 不断学习来进一步提高自己的表现。","她正在研究文学，沉浸在思绪之中。", "她有效地利用了休息时间来学习。"])
 
         elif d < 80:
         
@@ -405,7 +405,7 @@ label performance_reward(girl):
 
             girl_state = "friend"
             girl_pic = girl.get_pic("friend", not_tags=["public", "beach", "nature", "town"], naked_filter=True, soft=True)
-            girl_state_comment = rand_choice(["She has invited a friend over.","She's socialising with one of her friends.", "One of her friends has come to visit the brothel. They're like two peas in a pod.", "She has invited one of her friends over. They seem to be getting along well."])
+            girl_state_comment = rand_choice(["她邀请了一位朋友过来做客。","她正在和她的其中一个朋友聊天。", "她的一个朋友来青楼找她了。两人形影不离。", "她邀请了她的一个朋友过来。她们似乎相处得很好。"])
 
         else:
         
@@ -417,7 +417,7 @@ label performance_reward(girl):
 
             girl_state = "party"
             girl_pic = girl.get_pic("party", not_tags=["public", "beach", "nature", "town"], naked_filter=True, soft=True)
-            girl_state_comment = rand_choice(["She has invited a few of her friends over.","She's socialising with some of her friends, who are visiting the brothel.", "Some of her friends have come to visit the brothel.", "She has invited her friends over for a party."])
+            girl_state_comment = rand_choice(["她邀请了几个朋友过来做客。","她正在和一些来青楼的朋友聊天。", "她的一些朋友来青楼参观。", "她邀请了她的朋友来参加聚会。"])
 
         if not girl_pic:
     
@@ -429,7 +429,7 @@ label performance_reward(girl):
 
             girl_state = "profile"
             girl_pic = girl.get_pic("profile", "portrait", not_tags=["public", "beach", "nature", "town"], naked_filter=True, soft=True)
-            girl_state_comment = rand_choice(["You find her hanging around in the brothel.","She's relaxing in the brothel.", "She's enjoying a moment's rest in the brothel.", "She hums a cheerful tune as she skips through the brothel."])
+            girl_state_comment = rand_choice(["你发现她在青楼里闲逛。","她在青楼里放松。", "她正在青楼里享受片刻的休息。", "她在青楼里哼着欢快的曲调，到处跳来跳去。"])
         
     scene black
     with dissolve
@@ -487,7 +487,7 @@ label performance_reward(girl):
                         girl.char "That makes sense. I'll do my best to follow your advice."
                         
                     $ extra_effects = [Effect("change", "job customer capacity", int(3*modifier))] 
-                    $ effect_comment = "she will try to serve more customers while working"
+                    $ effect_comment = "她将努力在工作的同时服务更多的客人"
                     
                 "Hoard as much semen as you can" if girl.has_activated_sex_acts() and (dice(6) == 6 or MC.playerclass == "Trader"): # whore as much as possible
 
@@ -508,7 +508,7 @@ label performance_reward(girl):
                         girl.char "Very well... I'll do what I can."
                     
                     $ extra_effects = [Effect("change", "whore customer capacity", int(2*modifier))]
-                    $ effect_comment = "she will attempt to serve more customers while whoring"
+                    $ effect_comment = "她会尝试在卖淫时服务更多的客人"
 
                 "Focus on the whales" if MC.charisma > 4: # chance tip boost
 
@@ -527,7 +527,7 @@ label performance_reward(girl):
                         girl.char "All right, master. I hope I can improve."
                     
                     $ extra_effects = [Effect("special", "ignore budgets"), Effect("boost", "tip", 0.2, chance=0.25*modifier),Effect("change", "whore customer capacity", -1), Effect("change", "job customer capacity", -2)] 
-                    $ effect_comment = "she will serve less customers but acquire bigger tips"
+                    $ effect_comment = "虽然她将会给更少的客人提供服务，但会获得更多的小费"
                     
                 "Keep doing what you're doing": # Rep boost
 
@@ -546,7 +546,7 @@ label performance_reward(girl):
                         girl.char "Just give me some time. I really want to become an important part of [brothel.name]."
                         
                     $ extra_effects = [Effect("boost", "reputation gains", 0.1*modifier)] 
-                    $ effect_comment = "her reputation will improve more rapidly"
+                    $ effect_comment = "她的声望会更快地提高"
                     
                 "Stand up for yourself" if MC.strength > 4 or MC.playerclass == "Warrior": # defense boost
                         
@@ -565,7 +565,7 @@ label performance_reward(girl):
                         girl.char "That sounds daunting, but I'll try my best."
                         
                     $ extra_effects = [Effect("change", "defense", int(2*modifier))] 
-                    $ effect_comment = "she will be on her guard"
+                    $ effect_comment = "她会时刻保持警惕"
 
                 "Focus on training": # Lower train obedience targets
 
@@ -584,7 +584,7 @@ label performance_reward(girl):
                         girl.char "Y-yes [MC.name], I understand I have to improve."
                         
                     $ extra_effects = [Effect("change", "train obedience target", int(-25*modifier))] 
-                    $ effect_comment = "she will be more willing to undergo training"
+                    $ effect_comment = "她会更愿意接受调教"
                     
                 "Serve the customer, no matter what they request" if MC.spirit > 4: # Lower job/whore obedience targets
 
@@ -603,7 +603,7 @@ label performance_reward(girl):
                         girl.char "Please be patient with me, [MC.name]. I need to get used to all of this."
                         
                     $ extra_effects = [Effect("change", "job obedience target", int(-25*modifier)), Effect("change", "whore obedience target", int(-25*modifier))]
-                    $ effect_comment = "she will be less apprehensive about working or whoring"
+                    $ effect_comment = "她不再对工作或卖淫感到太多不安了"
                     
                 "Gain more experience": # boost xp/jp/rep
 
@@ -622,7 +622,7 @@ label performance_reward(girl):
                         girl.char "I'm sorry... I don't think I'm cut out for this..."
                         
                     $ extra_effects = [Effect("boost", "xp gains", 0.1*modifier), Effect("boost", "all jp gains", 0.1*modifier)] 
-                    $ effect_comment = "she will gain more experience and job proficiency"
+                    $ effect_comment = "她将获得更多的经验和更多的工作熟练度"
 
                 "Consider a spell at the farm" if MC.charisma > 8 or MC.get_alignment() == "evil": # farm boost
 
@@ -645,7 +645,7 @@ label performance_reward(girl):
                         girl.char "That's awful! ...D-do you really think it'll help?"
                         
                     $ extra_effects = [Effect("boost", "farm preference increase", 0.5*modifier)] 
-                    $ effect_comment = "she will be more susceptible to the training methods used at the farm"
+                    $ effect_comment = "她将更容易接受农场采用的训练方式"
     
         "Help the brothel": # improve brothel
         
@@ -675,7 +675,7 @@ label performance_reward(girl):
                         girl.char "Ugh... Fine, if you think it will help [brothel.name]..."
                       
                     $ extra_effects = [Effect("change", "customers", int(4 * modifier), scope="brothel")]
-                    $ effect_comment = "more customers will visit the brothel"
+                    $ effect_comment = "更多的顾客会光顾青楼"
                     
                 "Prep for quests and classes" if MC.spirit > 8 or MC.get_alignment() == "good": # quest/class performance boost (scope = brothel) 
 
@@ -694,7 +694,7 @@ label performance_reward(girl):
                         girl.char "Okay..."
 
                     $ extra_effects = [Effect("boost", "quest rewards", 0.5*modifier, scope="brothel"), Effect("boost", "class results", 1*modifier, scope="brothel")]
-                    $ effect_comment = "quests and classes will yield better rewards"
+                    $ effect_comment = "任务和课程将会产生更好的奖励"
                     
                 "Act as a floor manager" if MC.speed > 8 or MC.get_alignment() == "neutral": # job boost (scope=brothel)
                 
@@ -713,7 +713,7 @@ label performance_reward(girl):
                         girl.char "I'll try my best to set an example to follow."
 
                     $ extra_effects = [Effect("change", "job customer capacity", int(2*modifier), scope="brothel")]
-                    $ effect_comment = "your girls (excluding whores) will be able to serve more customers"
+                    $ effect_comment = "你的姑娘们(不包括从事妓女的)将能够服务更多的客人"
                     
                 "Help me with my errands" if MC.speed > 10 or MC.playerclass == "Trader": # resource/city rewards boost
 
@@ -732,7 +732,7 @@ label performance_reward(girl):
                         girl.char "As you wish."
 
                     $ extra_effects = [Effect("boost", "city rewards", 1*modifier, scope="brothel"), Effect("change", "city rewards", 1+int(1*modifier), scope="brothel"), Effect("boost", "resource extraction", 1*modifier, scope="brothel")]                
-                    $ effect_comment = "city rewards and resource extraction rates are improved"
+                    $ effect_comment = "城市奖励和资源提取率提高"
                     
                 "Punish the other girls" if MC.playerclass == "Warrior" or MC.get_alignment() == "evil": #fear/income boost
 
@@ -752,7 +752,7 @@ label performance_reward(girl):
                         girl.char "O-okay, if you think it will help..."
                     
                     $ extra_effects = [Effect("boost", "fear gains", 0.25*modifier, scope="brothel")]
-                    $ effect_comment = "fear will increase faster"
+                    $ effect_comment = "恐惧值会增加得更快"
                     
                 "Protect the other girls from harm" if MC.strength > 10 or MC.playerclass == "Warrior": # defense boost (scope = brothel)
 
@@ -771,7 +771,7 @@ label performance_reward(girl):
                         girl.char "Yes, master."
                     
                     $ extra_effects = [Effect("change", "defense", int(1*modifier), scope="brothel")]
-                    $ effect_comment = "girls in the brothel will be able to defend themselves better"
+                    $ effect_comment = "青楼里的姑娘们能更好地保护自己"
                     
                 "Help me with my enchantments" if MC.spirit > 10 or MC.playerclass == "Wizard": # mana/spirit boost
 
@@ -790,7 +790,7 @@ label performance_reward(girl):
                         girl.char "Of course! Just let me know what I can do."
                     
                     $ extra_effects = [Effect("change", "mana", int(2*modifier), scope="brothel")]
-                    $ effect_comment = "your available mana will increase"
+                    $ effect_comment = "你可用的法力值将会增加"
                     
                 "Decorate the brothel" if MC.charisma > 10 or MC.get_alignment() == "good": #love/mood boost
 
@@ -809,7 +809,7 @@ label performance_reward(girl):
                         girl.char "Well, [brothel.name] is our home after all. I'll try to make it look presentable."
                            
                     $ extra_effects = [Effect("boost", "love gains", 0.25*modifier, scope="brothel"),Effect("boost", "prestige", 0.1*modifier, scope="brothel")]
-                    $ effect_comment = "your girls' love and your brothel's prestige will improve more rapidly"
+                    $ effect_comment = "你的姑娘们的爱意值和你青楼的声望会提高得更快"
                            
                 "Make sure all the girls exercise regularly" if MC.speed > 10 or MC.get_alignment() == "neutral": #energy boost
 
@@ -829,7 +829,7 @@ label performance_reward(girl):
                         girl.char "I'll make sure the girls of [brothel.name] are fit and ready to serve every night."
                     
                     $ extra_effects = [Effect("boost", "energy use", -0.1*modifier, scope="brothel")]
-                    $ effect_comment = "your girls will use their energy more efficiently"                
+                    $ effect_comment = "你的姑娘们会更有效地利用她们的能量"
                     
                 "Make sure our farm creatures are well trained" if MC.gold > 10000 or MC.get_alignment() == "evil": #farm boost
 
@@ -848,7 +848,7 @@ label performance_reward(girl):
                         girl.char "Sure, I don't mind."
                     
                     $ extra_effects = [Effect("boost", "farm preference increase", 0.25*modifier, scope="farm")]
-                    $ effect_comment = "the farm as a whole will be more effective"
+                    $ effect_comment = "农场将作为一个整体更有效率"
 
                 "Be subservient to the other girls" if MC.gold > 10000: # boost brothel income
 
@@ -864,7 +864,7 @@ label performance_reward(girl):
                         girl.char "I'll try my best... But even so, I want to be the best I can be!" 
 
                     $ extra_effects = [Effect("boost", "income", 0.01*modifier, scope="brothel")] 
-                    $ effect_comment = "your brothel's profits should improve slightly"
+                    $ effect_comment = "你青楼的的利润应该会有所提高"
     
     hide screen show_event
     
@@ -2027,14 +2027,14 @@ label freedom_interact(girl):
 
     girl.char "Master, can we have a word?"
     
-    $ mc_response = rand_choice(["What is it, " + girl.name + "?", "Of course, " + girl.name + ". Speak your mind.", "Naturally. Make it quick.", "What's the matter, " + girl.name + "?"])
+    $ mc_response = rand_choice(["怎么了, " + girl.name + "?", "当然可以," + girl.name + "。想说什么都行。", "可以，赶紧说。", "有什么事吗, " + girl.name + "?"])
     $ renpy.say(you, mc_response)
 
     girl.char "I've been thinking..."
 
-    $ reason_intro = rand_choice(["The way things are going, I'm really enjoying my life as a slave.", "Being a slave is so much more fun than I ever thought it would be.", "I absolutely love working in a brothel like this.", "I think I could truly make a career out of this profession.", "Slavery gets a bad rep. It isn't as terrible as they say.", "Life is much simpler this way, knowing that my Master will take care of me."])
-    $ reason_problem = rand_choice(["Unfortunately, as a free girl, I tend to recieve special treatment in all the wrong ways. I'll always remain an outcast.", "But I've realised that the next step on this path can only be taken if you're incentivised to help me reach that next level.", "To further my career, I must be willing to take bold risks.", "If life has taught me anything, it's that being a slave can get you places.", "I'm eager to make my next move. I've thought long and hard about it, and the best course of action is to put you in control of my destiny."])
-    $ reason_solution = rand_choice(["That's why I've prepared this contract for you. For a lump sum, I would be willing to sign away my freedoms. What do you say?", "That's why I've decided to offer myself to you as an official slave. If you're interested in my services, that is.", "That's why I would like to start negotiations regarding this contract...", "That's why... Well, just have a look at this contract!"])
+    $ reason_intro = rand_choice(["照这样下去，我真的很享受做奴隶的生活。", "当奴隶比我想象的有趣多了。", "我非常喜欢在这样的青楼工作。", "我想我真的可以在这个行业中成就一番事业。", "奴隶制虽然名声不好，并不像人们说的那么可怕。", "知道主人会一直照顾我的话，这样生活就简单多了。"])
+    $ reason_problem = rand_choice(["很遗憾, 作为个自由民, 我常常以以所有错误的方式获得了特殊待遇。 我将永远是一个被遗弃的人。", "但我意识到，只有在您和其他姑娘们愿意帮助我达到下一个层次的情况下，我才能在这条道路上迈出下一步。", "为了我事业的发展，我必须敢于冒险。", "如果生活教会了我什么，那就是即便做个奴隶也可以让你出人头地。", "我迫不及待地想采取下一步行动。我认真考虑了很久，最好的办法就是让您来掌控我的命运。"])
+    $ reason_solution = rand_choice(["这就是我为你准备这份合同的原因。如果一次性付款，我愿意签字放弃我的自由。你说呢?", "所以我决定向您献上我正式的奴隶身份。如果您对我的服侍感兴趣的话。", "这就是为什么我想开始就这份合同进行谈判……", "这就是为什么…嗯，看看这份合同吧!"])
     
     if girl.personality.name == "sweet":
 
@@ -2181,25 +2181,25 @@ label ext_party(girl):
 
         renpy.show("brothel" + str(brothel.pic_index), at_list = [top])
 
-        party_intro = rand_choice([girl.name + " has invited some friends over to visit " + brothel.name + ".",girl.name + " is throwing a party for her friends.",girl.name + "'s friends have surprised her with a visit today."])
+        party_intro = rand_choice([girl.name + " 邀请了一些朋友来" + brothel.name + "做客。",girl.name + "正在和她的朋友开派对。",girl.name + "的朋友们今天来找她玩，给了她一个惊喜。"])
 
         party_personality_comment = {
 
-            "very extravert" : ["They're a rowdy bunch.", "Their excited yelps liven up the brothel.", "They run through the halls of the brothel as if they own the place.", "They want to hear all about the customers from " + girl.name + ".", "They seem eager to get to know you.", "They like to compete for each other's attention."],
+            "very extravert" : ["她们是一群吵吵闹闹的人。", "她们兴奋的叫声使青楼的氛围活跃起来。", "她们在青楼的大厅里跑来跑去，好像这地方是她们家似的。", "她们想从" + girl.name + "那里听到客人们的所有情况。", "她们似乎很想了解你。", "她们喜欢争夺彼此的注意力。"],
 
-            "very introvert" : ["They don't seem very talkative.","It's a timid affair.","They listen attentively as " + girl.name + " sums up her day-to-day.","They don't seem very interested in a tour around the brothel.","They seem very supportive of her.","They look happy to be invited.", "They seem very fond of " + girl.name + "."],
+            "very introvert" : ["她们似乎不太健谈。","It's a timid affair.","她们聚精会神地听" + girl.name + "总结自己的日常生活。","她们似乎对参观青楼不太感兴趣。","她们似乎很支持她。","她们看起来很高兴受到邀请。", "她们似乎很喜欢" + girl.name + "。"],
 
-            "very materialist" : ["They fervently inspect " + girl.name + "'s wardrobe.", "They are particularly interested in her earnings.", "They exchange makeup tips with one another.", "They show off their jewelry to one another.", "They seem keen to impress " + girl.name + ".", "They happily spend time gossiping."],
+            "very materialist" : ["她们热切地检查" + girl.name + "的衣橱。", "她们对她的收入特别感兴趣。", "她们互相交流化妆技巧。", "她们互相炫耀自己的珠宝。", "她们似乎急于给" + girl.name + "留下好印象。", "她们愉快地花时间闲聊。"],
 
-            "very idealist" : ["They talk politics with one another.", "They seem very polite and well mannered.", "They really enjoy each other's company.", "They affectionately greet " + girl.name + " with a hug.", "They seem very fond of " + girl.name + ".", "One of them has brought lots of sweets. She offers some to the guards."],
+            "very idealist" : ["她们互相谈论政治。", "她们看起来很有教养和礼貌。", "她们真的很享受彼此的陪伴。", "她们热情地拥抱" + girl.name + "。", "她们似乎很喜欢" + girl.name + "。", "其中一个人带来了许多糖果，她分给了保安们一些。"],
 
-            "very lewd" : ["They seem excited to be here.","They look excited.","They're very curious about the brothel.","They're fascinated about every aspect of the brothel.", "They her you to show them all of her sex toys.","They listen carefully as " + girl.name + " tells stories about her life in the brothel."],
+            "very lewd" : ["她们似乎很高兴来到这里。","她们看起来很兴奋。","她们对青楼很好奇。","她们对青楼的方方面面都很着迷。", "她们要你给她们看她所有的情趣玩具。","她们仔细地听" + girl.name + "讲述她在青楼的生活。"],
 
-            "very modest" : ["They look appalled.","They are shocked by her living conditions.","They plead with " + girl.name + " to take the party elsewhere.","They don't seem happy to be here.","They're a bit overdressed for the occasion.","They politely greet you as they pass by."],
+            "very modest" : ["她们看起来很震惊。","她们对她的生活条件感到震惊。","她们恳求" + girl.name + "在别处开聚会。","她们似乎不太乐意待在这里。","她们在这种场合穿得有点过于讲究了。","她们经过你身边时礼貌地向你打招呼。"],
 
-            "very dom" : ["They feign interest.", "They're bickering amongst themselves.", "They don't seem to get along very well.", "They exude confidence.","They seem to feel right at home.","They chat up one of the guards.", "They strike up a conversation with the guards.", "The mood is timid, as if " + girl.name + " and her friends have just had an argument."],
+            "very dom" : ["她们假装对这里很感兴趣。", "她们在互相争吵。", "她们似乎相处得不太好。", "她们洋溢着自信。","她们似乎感到宾至如归。","她们冲其中一个保安搭讪。", "她们和保安们攀谈起来。", "她看起来有点胆怯, 好像" + girl.name + "和她的朋友们刚刚吵了一架。"],
 
-            "very sub" : ["They follow " + girl.name + "'s lead as she guides them through the brothel.", "They enthousiastically sing songs together.", "Some of them bow for you as they pass.", "They seem enthralled as " + girl.name + " tells stories about her life here."],
+            "very sub" : ["她们跟随着" + girl.name + "的引导穿过青楼。", "她们一起热情地唱起了歌。", "有些人经过时向你鞠躬。", "当" + girl.name + "讲述自己在这里的生活时，她们似乎被迷住了。"],
 
             }
             
@@ -2211,15 +2211,15 @@ label ext_party(girl):
         party_bonus = ""
         
         if girl.is_("very idealist") and dice(6) <= 4:
-            party_bonus += rand_choice(["One of the visitors hands you a gift to thank " + brothel.name + " for hosting the party.", "Before they leave, " + girl.name + "'s friends come up to you to thank you for your part in an unforgettable day."]) + " You receive a bouquet of flowers. "
+            party_bonus += rand_choice(["其中一位客人递给你一份礼物，以感谢你在" + brothel.name + "举办聚会。", "在她们离开之前，" + girl.name + "的朋友过来感谢你在这难忘的一天里所做的贡献。"]) + "你收到了一束花。 "
             MC.items.append(get_rand_item(item_types = ["Flower"]))
 
         if girl.is_("very extravert") or dice(6) <= 3:
-            party_bonus += rand_choice(["The girls really enjoy their time in " + brothel.name + ".", "Before long the visitors take their leave. Time flies by when you're having fun.", "After a while the party comes to an end. " + girl.name + "'s friends leave with smiles on their faces."]) + " "
+            party_bonus += rand_choice(["姑娘们真的很享受在" + brothel.name + "的时光.", "不久之后客人们就离开了。当你们开心的时候，时间总是过得很快。", "过了一会儿，聚会结束了。" + girl.name + "的朋友们面带微笑地离开了。"]) + " "
             brothel.change_rep(girl.rank*2)
 
         if girl.is_("very introvert") and dice(6) <= 4:
-            party_bonus += rand_choice(["As the party winds down, they take great care to clean up their mess.", "They do their utmost to clean up after themselves.", "They make sure to tidy the place up."]) + " "
+            party_bonus += rand_choice(["聚会结束之后，她们非常仔细小心地收拾残局。", "她们尽最大努力把自己弄干净。", "她们一定要把这个地方打扫干净。"]) + " "
             brothel.change_dirt(-girl.rank*2)
             
         renpy.say("",party_bonus)
@@ -2235,9 +2235,9 @@ label ext_party(girl):
             renpy.show_screen("show_event", girl_pic, x=config.screen_width, y=int(config.screen_height*0.8), bg=None)
 
             party_bonus_gold = max(40 + dice(60), int(round(girl.rank * random.uniform(20.0, 100.0))))
-            party_bonus = rand_choice(["After her friends are gone, " + girl.name + " comes up to you to share some of the spoils.", "When the visitors have come and gone, " + girl.name + " approaches you with a gift."])
-            party_bonus_comment = rand_choice(["I'm sorry if we've made a bit of a mess. We all chipped in some gold to show our appreciation towards " + brothel.name + ".", "I charged the girls a fee to enter " + brothel.name + ". It's only right that you should recieve most of that.", "I'm sorry, Master. Perhaps I should have asked for your permission first. I hope you can forgive me."])
-            renpy.say("",party_bonus + " She hands you " + str(party_bonus_gold) + " gold.")
+            party_bonus = rand_choice(["在她的朋友们都走了之后，" + girl.name + "来到你面前分享这次聚会后的战利品。", "当客人们来了又去之后" + girl.name + "带着礼物走近了你。"])
+            party_bonus_comment = rand_choice(["如果我们把这里弄得有点乱话，我向您道歉。 我们一起凑了一些金币来表达我们对" + brothel.name + "的感激之情.", "我向姑娘们收了" + brothel.name + "的入场费. 您应该得到其中的大部分。", "对不起，主人。也许我应该先征得您的同意。我希望您能原谅我。"])
+            renpy.say("",party_bonus + "她交给你" + str(party_bonus_gold) + "金币。")
             renpy.play(s_gold, "sound")
             MC.gold += party_bonus_gold
             renpy.say(girl.char,party_bonus_comment)
@@ -2279,7 +2279,7 @@ label ext_holiday_valentines:
                 if not holiday_pic:
                     holiday_pic = girl.get_pic("profile", and_tags="happy", naked_filter=True, soft=True)
 
-                approach = [girl.name + " rushes towards you with flushed red cheeks.","You notice " + girl.name + " rushing towards you.",girl.name + " wishes to speak to you.", "You're stopped by " + girl.name + ", who wants to talk to you.", "You're held up by " + girl.name + ", who has something on her mind.", girl.name + " tugs on your arm, eager to say something.", "You run into " + girl.name + ", who candidly speaks her mind.", "You hear " + girl.name + " shouting your name as she runs up to you.", "You hear " + girl.name + " calling for you, eager to express what's on her mind.", "You're surprised by " + girl.name + ", who urgently wishes to speak with you."]
+                approach = [girl.name + "红着脸向你奔来。","你注意到" + girl.name + "向你冲了过来。",girl.name + "想和你谈谈。", "你被" + girl.name + "拦住了，她想和你谈谈。", "你被" + girl.name + "拦了下来, 看起来她有什么心事。", girl.name + "拽着你的胳膊，想说点什么。", "你遇到了" + girl.name + "，她坦率地说出了自己的想法。", "你听到" + girl.name + "喊着你的名字，回头一看她正在跑向你。", "你听到" + girl.name + "在呼唤你，非常渴望表达她现在的想法。", "你对此时的" + girl.name + "感到非常惊讶, 她迫切地想和你谈谈。"]
                 
                 renpy.say("",rand_choice(approach))
                 
@@ -2467,7 +2467,7 @@ label ext_birthday(girl): # girl's birthday
     show expression bg_bro at top with dissolve
 
     python:
-        renpy.say("","It's {b}{color=[c_orange]}" + girl.name + "'s birthday{/color}{/b} today. {i}Love and fear can be influenced much more effectively on a girl's birthday.{/i}")
+        renpy.say("","今天是{b}{color=[c_orange]}" + girl.name + "的生日{/color}{/b}。 {i}在女孩的生日那天，爱意值和恐惧值更容易受到影响。{/i}")
         girl.add_effects(Effect("boost", "love gains", 2), expires = calendar.time + 1)
         girl.add_effects(Effect("boost", "fear gains", 2), expires = calendar.time + 1)
     

@@ -26170,7 +26170,7 @@ translate chinese kosmo_returns2_4cc443c4:
 translate chinese kosmo_returns2_26659a6c:
 
     # kosmo "I offered to pay for her scholarship in Zan, but didn't tell her I charge a 200 percent interest rate."
-    kosmo "我提供给她在瓒留学的奖学金，但没有告诉她我要收取200%的利息。"
+    kosmo "我提供给她在瓒留学的奖学金，但没有告诉她我要收取二十成的利息。"
 
 # game/BKstory_events.rpy:13508
 translate chinese kosmo_returns2_84a71ea6:
@@ -30034,7 +30034,7 @@ translate chinese meet_carpenter_6c71abc5:
 translate chinese meet_carpenter_f38cbdf1:
 
     # carpenter "'nyway. I can build and fix things, I can make myself useful anywhere. But I won't be sucking dicks."
-    carpenter "'nyway. I can build and fix things, I can make myself useful anywhere. But I won't be sucking dicks."
+    carpenter "无论如何。我可以建造和修理东西，我可以在任何地方发挥作用。但我可不会去舔你的鸡巴。"
 
 # game/BKstory_events.rpy:15414
 translate chinese meet_carpenter_aeb3911a:
@@ -34468,7 +34468,7 @@ translate chinese meet_gurigura_b8501947:
 translate chinese meet_gurigura_292c869c:
 
     # "Passerby" "Hey, nice dildo, Father!"
-    "Passerby" "嘿，不错的按摩棒，父亲！"
+    "Passerby" "嘿，不错的按摩棒，神父！"
 
 # game/BKstory_events.rpy:17534
 translate chinese meet_gurigura_88073ed4:

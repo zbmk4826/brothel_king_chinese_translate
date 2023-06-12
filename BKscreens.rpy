@@ -2185,7 +2185,7 @@ screen rank_level_details(girl):
 
             vbox:
                 text "等级" size res_font(12)
-                text str(girl.level) + " {size=12} / " + str(girl.rank * 5) + "{/size}" color c_lightgreen
+                text str(girl.level) + " {size=12} / " + str(girl.rank * 10) + "{/size}" color c_lightgreen
 
             vbox:
                 text "人气" size res_font(12)
@@ -5801,7 +5801,7 @@ screen main_character():
 
                     text "{color=[col2]}" + str(int(MC.get_stat(stat))) + "{/color}" size res_font(18) xanchor 1.0 xalign 0.8
 
-                    if MC.skill_points > 0 and MC.get_stat(stat, raw=True) < 10:
+                    if MC.skill_points > 0 and MC.get_stat(stat, raw=True) < 20:
                         textbutton "+" text_size res_font(14) xpos 0.82 xfill False action Return("raise_" + stat)
 
             text "" size res_font(8)
@@ -5814,7 +5814,7 @@ screen main_character():
 
                     $ text1 = "每当你或你的女孩发生性关系时，或当你的一个女孩获得一个新的级别时，你都会获得威望。"
 
-                    if MC.level == 25:
+                    if MC.level == 100:
                         $ text1 += "\n你已经达到了最高等级。"
                     else:
                         $ text1 += "\n你需要" + str(int(MC_xp_to_levelup[MC.level])) + "点威望值来提升等级。"

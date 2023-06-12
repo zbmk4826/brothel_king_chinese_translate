@@ -649,7 +649,7 @@ init -4 python:
                          "Exotic emporium" : "舶来品商场",
 
                          "Market" : "集市",
-                         "Stables" : "牲畜棚",
+                         "Stables" : "马厩",
                          "Plaza" : "广场",
                          "Gallows" : "绞刑架",
                          "Prison" : "监狱",

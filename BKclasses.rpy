@@ -368,7 +368,7 @@ init -2 python:
             self.max_girl_level = {0: 1, 1: 1, 2: 5, 3: 5, 4: 10, 5: 10, 6: 15, 7: 20}[self.chapter]
 
         def update_max_girl_level(self): # Weekly update in random girls max level
-            if self.max_girl_level < self.max_girl_rank * 5:
+            if self.max_girl_level < self.max_girl_rank * 10:
                 self.max_girl_level += 0.5 # One level unlocks every two weeks
 
     class Main(object): #Attributes: name, job, god, pictures, decisions, inventory, girl inventory, character
@@ -869,7 +869,7 @@ init -2 python:
             return chg
 
         def ready_to_level(self):
-            if self.level < 25:
+            if self.level < 100:
                 if self.prestige >= MC_xp_to_levelup[self.level]:
                     return True
 
@@ -7294,7 +7294,7 @@ init -2 python:
                 return "{b}弱点{/b}：" + farm_related_dict[target]
 
             elif spe == "item":
-                return "{b}必须穿着{/b}：" + target.name
+                return "{b}必须穿着{/b}：" + setting_name_dict[target.name]
 
             elif spe == "girls":
                 return "{b}派遣两个女孩{/b} (额外报酬)"

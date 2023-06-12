@@ -2760,9 +2760,9 @@ init -4 python:
 
     xp_to_levelup = {0 : 0}
 
-    for i in range(1, 25):
+    for i in range(1, 100):
 
-        xp_to_levelup[i] = xp_to_levelup[i-1] + 10 * (i) ** 2
+        xp_to_levelup[i] = xp_to_levelup[i-1] + 5 * (i) ** 2
 
 #        if i < 5:
 #            xp_to_levelup[i] = xp_to_levelup[i-1] + 5 * (i + 1)
@@ -2781,9 +2781,9 @@ init -4 python:
 
     MC_xp_to_levelup = {0 : 0}
 
-    for i in range(1, 26):
+    for i in range(1, 101):
 
-        MC_xp_to_levelup[i] = MC_xp_to_levelup[i-1] + 10 * i ** 2
+        MC_xp_to_levelup[i] = MC_xp_to_levelup[i-1] + 5 * i ** 2
 
 
 
@@ -3339,7 +3339,7 @@ init -2 python:
     contract_description = {"cruise" : ":ORG:正在:dis:组织一次夜间巡游以感谢其成员今年的辛勤工作。:AVEN:将在黄昏时分出发前往海湾观光，然后停泊在:LOC:旁边，享受一个娱乐之夜。",
                             "party" : ":ORG:正在:aven:附近举办一个奢华的派对。所有在瓒城的人都要参加，并一直狂欢到天亮之后。",
                             "ceremony" : ":ORG:选择了:aven:靠近:LOC:来庆祝他们众多的圣日之一。为了更接近他们的神，崇拜者要超越精神和肉体，沉浸在最可耻的快乐中，用大量的圣酒洗去他们的罪孽，教会在现场很方便地出售这些圣酒。",
-                            "festival" : ":ORG:下个月将在:dis:举办一个巨大的节日，以庆祝新的季节、三头牛、太阳再次升起，或其他一些乡下人的胡话。不过，在:Aven:靠近:LOC:的地方会有一场大的盛宴，有食物、饮料、表演，当然还有女孩！",
+                            "festival" : ":ORG:下个月将在:dis:举办一个巨大的节日，以庆祝新的季节、三头牛、太阳再次升起，或其他一些乡下人的胡话。不过，在:AVEN:靠近:LOC:的地方会有一场大的盛宴，有食物、饮料、表演，当然还有女孩！",
                             "date" : ":ORG:已经邀请了几个朋友到:aven:旁边的:LOC:过夜，并要求有人陪伴。仪容整洁、举止得体的女仆被期望照顾他的每一个需求。",
                             "meeting" : ":ORG:召集志同道合的贵族和外交官开会，讨论:ven:在:LOC:附近的一个隐秘的地点。虽然这一严肃话题的复杂性将占据他们的大部分时间，但他们也希望主人能提供一流的服务和'缓解'紧张的方法。",
                             "magic" : ":ORG:召集所有的奥术师在:LOC:参加一个有趣的魔法之夜。在美女们的照顾下，客人们将在:aven:参加特别活动，俯瞰:DIS:的壮丽景色。",

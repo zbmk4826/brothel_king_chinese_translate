@@ -554,7 +554,7 @@ init -2 python:
             self.level = level
 
             # Adjust rank
-            while self.rank * 5 < self.level:
+            while self.rank * 10 < self.level:
                 self.rank += 1
 
             # Adjust XP and REP
@@ -2161,13 +2161,13 @@ init -2 python:
 
         def get_xp_cap(self):
 
-            if self.level < self.rank * 5:
+            if self.level < self.rank * 10:
 
                 cap = xp_to_levelup[self.level]
 
             else:
 
-                cap = xp_to_levelup[self.rank * 5 - 1]
+                cap = xp_to_levelup[self.rank * 10 - 1]
 
             return cap
 
@@ -2485,7 +2485,7 @@ init -2 python:
             elif stat_name == "xp":
 
                 _min = 0
-                _max = xp_to_levelup[self.rank * 5 - 1]
+                _max = xp_to_levelup[self.rank * 10 - 1]
 
             elif stat_name == "jp":
 
@@ -2716,10 +2716,10 @@ init -2 python:
                 if forced:
                     self.xp = self.get_xp_cap()
 
-                if self.level < 25: # Hard-coded level cap
+                if self.level < 100: # Hard-coded level cap
                     self.level += 1
 
-                    self.upgrade_points += 5 + 5 * self.rank
+                    self.upgrade_points += 5 + 10 * self.rank
 
                     if self.level%5 == 0:
                         self.perk_points += 2
@@ -2807,7 +2807,7 @@ init -2 python:
 
         def ready_to_level(self):
 
-            if self.level < self.rank * 5:
+            if self.level < self.rank * 10:
 
                 if self.xp >= self.get_xp_cap():
 
@@ -2827,7 +2827,7 @@ init -2 python:
 
             if self.rank < district.rank:
 
-                if self.rep >= rep_to_rank[self.rank] * self.get_effect("boost", "new rank reputation requirement") and self.level >= self.rank * 5:
+                if self.rep >= rep_to_rank[self.rank] * self.get_effect("boost", "new rank reputation requirement") and self.level >= self.rank * 10:
 
                     return True
 

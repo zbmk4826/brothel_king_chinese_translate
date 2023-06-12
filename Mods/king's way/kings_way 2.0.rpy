@@ -460,7 +460,7 @@ screen cheat_slave_edit:
                         textbutton "Max" action SetDict(slave_id.jp,job,slave_id.get_jp_cap(job))
             text "指令计数器" layout "nobreak" color "#33cccc"
             for act in slave_id.MC_interact_counters:
-                if act not in ("present", "money", "offer", None):
+                if act not in ("present", "money", "offer","discipline","reward",None):
                     hbox:
                         text "{}: {}".format(button_name_dict[act], slave_id.MC_interact_counters[act]) layout "nobreak"
                         textbutton "" action SetDict(slave_id.MC_interact_counters,act,0)

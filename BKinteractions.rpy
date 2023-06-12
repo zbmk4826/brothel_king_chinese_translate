@@ -1448,7 +1448,7 @@ label slave_remove_fixation(girl):
             "[girl.name] is getting used to [text1] Her progress is encouraging."
             $ renpy.say("",  "训练进行得很顺利。" + event_color["good"] % (girl.name + "有了一些进步。"))
         elif inter.result == 3:
-            $ text1 = fix.name.capitalize()
+            $ text1 = girl_related_dict[fix.name.capitalize()]
             "[girl.name] did very well today. [text1] is beginning to feel almost normal to her."
             $ renpy.say("",  "训练进行得很顺利。" + event_color["good"] % (girl.name + "有了一些进步。"))
 
@@ -2797,7 +2797,7 @@ label slave_punish_beat(girl): # To do: add a special reaction if she loves/hate
 label slave_punish_rape(girl):
     you "You need a good lesson! I will make sure that you learn it this time."
 
-    $ result = menu(get_act_menu(prompt="How will you punish her this time?", extended=False, girl=girl, conditions=False))
+    $ result = menu(get_act_menu(prompt="这次你要怎么惩罚她?", extended=False, girl=girl, conditions=False))
 
     if result == "back":
         $ inter.canceled = True
