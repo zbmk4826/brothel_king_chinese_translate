@@ -282,67 +282,67 @@ init -1 python:
     add_dialogue("slave love", ("very idealist"), ("您是我一生的挚爱!我希望我们永远不会分开。", "*亲吻*我爱您的一切!", "*blush* 您真的很特别，主人。我爱您!"))
     add_dialogue("slave love", ("very materialist"), ("我爱慕您, 主人.", "哦,主人!除了您，我谁也不在乎!", "真不敢相信我竟然这么在乎您，主人。"))
     add_dialogue("slave love", ("very lewd"), ("我无法停止对你的幻想，亲爱的。", "我的玩具都比不上骑在您的鸡巴上爽，主人。", "操，您都让我{i}这么{/i}湿了，[MC.name]……希望您能好好帮我解决一下呢~"))
-    add_dialogue("slave love", ("very modest"), ("您让我变得更完美, [MC.name].", "[MC.name], 你应该知道你对我有多重要……我爱你!", "哦[MC.name], 我无法想象没有您的生活。我们应该马上结婚!"))
-    add_dialogue("slave love", ("very dom"), ("你太棒了。你知道的，对吧?", "I'm not that good at talking about this kind of stuff... I just wanted to let you know that I care about you.", "Hey, uhm... I just wanted to confess that I really like you. A lot."))
-    add_dialogue("slave love", ("very sub"), ("I love you more than anyone, Master!", "[MC.name], you're the one that I love. The only one.", "Oh [MC.name], my sweetheart! I love you, love you, love you!"))
+    add_dialogue("slave love", ("very modest"), ("您让我变得更完美, [MC.name].", "[MC.name], 你应该知道你对我有多重要……我爱您!", "哦[MC.name], 我无法想象没有您的生活。我们应该马上结婚!"))
+    add_dialogue("slave love", ("very dom"), ("你太棒了。你知道的，对吧?", "我不太擅长谈论这种事情……我只是想让你知道我在乎您。", "嘿,嗯……我只是想承认我真的很喜欢您。非常。"))
+    add_dialogue("slave love", ("very sub"), ("我比任何人都爱您，主人!", "[MC.name], 您是我唯一爱的人。", "哦[MC.name],我的甜心!我爱您，爱您，爱您!"))
     
     # custom dialogue: salvation (Arios)
-    add_dialogue("holiday salvation", ("very extravert"), ("Isn't it fun to see the streets light up in this time of year?", "I'm always surprised at how they manage to fit all those candles inside the Cathedra."))
-    add_dialogue("holiday salvation", ("very introvert"), ("Is it okay if I keep one candle lit inside my room?", "It takes just one candle to keep the darkness at bay."))
-    add_dialogue("holiday salvation", ("very idealist"), ("What a beautiful day! Let's enjoy it to the fullest.", "I love how traditions like this bring us all together.", "I love to wander through Zan on this day. Wherever you are, a river of candles guides you towards the Cathedra.")) # likes holiday
-    add_dialogue("holiday salvation", ("very materialist"), ("We should totally sell our own candles next year. Imagine the gold you could rake in!", "What are we celebrating again? I don't get it."))
-    add_dialogue("holiday salvation", ("very lewd"), ("Ugh, this is such a pain... I can think of somewhere else to stick those candles.", "What's the point of all this? It's a waste of our time."))
-    add_dialogue("holiday salvation", ("very modest"), ("May the Light of Arios guide our hearts!", "Thank you, Master. May Arios bless all those who frequent [brothel.name].", "That was a beautiful gesture, Master. Thank you.", "I appreciate what you did today, Master.")) # loves holiday
-    add_dialogue("holiday salvation", ("very dom"), ("Is that all?", "*sigh* I've got better things to do today."))
-    add_dialogue("holiday salvation", ("very sub"), ("*giggle* I'll worship whatever you want me to worship, Master.", "Thank you, Master."))
-    add_dialogue("holiday salvation evil", ("very extravert"), ("Aww, don't you like seeing all those candles light up the streets of Zan?", "Okay, Master. If you say so."))
-    add_dialogue("holiday salvation evil", ("very introvert"), ("Oh... You don't like this tradition?", "W-we're not lighting up any candles? Not even one?"))
-    add_dialogue("holiday salvation evil", ("very idealist"), ("*pout* Why can't we just enjoy today's celebrations?", "*sigh* Well, that ruined my mood. Guess there's always next year.", "We don't have to celebrate Arios, but let's at least enjoy the moment!")) # likes holiday
-    add_dialogue("holiday salvation evil", ("very materialist"), ("Those candles are a fire hazard. Better safe than sorry.", "I don't care much about this tradition anyways."))
-    add_dialogue("holiday salvation evil", ("very lewd"), ("Thank you for saying what needed to be said, Master. [brothel.name] gets much more fun in the dark!", "I really don't care about any of this."))
-    add_dialogue("holiday salvation evil", ("very modest"), ("*pout* I'm sorry, Master. I must excuse myself.", "*sob* Oh, Master... I'm praying for you!", "*sob* I hope you will see Arios' Light one day, Master.", "*sob* I can't believe this! I pray that Arios will bring light into our lives.")) # loves holiday
-    add_dialogue("holiday salvation evil", ("very dom"), ("Are we done? Who cares about any of this?", "Let's just get on with our day, shall we?"))
-    add_dialogue("holiday salvation evil", ("very sub"), ("Not a big fan of Arios? Then neither am I!", "Whatever you wish, Master."))
+    add_dialogue("holiday salvation", ("very extravert"), ("在每年的这个时候看到灯火通明的街道不是很有趣吗?", "我总是很惊讶他们是如何把那么多蜡烛塞进大教堂的。"))
+    add_dialogue("holiday salvation", ("very introvert"), ("我可以在房间里点一支蜡烛吗?", "只需要一支蜡烛就能让黑暗远离。"))
+    add_dialogue("holiday salvation", ("very idealist"), ("多么美好的一天啊!让我们尽情享受吧。", "我喜欢这样的传统让我们团结在一起。", "我喜欢在这一天在瓒到处漫步。无论你身在何处，如河一般的蜡烛都会指引你走向大教堂。")) # likes holiday
+    add_dialogue("holiday salvation", ("very materialist"), ("明年我们真该自己卖蜡烛。想象一下你能赚到多少钱!", "我们要庆祝什么来着?我没搞懂。"))
+    add_dialogue("holiday salvation", ("very lewd"), ("啊，这太痛苦了……我能想到别的地方也是这么放蜡烛的。", "这一切的意义是什么?这是浪费我们的时间。"))
+    add_dialogue("holiday salvation", ("very modest"), ("愿阿里奥斯之光指引我们的心!", "谢谢您，主人。愿阿里奥斯保佑所有常来光顾[brothel.name]的人.", "这布置的真漂亮，主人。谢谢您！", "我很感激您今天所做的一切，主人。")) # loves holiday
+    add_dialogue("holiday salvation", ("very dom"), ("就这些吗?", "*叹气*我今天有更重要的事要做。"))
+    add_dialogue("holiday salvation", ("very sub"), ("*咯咯地笑*您要我敬奉什么我就敬奉什么，主人。", "谢谢您, 主人."))
+    add_dialogue("holiday salvation evil", ("very extravert"), ("哇，您不喜欢看到被所有蜡烛照亮的瓒城街道吗?", "好的,主人。既然您这么说。"))
+    add_dialogue("holiday salvation evil", ("very introvert"), ("哦……您不喜欢这个传统?", "我-我们不点蜡烛吗?一个都不点么?"))
+    add_dialogue("holiday salvation evil", ("very idealist"), ("*撅嘴*为什么我们就不能享受今天的庆祝活动呢?", "*叹气*真扫兴啊。看来明年也是这样了啊。", "我们不需要庆祝阿里奥斯，但至少让我们享受这一刻吧!")) # likes holiday
+    add_dialogue("holiday salvation evil", ("very materialist"), ("那些蜡烛可能有火灾隐患。有备才难无患。", "反正我也不怎么在乎这个传统。"))
+    add_dialogue("holiday salvation evil", ("very lewd"), ("谢谢您说了该说的话，主人。[brothel.name]在黑暗中能获得更多乐趣!", "我真的一点都不在乎这些。"))
+    add_dialogue("holiday salvation evil", ("very modest"), ("*噘嘴*对不起，主人。我得告辞了。", "*啜泣*哦,主人…我在为您祈祷!", "*啜泣*我希望有一天您能看到阿里奥斯之光，主人。", "*啜泣*我真不敢相信!我祈祷阿里奥斯能给我们的生活带来光明。")) # loves holiday
+    add_dialogue("holiday salvation evil", ("very dom"), ("我们完事了?谁在乎这些?", "我们继续我们的生活吧，好吗?"))
+    add_dialogue("holiday salvation evil", ("very sub"), ("不喜欢阿里奥斯?那我也不喜欢!", "随你的便，主人。"))
 
     # custom dialogue: night of nights
-    add_dialogue("slave defense", ("very extravert"), ("You'll protect us, won't you [MC.name]?", "I hope things won't get too chaotic tonight."))
-    add_dialogue("slave defense", ("very introvert"), ("Please keep [brothel.name] safe, Master.", "I'm scared..."))
-    add_dialogue("slave defense", ("very idealist"), ("We'll be okay! Our security guards can handle it.", "We have nothing to fear. Our Master will take care of things."))
-    add_dialogue("slave defense", ("very materialist"), ("I'm not afraid of using a weapon if I have to.", "I'm ready for anything tonight!"))
-    add_dialogue("slave defense", ("very lewd"), ("Nothing wrong with a bit of violence now and then to set people straight.", "*sigh* Boys will be boys."))
-    add_dialogue("slave defense", ("very modest"), ("Master! Protect me!", "Aah! I can't stand this!"))
-    add_dialogue("slave defense", ("very dom"), ("If anyone tries anything funny I'll slice off his cock.", "If you want to test me, then come and get it."))
-    add_dialogue("slave defense", ("very sub"), ("Master, I'm scared...", "Master, will we be okay?"))
+    add_dialogue("slave defense", ("very extravert"), ("[MC.name]，您会保护我们的，对吧?", "我希望今晚的事情不要太混乱。"))
+    add_dialogue("slave defense", ("very introvert"), ("请注意[brothel.name]的安全, 主人。", "我好害怕……"))
+    add_dialogue("slave defense", ("very idealist"), ("我们会没事的!我们的保安可以处理这些问题。", "我们没什么好害怕的。我们的主人会处理好一切的。"))
+    add_dialogue("slave defense", ("very materialist"), ("如果必要的话，我不怕使用武器。", "今晚我什么都准备好了!"))
+    add_dialogue("slave defense", ("very lewd"), ("偶尔用点暴力来纠正人们的错误行为并没有什么错。", "*叹气*男孩子就是男孩子。"))
+    add_dialogue("slave defense", ("very modest"), ("主人!保护我!", "啊!我受不了了!"))
+    add_dialogue("slave defense", ("very dom"), ("如果有人敢耍花样，我就把他的鸡巴割下来。", "如果你想测试我，那就来试试吧。"))
+    add_dialogue("slave defense", ("very sub"), ("主人，我好害怕……", "主人，我们会没事的吧?"))
 
     # custom dialogue: solstice/hmas
-    add_dialogue("holiday hmas", ("very extravert"), ("Okay, I admit it! I've been a naughty girl this year. *giggle*", "Ho ho ho, welcome one and all to [brothel.name]!", "What do Kosmo and a Hmas tree have in common? They both have ornamental balls."))
-    add_dialogue("holiday hmas", ("very introvert"), ("Ho ho ho!", "Merry Hmas, [MC.name].", "You look jolly today."))
-    add_dialogue("holiday hmas", ("very idealist"), ("It's so cold outside... Let's snuggle up together, shall we?", "My, look at the weather! Let's spend all day under a blanket together. *giggle*", "Everyone has been so naughty this year."))
-    add_dialogue("holiday hmas", ("very materialist"), ("I wonder if I'll recieve any presents tomorrow...", "I really hope someone will put something precious in my stocking.", "Merry Hmas to you, [MC.name]."))
-    add_dialogue("holiday hmas", ("very lewd"), ("*giggle* You've been such a naughty boy this year!", "*giggle* Is that a candy cane in your pocket, or are you just happy to see me?", "Naughty or nice? As if you even have to ask... Naughty ofcourse! *giggle*"))
-    add_dialogue("holiday hmas", ("very modest"), ("Have you been a good boy, [MC.name]?", "Are you giving away any presents tomorrow, [MC.name]?", "You've been really good to me, [MC.name]. Thank you."))
-    add_dialogue("holiday hmas", ("very dom"), ("Are you looking forward to Hmas?", "I'm glad we can spend this time together.", "I wonder if we'll get any snow this year."))
-    add_dialogue("holiday hmas", ("very sub"), ("Have I been a good girl, [MC.name]?", "I wonder if I'll get any presents this year.", "Am I naughty or nice, [MC.name]?"))
+    add_dialogue("holiday hmas", ("very extravert"), ("好吧，我承认!我今年一直是个淫荡的女孩。 *咯咯笑*", "嗬嗬嗬，欢迎大家光临[brothel.name]!", "科斯莫和性诞树有什么共同之处?它们都有装饰用的球哦。"))
+    add_dialogue("holiday hmas", ("very introvert"), ("嗬嗬嗬!", "性诞节快乐, [MC.name].", "您今天看起来很高兴。"))
+    add_dialogue("holiday hmas", ("very idealist"), ("外面太冷了……让我们依偎在一起取暖，怎么样?", "天哪，看看这天气!让我们一起在毯子下度过一整天吧。*咯咯笑*", "今年的每个人可都是非常淫荡的哦。"))
+    add_dialogue("holiday hmas", ("very materialist"), ("我不知道明天能否会收到礼物……", "我真希望有人能在我的袜子里放些珍贵的东西。", "祝您性诞节快乐, [MC.name]."))
+    add_dialogue("holiday hmas", ("very lewd"), ("*咯咯笑* 您今年真是个下流的小孩子!", "*咯咯笑*您口袋里装的是拐杖糖，还是很高兴见到我?", "淫荡还是有乖一点?您还需要问么…当然是淫荡了! *咯咯笑*"))
+    add_dialogue("holiday hmas", ("very modest"), ("您一直是个好孩子吗, [MC.name]?", "您明天要送什么礼物吗, [MC.name]?", "您对我真的很好, [MC.name]. 谢谢您."))
+    add_dialogue("holiday hmas", ("very dom"), ("您期待性诞节吗?", "我很高兴我们能共度这段时光。", "我想知道今年会不会下雪。"))
+    add_dialogue("holiday hmas", ("very sub"), ("我是个好女孩吗, [MC.name]?", "我不知道今年会不会收到礼物。", "我是乖一些还是要淫荡一些呢, [MC.name]?"))
 
     # custom dialogue: birthday congrats
-    add_dialogue("slave congrats", ("very extravert"), ("Happy birthday, sweetie.", "Congratulations! I wish you all the best.", "*sings* Happy birthday to you! Happy birthday to you!", "There's our birthday gal! Let's get this party started!"))
-    add_dialogue("slave congrats", ("very introvert"), ("Happy birthday! Have a wonderful day.", "*giggle* Surprise!", "Happy birthday!", "Congratulations!"))
-    add_dialogue("slave congrats", ("very idealist"), ("*sings* Happy birthday to you! Happy birthday to you!", "Yay! Let's celebrate!", "We're so glad to have you here.", "You deserve the greatest birthday ever. Congratulations!"))
-    add_dialogue("slave congrats", ("very materialist"), ("So how old are you exactly?", "*giggle* You're wearing {i}that{/i} on your birthday?", "Surprise! Happy birthday, girl!", "Happy birthday, sweetie!"))
-    add_dialogue("slave congrats", ("very lewd"), ("To celebrate, you can sleep in my bed tonight.", "HAPPY BIRTHDAY!", "Let's all stay up late tonight!", "*grin* Any customers you would like to celebrate with?"))
-    add_dialogue("slave congrats", ("very modest"), ("Happy birthday! You look absolutely radiant.", "I hope you'll have a great day and a great year to come.", "Congratulations! The years fly by, don't they?", "My, you look beautiful today. Have a wonderful birthday."))
-    add_dialogue("slave congrats", ("very dom"), ("Did you get any presents yet?", "Any presents you're looking forward to?", "Perhaps we could visit the city together?", "Congrats!"))
-    add_dialogue("slave congrats", ("very sub"), ("Here, I made us some cake.", "Happy birthday! Enjoy your day.", "Look at that smile! Congratulations.", "*hug* Congratulations!"))
+    add_dialogue("slave congrats", ("very extravert"), ("生日快乐，亲爱的。", "恭喜你!祝你一切顺利。", "*唱歌*祝你生日快乐!祝你生日快乐!", "我们的寿星来了!让我们开始派对吧!"))
+    add_dialogue("slave congrats", ("very introvert"), ("生日快乐!祝你度过愉快的一天。", "*咯咯笑* Surprise!", "生日快乐!", "恭喜!"))
+    add_dialogue("slave congrats", ("very idealist"), ("*唱歌*祝你生日快乐!祝你生日快乐!", "耶!让我们好好庆祝一下吧!", "我们很高兴你能来。", "您值得拥有最棒的生日。恭喜你!"))
+    add_dialogue("slave congrats", ("very materialist"), ("你到底多大了?", "*咯咯笑*你生日就穿{i}那个{/i}怎么样", "Surprise! 生日快乐, 姑娘!", "生日快乐，亲爱的。"))
+    add_dialogue("slave congrats", ("very lewd"), ("为了庆祝，你今晚可以睡我的床。", "生日快乐!", "今晚我们熬个通宵吧!", "*咧着嘴笑*你想和谁一起庆祝一下吗?"))
+    add_dialogue("slave congrats", ("very modest"), ("生日快乐!你看起来容光焕发。", "我希望你度过美好的一天，更要度过美好的一年。", "恭喜你!时间过得真快，不是吗?", "天啊，你今天真漂亮。祝你生日快乐。"))
+    add_dialogue("slave congrats", ("very dom"), ("你收到礼物了吗?", "你想要什么礼物?", "也许我们可以一起去城里逛逛?", "恭喜!"))
+    add_dialogue("slave congrats", ("very sub"), ("来，我做了些蛋糕。", "生日快乐!今天要好好享受.", "看看这个笑容!祝贺你。", "*拥抱* 祝贺你!"))
     
     # custom dialogue: birthday-gal
-    add_dialogue("slave birthday", ("very extravert"), ("Thanks for coming, everyone. LET'S PARTY!", "Haha, HURRAY FOR ME!!"))
-    add_dialogue("slave birthday", ("very introvert"), ("T-thanks, I guess...", "O-okay... That's enough already."))
-    add_dialogue("slave birthday", ("very idealist"), ("*sniff* T-thank you for coming... I love all of you so much!", "What a great surprise! Thanks everyone!"))
-    add_dialogue("slave birthday", ("very materialist"), ("Ahaha! I'm sure you've all been looking forward to this day. Where are my presents?", "Ahahaha! Thank you all so much. Now where are my presents?"))
-    add_dialogue("slave birthday", ("very lewd"), ("Yay! *giggle* Happy birthday to me!", "Yeah yeah, thanks I suppose. Now where's the stripper? I demand a stripper on my birthday!"))
-    add_dialogue("slave birthday", ("very modest"), ("I really appreciate this. Thank you!", "Aww, what a lovely surprise! Thanks everyone."))
-    add_dialogue("slave birthday", ("very dom"), ("How did you all know this was my birthday?", "Damn, I'm tearing up... Thank you."))
-    add_dialogue("slave birthday", ("very sub"), ("Aww, thanks everyone!", "T-thank you all so much."))
+    add_dialogue("slave birthday", ("very extravert"), ("谢谢大家的到来。让我们开始派对吧!", "哈哈，为我欢呼!!"))
+    add_dialogue("slave birthday", ("very introvert"), ("谢-谢谢，我想…", "好-好吧……这些真的太足够了。"))
+    add_dialogue("slave birthday", ("very idealist"), ("*抽鼻子* 谢-谢谢你们能来... 我爱你们所有人!", "真是个惊喜!谢谢大家!"))
+    add_dialogue("slave birthday", ("very materialist"), ("哈哈!我相信你们都很期待这一天很久了。我的礼物在哪里?", "啊哈哈哈!非常感谢大家。现在我的礼物在哪里?"))
+    add_dialogue("slave birthday", ("very lewd"), ("耶! *咯咯笑* 祝我生日快乐!", "是的，我想谢谢大家。那么脱衣舞女在哪儿?我生日那天要脱衣舞娘!"))
+    add_dialogue("slave birthday", ("very modest"), ("我真的很感激。谢谢你们！", "啊，多么可爱的惊喜啊!谢谢你们每一个人。"))
+    add_dialogue("slave birthday", ("very dom"), ("你们怎么知道今天是我的生日?", "该死，我要流泪了……谢谢你们！"))
+    add_dialogue("slave birthday", ("very sub"), ("啊, 谢谢大家!", "非-非常感谢大家。"))
     
     def add_trait_perkless(self, trait, pos=None, forced=False): # Where 'trait' is an object (important)
 
@@ -817,27 +817,27 @@ label traitking_init:
                     # Description:  She tells you that she really wants to try to [text1]
                     # training:       (menu item)
 
-                   "Godless description" : "stop being a godless heathen.",
-                   "Godless training" : "Worship a God",
-                   "Godless intro" : "You educate her on the teachings and virtues of Shalia and Arios.",
-                   "Godless pos_reaction" : "She comprehends that her life is lived in service of a greater power and starts confessing her sins.",
-                   "Godless neg_reaction" : "She is very confused about how the scriptures contradict themselves all over the place.",
+                   "Godless description" : "别再做不信神的异教徒了。",
+                   "Godless training" : "敬拜神明",
+                   "Godless intro" : "你用莎莉娅和阿里奥斯的教义和美德教育她。",
+                   "Godless pos_reaction" : "她意识到自己的一生都在为更强大的力量服务，并开始忏悔自己的罪行。",
+                   "Godless neg_reaction" : "她很困惑经文是如何做到到处都是自相矛盾的。",
                    "Godless pic" : "geisha",
                    "Godless and_tag" : "study",
                    
-                   "Trauma description" : "overcome her trauma.",
-                   "Trauma training" : "Overcome trauma",
-                   "Trauma intro" : "The two of you talk at length about her childhood, to eventually lead into talking about her defloration.",
-                   "Trauma pos_reaction" : "She vividly describes her memories of the event and gains a better understanding of her reaction towards it.",
-                   "Trauma neg_reaction" : "She breaks down and starts crying uncontrollably.",
+                   "Trauma description" : "克服她的创伤。",
+                   "Trauma training" : "克服创伤",
+                   "Trauma intro" : "你们俩长谈了她的童年，最后谈到了她的被玷污的事情。",
+                   "Trauma pos_reaction" : "她生动地描述了她对这件事的记忆，并更好地理解了自己对这件事的反应。",
+                   "Trauma neg_reaction" : "她崩溃了，无法控制地哭了起来。",
                    "Trauma pic" : "rest",
                    "Trauma and_tag" : "profile",
                    
-                   "Dull description" : "be a bit more adventurous.",
-                   "Dull training" : "Experience exciting things",
-                   "Dull intro" : "You walk around the streets of Zan together, deliberately wandering into dangerous corridors and side-streets you'd normally never explore.",
-                   "Dull pos_reaction" : "She enjoys the outing tremendously and has plenty of new stories to tell about what she has seen.",
-                   "Dull neg_reaction" : "She absolutely hates it and is disturbed by the things you happen to stumble upon. She longs for the safety of her own bedroom.",
+                   "Dull description" : "多一点冒险精神。",
+                   "Dull training" : "体验令人兴奋的事情",
+                   "Dull intro" : "你们一起走在瓒城的街道上, 故意四处穿梭在你们通常不会探索的危险道路和小巷。",
+                   "Dull pos_reaction" : "她非常喜欢这次郊游，并且有很多关于她所看到的新故事要讲。",
+                   "Dull neg_reaction" : "她非常讨厌这么干，而且被你偶然发现的东西打扰了。她非常渴望回到自己安全的卧室。",
                    "Dull pic" : "town",
                    "Dull and_tag" : "profile",
                    
@@ -1313,7 +1313,7 @@ label traitking_init:
                    "Monsterkin pic" : "dom",
                    "Monsterkin and_tag" : "teacher",
 
-                   "Vivified description" : "dispel the rumours that she's a magician's creation.",
+                   "Vivified description" : "消除她是魔法造物的谣言。",
                    "Vivified training" : "Allow the Magician's Guild to study her",
                    "Vivified intro" : "You send her to the magicians guild to conduct a thorough investigation of her personhood. The magicians seem very excited by this opportunity.",
                    "Vivified pos_reaction" : "The magicians are fascinated by her. It's not often that they get to study a real girl so intimately. They are unable to unanimously agree that she's an ordinary person.",
