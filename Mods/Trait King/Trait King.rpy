@@ -277,10 +277,10 @@ init -1 python:
     add_dialogue("holiday new year", ("very sub"), ("谢-谢谢您为我们做的一切，主人。", "我爱您，主人。祝您一切顺利!", "我希望我能在未来的许多年里能一直帮助[brothel.name],主人!"))
 
     # custom dialogue: valentines
-    add_dialogue("slave love", ("very extravert"), ("Master, I just want you and everyone else to know... I LOVE YOU!", "I love you {i}so{/i} much, Master!", "You're the best, [MC.name]. I love you more than anyone in the world!"))
-    add_dialogue("slave love", ("very introvert"), ("I-is this a good time? I love you, Master!", "*kiss* I love you, Master.", "*kiss* Thank you for everything, Master."))
-    add_dialogue("slave love", ("very idealist"), ("You're the love of my life! I hope we'll never be apart.", "*kiss* I love everything about you!", "*blush* You are truly something special, Master. I love you!"))
-    add_dialogue("slave love", ("very materialist"), ("I adore you, Master.", "Oh, Master! I don't care about anyone but you!", "I can't believe how much I've come to care about you, Master."))
+    add_dialogue("slave love", ("very extravert"), ("主人，我只是想让您和其他人知道…我爱您!", "我太爱{i}您{/i}了，主人!", "您是最棒的，[MC.name]。我爱您胜过世界上任何人!"))
+    add_dialogue("slave love", ("very introvert"), ("现-现在方便吗?我爱您，主人!", "*亲吻*我爱您, 主人.", "*亲吻* 主人，谢谢您所做的一切。"))
+    add_dialogue("slave love", ("very idealist"), ("您是我一生的挚爱!我希望我们永远不会分开。", "*亲吻*我爱您的一切!", "*blush* 您真的很特别，主人。我爱您!"))
+    add_dialogue("slave love", ("very materialist"), ("我爱慕您, 主人.", "哦,主人!除了您，我谁也不在乎!", "真不敢相信我竟然这么在乎您，主人。"))
     add_dialogue("slave love", ("very lewd"), ("I can't stop fantasizing about you, my love.", "None of my toys come close to the experience of riding your cock, Master.", "Fuck, you get me {i}so{/i} wet, [MC.name]"))
     add_dialogue("slave love", ("very modest"), ("You complete me, [MC.name].", "[MC.name], you should know how much you mean to me... I love you!", "Oh [MC.name], I cannot imagine a life without you. We should get married!"))
     add_dialogue("slave love", ("very dom"), ("You're awesome. You know that, right?", "I'm not that good at talking about this kind of stuff... I just wanted to let you know that I care about you.", "Hey, uhm... I just wanted to confess that I really like you. A lot."))

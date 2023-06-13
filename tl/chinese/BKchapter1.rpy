@@ -4318,7 +4318,7 @@ translate chinese c1_ask_guild_for_help_ad5913b7:
 translate chinese c1_ask_guild_for_help_c9fb7476:
 
     # renza "Master [MC.name]... So you're the one sneaking around my house. I thought you got the message the first time."
-    renza "原来是[MC.name]大师……所以是你在我的房子里鬼鬼祟祟的。我以为你第一次就知道了。"
+    renza "原来是[MC.name]大人……所以是你在我的房子里鬼鬼祟祟的。我以为你第一次就知道了。"
 
 # game/BKchapter1.rpy:2598
 translate chinese c1_ask_guild_for_help_42c04daa:
@@ -9118,7 +9118,7 @@ translate chinese c1_captain_meeting_5e5b2cc0:
 translate chinese c1_captain_meeting_8ebe52de:
 
     # captain "Forgive me, Master [MC.name], but you look a little young and inexperienced to be as wealthy as you claim to be..."
-    captain "恕我直言，[MC.name]大师，但您看起来太年轻了，而且没啥经验，您不可能有您说的那样富有……"
+    captain "恕我直言，[MC.name]大人，但您看起来太年轻了，而且没啥经验，您不可能有您说的那样富有……"
 
 # game/BKchapter1.rpy:4905
 translate chinese c1_captain_meeting_9f446804:

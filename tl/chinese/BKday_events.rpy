@@ -3814,7 +3814,7 @@ translate chinese onsen_night_event_wake_up_716c42c3:
 translate chinese onsen_night_event_wake_up_91296546:
 
     # man "Some boast, here, Master [MC.name]! What are those girls of yours capable of that we haven't seen before?"
-    man "有点夸张了，[MC.name]大师！你的姑娘能做到我们从未见过的事情吗？"
+    man "有点夸张了，[MC.name]大人！你的姑娘能做到我们从未见过的事情吗？"
 
 # game/BKday_events.rpy:2592
 translate chinese onsen_night_event_wake_up_685847ec:
@@ -11422,7 +11422,7 @@ translate chinese night_girl_perform_f857cc27:
 translate chinese night_girl_perform_cdf3047e:
 
     # "Customer" "Sorry, Master [MC.name], but I believe you left out a part of the story."
-    "客户" "对不起，[MC.name]大师，但我认为您还漏了故事的一部分。"
+    "客户" "对不起，[MC.name]大人，但我认为您还漏了故事的一部分。"
 
 # game/BKday_events.rpy:7271
 translate chinese night_girl_perform_c26fffe1:

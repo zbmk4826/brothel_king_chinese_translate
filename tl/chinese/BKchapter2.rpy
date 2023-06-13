@@ -16108,7 +16108,7 @@ translate chinese c2_palace_visit1_9209aa36:
 translate chinese c2_palace_visit1_1fcf2ee4:
 
     # kuro "Master [MC.name], please continue your investigation. You should learn about these foreign ninjas' motives. It must be linked to our problem in one way or another."
-    kuro "[MC.name]大师，请继续你的调查。你应该了解这些外国忍者的动机。这一定与我们现在的问题有关。"
+    kuro "[MC.name]大人，请继续你的调查。你应该了解这些外国忍者的动机。这一定与我们现在的问题有关。"
 
 # game/BKchapter2.rpy:8106
 translate chinese c2_palace_visit1_906a2155:
@@ -16132,7 +16132,7 @@ translate chinese c2_palace_visit1_8101cc06:
 translate chinese c2_palace_visit1_565c54c4:
 
     # kuro "Master [MC.name], why don't you join us? This is a boring affair, to be sure, but perhaps you can learn some new information."
-    kuro "[MC.name]大师，为什么不加入我们呢？虽然这是一个无聊的事情，但也许你可以学到一些新的情报。"
+    kuro "[MC.name]大人，为什么不加入我们呢？虽然这是一个无聊的事情，但也许你可以学到一些新的情报。"
 
 # game/BKchapter2.rpy:8114
 translate chinese c2_palace_visit1_a2661bfc:
@@ -16156,7 +16156,7 @@ translate chinese c2_palace_visit1_c7c904f2_1:
 translate chinese c2_palace_visit1_58cf91bc:
 
     # kuro "Come, Master [MC.name], your presence will surprise no one. But for all intents and purposes, it is best if you act as if we'd never met."
-    kuro "来吧，[MC.name]大师，你的出现不会让任何人感到惊讶。但是为了我们的目标，你最好是表现得好像我们从未见过面一样。"
+    kuro "来吧，[MC.name]大人，你的出现不会让任何人感到惊讶。但是为了我们的目标，你最好是表现得好像我们从未见过面一样。"
 
 # game/BKchapter2.rpy:8122
 translate chinese c2_palace_visit1_e0275b25:
@@ -17716,7 +17716,7 @@ translate chinese c2_palace_visit2_b5184d42:
 translate chinese c2_palace_visit2_d93bc0f4:
 
     # kuro "I hope you won't keep disappointing me, yes. Now, leave us, I have some important business to discuss with Master [MC.name]."
-    kuro "我希望你不要再让我失望了。现在，出去吧，我有一些重要的事情要和[MC.name]大师商量。"
+    kuro "我希望你不要再让我失望了。现在，出去吧，我有一些重要的事情要和[MC.name]大人商量。"
 
 # game/BKchapter2.rpy:8835
 translate chinese c2_palace_visit2_b453a22e:
@@ -17728,7 +17728,7 @@ translate chinese c2_palace_visit2_b453a22e:
 translate chinese c2_palace_visit2_4d474d9e:
 
     # kuro "I'm sorry you had to see that, Master [MC.name]."
-    kuro "很抱歉很抱歉让你看到这个，[MC.name]大师。"
+    kuro "很抱歉很抱歉让你看到这个，[MC.name]大人。"
 
 # game/BKchapter2.rpy:8843
 translate chinese c2_palace_visit2_5dc1a893:
@@ -18028,7 +18028,7 @@ translate chinese c2_palace_visit2_5c2157b6:
 translate chinese c2_palace_visit2_7d78de3d:
 
     # kuro "Master [MC.name], I would like to remind you that you are a guest in {i}my{/i} city. I could just as well have you expelled with just the clothes on your back."
-    kuro "[MC.name]大师，我想提醒你依据，你是在{i}我的{/i}城市里做客。我可以让你只穿着身上的衣服就从这座城里被驱逐出去。"
+    kuro "[MC.name]大人，我想提醒你依据，你是在{i}我的{/i}城市里做客。我可以让你只穿着身上的衣服就从这座城里被驱逐出去。"
 
 # game/BKchapter2.rpy:8978
 translate chinese c2_palace_visit2_8040c233:
@@ -18166,7 +18166,7 @@ translate chinese c2_palace_visit2_f678306b:
 translate chinese c2_palace_visit2_f4af8cf2:
 
     # kuro "I understand. So long, Master [MC.name]."
-    kuro "我明白了。再见，[MC.name]大师。"
+    kuro "我明白了。再见，[MC.name]大人。"
 
 # game/BKchapter2.rpy:9034
 translate chinese c2_palace_visit2_783ff731:
