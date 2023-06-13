@@ -281,9 +281,9 @@ init -1 python:
     add_dialogue("slave love", ("very introvert"), ("现-现在方便吗?我爱您，主人!", "*亲吻*我爱您, 主人.", "*亲吻* 主人，谢谢您所做的一切。"))
     add_dialogue("slave love", ("very idealist"), ("您是我一生的挚爱!我希望我们永远不会分开。", "*亲吻*我爱您的一切!", "*blush* 您真的很特别，主人。我爱您!"))
     add_dialogue("slave love", ("very materialist"), ("我爱慕您, 主人.", "哦,主人!除了您，我谁也不在乎!", "真不敢相信我竟然这么在乎您，主人。"))
-    add_dialogue("slave love", ("very lewd"), ("I can't stop fantasizing about you, my love.", "None of my toys come close to the experience of riding your cock, Master.", "Fuck, you get me {i}so{/i} wet, [MC.name]"))
-    add_dialogue("slave love", ("very modest"), ("You complete me, [MC.name].", "[MC.name], you should know how much you mean to me... I love you!", "Oh [MC.name], I cannot imagine a life without you. We should get married!"))
-    add_dialogue("slave love", ("very dom"), ("You're awesome. You know that, right?", "I'm not that good at talking about this kind of stuff... I just wanted to let you know that I care about you.", "Hey, uhm... I just wanted to confess that I really like you. A lot."))
+    add_dialogue("slave love", ("very lewd"), ("我无法停止对你的幻想，亲爱的。", "我的玩具都比不上骑在您的鸡巴上爽，主人。", "操，您都让我{i}这么{/i}湿了，[MC.name]……希望您能好好帮我解决一下呢~"))
+    add_dialogue("slave love", ("very modest"), ("您让我变得更完美, [MC.name].", "[MC.name], 你应该知道你对我有多重要……我爱你!", "哦[MC.name], 我无法想象没有您的生活。我们应该马上结婚!"))
+    add_dialogue("slave love", ("very dom"), ("你太棒了。你知道的，对吧?", "I'm not that good at talking about this kind of stuff... I just wanted to let you know that I care about you.", "Hey, uhm... I just wanted to confess that I really like you. A lot."))
     add_dialogue("slave love", ("very sub"), ("I love you more than anyone, Master!", "[MC.name], you're the one that I love. The only one.", "Oh [MC.name], my sweetheart! I love you, love you, love you!"))
     
     # custom dialogue: salvation (Arios)
