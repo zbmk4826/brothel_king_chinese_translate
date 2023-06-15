@@ -9657,7 +9657,7 @@ label c2_unlock_next_brothel(): # Happens in the rank 2 district where his broth
 
     $ dis = selected_district.name
     $ dis = "t" + dis[1:]
-
+    $ dis_chinese_name = location_name_dict[selected_district.name]
     "You head back outside, into the busy streets of [selected_district.name]."
 
     you "Nice building, and in a lively area, too. I wish we could talk to the owner."
@@ -9907,10 +9907,10 @@ label c2_meet_papa_freak():
         $ _loc = gallows
 
     $ _loc.action = True
-
+    $ location_chinese_name = location_name_dict[_loc.name]
     "When you are ready, visit the {b}[_loc.name]{/b} to bring Papa Freak the girl of his dreams."
 
-    $ game.set_task("把一个至少50美貌、身材、修养和魅力的妓女带到[_loc.name]给Papa Freak。", "advance2")
+    $ game.set_task("把一个至少50美貌、身材、修养和魅力的妓女带到[location_chinese_name]给怪胎老爹。", "advance2")
 
     return
 

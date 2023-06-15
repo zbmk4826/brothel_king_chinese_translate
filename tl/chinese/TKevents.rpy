@@ -2020,7 +2020,7 @@ translate chinese ext_holiday_hmas_f38a6198:
 translate chinese ext_holiday_hmas_60f2abf6:
 
     # "{i}Customers will pay a premium to get served tonight.{/i} Tomorrow families will unite to celebrate {b}{color=[c_orange]}Hmas{/color}{/b} together. Have you been naughty or nice?"
-    "{i}今晚客人将支付更高的费用。{/i}明天，家庭将团聚庆祝{b}{color=[c_orange]}Hmas{/color}{/b}。你是乖孩子还是淘气鬼？"
+    "{i}今晚客人将支付更高的费用。{/i}明天，家庭将团聚庆祝{b}{color=[c_orange]}性诞节{/color}{/b}。你是乖孩子还是淘气鬼？"
 
 translate chinese strings:
 

@@ -294,7 +294,7 @@ label jobgirl_1():
 
     while riddle_loop == 1:
 
-        $ solution = renpy.display_menu([("A Protoceratops", 1),("Molise", 2),("Man", 3)])
+        $ solution = renpy.display_menu([("原角龙", 1),("莫利塞", 2),("人类", 3)])
 
         if solution == 1:
 

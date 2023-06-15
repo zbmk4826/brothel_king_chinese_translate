@@ -1419,6 +1419,7 @@ init -3 python:
         finish = False
         rape = False
         rand_item = None
+        temp_text = ""
         rape_text = ""
         tip_special = ""
         lost_virginity = defaultdict(bool)
@@ -2033,9 +2034,17 @@ init -3 python:
 
         for spe in specials:
             try:
-                text_descript += event_color["good"] % perform_job_dict[spe]
+                if rand_item is not None:
+                   temp_text = perform_job_dict[spe] % rand_item.name
+                   text_descript += event_color["good"] % temp_text
+                else:
+                   text_descript += event_color["good"] % perform_job_dict[spe]
             except:
-                text_descript += event_color["good"] % perform_job_dict[spe]
+                if rand_item is not None:
+                   temp_text = perform_job_dict[spe] % rand_item.name
+                   text_descript += event_color["good"] % temp_text
+                else:
+                   text_descript += event_color["good"] % perform_job_dict[spe]
 
         if act in all_sex_acts:
             if len(customers) > 1:

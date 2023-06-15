@@ -3445,13 +3445,13 @@ screen brothel():
                     $ leftover_dur = round_int(max_dur - (calendar.time - brothel.started_building))
 
                     if leftover_dur/max_dur <= 0.25:
-                        $ text1 += u"\u25d5"
+                        $ text1 += "只剩"
                     elif leftover_dur/max_dur <= 0.5:
-                        $ text1 += u"\u25d1"
+                        $ text1 += "就差"
                     else:
-                        $ text1 += u"\u25d4"
+                        $ text1 += "还需"
 
-                    $ text1 += "" + str(leftover_dur) + "天){/size}"
+                    $ text1 += "" + str(leftover_dur) + "天完成){/size}"
             else:
                 $ text1 = "???"
 
@@ -3791,7 +3791,7 @@ screen brothel():
                                     ypadding 6
                                     insensitive_background c_darkgrey + "E5"
 
-                                    if room.level < district.rank:
+                                    if room.level < game.chapter:
                                         action Return(("add_room", room))
                                         hovered tt.Action(room.get_description())
 
@@ -3802,10 +3802,10 @@ screen brothel():
                                             fit_first True
                                             add room.pic.get(xres(120), yres(80)) idle_alpha 0.66 hover_alpha 1.0
                                             if not brothel_firstvisit:
-                                                text str(room.level) + "{size=-8}/" + str(district.rank) xalign 1.0
+                                                text str(room.level) + "{size=-8}/" + str(game.chapter) xalign 1.0
                                             if room.level:
                                                 text str(room.cust_limit) + "{image=img_cust}" xalign 0.1 yalign 0.9
-                                            if room.level < district.rank:
+                                            if room.level < game.chapter:
                                                 text "+" xalign 0.5 yalign 0.5 size res_font(36)
 
                                         text room.name.capitalize() size res_font(14) xcenter 0.5
@@ -6847,7 +6847,7 @@ screen resource_tab(rlist="MC", sz = yres(15), sp = 3, x=0.0, y=0.0, bg=None): #
             for resource in [resource_dict[r] for r in build_resources]:
 
                 if resource.rank <= district.rank:
-                    button background None action NullAction() tooltip (resource.description + " You have " + str(MC.resources[resource.name]) + " " + resource.name + " in store。") xpadding sp ypadding sp:
+                    button background None action NullAction() tooltip (resource.description + " 你仓库中共有" + str(MC.resources[resource.name]) + "个" + resource_name_dict[resource.name] + "。") xpadding sp ypadding sp:
                         has hbox spacing sp*2 yalign 0.5
                         add resource.pic.get(sz, sz) yalign 0.5
                         if MC.resources[resource.name] < 100:

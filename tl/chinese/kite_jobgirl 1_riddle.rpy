@@ -604,13 +604,13 @@ translate chinese jobgirl_1_fc3f2391:
 translate chinese jobgirl_1_81710e34:
 
     # you "Man."
-    you "男人啊。"
+    you "人类。"
 
 # game/kite_jobgirl 1_riddle.rpy:323
 translate chinese jobgirl_1_142446ee:
 
     # jobgirl "Which one?" with vpunch
-    jobgirl "哪一个？"
+    jobgirl "哪个？"
 
 # game/kite_jobgirl 1_riddle.rpy:325
 translate chinese jobgirl_1_34be61d7:
