@@ -1783,7 +1783,7 @@ init -2 python:
                 crz_text = ""
 
             if act == "idle":
-                return self.name + "%s进来青楼。%s希望得到{b}%s{/b}和喜欢{b}%s{/b}的人的招待。%s更喜欢%s的女孩。" % (crz_text, pronoun, girl_related_dict[self.wants_entertainment], girl_related_dict[self.wants_sex_act], pronoun, self.fetish.lower())
+                return self.name + "%s来到青楼。%s希望得到{b}%s{/b}和喜欢{b}%s{/b}的人的招待。%s更喜欢%s的女孩。" % (crz_text, pronoun, girl_related_dict[self.wants_entertainment], girl_related_dict[self.wants_sex_act], pronoun, self.fetish.lower())
 
             elif act in all_jobs:
                 desc += self.name + "%s进来青楼。\n%s希望得到{b}%s{/b}提供娱乐。" % (crz_text, pronoun, girl_related_dict[self.wants_entertainment])
@@ -4040,6 +4040,8 @@ init -2 python:
             target = "卖出价格" if target == "sell" else target
 
             target = "恐惧收益" if target == "fear gains" else target
+
+            target = "服饰增幅" if target == "dress" else target
 
             target = "总保养费用" if target == "total upkeep" else target
             target = "配饰增幅" if target == "accessory" else target

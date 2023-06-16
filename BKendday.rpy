@@ -544,7 +544,7 @@ label end_day:
         if farm.active:
             farm_training_girls, farm_holding_girls, farm_resting_girls = farm.assign_girls(logging=True)
 
-            renpy.notify("Counting farm days")
+            renpy.notify("计算农场工作日")
 
             for girl in (farm_training_girls + farm_holding_girls):
                 girl.add_log("farm_days")

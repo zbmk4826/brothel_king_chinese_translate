@@ -339,7 +339,7 @@ label slave_interact_menu():
         jump slave_interact_menu
 
     elif topic == "back":
-        if not free or renpy.call_screen("yes_no", "Do you really want to leave without training [girl.fullname]?"):
+        if not free or renpy.call_screen("yes_no", "你真的确定不训练[girl.fullname]就离开么?"):
             pass
         else:
             jump slave_interact_menu

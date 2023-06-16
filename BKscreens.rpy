@@ -176,17 +176,17 @@ screen tax_tab(fade=False):
             add ProportionalScale("NPC/taxgirl/portrait.webp", *res_tb(35)) yalign 0.5
 
             if calendar.day in (28, 7):
-                $ due_date = "tomorrow"
+                $ due_date = "明天"
             elif calendar.day in (1, 8):
-                $ due_date = "tonight"
+                $ due_date = "今晚"
             elif calendar.day >= 15:
-                $ due_date = "in %s days" % (29-calendar.day)
+                $ due_date = "%s天后" % (29-calendar.day)
             else: # Tax due date has been extended by a week
-                $ due_date = "in %s days" % (8-calendar.day)
+                $ due_date = "%s天后" % (8-calendar.day)
 
             vbox:
-                text "公会费用" bold True size res_font(14)
-                text "{image=img_gold} " + '{:,}'.format(round_int(NPC_taxgirl.current_tax)).replace(',', ' ') + " due %s." % due_date xalign 0.0 yalign 0.5 size res_font(14) color c_red
+                text "公会会费" bold True size res_font(14)
+                text "{image=img_gold} " + '{:,}'.format(round_int(NPC_taxgirl.current_tax)).replace(',', ' ') + "应在%s缴纳。" % due_date xalign 0.0 yalign 0.5 size res_font(14) color c_red
 
 
 screen overlay(current_screen = None, kwargs = None):
@@ -4038,7 +4038,7 @@ screen brothel_options():
                     hbox spacing 3:
                         vbox xsize xres(100):
                             text "Customers" size res_font(14) bold True color c_brown yalign 1.0
-                            text percentage_description(brothel.get_adv_setting("attraction")) + " to customer attraction" size res_font(14) color c_brown
+                            text percentage_description(brothel.get_adv_setting("attraction")) + "吸引顾客" size res_font(14) color c_brown
                         bar xsize xres(100) xpos 0 yalign 0.0 value FieldValue(brothel, "advertising_setting", range=4, offset=-2, action=Function(brothel.update_customer_count)) tooltip "使用此设置来调整客户吸引力（有多少客户会来青楼）和客户预算（每个客户能够花费的最大金币量）之间的倾向。"
                         vbox xsize xres(100):
                             text "预算" size res_font(14) bold True color c_brown yalign 1.0
