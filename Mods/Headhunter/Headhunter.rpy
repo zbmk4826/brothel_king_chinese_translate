@@ -392,14 +392,14 @@ label headhunter_menu:
             $ menu_item_constitution = "体质: " + str(headhunted_constitution)
             $ menu_item_obedience = "服从: " + str(headhunted_obedience)
 #            $ menu_item_virginity_trait = "Virginity: " + str(headhunted_virginity_trait)
-            $ menu_item_pos_trait1 = "正面性格 1: " + str(headhunted_pos_trait1)
-            $ menu_item_pos_trait2 = "正面性格 2: " + str(headhunted_pos_trait2)
-            $ menu_item_pos_trait3 = "正面性格 3: " + str(headhunted_pos_trait3)
-            $ menu_item_pos_trait4 = "正面性格 4: " + str(headhunted_pos_trait4)
-            $ menu_item_pos_trait5 = "正面性格 5: " + str(headhunted_pos_trait5)
-            $ menu_item_neg_trait1 = "负面性格 1: " + str(headhunted_neg_trait1)
-            $ menu_item_neg_trait2 = "负面性格 2: " + str(headhunted_neg_trait2)
-            $ menu_item_neg_trait3 = "负面性格 3: " + str(headhunted_neg_trait3)
+            $ menu_item_pos_trait1 = "正面特性 1: " + str(headhunted_pos_trait1)
+            $ menu_item_pos_trait2 = "正面特性 2: " + str(headhunted_pos_trait2)
+            $ menu_item_pos_trait3 = "正面特性 3: " + str(headhunted_pos_trait3)
+            $ menu_item_pos_trait4 = "正面特性 4: " + str(headhunted_pos_trait4)
+            $ menu_item_pos_trait5 = "正面特性 5: " + str(headhunted_pos_trait5)
+            $ menu_item_neg_trait1 = "负面特性 1: " + str(headhunted_neg_trait1)
+            $ menu_item_neg_trait2 = "负面特性 2: " + str(headhunted_neg_trait2)
+            $ menu_item_neg_trait3 = "负面特性 3: " + str(headhunted_neg_trait3)
             $ menu_item_sex_experience = "性经验: " + str(headhunted_sexual_experience)
             $ menu_item_farm_weakness = "农场弱点: " + str(headhunted_farm_weakness.lower())
             $ menu_item_pos_fixation1 = "偏好 1: " + str(headhunted_favorite_fixation1.lower())
@@ -470,65 +470,19 @@ label headhunter_menu:
                             $ menu_item_originality = "是否原创: " + str(deforig)
                             jump headhunter_menu_identity
                         "[menu_item_personality]":
-                            $ pers_temp = ""
-                            if headhunted_personality:
-                                $ pers_temp = headhunted_personality
-                            menu:
-                                "变态":
-                                    $ pers_temp = "pervert"
-                                "逆反":
-                                    $ pers_temp = "rebel"
-                                "冷漠":
-                                    $ pers_temp = "cold"
-                                "书呆子":
-                                    $ pers_temp = "nerd"
-                                "受虐狂":
-                                    $ pers_temp = "masochist"
-                                "喜好虚荣但头脑简单":
-                                    $ pers_temp = "meek"
-                                "温顺":
-                                    $ pers_temp = "rebel"
-                                "可爱":
-                                    $ pers_temp = "sweet"
-                                "肤浅":
-                                    $ pers_temp = "superficial"
-                                "圣洁":
-                                    $ pers_temp = "holy"
-                                "乐于助人":
-                                    $ pers_temp = "helper"
-                                "闷骚":
-                                    $ pers_temp = "creep"
-                                "克制":
-                                    $ pers_temp = "repressed"
-                                "阴谋家":
-                                    $ pers_temp = "schemer"
-                                "故作正经":
-                                    $ pers_temp = "prude"
-                                "公主病":
-                                    $ pers_temp = "princess"
-                                "宠物":
-                                    $ pers_temp = "pet"
-                                "随和":
-                                    $ pers_temp = "easy"
-                                "班长":
-                                    $ pers_temp = "class president"
-                                "傲娇":
-                                    $ pers_temp = "tsundere"
-                                "忠心耿耿":
-                                    $ pers_temp = "loyal"
-                                "病娇":
-                                    $ pers_temp = "yandere"
-                                "受虐狂2":
-                                    $ pers_temp = "masochist2"
-                                "固执":
-                                    $ pers_temp = "stubborn"
-                            if pers_temp in gpersonalities.keys() + ["random"]:
-                                $ headhunted_personality = pers_temp
-                                $ headhunted_personality_name = gpersonalities[pers_temp].label
-                            if pers_temp == "":
-                                $ headhunted_personality = "random"
-                                $ headhunted_personality = "随机"
-                            $ menu_item_personality = "性格: " + str(headhunted_personality_name)
+                            python:
+                                hunter_gpersonalities = []
+                                for pt in gpersonalities:
+                                    hunter_gpersonalities.append((gpersonalities[pt].label, pt))
+                                per = long_menu("选择性格", hunter_gpersonalities)
+                                pers_temp = per
+                                if pers_temp in gpersonalities.keys() + ["random"]:
+                                    headhunted_personality = pers_temp
+                                    headhunted_personality_name = gpersonalities[pers_temp].label
+                                if pers_temp == "":
+                                    headhunted_personality = "random"
+                                    headhunted_personality_name = "随机"
+                                menu_item_personality = "性格: " + str(headhunted_personality_name)
                             jump headhunter_menu_identity
                         "[menu_item_freedom]":
                             if renpy.call_screen("yes_no", "你想让我们只是找到她，而不是把她变成奴隶吗? 目前: " + freedom_default):
@@ -719,7 +673,7 @@ label headhunter_menu:
 
                         "返回":
                             jump headhunter_menu
-                "特质":
+                "特性":
                     label headhunter_menu_traits:
                     $ headhunter_gold_traits = 0
 #                    if headhunted_virginity_trait in trait_dict.keys():
@@ -784,9 +738,19 @@ label headhunter_menu:
                             if headhunted_pos_trait1:
                                 $ trait_name_temp = headhunted_pos_trait1
                             if trait_name_temp == "Not specified":
-                                $ trait_name_temp = renpy.input("特质名: ", default = "")
+                                python:
+                                    traits = []
+                                    for tr in (hunter_pos_traits + hunter_gold_traits):
+                                        traits.append((trait_name_dict[tr.name],tr))
+                                    trait = long_menu("选择特性", traits)
+                                    trait_name_temp = trait.name
                             else:
-                                $ trait_name_temp = renpy.input("特质名: ", default = "")
+                                python:
+                                    traits = []
+                                    for tr in hunter_pos_traits + hunter_gold_traits:
+                                        traits.append((trait_name_dict[tr.name],tr))
+                                    trait = long_menu("选择特性", traits)
+                                    trait_name_temp = trait.name
                             if trait_name_temp in trait_dict.keys():
                                 if trait_dict[trait_name_temp] in (hunter_pos_traits + hunter_gold_traits):
                                     if trait_dict[trait_name_temp] in hunter_gold_traits and headhunter_gold_traits >= 2:
@@ -813,16 +777,26 @@ label headhunter_menu:
                                         $ headhunted_pos_trait1 = capitalize_allcaps(trait_name_temp)
                             if trait_name_temp in ("", "None", "Non", "No", "N", "Not", "NotS", "Not specified", "Not Specified", "none", "non", "no", "n", "nots", "Nots", "not specified"):
                                 $ headhunted_pos_trait1 = "Not specified"
-                            $ menu_item_pos_trait1 = "正面特质1: " + str(headhunted_pos_trait1)
+                            $ menu_item_pos_trait1 = "正面特性1: " + trait_name_dict[str(headhunted_pos_trait1)]
                             jump headhunter_menu_traits
                         "[menu_item_pos_trait2]":
                             $ trait_name_temp = "Not specified"
                             if headhunted_pos_trait2:
                                 $ trait_name_temp = headhunted_pos_trait2
                             if trait_name_temp == "Not specified":
-                                $ trait_name_temp = renpy.input("特质名： ", default = "")
+                                python:
+                                    traits = []
+                                    for tr in (hunter_pos_traits + hunter_gold_traits):
+                                        traits.append((trait_name_dict[tr.name],tr))
+                                    trait = long_menu("选择特性", traits)
+                                    trait_name_temp = trait.name
                             else:
-                                $ trait_name_temp = renpy.input("特质名： ", default = "")
+                                python:
+                                    traits = []
+                                    for tr in hunter_pos_traits + hunter_gold_traits:
+                                        traits.append((trait_name_dict[tr.name],tr))
+                                    trait = long_menu("选择特性", traits)
+                                    trait_name_temp = trait.name
                             if trait_name_temp in trait_dict.keys():
                                 if trait_dict[trait_name_temp] in (hunter_pos_traits + hunter_gold_traits):
                                     if trait_dict[trait_name_temp] in hunter_gold_traits and headhunter_gold_traits >= 2:
@@ -849,16 +823,26 @@ label headhunter_menu:
                                         $ headhunted_pos_trait2 = capitalize_allcaps(trait_name_temp)
                             if trait_name_temp in ("", "None", "Non", "No", "N", "Not", "NotS", "Not specified", "Not Specified", "none", "non", "no", "n", "nots", "Nots", "not specified"):
                                 $ headhunted_pos_trait2 = "Not specified"
-                            $ menu_item_pos_trait2 = "正面特质2: " + str(headhunted_pos_trait2)
+                            $ menu_item_pos_trait2 = "正面特性2: " + trait_name_dict[str(headhunted_pos_trait2)]
                             jump headhunter_menu_traits
                         "[menu_item_pos_trait3]":
                             $ trait_name_temp = "Not specified"
                             if headhunted_pos_trait3:
                                 $ trait_name_temp = headhunted_pos_trait3
                             if trait_name_temp == "Not specified":
-                                $ trait_name_temp = renpy.input("特质名： ", default = "")
+                                python:
+                                    traits = []
+                                    for tr in (hunter_pos_traits + hunter_gold_traits):
+                                        traits.append((trait_name_dict[tr.name],tr))
+                                    trait = long_menu("选择特性", traits)
+                                    trait_name_temp = trait.name
                             else:
-                                $ trait_name_temp = renpy.input("特质名： ", default = "")
+                                python:
+                                    traits = []
+                                    for tr in hunter_pos_traits + hunter_gold_traits:
+                                        traits.append((trait_name_dict[tr.name],tr))
+                                    trait = long_menu("选择特性", traits)
+                                    trait_name_temp = trait.name
                             if trait_name_temp in trait_dict.keys():
                                 if trait_dict[trait_name_temp] in (hunter_pos_traits + hunter_gold_traits):
                                     if trait_dict[trait_name_temp] in hunter_gold_traits and headhunter_gold_traits >= 2:
@@ -885,16 +869,26 @@ label headhunter_menu:
                                         $ headhunted_pos_trait3 = capitalize_allcaps(trait_name_temp)
                             if trait_name_temp in ("", "None", "Non", "No", "N", "Not", "NotS", "Not specified", "Not Specified", "none", "non", "no", "n", "nots", "Nots", "not specified"):
                                 $ headhunted_pos_trait3 = "Not specified"
-                            $ menu_item_pos_trait3 = "正面特质3: " + str(headhunted_pos_trait3)
+                            $ menu_item_pos_trait3 = "正面特性3: " + trait_name_dict[str(headhunted_pos_trait3)]
                             jump headhunter_menu_traits
                         "[menu_item_pos_trait4]":
                             $ trait_name_temp = "Not specified"
                             if headhunted_pos_trait4:
                                 $ trait_name_temp = headhunted_pos_trait4
                             if trait_name_temp == "Not specified":
-                                $ trait_name_temp = renpy.input("特质名： ", default = "")
+                                python:
+                                    traits = []
+                                    for tr in (hunter_pos_traits + hunter_gold_traits):
+                                        traits.append((trait_name_dict[tr.name],tr))
+                                    trait = long_menu("选择特性", traits)
+                                    trait_name_temp = trait.name
                             else:
-                                $ trait_name_temp = renpy.input("特质名： ", default = "")
+                                python:
+                                    traits = []
+                                    for tr in hunter_pos_traits + hunter_gold_traits:
+                                        traits.append((trait_name_dict[tr.name],tr))
+                                    trait = long_menu("选择特性", traits)
+                                    trait_name_temp = trait.name
                             if trait_name_temp in trait_dict.keys():
                                 if trait_dict[trait_name_temp] in (hunter_pos_traits + hunter_gold_traits):
                                     if trait_dict[trait_name_temp] in hunter_gold_traits and headhunter_gold_traits >= 2:
@@ -921,16 +915,26 @@ label headhunter_menu:
                                         $ headhunted_pos_trait4 = capitalize_allcaps(trait_name_temp)
                             if trait_name_temp in ("", "None", "Non", "No", "N", "Not", "NotS", "Not specified", "Not Specified", "none", "non", "no", "n", "nots", "Nots", "not specified"):
                                 $ headhunted_pos_trait4 = "Not specified"
-                            $ menu_item_pos_trait4 = "正面特质4: " + str(headhunted_pos_trait4)
+                            $ menu_item_pos_trait4 = "正面特性4: " + trait_name_dict[str(headhunted_pos_trait4)]
                             jump headhunter_menu_traits
                         "[menu_item_pos_trait5]":
                             $ trait_name_temp = "Not specified"
                             if headhunted_pos_trait5:
                                 $ trait_name_temp = headhunted_pos_trait5
                             if trait_name_temp == "Not specified":
-                                $ trait_name_temp = renpy.input("特质名： ", default = "")
+                                python:
+                                    traits = []
+                                    for tr in (hunter_pos_traits + hunter_gold_traits):
+                                        traits.append((trait_name_dict[tr.name],tr))
+                                    trait = long_menu("选择特性", traits)
+                                    trait_name_temp = trait.name
                             else:
-                                $ trait_name_temp = renpy.input("特质名： ", default = "")
+                                python:
+                                    traits = []
+                                    for tr in hunter_pos_traits + hunter_gold_traits:
+                                        traits.append((trait_name_dict[tr.name],tr))
+                                    trait = long_menu("选择特性", traits)
+                                    trait_name_temp = trait.name
                             if trait_name_temp in trait_dict.keys():
                                 if trait_dict[trait_name_temp] in (hunter_pos_traits + hunter_gold_traits):
                                     if trait_dict[trait_name_temp] in hunter_gold_traits and headhunter_gold_traits >= 2:
@@ -957,16 +961,26 @@ label headhunter_menu:
                                         $ headhunted_pos_trait5 = capitalize_allcaps(trait_name_temp)
                             if trait_name_temp in ("", "None", "Non", "No", "N", "Not", "NotS", "Not specified", "Not Specified", "none", "non", "no", "n", "nots", "Nots", "not specified"):
                                 $ headhunted_pos_trait5 = "Not specified"
-                            $ menu_item_pos_trait5 = "正面特质5: " + str(headhunted_pos_trait5)
+                            $ menu_item_pos_trait5 = "正面特性5: " + trait_name_dict[str(headhunted_pos_trait5)]
                             jump headhunter_menu_traits
                         "[menu_item_neg_trait1]":
                             $ trait_name_temp = "Not specified"
                             if headhunted_neg_trait1:
                                 $ trait_name_temp = headhunted_neg_trait1
                             if trait_name_temp == "Not specified":
-                                $ trait_name_temp = renpy.input("特质名： ", default = "")
+                                python:
+                                    traits = []
+                                    for tr in hunter_neg_traits:
+                                        traits.append((trait_name_dict[tr.name],tr))
+                                    trait = long_menu("选择特性", traits)
+                                    trait_name_temp = trait.name
                             else:
-                                $ trait_name_temp = renpy.input("特质名： ", default = "")
+                                python:
+                                    traits = []
+                                    for tr in hunter_neg_traits:
+                                        traits.append((trait_name_dict[tr.name],tr))
+                                    trait = long_menu("选择特性", traits)
+                                    trait_name_temp = trait.name
                             if trait_name_temp in trait_dict.keys():
                                 if trait_name_temp.lower() in ("recently kidnapped", ):
                                     $ headhunted_neg_trait1 = "想得美!你自己去抓她好了!"
@@ -984,16 +998,26 @@ label headhunter_menu:
                                     $ headhunted_neg_trait1 = capitalize_allcaps(trait_name_temp)
                             if trait_name_temp in ("", "None", "Non", "No", "N", "Not", "NotS", "Not specified", "Not Specified", "none", "non", "no", "n", "nots", "Nots", "not specified"):
                                 $ headhunted_neg_trait1 = "Not specified"
-                            $ menu_item_neg_trait1 = "Negative trait 1: " + str(headhunted_neg_trait1)
+                            $ menu_item_neg_trait1 = "负面特性1: " + trait_name_dict[str(headhunted_neg_trait1)]
                             jump headhunter_menu_traits
                         "[menu_item_neg_trait2]":
                             $ trait_name_temp = "Not specified"
                             if headhunted_neg_trait2:
                                 $ trait_name_temp = headhunted_neg_trait2
                             if trait_name_temp == "Not specified":
-                                $ trait_name_temp = renpy.input("特质名： ", default = "")
+                                python:
+                                    traits = []
+                                    for tr in hunter_neg_traits:
+                                        traits.append((trait_name_dict[tr.name],tr))
+                                    trait = long_menu("选择特性", traits)
+                                    trait_name_temp = trait.name
                             else:
-                                $ trait_name_temp = renpy.input("特质名： ", default = "")
+                                python:
+                                    traits = []
+                                    for tr in hunter_neg_traits:
+                                        traits.append((trait_name_dict[tr.name],tr))
+                                    trait = long_menu("选择特性", traits)
+                                    trait_name_temp = trait.name
                             if trait_name_temp in trait_dict.keys():
                                 if trait_name_temp.lower() in ("recently kidnapped", ):
                                     $ headhunted_neg_trait2 = "想得美!你自己去抓她好了!"
@@ -1011,16 +1035,26 @@ label headhunter_menu:
                                     $ headhunted_neg_trait2 = capitalize_allcaps(trait_name_temp)
                             if trait_name_temp in ("", "None", "Non", "No", "N", "Not", "NotS", "Not specified", "Not Specified", "none", "non", "no", "n", "nots", "Nots", "not specified"):
                                 $ headhunted_neg_trait2 = "Not specified"
-                            $ menu_item_neg_trait2 = "Negative trait 2: " + str(headhunted_neg_trait2)
+                            $ menu_item_neg_trait2 = "负面特性2: " + trait_name_dict[str(headhunted_neg_trait2)]
                             jump headhunter_menu_traits
                         "[menu_item_neg_trait3]":
                             $ trait_name_temp = "Not specified"
                             if headhunted_neg_trait3:
                                 $ trait_name_temp = headhunted_neg_trait3
                             if trait_name_temp == "Not specified":
-                                $ trait_name_temp = renpy.input("特质名： ", default = "")
+                                python:
+                                    traits = []
+                                    for tr in hunter_neg_traits:
+                                        traits.append((trait_name_dict[tr.name],tr))
+                                    trait = long_menu("选择特性", traits)
+                                    trait_name_temp = trait.name
                             else:
-                                $ trait_name_temp = renpy.input("特质名： ", default = "")
+                                python:
+                                    traits = []
+                                    for tr in hunter_neg_traits:
+                                        traits.append((trait_name_dict[tr.name],tr))
+                                    trait = long_menu("选择特性", traits)
+                                    trait_name_temp = trait.name
                             if trait_name_temp in trait_dict.keys():
                                 if trait_name_temp.lower() in ("recently kidnapped", ):
                                     $ headhunted_neg_trait3 = "想得美!你自己去抓她好了!"
@@ -1038,7 +1072,7 @@ label headhunter_menu:
                                     $ headhunted_neg_trait3 = capitalize_allcaps(trait_name_temp)
                             if trait_name_temp in ("", "None", "Non", "No", "N", "Not", "NotS", "Not specified", "Not Specified", "none", "non", "no", "n", "nots", "Nots", "not specified"):
                                 $ headhunted_neg_trait3 = "Not specified"
-                            $ menu_item_neg_trait3 = "Negative trait 3: " + str(headhunted_neg_trait3)
+                            $ menu_item_neg_trait3 = "负面特性3: " + trait_name_dict[str(headhunted_neg_trait3)]
                             jump headhunter_menu_traits
                         "返回":
                             jump headhunter_menu

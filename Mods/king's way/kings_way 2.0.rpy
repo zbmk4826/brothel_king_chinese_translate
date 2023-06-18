@@ -182,6 +182,27 @@ screen MCCheat:
             textbutton "+100" action SetField(MC,"gold",MC.gold +100)
             textbutton "+1000" action SetField(MC,"gold",MC.gold +1000)
             textbutton "+10000" action SetField(MC,"gold",MC.gold +10000)
+        hbox:
+             text "善良"
+             textbutton "-10" action SetField(MC,"good",MC.good -10)
+             textbutton "-1" action SetField(MC,"good",MC.good -1)
+             text "[MC.good]"
+             textbutton "+1" action SetField(MC,"good",MC.good +1)
+             textbutton "+10" action SetField(MC,"good",MC.good +10)
+        hbox:
+             text "邪恶"
+             textbutton "-10" action SetField(MC,"evil",MC.evil -10)
+             textbutton "-1" action SetField(MC,"evil",MC.evil -1)
+             text "[MC.evil]"
+             textbutton "+1" action SetField(MC,"evil",MC.evil +1)
+             textbutton "+10" action SetField(MC,"evil",MC.evil +10)
+        hbox:
+             text "中立"
+             textbutton "-10" action SetField(MC,"neutral",MC.neutral -10)
+             textbutton "-1" action SetField(MC,"neutral",MC.neutral -1)
+             text "[MC.neutral]"
+             textbutton "+1" action SetField(MC,"neutral",MC.neutral +1)
+             textbutton "+10" action SetField(MC,"neutral",MC.neutral +10)
         text "材料" color "#33cccc"
         hbox:
             vbox:
@@ -217,6 +238,9 @@ screen cheat_slave_edit:
                 text "[slave_id.level]"
                 textbutton "+1" action SetField(slave_id,"level",slave_id.level +1)
                 textbutton "Level Up" action Function(slave_id.level_up, forced = True)
+            hbox:
+                if slave_id in game.free_girls:
+                    text "位置: {}".format(location_name_dict[slave_id.location])
             hbox:
                 text "人气"
                 bar:
@@ -522,10 +546,21 @@ screen cheat_slave_edit:
                                 text_layout "nobreak"
                                 hovered SetVariable("trait_desc",trait.get_description("girls"))
                                 unhovered SetVariable("trait_desc"," ")
+                    for trait in neg_traits_fix:
+                        if trait in slave_id.traits:
+                            textbutton "移除特质  " + trait_name_dict[trait.name]:
+                                action Function(slave_id.remove_trait,trait)
+                                text_layout "nobreak"
+                                hovered SetVariable("trait_desc",trait.get_description("girls"))
+                                unhovered SetVariable("trait_desc"," ")
+                        else:
+                            textbutton "增加特质  " + trait_name_dict[trait.name]:
+                                action Function(slave_id.add_trait,trait)
+                                text_color c_purple
+                                text_layout "nobreak"
+                                hovered SetVariable("trait_desc",trait.get_description("girls"))
+                                unhovered SetVariable("trait_desc"," ")
                 text "{size=-6}[trait_desc]{/size}"
-            vbox:
-                if slave_id in game.free_girls:
-                    text "位置: {}".format(location_name_dict[slave_id.location])
         else:
             vbox:
                 text '特质'

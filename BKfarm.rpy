@@ -155,7 +155,7 @@ init -2 python:
 
     class Minion(object):
 
-        def __init__(self, type, level = 0, name = ""):
+        def __init__(self, type,price = 1, level = 0, name = ""):
             self.type = type
             self.level = level
             if name:
@@ -163,6 +163,7 @@ init -2 python:
             else:
                 self.name = generate_name(type)
             self.target = "Farm minion"
+            self.price = price
             self.filter = "misc"
             self.equipped = False
             self.xp = minion_xp_to_level[level]

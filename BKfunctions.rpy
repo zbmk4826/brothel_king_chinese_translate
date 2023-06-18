@@ -3380,7 +3380,7 @@ init -3 python:
     #  </DougTheC>
 
 
-    def long_menu(prompt, menu_list, limit=9): # Creates a menu with next/previous commands if menu has many items
+    def long_menu(prompt, menu_list, limit=7): # Creates a menu with next/previous commands if menu has many items
 
         if len(menu_list) <= limit:
             return menu([(prompt, None)] + menu_list)
@@ -3400,14 +3400,14 @@ init -3 python:
                 part_menu = menu_list[index:end]
 
             if index > 0:
-                part_menu += [("{i}前一个{/i}", "previous")]
+                part_menu += [("{i}上一页{/i}", "previous")]
             else:
-                part_menu += [("{color=#AAA}{i}前一个{/i}", "previous")]
+                part_menu += [("{color=#AAA}{i}上一页{/i}", "previous")]
 
             if end < len(menu_list):
-                part_menu += [("{i}下一个{/i}", "next")]
+                part_menu += [("{i}下一页{/i}", "next")]
             else:
-                part_menu += [("{color=#AAA}{i}下一个{/i}", "next")]
+                part_menu += [("{color=#AAA}{i}下一页{/i}", "next")]
 
             r = menu(part_menu)
 

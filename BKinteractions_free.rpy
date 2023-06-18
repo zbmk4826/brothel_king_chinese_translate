@@ -819,7 +819,7 @@ label free_give_gift(girl): # Interactions are deducted here for giving gold
 
         gift_list.append(("Go back", "back"))
 
-        result = long_menu("Choose a present", gift_list)
+        result = long_menu("选择一份礼物", gift_list)
 
     if result == "back":
         return
@@ -1226,7 +1226,7 @@ label free_girl_girlfriend(girl):
     else:
 
         $ thing = rand_choice(("color", "food", "drink"))
-
+        $ thing_cn = translate_cn(thing, girl_related_dict)
         if dice(6) >= 4:
 
             $ type = "喜欢"
@@ -1288,7 +1288,7 @@ label free_girl_girlfriend(girl):
 
             m = []
 
-            m.append(("[girl.name][type]的[thing]是...", None))
+            m.append(("[girl.name][type]的[thing_cn]是...", None))
 
             for h in fav_list:
 

@@ -6016,8 +6016,17 @@ label slave_story_help(girl, act):
 
             you "Yes. You do that."
 
-            $ old = girl.traits[2].name
-            $ girl.remove_trait(girl.traits[2])
+            $ old = "空气"
+            python:
+                for girl_trait in girl.traits:
+                    if game.has_active_mod("traitking"):
+                        if girl_trait in traitking_neg_traits:
+                            old = trait_name_dict[girl_trait.name]
+                            girl.remove_trait(girl_trait)
+                    else:
+                        if girl_trait in neg_traits:
+                            old = trait_name_dict[girl_trait.name]
+                            girl.remove_trait(girl_trait)
             $ girl.add_trait(clumsy_trait, forced=True)
 
             play sound s_chimes
@@ -6174,8 +6183,17 @@ label slave_story_help(girl, act):
 
             girl.char "Thank you, Master! You take a weight off my chest..."
 
-            $ old = girl.traits[2].name
-            $ girl.remove_trait(girl.traits[2])
+            $ old = "空气"
+            python:
+                for girl_trait in girl.traits:
+                    if game.has_active_mod("traitking"):
+                        if girl_trait in traitking_neg_traits:
+                            old = trait_name_dict[girl_trait.name]
+                            girl.remove_trait(girl_trait)
+                    else:
+                        if girl_trait in neg_traits:
+                            old = trait_name_dict[girl_trait.name]
+                            girl.remove_trait(girl_trait)
             $ girl.add_trait(godless_trait)
 
             play sound s_chimes
@@ -6190,6 +6208,7 @@ label slave_story_help(girl, act):
 
 
         "Buy her a new pet (800 gold)" if act == "pet":
+            $ pet = None
             python:
                 for it in all_items:
                     if it.name.lower() == "common pet":
@@ -6316,9 +6335,17 @@ label slave_story_help(girl, act):
             you "...but you'd have to promise to behave, and keep it to yourself. I don't want the other girls to complain that I am having favorites."
 
             girl.char "Understood, loud and clear! You won't hear me complain!"
-
-            $ old = girl.traits[2].name
-            $ girl.remove_trait(girl.traits[2])
+            $ old = "空气"
+            python:
+                for girl_trait in girl.traits:
+                    if game.has_active_mod("traitking"):
+                        if girl_trait in traitking_neg_traits:
+                            old = trait_name_dict[girl_trait.name]
+                            girl.remove_trait(girl_trait)
+                    else:
+                        if girl_trait in neg_traits:
+                            old = trait_name_dict[girl_trait.name]
+                            girl.remove_trait(girl_trait)
             $ girl.add_trait(expensive_trait, forced=True)
 
             play sound s_chimes

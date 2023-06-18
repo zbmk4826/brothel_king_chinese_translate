@@ -14614,7 +14614,7 @@ label visit_bank():
 
 
         else:
-            if renpy.call_screen("yes_no", "你确定要贷款 "+ str(r.mount) + " 金币吗？（日息：" + str(r.daily_cost) + "金币）"):
+            if renpy.call_screen("yes_no", "你确定要贷款 "+ str(r.amount) + " 金币吗？（日息：" + str(r.daily_cost) + "金币）"):
                 $ MC.take_loan(r)
                 play sound s_gold
 

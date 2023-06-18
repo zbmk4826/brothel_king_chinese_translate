@@ -1169,7 +1169,7 @@ label undervalued_interact(girl):
 
         verb = girl.nickname["trait"].verb
         adjective = girl.nickname["adjective"]
-        noun = girl.nickname["noun"]
+        noun = pejorative_translate_noun[girl.nickname["noun"]]
 
         if girl.nickname["trait"].name in undervalued_trait_nick:
             trait = "" + undervalued_trait_nick[girl.nickname["trait"].name]

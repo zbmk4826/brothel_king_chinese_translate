@@ -3663,7 +3663,7 @@ init -2 python:
 
             target = self.get_obedience_check_target(act, train=False)
 
-            result = renpy.random.randrange(100) * self.get_effect("boost", "obedience tests")
+            result = renpy.random.randrange(1000) * self.get_effect("boost", "obedience tests")
 
             # Boost to training check if girl remembers being rewarded or punished (Dom girls don't like punishment)
 

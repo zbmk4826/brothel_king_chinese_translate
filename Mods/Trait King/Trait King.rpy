@@ -343,7 +343,8 @@ init -1 python:
     add_dialogue("slave birthday", ("very modest"), ("我真的很感激。谢谢你们！", "啊，多么可爱的惊喜啊!谢谢你们每一个人。"))
     add_dialogue("slave birthday", ("very dom"), ("你们怎么知道今天是我的生日?", "该死，我要流泪了……谢谢你们！"))
     add_dialogue("slave birthday", ("very sub"), ("啊, 谢谢大家!", "非-非常感谢大家。"))
-    
+    traitking_activated = False
+
     def add_trait_perkless(self, trait, pos=None, forced=False): # Where 'trait' is an object (important)
 
         if not forced:
@@ -1333,70 +1334,70 @@ label traitking_init:
         ## Evolved negative traits
         
         traitking_neg_evolved = { 
-                "Godless" : Trait("Devout", verb = "be", eff1 = Effect("boost", "reputation gains", 0.1), base_description = "She once was lost, but now faithfully serves her God."),
-                "Trauma" : Trait("Stoic", verb="be", effects = [Effect("boost", "love", -0.2), Effect("boost", "fear", -0.4)], base_description = "She is emotionally stable despite losing her virginity against her will."),
-                "Dull" : Trait("Curious", verb = "be", eff1 = Effect("special", "effect chance", 0.1), base_description = "She once led a sheltered life, but now invites new experiences into her life."),
-                "Mean" : Trait("Reserved", verb = "be", eff1 = Effect("change", "charm", -5, scales_with = "rank"), eff2 = Effect("change", "refinement", 10), base_description = "She has a mean streak, but tries not to speak her mind whenever it is filled with negativity."),
-                "Scars" : Trait("Marks", verb = "be", eff1 = Effect("change", "body", -5, scales_with = "rank"), eff2 = Effect("change", "charm", 10), base_description = "She carries herself with such confidence that you barely notice her nasty scars."),
-                "Plain" : Trait("Odd", verb = "be", eff1 = Effect("change", "beauty", -5, scales_with = "rank"), eff2 = Effect("change", "charm", 10), base_description = "She's looks like an ordinary girl, but makes up for it with her unique personality."),
-                "Rude" : Trait("Raw", verb = "be", eff1 = Effect("change", "refinement", -5, scales_with = "rank"), base_description = "She tries to be considerate, despite her uncultured origins."),
-                "Rough" : Trait("Impolite", verb = "be", eff1 = Effect("change", "sensitivity", -5, scales_with = "rank"), opposite = "Delicate", base_description = "She occasionally acts without considering decorum."),
-                "Weak" : Trait("Tender", verb = "be", eff1 = Effect("change", "constitution", -5, scales_with = "rank"), opposite = "Resilient", base_description = "She has trained hard to be a bit less vulnerable than she once was."),
-                "Defiant" : Trait("Resistant", verb = "be", eff1 = Effect("change", "obedience", -5, scales_with = "rank"), eff2=Effect("change", "valuation", -20), opposite = "Meek", base_description = "She likes to rebel against authority every now and then."),
-                "Gluttonous" : Trait("Craving", verb = "be", eff1 = Effect("change", "constitution", -15), base_description = "She is always hungry, but has learned not to overindulge."),
-                "Uncouth" : Trait("Primitive", verb="be", eff1=Effect("change", "refinement", -20), opposite = "Groomed", base_description = "She lacks basic manners, but has good intentions."),
-                "Deaf" : Trait("Inattentive", verb = "be", eff1 = Effect("change", "obedience", -10), eff2 = Effect("change", "waitress jp gains", -0.25), base_description = "She may not be deaf, but she is often absentminded."),
-                "Timid" : Trait("Bashful", verb = "be", eff1 = Effect("boost", "charm gains", -0.25), eff2 = Effect("change", "sensitivity", 10), opposite = "charming", base_description = "She's is endearingly shy."),
-                "Plump" : Trait("Full-figured", verb = "be", eff1 = Effect("boost", "body gains", -0.25), eff2 = Effect("change", "constitution", 10), opposite = "Fit", base_description = "She has generous natural curves."),
-                "Scruffy" : Trait("Authentic", verb = "be", eff1 = Effect("boost", "beauty gains", -0.25), eff2 = Effect("change", "beauty", 10), opposite = "Beautiful", base_description = "She prefers to be genuine and acknowledges her imperfections instead hiding them."),
-                "Vulgar" : Trait("Honest", verb = "be", eff1 = Effect("boost", "refinement gains", -0.25), eff2 = Effect("change", "libido", 10), opposite = "Elegant", base_description = "She freely speaks her mind without mincing words."),
-                "Tame" : Trait("Restrained", verb = "be", eff1 = Effect("boost", "libido gains", -0.25), eff2=Effect("change", "refinement", 10), opposite = "Slutty", base_description = "She is well-behaved."),
-                "Frail" : Trait("Cherished", verb = "be", eff1 = Effect("boost", "constitution gains", -0.25), eff2=Effect("change", "sensitivity", 10), opposite = "Athletic", base_description = "She is frail, but worth protecting."),
-                "Rebellious" : Trait("Liberated", verb = "be", eff1 = Effect("boost", "obedience gains", -0.25), eff2 = Effect("change", "charm", 10), opposite = "Obedient", base_description = "She is free to make her own choices."),
-                "Distrustful" : Trait("Independent", verb = "be", eff1 = Effect("boost", "love gains", -0.25), eff2 = Effect("change", "refinement", 10), opposite = "Loyal", base_description = "She's an independent and reliable girl."),
-                "Fearful" : Trait("Anxious", verb = "be", eff1 = Effect("boost", "fear", 0.25), eff2 = Effect("change", "defense", 1), opposite = "Brave", base_description = "She's nervous and quick to worry."),
-                "Paranoid" : Trait("Cautious", verb = "be", eff1 = Effect("boost", "fear", 1.0), eff2 = Effect("change", "defense", 2), base_description = "She's wary and takes great care to avoid danger."),
-                "Homely" : Trait("Comfortable", verb = "be", eff1 = Effect("boost", "reputation gains", -0.1), eff2 = Effect("boost", "love", 0.25), opposite = "Sexy", base_description = "She feels at ease."),
-                "Prude" : Trait("Behaved", verb = "be", eff1 = Effect("boost", "service jp gains", -0.25), eff2 = Effect("boost", "sex jp gains", -0.25), eff3=Effect("change", "refinement", 10), opposite = "Naughty", base_description = "She does not like meaningless sex and prefers to build a connection first."),
-                "Naive" : Trait("Green", verb = "be",eff1 = Effect("boost", "anal jp gains", -0.25), eff2 = Effect("boost", "fetish jp gains", -0.25), eff3=Effect("change", "beauty", 10), opposite = "Kinky", base_description = "She does not like doing the weird stuff... Yet..."),
-                "Square" : Trait("Traditional", verb = "be", eff1 = Effect("change", "sex act requirements", 20), eff2=Effect("change", "refinement", 10), opposite = "Pervert", base_description = "She prefers to do things by the book."),
-                "Strong Gag Reflex" : Trait("Throat spasms", verb = "have", eff1 = Effect("increase satisfaction", "service", -1), eff2=Effect("change", "libido", 10), base_description = "She used to choke a lot more, but still vomits on a dick now and then."),
-                "All thumbs" : Trait("Klutzy", verb = "be", eff1 = Effect("increase satisfaction", "waitress", -1), eff2 = Effect("change", "libido", 10), opposite=['Deft', 'Bright', 'Brisk', 'Rowdy'], base_description = "She still struggles to make herself useful."),
-                "Awkward" : Trait("Embarrassed", verb = "be", eff1 = Effect("increase satisfaction", "dancer", -1), eff2 = Effect("change", "charm", 10), opposite=['Nimble', 'Agile', 'Brisk', 'Powerful'], base_description = "She feels uncomfortable in some situations."),
-                "Brutal" : Trait("Fierce", verb = "be", eff1 = Effect("increase satisfaction", "masseuse", -1), eff2 = Effect("change", "constitution", 10), opposite=['Deft', 'Soft skin', 'Agile', 'Unhurried'], base_description = "She likes to openly display her strength."),
-                "Dumb" : Trait("Dopey", verb = "be", effects = [Effect("increase satisfaction", "geisha", -1), Effect("change", "charm", 10)], opposite=['Nimble', 'Soft skin', 'Bright', 'Modest'], base_description = "She's stupid and funny."),
-                "Oafish" : Trait("Simple", verb = "be", eff1 = Effect("boost", "dancer jp gains", -0.25), eff2 = Effect("boost", "geisha jp gains", -0.25), eff3 = Effect("change", "libido", 10), opposite=['Nimble', 'Agile', 'Brisk', 'Soft skin', 'Bright'], base_description = "She does not like thinking about complicated things."),
-                "Clumsy" : Trait("Silly", verb = "be", eff1 = Effect("boost", "waitress jp gains", -0.25), eff2 = Effect("boost", "masseuse jp gains", -0.25), eff3 = Effect("change", "sensitivity", 10), opposite=['Deft', 'Bright', 'Brisk', 'Rowdy', 'Soft skin', 'Agile'], base_description = "People like to make fun of her mistakes."),
-                "Slow" : Trait("Relaxed", verb = "be", eff1 = Effect("boost", "xp gains", -0.25), eff2 = Effect("change", "libido", 10), opposite = ["Fast learner", "Sharp", "Genius"], base_description = "She prefers to take it easy."),
-                "Arrogant" : Trait("Self-assured", verb = "be", eff1 = Effect("boost", "all jp gains", -0.25 ), eff2 = Effect("change", "body", 10), opposite = "Humble", base_description = "She may be a bit too confident in her abilities."),
-                "Stubborn" : Trait("Determined", verb = "be", eff1 = Effect("boost", "xp gains", -0.1 ), eff2 = Effect("boost", "all jp gains", -0.1 ), eff3 = Effect("change", "constitution", 10), base_description = "She feels driven pursue her own ideas, even when they are questionable."),
-                "Lazy" : Trait("Peaceful", verb = "be", eff1 = Effect("boost", "max energy", -0.1), eff2 = Effect("change", "refinement", 10), opposite = ["Energetic", "Driven"], base_description = "She is serene and carefree."),
-                "Blind" : Trait("Myopic", verb = "be", eff1 = Effect("change", "defense", -2), eff2 = Effect("change", "sensitivity", 10), base_description = "She is short-sighted."),
-                "Vulnerable" : Trait("Accessible", verb = "be", eff1 = Effect("change", "defense", -2), eff2 = Effect("change", "sensitivity", 10), opposite = ["Strong", "Warrior"], base_description = "She sees it as her duty to comfort even the most unstable individuals."),
-                "Expensive" : Trait("Valuable", verb = "be", eff1 = Effect("boost", "upkeep", 1), eff2=Effect("change", "valuation", +50), opposite = "Humble", base_description = "She deserves to be treated like a princess."),
-                "Greedy" : Trait("Philanthropic", verb = "be", eff1 = Effect("boost", "upkeep", -0.8), base_description = "She wishes to live a frugal life and donates whatever she can to those in need."),
-                "Cold" : Trait("Cool", verb = "be", eff1 = Effect("change", "refinement", -10, scales_with = "rank"), eff2 = Effect("boost", "tiredness", -0.1), base_description = "She knows how to hold her nerve."),
-                "Jaded" :  Trait("Veteran", verb = "be a", eff1 = Effect("special", "skill catch up", 1), eff2 = Effect("change", "valuation", -10, scales_with = "rank"), opposite = "Sensitive", base_description = "She guides the others through her experience and know-how."),
-                "Sickly" : Trait("Empathic", verb = "be", eff1 = Effect("boost", "hurt", +2), eff2=Effect("change", "sensitivity", 20), opposite = "Tough", base_description = "Disease and hardship has made her become more compassionate."),
-                "Unlucky" : Trait("Unrelenting", verb = "be", eff1 = Effect("special", "unlucky", 1), eff2 = Effect("reroll", "job critical failure", 1), base_description = "She has some terrible luck, but perseveres through sheer willpower.", opposite = "Lucky"),
-                "Slave Brand" : Trait("Trophy", verb="be a", effects = [Effect("boost", "prestige", 1.5), Effect("change", "valuation", -100)], archetype="The Bride", base_description = "She has a tattoo that says {i}'Property of Kosmo. If found, please return to rightful owner.'{/i}."),
+                "Godless" : Trait("Devout", verb = "be", eff1 = Effect("boost", "reputation gains", 0.1), base_description = "她曾经迷失了自己的信仰，但现在忠实地侍奉她的神。"),
+                "Trauma" : Trait("Stoic", verb="be", effects = [Effect("boost", "love", -0.2), Effect("boost", "fear", -0.4)], base_description = "尽管并非自愿而失去了贞洁，但她情绪稳定"),
+                "Dull" : Trait("Curious", verb = "be", eff1 = Effect("special", "effect chance", 0.1), base_description = "她曾经过着枯燥无味的生活，但现在她愿意在生活中尝试一些新的事物。"),
+                "Mean" : Trait("Reserved", verb = "be", eff1 = Effect("change", "charm", -5, scales_with = "rank"), eff2 = Effect("change", "refinement", 10), base_description = "她脾气很坏，但是每当充满消极情绪时，她还是尽量不把自己的想法说出来。"),
+                "Scars" : Trait("Marks", verb = "be", eff1 = Effect("change", "body", -5, scales_with = "rank"), eff2 = Effect("change", "charm", 10), base_description = "她表现得如此自信，以至于你几乎没有注意到她那令人讨厌的伤疤。"),
+                "Plain" : Trait("Odd", verb = "be", eff1 = Effect("change", "beauty", -5, scales_with = "rank"), eff2 = Effect("change", "charm", 10), base_description = "她看起来像一个普通的女孩，但她独特的个性弥补了这一点。"),
+                "Rude" : Trait("Raw", verb = "be", eff1 = Effect("change", "refinement", -5, scales_with = "rank"), base_description = "尽管她出身低微，但她还是尽力为别人着想。"),
+                "Rough" : Trait("Impolite", verb = "be", eff1 = Effect("change", "sensitivity", -5, scales_with = "rank"), opposite = "Delicate", base_description = "她现在偶尔表现出来缺乏礼仪。"),
+                "Weak" : Trait("Tender", verb = "be", eff1 = Effect("change", "constitution", -5, scales_with = "rank"), opposite = "Resilient", base_description = "她经过刻苦的锻炼，不再像以前那样虚弱。"),
+                "Defiant" : Trait("Resistant", verb = "be", eff1 = Effect("change", "obedience", -5, scales_with = "rank"), eff2=Effect("change", "valuation", -20), opposite = "Meek", base_description = "她还是喜欢时不时地反抗权威。"),
+                "Gluttonous" : Trait("Craving", verb = "be", eff1 = Effect("change", "constitution", -15), base_description = "她总是很饿，但已经学会了不要暴饮暴食。"),
+                "Uncouth" : Trait("Primitive", verb="be", eff1=Effect("change", "refinement", -20), opposite = "Groomed", base_description = "她缺乏基本的礼貌，但本意是好的。"),
+                "Deaf" : Trait("Inattentive", verb = "be", eff1 = Effect("change", "obedience", -10), eff2 = Effect("change", "waitress jp gains", -0.25), base_description = "她也许不是聋子，但她经常心不在焉。"),
+                "Timid" : Trait("Bashful", verb = "be", eff1 = Effect("boost", "charm gains", -0.25), eff2 = Effect("change", "sensitivity", 10), opposite = "charming", base_description = "她害羞时很可爱。"),
+                "Plump" : Trait("Full-figured", verb = "be", eff1 = Effect("boost", "body gains", -0.25), eff2 = Effect("change", "constitution", 10), opposite = "Fit", base_description = "她身材有优美的自然曲线。"),
+                "Scruffy" : Trait("Authentic", verb = "be", eff1 = Effect("boost", "beauty gains", -0.25), eff2 = Effect("change", "beauty", 10), opposite = "Beautiful", base_description = "她更喜欢真诚地承认自己的缺点，而不是隐藏它们。"),
+                "Vulgar" : Trait("Honest", verb = "be", eff1 = Effect("boost", "refinement gains", -0.25), eff2 = Effect("change", "libido", 10), opposite = "Elegant", base_description = "她经常直抒胸臆，直言不讳。"),
+                "Tame" : Trait("Restrained", verb = "be", eff1 = Effect("boost", "libido gains", -0.25), eff2=Effect("change", "refinement", 10), opposite = "Slutty", base_description = "她很守规矩。"),
+                "Frail" : Trait("Cherished", verb = "be", eff1 = Effect("boost", "constitution gains", -0.25), eff2=Effect("change", "sensitivity", 10), opposite = "Athletic", base_description = "她很脆弱，但值得保护。"),
+                "Rebellious" : Trait("Liberated", verb = "be", eff1 = Effect("boost", "obedience gains", -0.25), eff2 = Effect("change", "charm", 10), opposite = "Obedient", base_description = "她可以自由地做出自己的选择。"),
+                "Distrustful" : Trait("Independent", verb = "be", eff1 = Effect("boost", "love gains", -0.25), eff2 = Effect("change", "refinement", 10), opposite = "Loyal", base_description = "她是一个独立可靠的女孩。"),
+                "Fearful" : Trait("Anxious", verb = "be", eff1 = Effect("boost", "fear", 0.25), eff2 = Effect("change", "defense", 1), opposite = "Brave", base_description = "她很容易紧张，很容易担心吊胆。"),
+                "Paranoid" : Trait("Cautious", verb = "be", eff1 = Effect("boost", "fear", 1.0), eff2 = Effect("change", "defense", 2), base_description = "她很警惕，小心翼翼地避免危险。"),
+                "Homely" : Trait("Comfortable", verb = "be", eff1 = Effect("boost", "reputation gains", -0.1), eff2 = Effect("boost", "love", 0.25), opposite = "Sexy", base_description = "她感到很自在。"),
+                "Prude" : Trait("Behaved", verb = "be", eff1 = Effect("boost", "service jp gains", -0.25), eff2 = Effect("boost", "sex jp gains", -0.25), eff3=Effect("change", "refinement", 10), opposite = "Naughty", base_description = "她不喜欢毫无意义的性爱，更喜欢先建立起来亲密的关系。"),
+                "Naive" : Trait("Green", verb = "be",eff1 = Effect("boost", "anal jp gains", -0.25), eff2 = Effect("boost", "fetish jp gains", -0.25), eff3=Effect("change", "beauty", 10), opposite = "Kinky", base_description = "她不喜欢做奇怪的事情。然而……"),
+                "Square" : Trait("Traditional", verb = "be", eff1 = Effect("change", "sex act requirements", 20), eff2=Effect("change", "refinement", 10), opposite = "Pervert", base_description = "她喜欢照章办事。"),
+                "Strong Gag Reflex" : Trait("Throat spasms", verb = "have", eff1 = Effect("increase satisfaction", "service", -1), eff2=Effect("change", "libido", 10), base_description = "她以前很容易被呛到，但现在还是时不时被鸡巴呛到。"),
+                "All thumbs" : Trait("Klutzy", verb = "be", eff1 = Effect("increase satisfaction", "waitress", -1), eff2 = Effect("change", "libido", 10), opposite=['Deft', 'Bright', 'Brisk', 'Rowdy'], base_description = "她还在努力让自己变得有用。"),
+                "Awkward" : Trait("Embarrassed", verb = "be", eff1 = Effect("increase satisfaction", "dancer", -1), eff2 = Effect("change", "charm", 10), opposite=['Nimble', 'Agile', 'Brisk', 'Powerful'], base_description = "她在某些情况下感到不舒服。"),
+                "Brutal" : Trait("Fierce", verb = "be", eff1 = Effect("increase satisfaction", "masseuse", -1), eff2 = Effect("change", "constitution", 10), opposite=['Deft', 'Soft skin', 'Agile', 'Unhurried'], base_description = "她喜欢公开展示自己的力量。"),
+                "Dumb" : Trait("Dopey", verb = "be", effects = [Effect("increase satisfaction", "geisha", -1), Effect("change", "charm", 10)], opposite=['Nimble', 'Soft skin', 'Bright', 'Modest'], base_description = "她虽然很蠢但是挺有趣的。"),
+                "Oafish" : Trait("Simple", verb = "be", eff1 = Effect("boost", "dancer jp gains", -0.25), eff2 = Effect("boost", "geisha jp gains", -0.25), eff3 = Effect("change", "libido", 10), opposite=['Nimble', 'Agile', 'Brisk', 'Soft skin', 'Bright'], base_description = "她不喜欢思考复杂的事情。"),
+                "Clumsy" : Trait("Silly", verb = "be", eff1 = Effect("boost", "waitress jp gains", -0.25), eff2 = Effect("boost", "masseuse jp gains", -0.25), eff3 = Effect("change", "sensitivity", 10), opposite=['Deft', 'Bright', 'Brisk', 'Rowdy', 'Soft skin', 'Agile'], base_description = "人们喜欢取笑她的错误。"),
+                "Slow" : Trait("Relaxed", verb = "be", eff1 = Effect("boost", "xp gains", -0.25), eff2 = Effect("change", "libido", 10), opposite = ["Fast learner", "Sharp", "Genius"], base_description = "她喜欢悠着点。"),
+                "Arrogant" : Trait("Self-assured", verb = "be", eff1 = Effect("boost", "all jp gains", -0.25 ), eff2 = Effect("change", "body", 10), opposite = "Humble", base_description = "她可能对自己的能力有点过于自信了。"),
+                "Stubborn" : Trait("Determined", verb = "be", eff1 = Effect("boost", "xp gains", -0.1 ), eff2 = Effect("boost", "all jp gains", -0.1 ), eff3 = Effect("change", "constitution", 10), base_description = "她觉得有动力追求自己的想法，即使这些想法值得怀疑。"),
+                "Lazy" : Trait("Peaceful", verb = "be", eff1 = Effect("boost", "max energy", -0.1), eff2 = Effect("change", "refinement", 10), opposite = ["Energetic", "Driven"], base_description = "她安详而无忧无虑。"),
+                "Blind" : Trait("Myopic", verb = "be", eff1 = Effect("change", "defense", -2), eff2 = Effect("change", "sensitivity", 10), base_description = "她近视眼。"),
+                "Vulnerable" : Trait("Accessible", verb = "be", eff1 = Effect("change", "defense", -2), eff2 = Effect("change", "sensitivity", 10), opposite = ["Strong", "Warrior"], base_description = "她认为安慰那些情绪最不稳定的人是她的责任。"),
+                "Expensive" : Trait("Valuable", verb = "be", eff1 = Effect("boost", "upkeep", 1), eff2=Effect("change", "valuation", +50), opposite = "Humble", base_description = "她应该得到公主般的待遇。"),
+                "Greedy" : Trait("Philanthropic", verb = "be", eff1 = Effect("boost", "upkeep", -0.8), base_description = "她希望过俭朴的生活，并尽她所能把自己的收入捐赠给那些需要帮助的人。"),
+                "Cold" : Trait("Cool", verb = "be", eff1 = Effect("change", "refinement", -10, scales_with = "rank"), eff2 = Effect("boost", "tiredness", -0.1), base_description = "她知道如何保持镇定。"),
+                "Jaded" :  Trait("Veteran", verb = "be a", eff1 = Effect("special", "skill catch up", 1), eff2 = Effect("change", "valuation", -10, scales_with = "rank"), opposite = "Sensitive", base_description = "她通过自己的经验和专业知识来指导其他人。"),
+                "Sickly" : Trait("Empathic", verb = "be", eff1 = Effect("boost", "hurt", +2), eff2=Effect("change", "sensitivity", 20), opposite = "Tough", base_description = "疾病和苦难使她变得更加富有同情心。"),
+                "Unlucky" : Trait("Unrelenting", verb = "be", eff1 = Effect("special", "unlucky", 1), eff2 = Effect("reroll", "job critical failure", 1), base_description = "她运气很差，但靠意志力坚持了下来。", opposite = "Lucky"),
+                "Slave Brand" : Trait("Trophy", verb="be a", effects = [Effect("boost", "prestige", 1.5), Effect("change", "valuation", -100)], archetype="The Bride", base_description = "她身上有个纹身，上面写着 {i}'科斯莫的财产.如果找到请归还给合法的主人.'{/i}."),
 
-                "Lesbian" : Trait("Queer", verb = "be a", eff1=Effect("increase satisfaction", "all sex acts", -1), eff2=Effect("increase satisfaction", "bisexual", 3), archetype="The Courtesan", base_description = "She does not get aroused by men, but serves women like no other."),
-                "City girl" : Trait("Cosmopolitan", verb="be a", eff1=Effect("boost", "farm preference increase", -1.0), eff2=Effect("change", "valuation", +60), eff3 = Effect("change", "refinement", 20), archetype="The Escort", base_description = "She is a cultured soul who thrives in the city, but would despise living in the countryside."),
-                "Circumcised" : Trait("Priestess", verb = "be a", effects = [Effect("change", "libido", -50), Effect("change", "sensitivity", -50), Effect("increase satisfaction", "all jobs", 1), Effect("change", "whore obedience target", 100), Effect("change", "valuation", +200)], base_description = "She has dedicated her life to serving Arios and the church has honored her with the title of Priestess."), 
-                "Deceitful" : Trait("Sly", verb = "be", eff1=Effect("boost", "income", -0.01), eff2=Effect("change", "valuation", +50), base_description = "She is a manipulative girl who makes sure she gets whatever she wants."),
-                "Inbred" : Trait("Pureblood", verb = "be a", eff1 = Effect("boost", "love", 0.5), eff2 = Effect("boost", "all jp gains", -0.5), eff3=Effect("change", "valuation", +400), base_description = "Her father and mother were closely related by blood, which leads people to assume that she might come from a royal bloodline."),
-                "Depressed" : Trait("Cynical", verb="be", eff1=Effect("change", "mood", -1), eff2=Effect("change", "constitution", 10), base_description = "She has a pessimistic outlook on life and copes with this by openly showing her contempt."),
-                "Chaste" : Trait("Pure", verb = "be", eff1 = Effect("increase satisfaction", "waitress", 1), eff2 = Effect("increase satisfaction", "geisha", 1), eff3=Effect("change", "valuation", +100), opposite = "Pervert", base_description = "She disapproves of sex outside of marriage, yet she works in a brothel. Visitors consider it endearing."),
-                "Disfigured" : Trait("Repaired", verb = "be", eff1 = Effect("boost", "naked bonus", -0.1), eff2 = Effect("change", "beauty", -10), eff3=Effect("change", "valuation", -25), opposite = "Nice boobs", base_description = "She was disfigured in a nasty accident, but specialist doctors have concealed the damage as much as they could."),
-                "Drunkard" : Trait("Teetotaler", verb="be a", eff1=Effect("change", "constitution", 15, scales_with = "rank"), eff2= Effect("boost", "reputation gains", -0.25), eff3=Effect("change", "valuation", +50), base_description = "She completely abstains from intoxicating beverages."),
+                "Lesbian" : Trait("Queer", verb = "be a", eff1=Effect("increase satisfaction", "all sex acts", -1), eff2=Effect("increase satisfaction", "bisexual", 3), archetype="The Courtesan", base_description = "她不会被男人激起性欲，但却可以接待女性客人。"),
+                "City girl" : Trait("Cosmopolitan", verb="be a", eff1=Effect("boost", "farm preference increase", -1.0), eff2=Effect("change", "valuation", +60), eff3 = Effect("change", "refinement", 20), archetype="The Escort", base_description = "她是个有教养的人，在城市里生活得很好，但不喜欢住在农村。"),
+                "Circumcised" : Trait("Priestess", verb = "be a", effects = [Effect("change", "libido", -50), Effect("change", "sensitivity", -50), Effect("increase satisfaction", "all jobs", 1), Effect("change", "whore obedience target", 100), Effect("change", "valuation", +200)], base_description = "她将自己的一生奉献给阿里奥斯，教会授予她女祭司的称号。"),
+                "Deceitful" : Trait("Sly", verb = "be", eff1=Effect("boost", "income", -0.01), eff2=Effect("change", "valuation", +50), base_description = "她是个控制欲很强的女孩，想要什么就得到什么。"),
+                "Inbred" : Trait("Pureblood", verb = "be a", eff1 = Effect("boost", "love", 0.5), eff2 = Effect("boost", "all jp gains", -0.5), eff3=Effect("change", "valuation", +400), base_description = "她的父亲和母亲有密切的血缘关系，这使人们认为她可能来自王室血统。"),
+                "Depressed" : Trait("Cynical", verb="be", eff1=Effect("change", "mood", -1), eff2=Effect("change", "constitution", 10), base_description = "她对生活持悲观态度，但是却可以笑看生活中的不平。"),
+                "Chaste" : Trait("Pure", verb = "be", eff1 = Effect("increase satisfaction", "waitress", 1), eff2 = Effect("increase satisfaction", "geisha", 1), eff3=Effect("change", "valuation", +100), opposite = "Pervert", base_description = "她不赞成婚外性行为，但她在却在青楼工作。客人们认为这一点很可爱。"),
+                "Disfigured" : Trait("Repaired", verb = "be", eff1 = Effect("boost", "naked bonus", -0.1), eff2 = Effect("change", "beauty", -10), eff3=Effect("change", "valuation", -25), opposite = "Nice boobs", base_description = "她在一次严重的事故中毁容，但医学专家已经尽可能地掩盖了这一损伤。"),
+                "Drunkard" : Trait("Teetotaler", verb="be a", eff1=Effect("change", "constitution", 15, scales_with = "rank"), eff2= Effect("boost", "reputation gains", -0.25), eff3=Effect("change", "valuation", +50), base_description = "她完全不喝那些带酒精的饮品。"),
                 # "Kidnapped" : Trait("Bonded", verb = "be", eff1=Effect("change", "obedience", 40), eff2 = Effect("boost", "love", 0.5), eff3=Effect("change", "maintenance", 1, scope="brothel"), base_description = "She was kidnapped, but cares deeply about you due to Stockholm Syndrome."),
-                "Frigid" : Trait("Composed", verb = "be", eff1 = Effect("change", "libido", -10), eff2 = Effect("increase satisfaction", "masseuse", 1), eff3=Effect("increase satisfaction", "dancer", 1), opposite = "Horny", base_description = "She is always calm and collected, which allows the customers to wind down."),
-                "Asexual" : Trait("Celibate", verb = "be", effects = [Effect("change", "libido", -50), Effect("increase satisfaction", "all sex acts", -1), Effect("increase satisfaction", "all jobs", 1)], opposite = "Pervert", base_description = "She has little to no interest in intimacy, but understands that she must earn her keep one way or the other."),
-                "Bloodslut" : Trait("Islander", verb = "be a", effects=[Effect("gain", "all sexual preferences", 250), Effect("change", "valuation", -20), Effect("change", "brothel reputation", -10, scales_with = "rank", chance=0.01, scope="brothel"), Effect("change", "customers", -2, scope="brothel"), Effect("personality", "creep")], opposite = "Virgin", base_description = "Despite a shady past on the Blood Islands, most customers have grown fond of her."),
-                "Half-elf" : Trait("Fey Blood", verb = "be a", effects=[Effect("boost", "tiredness", -0.1)], base_description = "She has elven blood running through her veins, but customers don't seem to mind."),
-                "Monsterkin" : Trait("Beastly", verb = "be a", effects=[Effect("special", "immune", 1), Effect("change", "security", -1, scope = "brothel")], base_description = "Some believe that she was birthed by a monster. But don't let that scare you, she's an admirable creature once you get to know her."),
-                "Vivified" : Trait("Awakened", verb = "be", effects=[Effect("change", "constitution", -20), Effect("change", "valuation", +600)], base_description = "People believe that she is an unnatural being, conjured up by a magician. Collectors from all over Xeros are interested in obtaining and studying her."),
+                "Frigid" : Trait("Composed", verb = "be", eff1 = Effect("change", "libido", -10), eff2 = Effect("increase satisfaction", "masseuse", 1), eff3=Effect("increase satisfaction", "dancer", 1), opposite = "Horny", base_description = "她总是泰然自若，让客人们放松下来。"),
+                "Asexual" : Trait("Celibate", verb = "be", effects = [Effect("change", "libido", -50), Effect("increase satisfaction", "all sex acts", -1), Effect("increase satisfaction", "all jobs", 1)], opposite = "Pervert", base_description = "她对亲密关系几乎没有兴趣，但她明白，无论如何，她无论如何都要坚持下去。"),
+                "Bloodslut" : Trait("Islander", verb = "be a", effects=[Effect("gain", "all sexual preferences", 250), Effect("change", "valuation", -20), Effect("change", "brothel reputation", -10, scales_with = "rank", chance=0.01, scope="brothel"), Effect("change", "customers", -2, scope="brothel"), Effect("personality", "creep")], opposite = "Virgin", base_description = "尽管曾在血腥群岛有一段不光彩的过去，但大多数顾客都喜欢上了她。"),
+                "Half-elf" : Trait("Fey Blood", verb = "be a", effects=[Effect("boost", "tiredness", -0.1)], base_description = "她的血管里流淌着精灵的血液，但顾客们似乎并不介意。"),
+                "Monsterkin" : Trait("Beastly", verb = "be a", effects=[Effect("special", "immune", 1), Effect("change", "security", -1, scope = "brothel")], base_description = "有些人认为她是由怪物所生。但别被吓到，一旦你了解她，她是一个令人钦佩的人。"),
+                "Vivified" : Trait("Awakened", verb = "be", effects=[Effect("change", "constitution", -20), Effect("change", "valuation", +600)], base_description = "人们相信她是被魔法师变出来的非自然生物。来自克塞罗斯各地的收藏家都有兴趣获得和研究她。"),
 
                         }
         
@@ -1470,15 +1471,15 @@ label traitking_init:
 
         ## STORY GIRLS TRAITS ##
 
-        trait_dict["Dynamo"] = Trait("Dynamo", verb = "be a", effects = [Effect("boost", "max energy", 0.3), Effect("boost", "energy", 0.15)], base_description = "Burns with fiery energy.")
-        trait_dict["Lolita"] = Trait("Lolita", verb = "be a", effects = [Effect("boost", "tip", 2, chance=0.2)], base_description = "She isn't actually underage, but looks like she does - and some customers love that.")
-        trait_dict["Ghost"] = Trait("Ghost", verb = "be a", effects = [Effect("special", "immune", 1)], base_description = "She is a ghost, and cannot be hurt by any normal means.")
-        trait_dict["Stalwart"] = Trait("Stalwart", verb = "be", effects = [Effect("change", "all skill max", 5, scales_with = "rank")], base_description = "It doesn't matter what she does, she'll train harder than anyone else.")
+        trait_dict["Dynamo"] = Trait("Dynamo", verb = "be a", effects = [Effect("boost", "max energy", 0.3), Effect("boost", "energy", 0.15)], base_description = "她浑身燃烧着炽热的能量。")
+        trait_dict["Lolita"] = Trait("Lolita", verb = "be a", effects = [Effect("boost", "tip", 2, chance=0.2)], base_description = "她实际上并不是未成年，但看起来她确实像个孩子了——一些顾客喜欢这样。")
+        trait_dict["Ghost"] = Trait("Ghost", verb = "be a", effects = [Effect("special", "immune", 1)], base_description = "她是个幽灵，用任何正常手段都伤害不了她。")
+        trait_dict["Stalwart"] = Trait("Stalwart", verb = "be", effects = [Effect("change", "all skill max", 5, scales_with = "rank")], base_description = "不管她做什么，她都会比其他人更努力地训练。")
 
-        trait_dict["Firebound"] = Trait("Firebound", verb = "be", effects = [Effect("special", "bound", 1), Effect("change", "defense", 7)], base_description = "Will not attack you. Deadly to everyone else.")
-        trait_dict["Voidbound"] = Trait("Voidbound", verb = "be", effects = [Effect("special", "bound", 1), Effect("change", "defense", 7)], base_description = "Will not attack you. Deadly to everyone else.")
-        trait_dict["Waterbound"] = Trait("Waterbound", verb = "be", effects = [Effect("special", "bound", 1), Effect("change", "defense", 7)], base_description = "Will not attack you. Deadly to everyone else.")
-        trait_dict["Earthbound"] = Trait("Earthbound", verb = "be", effects = [Effect("special", "bound", 1), Effect("change", "defense", 7)], base_description = "Will not attack you. Deadly to everyone else.")
+        trait_dict["Firebound"] = Trait("Firebound", verb = "be", effects = [Effect("special", "bound", 1), Effect("change", "defense", 7)], base_description = "她不会攻击你。但对其他人来说是致命的。")
+        trait_dict["Voidbound"] = Trait("Voidbound", verb = "be", effects = [Effect("special", "bound", 1), Effect("change", "defense", 7)], base_description = "她不会攻击你。但对其他人来说是致命的。")
+        trait_dict["Waterbound"] = Trait("Waterbound", verb = "be", effects = [Effect("special", "bound", 1), Effect("change", "defense", 7)], base_description = "她不会攻击你。但对其他人来说是致命的。")
+        trait_dict["Earthbound"] = Trait("Earthbound", verb = "be", effects = [Effect("special", "bound", 1), Effect("change", "defense", 7)], base_description = "她不会攻击你。但对其他人来说是致命的。")
         
         ## Refresh generated girls
         game.free_girls = []
@@ -1502,7 +1503,7 @@ label traitking_init:
         calendar.set_alarm(calendar.time + 1, StoryEvent(label="traitking_night", type="night"))
         
         # schedule holidays
-        renpy.call("traitking_holidays")        
+        renpy.call("traitking_holidays")
 
         traitking_activated = True
         
