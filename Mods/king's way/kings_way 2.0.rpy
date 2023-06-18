@@ -8,6 +8,9 @@ init -1 python:
         for girl in MC.girls:
             girl.energy = girl.get_stat_minmax("energy")[1]
             girl.heal(99)
+        for girl in farm.girls:
+            girl.energy = girl.get_stat_minmax("energy")[1]
+            girl.heal(99)
     def cheat_building_duration():
         for bd in all_furniture:
             bd.duration = 0
@@ -110,7 +113,7 @@ screen cheat_all_slave:
     #text "cheat_all_slave"
     hbox:
         vbox:
-            xsize 400
+            xsize 300
             text '你的姑娘'
             vpgrid:
                 cols 1
@@ -121,7 +124,7 @@ screen cheat_all_slave:
                 for girl in MC.girls:
                     textbutton "{}".format(girl.get_name()) action SetVariable("slave_id",girl) xfill True
         vbox:
-            xsize 400
+            xsize 300
             text '自由女孩'
             vpgrid:
                 cols 1
@@ -130,6 +133,17 @@ screen cheat_all_slave:
                 scrollbars "vertical"
                 spacing 0
                 for girl in game.free_girls:
+                    textbutton "{}".format(girl.get_name()) action SetVariable("slave_id",girl) xfill True text_layout "nobreak"
+        vbox:
+            xsize 300
+            text '农场姑娘'
+            vpgrid:
+                cols 1
+                xfill True
+                mousewheel True
+                scrollbars "vertical"
+                spacing 0
+                for girl in farm.girls:
                     textbutton "{}".format(girl.get_name()) action SetVariable("slave_id",girl) xfill True text_layout "nobreak"
 
 screen KW_Options():

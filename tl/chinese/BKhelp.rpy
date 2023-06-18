@@ -3034,3 +3034,25 @@ translate chinese strings:
     old "GO"
     new "开始"
 
+# TODO: Translation updated at 2023-06-18 15:01
+
+# game/BKhelp.rpy:134
+translate chinese mod_menu_b244640b_1:
+
+    # "Girl pack pictures will no longer be counted."
+    ""
+
+translate chinese strings:
+
+    # game/BKhelp.rpy:10
+    old "Reset items"
+    new "重置道具列表"
+
+# TODO: Translation updated at 2023-06-18 15:04
+
+# game/BKhelp.rpy:134
+translate chinese mod_menu_6a6eda2a:
+
+    # "items have been reset."
+    "道具已经重置"
+

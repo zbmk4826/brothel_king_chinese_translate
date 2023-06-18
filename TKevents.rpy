@@ -1545,7 +1545,7 @@ label undervalued_interact(girl):
                         if traits.name != "Unknown":
                             text1 += traits.base_description + " "
 
-                    text1 += "And that's just scratching the surface!"
+                    text1 += "这还只是冰山一角!"
 
                 you "She's a fantastic girl with so many different qualities."
 

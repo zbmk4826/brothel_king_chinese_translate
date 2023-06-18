@@ -994,7 +994,7 @@ translate chinese city_slave_98472443:
 translate chinese city_slave_41f096b7:
 
     # slavegirl1 "Master [MC.name]! It's good to see you!"
-    slavegirl1 "[MC.name]大人！很高兴见到你！"
+    slavegirl1 "[MC.name]大师！很高兴见到你！"
 
 # game/BKcity_events.rpy:902
 translate chinese city_slave_d5c1bdf2:
@@ -1174,7 +1174,7 @@ translate chinese city_slave_c7d97402:
 translate chinese city_slave_190538b3:
 
     # slave "Thank you, Master [MC.name]."
-    slave "谢谢，[MC.name]大人。"
+    slave "谢谢，[MC.name]大师。"
 
 # game/BKcity_events.rpy:1010
 translate chinese city_slave_0769663a:
@@ -1540,7 +1540,7 @@ translate chinese city_slave_b250f193:
 translate chinese city_slave_ffb55243:
 
     # slavegirl1 "There she is! Be a nice girl now, Master [MC.name] is going to take good care of you."
-    slavegirl1 "她在那里！要乖乖做个好女孩，[MC.name]大人会好好照顾你的。"
+    slavegirl1 "她在那里！要乖乖做个好女孩，[MC.name]大师会好好照顾你的。"
 
 # game/BKcity_events.rpy:1256
 translate chinese city_slave_99a292db:
@@ -1558,7 +1558,7 @@ translate chinese city_slave_cbaacbae:
 translate chinese city_slave_36eacddf:
 
     # slavegirl1 "Master [MC.name] will now fuck your pussy. Brace yourself, now, he's got a big dick. Mmmh..."
-    slavegirl1 "[MC.name]大人现在会操你的小穴。准备好了吗，他的鸡巴很大。嗯..."
+    slavegirl1 "[MC.name]大师现在会操你的小穴。准备好了吗，他的鸡巴很大。嗯..."
 
 # game/BKcity_events.rpy:1268
 translate chinese city_slave_0657eae3:
@@ -1618,7 +1618,7 @@ translate chinese city_slave_46143a51:
 translate chinese city_slave_d5de3b60:
 
     # slavegirl1 "Looks like you managed to turn Master [MC.name] on... *giggle*"
-    slavegirl1 "看起来你成功地勾起了[MC.name]大人的兴致...*咯咯笑*"
+    slavegirl1 "看起来你成功地勾起了[MC.name]大师的兴致...*咯咯笑*"
 
 # game/BKcity_events.rpy:1314
 translate chinese city_slave_5d29cd48:
@@ -6748,7 +6748,7 @@ translate chinese slave_beach_event_19352ab1:
 translate chinese slave_beach_event_7335c319:
 
     # "The customers brought in [tip] gold. You gave [girl.name] [upk] gold for upkeep."
-    "顾客总共付了[tips]金币。你给了[girl.name][upk]金币作为报酬。"
+    "顾客总共付了[tip]金币。你给了[girl.name][upk]金币作为报酬。"
 
 # game/BKcity_events.rpy:5604
 translate chinese slave_beach_event_3db5f193:

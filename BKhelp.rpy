@@ -127,6 +127,17 @@ label help(scr):
 
             call help_about_game from _call_help_about_game
 
+        "Reset items":
+
+            call init_items() from _call_help_init_items
+
+            "items have been reset."
+
+        "Reset perks":
+
+            call init_perks() from _call_help_init_perks
+
+            "Perks have been reset."
 
         "Never mind":
 

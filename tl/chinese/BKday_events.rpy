@@ -3814,7 +3814,7 @@ translate chinese onsen_night_event_wake_up_716c42c3:
 translate chinese onsen_night_event_wake_up_91296546:
 
     # man "Some boast, here, Master [MC.name]! What are those girls of yours capable of that we haven't seen before?"
-    man "有点夸张了，[MC.name]大人！你的姑娘能做到我们从未见过的事情吗？"
+    man "有点夸张了，[MC.name]大师！你的姑娘能做到我们从未见过的事情吗？"
 
 # game/BKday_events.rpy:2592
 translate chinese onsen_night_event_wake_up_685847ec:
@@ -11422,7 +11422,7 @@ translate chinese night_girl_perform_f857cc27:
 translate chinese night_girl_perform_cdf3047e:
 
     # "Customer" "Sorry, Master [MC.name], but I believe you left out a part of the story."
-    "客户" "对不起，[MC.name]大人，但我认为您还漏了故事的一部分。"
+    "客人" "对不起，[MC.name]大师，但我认为您还漏了故事的一部分。"
 
 # game/BKday_events.rpy:7271
 translate chinese night_girl_perform_c26fffe1:
@@ -11434,7 +11434,7 @@ translate chinese night_girl_perform_c26fffe1:
 translate chinese night_girl_perform_b30b843e:
 
     # "Customer" "As she ventured into the moutain, still dazed from a particularly intense milking session, she ran into a big, bad wolf..."
-    "客户" "当她去山里冒险时，还在为之前的挤奶高潮而恍惚不已，她就遇到了一只大灰狼..."
+    "客人" "当她去山里冒险时，还在为之前的挤奶高潮而恍惚不已，她就遇到了一只大灰狼..."
 
 # game/BKday_events.rpy:7275
 translate chinese night_girl_perform_f81378ce:
@@ -11446,7 +11446,7 @@ translate chinese night_girl_perform_f81378ce:
 translate chinese night_girl_perform_5e84622b:
 
     # "Customer" "The horny wolf got the jump on her, and was intent on raping her."
-    "客户" "那只好色的狼突然袭击了她，企图强奸她。"
+    "客人" "那只好色的狼突然袭击了她，企图强奸她。"
 
 # game/BKday_events.rpy:7284
 translate chinese night_girl_perform_22b1dd3f:
@@ -11500,7 +11500,7 @@ translate chinese night_girl_perform_d3f53588:
 translate chinese night_girl_perform_e115bb43:
 
     # "Customer" "Aw... *sigh*"
-    "客户" "啊...*叹气*"
+    "客人" "啊...*叹气*"
 
 # game/BKday_events.rpy:7325
 translate chinese night_girl_perform_fd347a9c:
@@ -11908,7 +11908,7 @@ translate chinese night_girl_perform_547df988:
 translate chinese night_girl_perform_fae45f62:
 
     # "Customer" "Aw! You're a cruel man... *sniff*"
-    "客户" "啊！你真是个残忍的人......*哭泣*"
+    "客人" "啊！你真是个残忍的人......*哭泣*"
 
 # game/BKday_events.rpy:7574
 translate chinese night_girl_perform_8b00c3e5:

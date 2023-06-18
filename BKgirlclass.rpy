@@ -1979,7 +1979,7 @@ init -2 python:
 
             chg *= self.get_effect("boost", "energy use") # (1 - (self.rank-1)*0.15)
 
-            r, case = self.change_energy(-chg)
+            r, case = self.change_energy(-chg * 0.4)
 
             text1 = ""
             text2 = "\n精力{color=[c_red]} " + str(round_int(r)) + "{/color}"

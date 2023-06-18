@@ -22444,7 +22444,7 @@ translate chinese satella_game_guess_loop_372c725f:
 translate chinese satella_game_guess_loop_9d83cf7d:
 
     # extend "\n{i}[answers]{/i}" nointeract
-    extend "\n{i}[答案]{/i}" nointeract
+    extend "\n{i}[answers]{/i}" nointeract
 
 # game/BKstory_events.rpy:11364
 translate chinese satella_game_guess_loop_95c3f3e6:

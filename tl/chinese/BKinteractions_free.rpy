@@ -550,7 +550,7 @@ translate chinese free_girl_girlfriend_d9a9b5f7_1:
 translate chinese free_girl_girlfriend_f64defce:
 
     # girl.char "Do you remember what is my [type] [thing]?"
-    girl.char "你还记得我[type]的[thing]是什么？"
+    girl.char "你还记得我[type]的[thing_cn]是什么？"
 
 # game/BKinteractions_free.rpy:1311
 translate chinese free_girl_girlfriend_d9a9b5f7_2:

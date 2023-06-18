@@ -1336,7 +1336,7 @@ translate chinese ore_intro_0a68ea71:
 translate chinese ore_intro_4f551cd3:
 
     # "Miner" "Shalia take 'em all! We work our asses off in the mine day and night, but at the end those bloody bureaucrats take a 70 percent cut just doin' nuthin'."
-    "矿工" "愿莎莉娅带走他们！我们没日没夜地在矿里累死累活的工作，但最后那些该死的官僚什么都不做就拿了70%的分成。"
+    "矿工" "愿莎莉娅带走他们！我们没日没夜地在矿里累死累活的工作，但最后那些该死的官僚什么都不做就拿了7成。"
 
 # game/BKevents.rpy:2267
 translate chinese ore_intro_1fb53abf:
