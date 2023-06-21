@@ -1201,7 +1201,7 @@ label free_girl_girlfriend(girl):
 
             for h in origin_list:
 
-                m.append((h, h))
+                m.append((origins_chinese_translate[h], h))
 
             m.append(("我不记得了", "give up"))
 

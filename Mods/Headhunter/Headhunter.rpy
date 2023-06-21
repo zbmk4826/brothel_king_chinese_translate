@@ -1815,7 +1815,7 @@ label headhunter_delivers:
                         play sound s_sigh
                         $ renpy.say(girl.char, "啊, 主人...")
 
-                    call send_to_farm(girl, can_beg=False, context = "slavemarket")
+                    call send_to_farm(girl, can_beg=False)
 
                     jump headhunter_end2
                 else:

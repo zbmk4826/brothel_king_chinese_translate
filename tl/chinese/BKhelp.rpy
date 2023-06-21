@@ -2732,7 +2732,7 @@ translate chinese strings:
 
     # game/BKhelp.rpy:1509
     old "Girls"
-    new "姑娘们们"
+    new "姑娘们"
 
     # game/BKhelp.rpy:1509
     old "Free girls"

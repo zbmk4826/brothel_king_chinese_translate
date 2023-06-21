@@ -2034,13 +2034,13 @@ init -3 python:
 
         for spe in specials:
             try:
-                if rand_item is not None:
+                if rand_item is not None and spe == "random item":
                    temp_text = perform_job_dict[spe] % rand_item.name
                    text_descript += event_color["good"] % temp_text
                 else:
                    text_descript += event_color["good"] % perform_job_dict[spe]
             except:
-                if rand_item is not None:
+                if rand_item is not None and spe == "random item":
                    temp_text = perform_job_dict[spe] % rand_item.name
                    text_descript += event_color["good"] % temp_text
                 else:
