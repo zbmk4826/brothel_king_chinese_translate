@@ -270,7 +270,7 @@ label run_ninja_game(njgame): # Returns "ninja" if ninja caught, "guest" if gues
 
     $ centered(event_color["special"] % "\n\n{b}女忍者狩猎开始\n回合 " + stage_name + "{/b}")
 
-    if MC.has_item("makibishi"):
+    if MC.has_item("撒菱"):
         if not njgame.special:
             menu:
                 "Do you want to use your makibishi to automatically catch your target?"
@@ -278,7 +278,7 @@ label run_ninja_game(njgame): # Returns "ninja" if ninja caught, "guest" if gues
                 "Yes (spend 1 makibishi)":
                     play sound s_dice
                     $ njgame.hits = 3
-                    $ MC.items.remove(makibishi)
+                    $ MC.items.remove(MC.get_items(name="撒菱")[0])
                 "No":
                     pass
 

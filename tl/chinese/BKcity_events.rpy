@@ -4276,7 +4276,7 @@ translate chinese city_gypsy_929d633d:
 translate chinese city_gypsy_fdbf20d3:
 
     # ev_girl2 "I'm cumming!!! Hiiiiii!!!"
-    ev_girl2 "我要射了！！！嗨！！！"
+    ev_girl2 "我要高潮了！！！嗨！！！"
 
 # game/BKcity_events.rpy:3422
 translate chinese city_gypsy_34b60ad2:

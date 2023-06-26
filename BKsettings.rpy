@@ -632,6 +632,18 @@ init -4 python:
                          "fetish" : "性虐",
                          "Energy" : "精力",
                          "energy" : "精力",
+
+                         ## 装备类型 ##
+                         "Ring" : "戒指",
+                         "Dress" : "衣服",
+                         "Necklace" : "项链",
+                         "Accessory" : "配饰",
+                         "Toy" : "玩具",
+
+
+                         "marauding ogres" : "四处劫掠的巨魔",
+                         "gooey monsters" : "粘糊糊的怪物",
+                         "rogue mercenaries" : "流浪佣兵",
                          }
 
     ## 访问城市界面 ##
@@ -691,6 +703,7 @@ init -4 python:
                          "Pimp license" : "皮条客牌照",
                          "Whoremonger license" : "妓女贩牌照",
                          "Brothelmaster license" : "青楼主牌照",
+
                          }
 
     ## 特质名称 ##

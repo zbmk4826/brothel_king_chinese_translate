@@ -40,7 +40,7 @@ label security(working_girls, ev_type=None): # Happens when the threat level ove
     if ev_type == "raid": # A raiding party blitzes the brothel, trying to kidnap one of your girls. 2-4 girls are targeted, you can only defend one yourself.
 
         python:
-            attackers = rand_choice(("四处劫掠的巨魔", "粘糊糊的怪物", "流浪佣兵"))
+            attackers = rand_choice(("marauding ogres", "gooey monsters", "rogue mercenaries"))
             if attackers == "gooey monsters" and is_censored("monster"):
                 attackers = "rogue mercenaries"
 
@@ -58,6 +58,7 @@ label security(working_girls, ev_type=None): # Happens when the threat level ove
         show expression pic1 at top as bg with dissolve
 
         play sound s_crowd_riot
+        $ attackers_cn = setting_name_dict[attackers]
 
         security "{color=[c_red]}[brothel.name] is being raided by [attackers]!{/color}\nYou rush outside with the defenders."
 
@@ -99,19 +100,19 @@ label security(working_girls, ev_type=None): # Happens when the threat level ove
         play sound s_scream_loud
         girl.char "EEEEK!!! Master, help me!" with vpunch
 
-        if attackers == "四处劫掠的巨魔":
+        if attackers == "marauding ogres":
             $ strength = 8
             $ magic = 5
             $ hit = "手中的那把巨斧"
             show ogre at totheleft as enemy with dissolve
 
-        elif attackers == "粘糊糊的怪物":
+        elif attackers == "gooey monsters":
             $ strength = 4
             $ magic = 7
             $ hit = "一条抖动的触手"
             show sewer_monster as enemy at truecenter with dissolve
 
-        elif attackers == "流浪佣兵":
+        elif attackers == "rogue mercenaries":
             $ strength = 6
             $ magic = 6
             $ hit = "手中的长剑"
@@ -119,13 +120,13 @@ label security(working_girls, ev_type=None): # Happens when the threat level ove
 
         "You reach [girl.fullname] just in time to confront her attacker."
 
-        if attackers == "四处劫掠的巨魔":
+        if attackers == "marauding ogres":
             show ogre at left as enemy with move
 
-        elif attackers == "粘糊糊的怪物":
+        elif attackers == "gooey monsters":
             show sewer_monster as enemy at centerleft with move
 
-        elif attackers == "流浪佣兵":
+        elif attackers == "rogue mercenaries":
             show masked_thug at left as enemy with move
 
         # Pick challenge
@@ -172,7 +173,7 @@ label security(working_girls, ev_type=None): # Happens when the threat level ove
                 play sound s_lightning
                 with flash
 
-                if attackers == "流浪佣兵":
+                if attackers == "rogue mercenaries":
                     show thug2 burnt as enemy with move:
                         xalign 0.4
                         time 0.5
@@ -251,7 +252,7 @@ label security(working_girls, ev_type=None): # Happens when the threat level ove
 
             $ lost_gold = int(MC.gold * 0.15)
             $ MC.gold -= lost_gold
-            $ text1 = "当你昏倒的时候, [attackers]洗劫了你的青楼, {color=[c_red]}抢走了 [lost_gold] 金币。{/color} "
+            $ text1 = "当你昏倒的时候, [attackers_cn]洗劫了你的青楼, {color=[c_red]}抢走了 [lost_gold] 金币。{/color} "
 
         python:
 
@@ -1601,7 +1602,7 @@ label kidnap_tip(girl): # Happens at the taverns location if a girl has been kid
         try:
             k = girl.kidnapper
         except:
-            girl.kidnapper = "流浪佣兵"
+            girl.kidnapper = "rogue mercenaries"
 
     play music m_tavern fadein 3.0
 
@@ -1688,13 +1689,15 @@ label kidnap_tip(girl): # Happens at the taverns location if a girl has been kid
                     $ game.kidnapped.remove(girl)
 
     if tip:
+
+        $ kidnapper_cn = setting_name_dict[girl.kidnapper]
         man "Thank you, kind sir!"
 
         man "Right then. [girl.name] was captured by [girl.kidnapper]. I know where their lair is..."
 
         scene black with fade
 
-        $ loc = rand_choice(game.get_available_locations())
+        $ loc = location_name_dict[rand_choice(game.get_available_locations())]
         $ city_events.append(StoryEvent(label = "kidnap_rescue", call_args = [girl], location = loc.name))
 
         "The man showed you where to find [girl.fullname] near the {b}[loc.name]{/b}."

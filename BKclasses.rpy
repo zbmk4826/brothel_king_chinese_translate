@@ -460,7 +460,7 @@ init -2 python:
                 self.charisma += 1
 
             self.interactions = self.speed
-            self.mana = self.spirit
+            self.mana = self.spirit * 2
 
         ## Load pics
 
@@ -568,7 +568,7 @@ init -2 python:
 
         def reset_interactions(self):
             self.interactions = round_int(self.get_speed() * self.get_effect("boost", "AP") + self.get_effect("change", "AP"))
-            self.mana = round_int(self.get_spirit() * self.get_effect("boost", "mana") + self.get_effect("change", "mana"))
+            self.mana = round_int(self.get_spirit() * 2 * self.get_effect("boost", "mana") + self.get_effect("change", "mana"))
 
         ## Banking
 
@@ -780,9 +780,9 @@ init -2 python:
                 renpy.notify("\n这个法术已经生效。")
                 return False
 
-            elif self.has_active_spell(spelltype = spl.type):
-                renpy.notify("\n另一个 " + spl.type + "法术已经生效。")
-                return False
+#             elif self.has_active_spell(spelltype = spl.type):
+#                 renpy.notify("\n另一个 " + spl.type + "法术已经生效。")
+#                 return False
 
             elif self.mana >= spl.cost:
 
@@ -845,8 +845,8 @@ init -2 python:
             elif spl.auto == "morning":
                 spl.auto = False
 
-            elif self.has_auto_spell(spl.type):
-                renpy.notify("\n只能有一个" + spl.type + "法术可以自动施展。")
+#             elif self.has_auto_spell(spl.type):
+#                 renpy.notify("\n只能有一个" + spl.type + "法术可以自动施展。")
 
             else:
                 spl.auto = "night"
@@ -5355,8 +5355,8 @@ init -2 python:
                 return False, "你没有足够的互动时间来做这件事。"
             elif self.get_gold_cost() and MC.gold < self.get_gold_cost():
                 return False, "你没有足够的钱来支付这个训练的费用 (" + str(self.get_gold_cost()) + "{image=img_gold})。"
-            elif self.group == "train" and girl.MC_interact_counters[self.group] >= 2:
-                return False, "你每天只能训练一个女孩两次。"
+            elif self.group == "train" and girl.MC_interact_counters[self.group] >= 4:
+                return False, "你每天只能训练一个女孩四次。"
             elif self.group in ("reward", "discipline") and girl.MC_interact_counters[self.group] >= 1:
                 return False, "你每天只能奖励或惩罚一个女孩一次。"
             elif self.group in ("gold", "gift", "sex_reward", "rape", "offer") and girl.MC_interact_counters[self.group] >= 1:
@@ -5556,20 +5556,25 @@ init -2 python:
                     r = dice(6) + MC.get_charisma()
 
                     if self.type == "slave_life":
-                        if r >= 9:
+                        if r >= 9 and r <20:
                             ob += 1
-
+                        elif r >= 20:
+                            ob += 2
                     elif self.type == "brothel":
-                        if r >= 9:
+                        if r >= 9 and r <20:
                             lib += 1
-
+                        elif r >= 20:
+                            lib += 2
                     elif self.type == "customers":
-                        if r >= 9:
+                        if r >= 9 and r <20:
                             sen += 1
-
+                        elif r >= 20:
+                            sen += 2
                     elif self.type == "other_girls":
-                        if r >= 9:
+                        if r >= 9 and r <20:
                             cha += 1
+                        elif r >= 20:
+                            cha += 2
 
                     ## Impact other girls (if necessary)
 
@@ -5777,15 +5782,19 @@ init -2 python:
                             if self.result == "good":
                                 ob += dice(6)
                             elif self.MC_reaction == "discipline": # Scolding her might have a good effect
-                                if r >= 9:
-                                    ob += dice(3)
+                                if r >= 9 and r < 20:
+                                    con += dice(3)
+                                if r >= 20:
+                                    con += dice(6)
 
                         elif self.act == "constitution":
                             if self.result == "good":
                                 con += dice(6)
                             elif self.MC_reaction == "discipline": # Scolding her might have a good effect
-                                if r >= 9:
+                                if r >= 9 and r < 20:
                                     con += dice(3)
+                                if r >= 20:
+                                    con += dice(6)
 
                     # 3. Love and fear (sexual training)
 
@@ -7300,7 +7309,7 @@ init -2 python:
                 return "{b}弱点{/b}：" + farm_related_dict[target]
 
             elif spe == "item":
-                return "{b}必须穿着{/b}：" + setting_name_dict[target.name]
+                return "{b}必须穿着或佩戴{/b}：" + setting_name_dict[target.name]
 
             elif spe == "girls":
                 return "{b}派遣两个女孩{/b} (额外报酬)"

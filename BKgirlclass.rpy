@@ -1741,8 +1741,8 @@ init -2 python:
 
             # Halves capacity if girl is working and whoring
 
-            if self.work_whore:
-                cust_cap = round_int(cust_cap / 2)
+#             if self.work_whore:
+#                 cust_cap = round_int(cust_cap / 2)
 
             if cust_cap < 1:
                 cust_cap = 1
@@ -4676,15 +4676,15 @@ init -2 python:
                     self.remove_trait(trait)
 
                     if origin == "brothel":
-                        self.add_trait(housebroken_trait, pos=1)
+                        self.add_trait(housebroken_trait)
                     elif origin == "farm":
-                        self.add_trait(farmgirl_trait, pos=1)
+                        self.add_trait(farmgirl_trait)
                     elif origin == "MC" and self.love > self.fear:
-                        self.add_trait(t_pet_trait, pos=1)
+                        self.add_trait(t_pet_trait)
                     elif origin == "MC" and self.love <= self.fear:
-                        self.add_trait(trauma_trait, pos=1)
+                        self.add_trait(trauma_trait)
                     elif origin == "rape":
-                        self.add_trait(trauma_trait, pos=1)
+                        self.add_trait(trauma_trait)
 
                     return True
 

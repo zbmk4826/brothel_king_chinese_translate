@@ -2840,7 +2840,7 @@ label visit_willow():
 
 label visit_gina():
 
-    if MC.get_items(name="Cimerian"):
+    if MC.get_items(name="西梅利亚"):
         scene black
         show expression selected_location.get_pic(config.screen_width, int(config.screen_height*0.8)) at top
         with fade
@@ -2867,7 +2867,7 @@ label visit_gina():
                 python:
                     ev_list = []
 
-                    for it in MC.get_items(name="Cimerian"):
+                    for it in MC.get_items(name="西梅利亚"):
                         if it.name == "西梅利亚废料":
                             it.price = 350
                             rv = 1
@@ -2949,7 +2949,7 @@ label visit_gina():
                     you "Speaking of 'ground-breaking', any more plans to fly off a cliff and crash down in the mud?"
                     gina "Why you... Grrr... *angry*"
 
-                    call receive_item(blueprint_item, msg="You have acquired %s. Seek a skilled craftsman (or woman) to try and make sense of it.") from _call_receive_item_17
+                    call receive_item(blueprint_item, msg="Y你已经获得了%s. 找一个熟练的男工匠(女的也可以)试着把它弄明白。") from _call_receive_item_17
 
                 elif NPC_gina.flags["research"] >= 15 and not NPC_gina.flags["extractor2 unlock"]:
                     gina "Wait, what do we have here? I think I know where this goes..."

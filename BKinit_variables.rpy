@@ -1789,7 +1789,7 @@ init python:
                        "fondling her boobs neg_reaction" : "她不喜欢在那里被碰触，紧张的情绪使训练变得不那么愉快。",
 
                        "groping her ass description" : "被人摸来摸去",
-                       "groping her ass action" : "抚摸她的屁股",
+                       "groping her ass action" : "玩弄她的屁穴",
                        "groping her ass intro" : "你摸着%s的屁股，开始用手指抚弄她的屁眼。",
                        "groping her ass pos_reaction" : "她喜欢被抚摸，当你把两根手指塞进她的屁眼时，她会兴奋地呻吟。",
                        "groping her ass neg_reaction" : "她不喜欢在那里被触碰，紧张的情绪使训练变得不那么愉快。",
@@ -2384,7 +2384,7 @@ init -4 python:
                         "reroll" : " 她惊险的逃过了一场大祸。",
                         "unlucky" : "",
                         "lucky" : "",
-                        "random item" : " 客人%s留下了贵重的东西。",
+                        "random item" : " 客人留下了贵重的东西：%s。",
                         "beauty bonus" : "客人%s发现她的美丽令人惊叹。",
                         "body bonus" : " 客人%s喜欢她的玲珑曲线。",
                         "charm bonus" : " 客人%s被她的魅力迷住了。",

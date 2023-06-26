@@ -4,7 +4,7 @@
 translate chinese security_488f4983:
 
     # security "{color=[c_red]}[brothel.name] is being raided by [attackers]!{/color}\nYou rush outside with the defenders."
-    security "{color=[c_red]}[brothel.name]正在遭受[attackers]的袭击！{/color}\n你和安保人员一起冲了出去。"
+    security "{color=[c_red]}[brothel.name]正在遭受[attackers_cn]的袭击！{/color}\n你和安保人员一起冲了出去。"
 
 # game/BKsecurity.rpy:68
 translate chinese security_56178303:
@@ -22,7 +22,7 @@ translate chinese security_e458fe67:
 translate chinese security_af6afeb1:
 
     # security "Some of the attackers have sneaked out the back of [brothel.name] while the security guards were distracted! You rush back to the brothel to help.\n{color=[c_red]}[girl_nb] of your girls are under attack, but you can only help one!{/color}"
-    security "原来趁保安们一不留神，几名袭击者从[brothel.name]的后面溜了进去！你连忙冲回去帮忙。\n{color=[c_red]}[girl_nb]你的女孩们正在受到攻击，但你第一时间却只能帮助其中一个！{/ color}"
+    security "原来趁保安们一不留神，几名袭击者从[brothel.name]的后面溜了进去！你连忙冲回去帮忙。\n{color=[c_red]}[girl_nb]个姑娘正在受到攻击，但你第一时间却只能帮助其中一个！{/ color}"
 
 # game/BKsecurity.rpy:100
 translate chinese security_80691383:
@@ -946,13 +946,13 @@ translate chinese kidnap_tip_cd15ccdf:
 translate chinese kidnap_tip_4afd0488:
 
     # man "Right then. [girl.name] was captured by [girl.kidnapper]. I know where their lair is..."
-    man "好的，[girl.name]被[kidnapper]抓走了。我知道他们的藏身之处..."
+    man "好的，[girl.name]被[kidnapper_cn]抓走了。我知道他们的藏身之处..."
 
 # game/BKsecurity.rpy:1700
 translate chinese kidnap_tip_7423ebaa:
 
     # "The man showed you where to find [girl.fullname] near the {b}[loc.name]{/b}."
-    "男人告诉你在{b}[loc.name]{/b}附近可以找到[girl.fullname]。"
+    "男人告诉你在{b}[loc]{/b}附近可以找到[girl.fullname]。"
 
 # game/BKsecurity.rpy:1709
 translate chinese kidnap_rescue_62968ca6:

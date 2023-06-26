@@ -3444,13 +3444,15 @@ screen brothel():
                     $ max_dur = float(brothel.current_building.duration)
                     $ leftover_dur = round_int(max_dur - (calendar.time - brothel.started_building))
 
-                    if leftover_dur/max_dur <= 0.25:
-                        $ text1 += "只剩"
-                    elif leftover_dur/max_dur <= 0.5:
-                        $ text1 += "就差"
+                    if max_dur != 0:
+                        if  leftover_dur/max_dur <= 0.25:
+                            $ text1 += "只剩"
+                        elif leftover_dur/max_dur <= 0.5:
+                            $ text1 += "就差"
+                        else:
+                            $ text1 += "还需"
                     else:
-                        $ text1 += "还需"
-
+                        $ text1 += "还剩"
                     $ text1 += "" + str(leftover_dur) + "天完成){/size}"
             else:
                 $ text1 = "???"
@@ -4905,7 +4907,7 @@ screen restock_button(merc, upgrade=False):
         if upgrade == True and merc.can_upgrade():
             $ chapter, cost, upgrade = shop_upgrades[merc.upgrade_level + 1]
 
-            $ ttip = "升级这个商店的库存（+%s的%s项目）为%s %s。" % (str(upgrade[1]), upgrade[0], str(cost[1]), cost[0])
+            $ ttip = "升级这个商店的库存（+%s的%s项目）为%s %s。" % (str(upgrade[1]), upgrade[0], str(cost[1]), resource_name_dict[cost[0]])
 
             textbutton "升级商店" text_size res_font(18) tooltip ttip:
                 if MC.has_resource(*cost):
@@ -5108,7 +5110,7 @@ screen item_tab(left, right, context):
                     if not MC.active_inv_filter:
                         $ it_list2 = right.items
                     else:
-                        $ it_list2 = [it for it in right.items if it.filter == MC.active_inv_filter]
+                        $ it_list2 = [it for it in right.items if it != None and it.filter == MC.active_inv_filter]
 
                     if len(it_list2) > right_length:
                         $ it_list2 = it_list2[:right_length] + ["more_button"]
@@ -5144,43 +5146,42 @@ screen item_tab(left, right, context):
                             for it in it_list2:
                                 if it == "more_button":
                                     textbutton "显示更多物品" xsize xres(170) text_size res_font(14) text_italic True action SetScreenVariable("right_length", right_length + max_item_shown)
+                                elif it != None:
+                                    if not it.equipped:
+                                        $ ttip = it.description
 
-                                elif not it.equipped:
+                                        button:
+                                            xsize xres(170)
+                                            yminimum yres(68)
 
-                                    $ ttip = it.description
+                                            action (Show("item_profile", it = it, act = act, transition = dissolve), SetVariable("selected_item", it))
+                                            tooltip ttip
 
-                                    button:
-                                        xsize xres(170)
-                                        yminimum yres(68)
+                                            hbox spacing 3:
 
-                                        action (Show("item_profile", it = it, act = act, transition = dissolve), SetVariable("selected_item", it))
-                                        tooltip ttip
+                                                frame yalign 0.5 xsize xres(60) ysize yres(60) ymargin 3:
 
-                                        hbox spacing 3:
-
-                                            frame yalign 0.5 xsize xres(60) ysize yres(60) ymargin 3:
-
-                                                add it.pic.get(*res_tb(50)) xalign 0.5 yalign 0.5
+                                                    add it.pic.get(*res_tb(50)) xalign 0.5 yalign 0.5
 
 
-                                            vbox yalign 0.5:
-                                                $ text1 = it.name
+                                                vbox yalign 0.5:
+                                                    $ text1 = it.name
 
-                                                if isinstance(it, Item):
-                                                    if it.charges > 1:
-                                                        $ text1 += " (" + str(it.charges) + ")"
+                                                    if isinstance(it, Item):
+                                                        if it.charges > 1:
+                                                            $ text1 += " (" + str(it.charges) + ")"
 
-                                                    if it.equipped:
-                                                        $ text1 += "\n{i}已装备{/i}"
+                                                        if it.equipped:
+                                                            $ text1 += "\n{i}已装备{/i}"
 
-                                                elif isinstance(it, Minion):
-                                                    $ text1 +=  "\n等级" + str(it.level)
+                                                    elif isinstance(it, Minion):
+                                                        $ text1 +=  "\n等级" + str(it.level)
 
-                                                if act == "buy":
+                                                    if act == "buy":
 
-                                                    $ text1 += "\n" + str(it.get_price("buy")) + "金币"
+                                                        $ text1 += "\n" + str(it.get_price("buy")) + "金币"
 
-                                                text text1 size res_font(14)
+                                                    text text1 size res_font(14)
 
 
 
@@ -8085,7 +8086,7 @@ screen contract_result(contract, x=450):
                 if contract.special_bonus != 1.0:
                     text str(contract.get_special_value()) + "金币" color c_darkgold yalign 0.5 size res_font(13) at contract_result_transform
                 else:
-                    text "{i}失踪{/i}" color c_lightred yalign 0.5 size res_font(13) at contract_result_transform
+                    text "{i}未满足{/i}" color c_lightred yalign 0.5 size res_font(13) at contract_result_transform
 
         vbox spacing 6:
             text "分数" size res_font(16) bold True color c_prune

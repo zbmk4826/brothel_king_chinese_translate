@@ -1683,12 +1683,13 @@ init -3 python:
         for it in girls[0].items:
             if item_used:
                 break
-            elif it.usage == "auto_work":
-                for e in it.effects:
-                    if e.target.startswith(act):
-                        girls[0].use_item(it)
-                        item_used = it
-                        break
+            elif it != None:
+                if it.usage == "auto_work":
+                    for e in it.effects:
+                        if e.target.startswith(act):
+                            girls[0].use_item(it)
+                            item_used = it
+                            break
 
         # Apply misc effects
         if act in all_jobs:
@@ -1893,7 +1894,7 @@ init -3 python:
         if act in all_jobs or len(girls) > 1:
             tiredness = 5 * len(customers)
         else:
-            tiredness = 10 * len(customers)
+            tiredness = 5 * len(customers)
 
         #<Chris Job Mod>
         if game.has_active_mod("chrisjobmod"):
@@ -2127,9 +2128,9 @@ init -3 python:
         text_changes += "\n" + stat_increase_dict["gold+"] % str(round_int(sum(tip_gains.values()))) + tip_special
 
         if total_budget == 0:
-            text_changes += "\n(max)"
+            text_changes += "\n(达到客人预算上限)"
         elif total_budget < 0:
-            text_changes += "\n(超出预算)"
+            text_changes += "\n(超出客人预算)"
 
 
 

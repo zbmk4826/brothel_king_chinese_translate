@@ -6436,7 +6436,7 @@ translate chinese night_girl_perform_db042c6a:
 translate chinese night_girl_perform_12761a32:
 
     # girl.char "I'm... I'm cummiiiing!!!"
-    girl.char "我...我要射了！！！"
+    girl.char "我...我要高潮了！！！"
 
 # game/BKday_events.rpy:4350
 translate chinese night_girl_perform_3c674b47:

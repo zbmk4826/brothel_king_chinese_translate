@@ -10660,7 +10660,7 @@ translate chinese stella_sex_152d87c1:
 translate chinese stella_sex_97443ffa:
 
     # stella "CUMMIIIIIING!!!!"
-    stella "我要射了！！！"
+    stella "我要高潮了！！！"
 
 # game/BKstory_events.rpy:5362
 translate chinese stella_sex_238874e1:

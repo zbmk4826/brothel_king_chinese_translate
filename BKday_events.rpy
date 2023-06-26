@@ -605,7 +605,7 @@ label random_morning_events():
             if ev_type not in ("mood", "love", "fear"):
                 $xxx6=girl_related_dict[ev_type]
             else:
-                $xxx6=ev_type
+                $xxx6=girl_related_dict[ev_type]
             "[girl.fullname]'s [ev_type] has increased."
 
     return
