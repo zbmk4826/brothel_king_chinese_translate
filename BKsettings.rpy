@@ -88,6 +88,12 @@ init -4 python:
 
     ## 女孩相关 ##
     girl_related_dict = {
+                        "Mood" : "情绪",
+                        "mood" : "情绪",
+                        "Love" : "爱意",
+                        "love" : "爱意",
+                        "Fear" : "恐惧",
+                        "fear" : "恐惧",
                         ## 统计名称 ##
                         "Beauty" : "美貌",
                         "beauty" : "美貌",

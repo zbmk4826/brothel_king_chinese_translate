@@ -608,7 +608,7 @@ label end_day:
 
             for it in girl.items: # To do: track changes and display in right column
 
-                if it.usage == "auto_rest":
+                if it != None and it.usage == "auto_rest":
 
                     # Limited scope: for toys only
 
@@ -627,10 +627,10 @@ label end_day:
                         extra_text += "\n她用" + it.name + "玩得很开心。"
 
             if used:
-                extra_text += "\n她使用那些小玩意儿玩得很开心" + and_text(used)
+                extra_text += "\n她使用那些"+ and_text(used) +"之类的小玩意儿玩得很开心"
                 if result:
                     extra_sound = s_spell
-                    extra_text += "，学到了一些新东西"
+                    extra_text += "，然后学到了一些新东西"
                 extra_text += "。"
                 girl.add_log("used toy")
 
